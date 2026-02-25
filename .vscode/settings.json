@@ -1,0 +1,5 @@
+{
+  "java.project.sourcePaths": ["data/planetiler"],
+  "java.project.referencedLibraries": ["data/planetiler/*.jar"],
+  "java.compile.nullAnalysis.mode": "automatic"
+}
