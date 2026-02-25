@@ -11,5 +11,6 @@ node_modules
 *.jar
 *.pbf
 *.pmtiles
+data/public/icons*
 dist
 tmp
