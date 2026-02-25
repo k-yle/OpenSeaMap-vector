@@ -1,0 +1,15 @@
+# OS
+.DS_Store
+Desktop.ini
+wget-log
+
+# JS
+node_modules
+*.tsbuildinfo
+
+# generated data
+*.jar
+*.pbf
+*.pmtiles
+dist
+tmp
