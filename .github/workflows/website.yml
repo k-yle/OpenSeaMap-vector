@@ -1,0 +1,53 @@
+name: website
+
+on: [push]
+
+jobs:
+  build_website:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Install NodeJS
+        uses: actions/setup-node@v6
+        with:
+          node-version: 25.x
+
+      - run: . ./sprite.sh
+
+      - run: npm install
+        working-directory: packages/website
+
+      - run: npm run lint
+        working-directory: packages/website
+
+      - run: npm run build
+        working-directory: packages/website
+
+      - name: Upload compiled files as an artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          retention-days: 0.5
+          path: packages/website/dist
+
+  deploy_website:
+    needs: build_website
+
+    if: ${{ github.ref == format('refs/heads/{0}', github.event.repository.default_branch) }}
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy artifact to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

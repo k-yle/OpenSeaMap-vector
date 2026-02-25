@@ -11,13 +11,13 @@
     },
     "seamarks": {
       "type": "vector",
-      "url": "pmtiles://http://localhost:1673/seamarks.pmtiles"
+      "url": "pmtiles://https://cdn-oceania-07.kyle.kiwi/seamarks.pmtiles"
     }
   },
   "sprite": [
     {
       "id": "default",
-      "url": "http://localhost:1673/icons"
+      "url": "https://kyle.kiwi/OpenSeaMap-vector/icons"
     }
   ],
   "layers": [
