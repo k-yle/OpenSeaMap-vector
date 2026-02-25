@@ -1,8 +1,10 @@
 import { useEffect, useRef } from 'react';
+import { renderToStaticMarkup } from 'react-dom/server';
 import { Map, Popup, addProtocol } from 'maplibre-gl';
 import { PMTiles, Protocol } from 'pmtiles';
 import { PMTILES_URL, getStyle } from './style.js';
 import { onStyleImageMissing } from './onStyleImageMissing.js';
+import { MapPopup } from './components/MapPopup.js';
 
 const protocol = new Protocol();
 addProtocol('pmtiles', protocol.tile);
@@ -49,9 +51,11 @@ export const App: React.FC = () => {
           map.getCanvas().style.cursor = '';
         });
         map.on('click', clickableKeys, (event) => {
+          const feature = event.features![0]!;
+
           new Popup()
             .setLngLat(event.lngLat)
-            .setHTML('hi <3')
+            .setHTML(renderToStaticMarkup(<MapPopup feature={feature} />))
             .setMaxWidth('80vw')
             .addTo(map);
         });
