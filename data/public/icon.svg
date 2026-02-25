@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128">
+	<defs>
+		<linearGradient id="lx">
+			<stop offset="0" stop-color="#fe3" stop-opacity="0" />
+			<stop offset=".5" stop-color="#fe3" />
+			<stop offset="1" stop-color="#fe3" stop-opacity="0" />
+		</linearGradient>
+	</defs>
+  <path fill="url('#lx')" opacity="0.5" d="M 25 12 L 54 17 L 74 17 L 103 12 L 103 44 L 74 40 L 54 40 L 25 44 L 25 12 M 74 17" />
+	<path fill="url('#lx')" d="M 1 8 L 54 17 L 74 17 L 127 7 L 127 48 L 74 40 L 54 40 L 1 48 L 1 8">
+    <animate
+      attributeName="opacity"
+      values="0.1;1;0.1"
+      dur="3s"
+      repeatCount="indefinite"
+    />
+  </path>
+	<rect fill="#fe3" stroke="#000" stroke-width="2" x="53" y="17" width="22" height="22" />
+	<path fill="#fff" d="M 50 57 L 53 40 H 75 L 77 57 Z" />
+  <path fill="#f00" d="M 50 57 h 27 l 3 21 H 48 l 2 -21 z" />
+	<path fill="#fff" d="M 45 98 H 83 L 80 78 L 80 78 H 48 Z" />
+	<path fill="#f00" d="M 45 98 h 38 l 3 21 H 42 l 3 -21 z" />
+	<path fill="#000" d="M 44 39 h 40 v 3 H 44 z" />
+	<path fill="none" stroke="#000" stroke-width="2" d="m42 119 11-79h22l11 78-44 1z" />
+	<path stroke="#000" d="M 45 17 h 38 L 64 4 L 45 17 z" />
+	<rect x="9" y="117" width="109" height="5" />
+</svg>
