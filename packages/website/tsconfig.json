@@ -2,7 +2,7 @@
   "extends": "eslint-config-kyle/tsconfig.base.json",
   "compilerOptions": {
     "rootDir": "src",
-    "lib": ["esnext", "dom"],
+    "lib": ["esnext", "dom", "dom.iterable"],
     "types": ["vite/client"]
   },
   "include": ["src"]

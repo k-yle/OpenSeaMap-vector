@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { Map, Popup, addProtocol } from 'maplibre-gl';
 import { PMTiles, Protocol } from 'pmtiles';
 import { PMTILES_URL, getStyle } from './style.js';
+import { onStyleImageMissing } from './onStyleImageMissing.js';
 
 const protocol = new Protocol();
 addProtocol('pmtiles', protocol.tile);
@@ -38,6 +39,8 @@ export const App: React.FC = () => {
           hash: 'map',
         });
         mapRef.current = map;
+
+        map.on('styleimagemissing', onStyleImageMissing);
 
         map.on('mouseenter', clickableKeys, () => {
           map.getCanvas().style.cursor = 'pointer';
