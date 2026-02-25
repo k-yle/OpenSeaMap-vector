@@ -1,0 +1,102 @@
+name: planet
+
+on:
+  schedule:
+    - cron: "6 6 6 * *" # on the 6th day of every month
+  workflow_dispatch:
+
+jobs:
+  download_planet:
+    runs-on: ubuntu-latest
+    continue-on-error: false # if one region fails, the entire workflow should fail
+
+    strategy:
+      matrix:
+        continent:
+          - africa # 7 GB
+          - antarctica # 0 GB
+          - asia # 14 GB
+          - australia-oceania # 1 GB
+          - central-america # 1 GB
+          - europe # 31 GB
+          - north-america # 17 GB
+          - south-america # 3 GB
+
+    steps:
+      - name: Free up disk space
+        uses: BRAINSia/free-disk-space@f9f59b0ef974ff4b873aa243ce5278ab644eedc6
+        if: ${{ matrix.continent == 'europe' || matrix.continent == 'north-america' || matrix.continent == 'asia' }}
+        with:
+          tool-cache: true
+
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Download the planet file for ${{ matrix.continent }}
+        run: curl -Lo ./data/full.pbf "https://download.geofabrik.de/${{ matrix.continent }}-latest.osm.pbf"
+
+      - name: Run osmium filter-tags
+        run: . ./planet.sh
+
+      - name: Rename file
+        run: mv data/public/seamarks.pbf "data/${{ matrix.continent }}.pbf"
+
+      - name: Store the slimmed-down planet file as an artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: planet-${{ matrix.continent }}
+          path: data/${{ matrix.continent }}.pbf
+          retention-days: 0.5
+
+  generate_tiles:
+    needs: download_planet
+    runs-on: ubuntu-latest
+
+    environment:
+      name: cloudflare
+      url: https://cdn-oceania-07.kyle.kiwi
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Download all the seamarks.pbf files from the previous jobs
+        uses: actions/download-artifact@v5
+        with:
+          path: data/tmp_pbf
+          pattern: planet-*
+          merge-multiple: true
+
+      - name: Merge into a single pbf file
+        run: |
+          docker run --rm -v $(pwd):/data \
+            iboates/osmium:latest \
+            merge \
+            /data/data/tmp_pbf/africa.pbf \
+            /data/data/tmp_pbf/antarctica.pbf \
+            /data/data/tmp_pbf/asia.pbf \
+            /data/data/tmp_pbf/australia-oceania.pbf \
+            /data/data/tmp_pbf/central-america.pbf \
+            /data/data/tmp_pbf/europe.pbf \
+            /data/data/tmp_pbf/north-america.pbf \
+            /data/data/tmp_pbf/south-america.pbf \
+            -o /data/data/public/seamarks.pbf
+        # TODO: don't list every file name here, use a wildcard or xargs or something
+
+      - name: Run planetiler
+        run: . ./tiles.sh
+
+      - name: Configure the AWS CLI for R2
+        run: |
+          aws configure set aws_access_key_id ${{ secrets.R2_ACCESS_KEY_ID }}
+          aws configure set aws_secret_access_key ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          aws configure set default.region auto
+
+      - name: Upload to R2
+        run: |
+          aws s3 sync ./data/public s3://${{ secrets.R2_BUCKET }} \
+            --endpoint-url https://${{ secrets.R2_ACCOUNT_ID }}.r2.cloudflarestorage.com
