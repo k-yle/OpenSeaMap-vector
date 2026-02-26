@@ -1,0 +1,31 @@
+import type { Dimensions } from './types.def.js';
+
+export async function svgToRaster(svg: string, { width, height }: Dimensions) {
+  // svg -> blob
+  const blob = new Blob([svg], { type: 'image/svg+xml' });
+  const blobUrl = URL.createObjectURL(blob);
+
+  // blob -> image
+  const img = new Image();
+  await new Promise((resolve, reject) => {
+    img.addEventListener('load', resolve);
+    img.addEventListener('error', reject);
+    img.src = blobUrl;
+  });
+
+  // image -> canvas
+  const canvas = document.createElement('canvas');
+  canvas.width = width;
+  canvas.height = height;
+  const ctx = canvas.getContext('2d')!;
+  ctx.drawImage(img, 0, 0);
+
+  // canvas -> png
+  const pixelBuffer = ctx.getImageData(0, 0, canvas.width, canvas.height);
+
+  // cleanup
+  URL.revokeObjectURL(blobUrl);
+  canvas.remove();
+
+  return pixelBuffer;
+}

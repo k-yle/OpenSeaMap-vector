@@ -1,0 +1,2027 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300">
+<defs />
+<rect x="0" y="0" width="420" height="300" fill="#fff" />
+<text x="30" y="6.25" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">cone, point up</text>
+<text x="50" y="18.75" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">cone, point down</text>
+<text x="70" y="6.25" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">sphere</text>
+<text x="90" y="18.75" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">2 spheres</text>
+<text x="110" y="6.25" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">cylinder</text>
+<text x="130" y="18.75" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">board</text>
+<text x="150" y="6.25" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">x-shape</text>
+<text x="170" y="18.75" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">cross</text>
+<text x="190" y="6.25" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">2 cones point together</text>
+<text x="210" y="18.75" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">2 cones base together</text>
+<text x="230" y="6.25" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">rhombus</text>
+<text x="250" y="18.75" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">2 cones up</text>
+<text x="270" y="6.25" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">2 cones down</text>
+<text x="290" y="18.75" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">besom, point up</text>
+<text x="310" y="6.25" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">besom, point down</text>
+<text x="330" y="18.75" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">flag</text>
+<text x="350" y="6.25" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">square</text>
+<text x="370" y="18.75" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">triangle, point up</text>
+<text x="390" y="6.25" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">triangle, point down</text>
+<text x="410" y="18.75" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">none</text>
+<text x="10" y="37.5" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">tower</text>
+<text x="10" y="62.5" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">pile</text>
+<text x="10" y="87.5" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">pole</text>
+<text x="10" y="112.5" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">conical</text>
+<text x="10" y="137.5" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">can</text>
+<text x="10" y="162.5" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">spherical</text>
+<text x="10" y="187.5" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">pillar</text>
+<text x="10" y="212.5" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">spar</text>
+<text x="10" y="237.5" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">barrel</text>
+<text x="10" y="262.5" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">super-buoy</text>
+<text x="10" y="287.5" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">none</text>
+<g transform="translate(20, 25)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(0 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L0 9 0 8.5 1 8.5 2 1 2 0 8 0 8 1 9 8.5 10 8.5 10 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(0 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(20, 50)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(2 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L1 9 1 8.5 4 8.5 4 0 6 0 6 8.5 9 8.5 9 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(2 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(20, 75)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(4 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.75 9V0h.5V9Z" fill="hsl(4 80% 40%)" stroke="#000" stroke-width="0.1" />
+</g>
+</g>
+<g transform="translate(20, 100)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(6 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0063 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.4139 0 .75-.336.75-.75s-.3361-.75-.75-.75ZM6.3594 5.2406ZM6.6 4.5313v.0093c1.2999.9961 2.0322 2.5541 1.9781 4.175h.6282V9.275v.0063H6.2219c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2157-.9656H.8219V8.7156h.7812C2.0236 6.302 4.1343 4.522 6.6 4.5313Z" fill="hsl(6 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(20, 125)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(8 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.1418 4.1416 1.6199 8.7166H.823V9.2822H3.7918C3.9205 9.8355 4.4151 10.2478 5.0074 10.2478 5.5999 10.2478 6.0945 9.8357 6.223 9.2822H9.2074V9.2759 8.7165H8.4386L9.3386 6.0977ZM5.0074 8.2479C5.4214 8.2479 5.7574 8.5839 5.7574 8.9979 5.7574 9.4119 5.4214 9.7479 5.0074 9.7479 4.5934 9.7479 4.2574 9.4119 4.2574 8.9979 4.2574 8.5839 4.5934 8.2479 5.0074 8.2479Z" fill="hsl(8 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(20, 150)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(10 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0094 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75ZM5.5 4.3656c1.1247.0034 2.2053.6228 2.7813 1.6.4864.8254.5759 1.852.2624 2.75h.6657V9.275v.0062H6.225c-.1285.5536-.6231.9657-1.2156.9657-.5923 0-1.0869-.4124-1.2156-.9657L1.5969 9.2781V8.7156h.8406c-.316-.9044-.2229-1.9375.2719-2.7656C3.2912 4.9763 4.3753 4.3622 5.5 4.3656Z" fill="hsl(10 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(20, 175)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(12 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="m8.899.65L7.1272.0812 4.454 5.4538 1.4759 8.7132H.6978l-.0125.5656H3.7915c.1287.5533.6233.9657 1.2156.9657.5925 0 1.0871-.4121 1.2156-.9657H8.6352V8.7132H7.857L7.6102 6.4788ZM5.7559 8.9956c0 .414-.336.75-.75.75-.414 0-.75-.336-.75-.75s.336-.75.75-.75c.414 0 .75.336.75.75Z" fill="hsl(12 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(20, 200)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(14 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.9995 8.2476c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75-.336-.75-.75-.75ZM7.008.226l1.721.602L6.163 8.516c.028.047.047.1.0521.2004l.8313-.0031v.5656l-.8313.0031c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H2.9276l.0125-.5656h.8438c.1068-.4604.3711-.7134.6221-.7984Z" fill="hsl(14 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(20, 225)">
+<g style="transform:translate(5px, 6.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(16 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M1 8.74A3.6 1.8 90 012.62 5.5a3.6 1.8 90 01.99 3.24Zm2.7 0A3.6 1.8 90 002.7 5.5a4.5 1.35 0 015.14 0A3.6 1.8 90 019.37 8.74v.5359.0063H6.223c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H.823V8.74Zm1.3074-.4921c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75Z" fill="hsl(16 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(20, 250)">
+<g style="transform:translate(5px, 5.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(18 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.6844 4.5156 3 6H2L0 5.0688l1.0781 3.65H0v.5625l3.7938.0062c.2062.5533.6233.9719 1.2156.9719.5925 0 1.0902-.4183 1.2187-.9719L10 9.2844V8.7188H8.9L10 5 8 6H7L6.3656 4.5156H3.6844Zm1.325 3.7438c.414 0 .75.336.75.75s-.336.75-.75.75-.75-.336-.75-.75.336-.75.75-.75Z" fill="hsl(18 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(20, 275)">
+<g style="transform:translate(5px, 9.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(20 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(20 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(40, 25)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(20 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L0 9 0 8.5 1 8.5 2 1 2 0 8 0 8 1 9 8.5 10 8.5 10 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(20 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(40, 50)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(22 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L1 9 1 8.5 4 8.5 4 0 6 0 6 8.5 9 8.5 9 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(22 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(40, 75)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(24 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.75 9V0h.5V9Z" fill="hsl(24 80% 40%)" stroke="#000" stroke-width="0.1" />
+</g>
+</g>
+<g transform="translate(40, 100)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(26 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0063 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.4139 0 .75-.336.75-.75s-.3361-.75-.75-.75ZM6.3594 5.2406ZM6.6 4.5313v.0093c1.2999.9961 2.0322 2.5541 1.9781 4.175h.6282V9.275v.0063H6.2219c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2157-.9656H.8219V8.7156h.7812C2.0236 6.302 4.1343 4.522 6.6 4.5313Z" fill="hsl(26 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(40, 125)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(28 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.1418 4.1416 1.6199 8.7166H.823V9.2822H3.7918C3.9205 9.8355 4.4151 10.2478 5.0074 10.2478 5.5999 10.2478 6.0945 9.8357 6.223 9.2822H9.2074V9.2759 8.7165H8.4386L9.3386 6.0977ZM5.0074 8.2479C5.4214 8.2479 5.7574 8.5839 5.7574 8.9979 5.7574 9.4119 5.4214 9.7479 5.0074 9.7479 4.5934 9.7479 4.2574 9.4119 4.2574 8.9979 4.2574 8.5839 4.5934 8.2479 5.0074 8.2479Z" fill="hsl(28 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(40, 150)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(30 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0094 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75ZM5.5 4.3656c1.1247.0034 2.2053.6228 2.7813 1.6.4864.8254.5759 1.852.2624 2.75h.6657V9.275v.0062H6.225c-.1285.5536-.6231.9657-1.2156.9657-.5923 0-1.0869-.4124-1.2156-.9657L1.5969 9.2781V8.7156h.8406c-.316-.9044-.2229-1.9375.2719-2.7656C3.2912 4.9763 4.3753 4.3622 5.5 4.3656Z" fill="hsl(30 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(40, 175)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(32 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="m8.899.65L7.1272.0812 4.454 5.4538 1.4759 8.7132H.6978l-.0125.5656H3.7915c.1287.5533.6233.9657 1.2156.9657.5925 0 1.0871-.4121 1.2156-.9657H8.6352V8.7132H7.857L7.6102 6.4788ZM5.7559 8.9956c0 .414-.336.75-.75.75-.414 0-.75-.336-.75-.75s.336-.75.75-.75c.414 0 .75.336.75.75Z" fill="hsl(32 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(40, 200)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(34 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.9995 8.2476c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75-.336-.75-.75-.75ZM7.008.226l1.721.602L6.163 8.516c.028.047.047.1.0521.2004l.8313-.0031v.5656l-.8313.0031c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H2.9276l.0125-.5656h.8438c.1068-.4604.3711-.7134.6221-.7984Z" fill="hsl(34 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(40, 225)">
+<g style="transform:translate(5px, 6.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(36 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M1 8.74A3.6 1.8 90 012.62 5.5a3.6 1.8 90 01.99 3.24Zm2.7 0A3.6 1.8 90 002.7 5.5a4.5 1.35 0 015.14 0A3.6 1.8 90 019.37 8.74v.5359.0063H6.223c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H.823V8.74Zm1.3074-.4921c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75Z" fill="hsl(36 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(40, 250)">
+<g style="transform:translate(5px, 5.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(38 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.6844 4.5156 3 6H2L0 5.0688l1.0781 3.65H0v.5625l3.7938.0062c.2062.5533.6233.9719 1.2156.9719.5925 0 1.0902-.4183 1.2187-.9719L10 9.2844V8.7188H8.9L10 5 8 6H7L6.3656 4.5156H3.6844Zm1.325 3.7438c.414 0 .75.336.75.75s-.336.75-.75.75-.75-.336-.75-.75.336-.75.75-.75Z" fill="hsl(38 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(40, 275)">
+<g style="transform:translate(5px, 9.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(40 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(40 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(60, 25)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(40 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L0 9 0 8.5 1 8.5 2 1 2 0 8 0 8 1 9 8.5 10 8.5 10 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(40 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(60, 50)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(42 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L1 9 1 8.5 4 8.5 4 0 6 0 6 8.5 9 8.5 9 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(42 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(60, 75)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(44 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.75 9V0h.5V9Z" fill="hsl(44 80% 40%)" stroke="#000" stroke-width="0.1" />
+</g>
+</g>
+<g transform="translate(60, 100)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(46 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0063 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.4139 0 .75-.336.75-.75s-.3361-.75-.75-.75ZM6.3594 5.2406ZM6.6 4.5313v.0093c1.2999.9961 2.0322 2.5541 1.9781 4.175h.6282V9.275v.0063H6.2219c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2157-.9656H.8219V8.7156h.7812C2.0236 6.302 4.1343 4.522 6.6 4.5313Z" fill="hsl(46 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(60, 125)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(48 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.1418 4.1416 1.6199 8.7166H.823V9.2822H3.7918C3.9205 9.8355 4.4151 10.2478 5.0074 10.2478 5.5999 10.2478 6.0945 9.8357 6.223 9.2822H9.2074V9.2759 8.7165H8.4386L9.3386 6.0977ZM5.0074 8.2479C5.4214 8.2479 5.7574 8.5839 5.7574 8.9979 5.7574 9.4119 5.4214 9.7479 5.0074 9.7479 4.5934 9.7479 4.2574 9.4119 4.2574 8.9979 4.2574 8.5839 4.5934 8.2479 5.0074 8.2479Z" fill="hsl(48 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(60, 150)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(50 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0094 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75ZM5.5 4.3656c1.1247.0034 2.2053.6228 2.7813 1.6.4864.8254.5759 1.852.2624 2.75h.6657V9.275v.0062H6.225c-.1285.5536-.6231.9657-1.2156.9657-.5923 0-1.0869-.4124-1.2156-.9657L1.5969 9.2781V8.7156h.8406c-.316-.9044-.2229-1.9375.2719-2.7656C3.2912 4.9763 4.3753 4.3622 5.5 4.3656Z" fill="hsl(50 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(60, 175)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(52 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="m8.899.65L7.1272.0812 4.454 5.4538 1.4759 8.7132H.6978l-.0125.5656H3.7915c.1287.5533.6233.9657 1.2156.9657.5925 0 1.0871-.4121 1.2156-.9657H8.6352V8.7132H7.857L7.6102 6.4788ZM5.7559 8.9956c0 .414-.336.75-.75.75-.414 0-.75-.336-.75-.75s.336-.75.75-.75c.414 0 .75.336.75.75Z" fill="hsl(52 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(60, 200)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(54 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.9995 8.2476c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75-.336-.75-.75-.75ZM7.008.226l1.721.602L6.163 8.516c.028.047.047.1.0521.2004l.8313-.0031v.5656l-.8313.0031c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H2.9276l.0125-.5656h.8438c.1068-.4604.3711-.7134.6221-.7984Z" fill="hsl(54 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(60, 225)">
+<g style="transform:translate(5px, 6.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(56 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M1 8.74A3.6 1.8 90 012.62 5.5a3.6 1.8 90 01.99 3.24Zm2.7 0A3.6 1.8 90 002.7 5.5a4.5 1.35 0 015.14 0A3.6 1.8 90 019.37 8.74v.5359.0063H6.223c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H.823V8.74Zm1.3074-.4921c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75Z" fill="hsl(56 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(60, 250)">
+<g style="transform:translate(5px, 5.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(58 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.6844 4.5156 3 6H2L0 5.0688l1.0781 3.65H0v.5625l3.7938.0062c.2062.5533.6233.9719 1.2156.9719.5925 0 1.0902-.4183 1.2187-.9719L10 9.2844V8.7188H8.9L10 5 8 6H7L6.3656 4.5156H3.6844Zm1.325 3.7438c.414 0 .75.336.75.75s-.336.75-.75.75-.75-.336-.75-.75.336-.75.75-.75Z" fill="hsl(58 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(60, 275)">
+<g style="transform:translate(5px, 9.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(60 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(60 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(80, 25)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M 5 2.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(60 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(60 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L0 9 0 8.5 1 8.5 2 1 2 0 8 0 8 1 9 8.5 10 8.5 10 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(60 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(80, 50)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M 5 2.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(62 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(62 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L1 9 1 8.5 4 8.5 4 0 6 0 6 8.5 9 8.5 9 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(62 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(80, 75)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M 5 2.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(64 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(64 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.75 9V0h.5V9Z" fill="hsl(64 80% 40%)" stroke="#000" stroke-width="0.1" />
+</g>
+</g>
+<g transform="translate(80, 100)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M 5 2.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(66 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(66 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0063 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.4139 0 .75-.336.75-.75s-.3361-.75-.75-.75ZM6.3594 5.2406ZM6.6 4.5313v.0093c1.2999.9961 2.0322 2.5541 1.9781 4.175h.6282V9.275v.0063H6.2219c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2157-.9656H.8219V8.7156h.7812C2.0236 6.302 4.1343 4.522 6.6 4.5313Z" fill="hsl(66 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(80, 125)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M 5 2.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(68 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(68 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.1418 4.1416 1.6199 8.7166H.823V9.2822H3.7918C3.9205 9.8355 4.4151 10.2478 5.0074 10.2478 5.5999 10.2478 6.0945 9.8357 6.223 9.2822H9.2074V9.2759 8.7165H8.4386L9.3386 6.0977ZM5.0074 8.2479C5.4214 8.2479 5.7574 8.5839 5.7574 8.9979 5.7574 9.4119 5.4214 9.7479 5.0074 9.7479 4.5934 9.7479 4.2574 9.4119 4.2574 8.9979 4.2574 8.5839 4.5934 8.2479 5.0074 8.2479Z" fill="hsl(68 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(80, 150)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M 5 2.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(70 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(70 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0094 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75ZM5.5 4.3656c1.1247.0034 2.2053.6228 2.7813 1.6.4864.8254.5759 1.852.2624 2.75h.6657V9.275v.0062H6.225c-.1285.5536-.6231.9657-1.2156.9657-.5923 0-1.0869-.4124-1.2156-.9657L1.5969 9.2781V8.7156h.8406c-.316-.9044-.2229-1.9375.2719-2.7656C3.2912 4.9763 4.3753 4.3622 5.5 4.3656Z" fill="hsl(70 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(80, 175)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M 5 2.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(72 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(72 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="m8.899.65L7.1272.0812 4.454 5.4538 1.4759 8.7132H.6978l-.0125.5656H3.7915c.1287.5533.6233.9657 1.2156.9657.5925 0 1.0871-.4121 1.2156-.9657H8.6352V8.7132H7.857L7.6102 6.4788ZM5.7559 8.9956c0 .414-.336.75-.75.75-.414 0-.75-.336-.75-.75s.336-.75.75-.75c.414 0 .75.336.75.75Z" fill="hsl(72 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(80, 200)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M 5 2.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(74 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(74 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.9995 8.2476c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75-.336-.75-.75-.75ZM7.008.226l1.721.602L6.163 8.516c.028.047.047.1.0521.2004l.8313-.0031v.5656l-.8313.0031c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H2.9276l.0125-.5656h.8438c.1068-.4604.3711-.7134.6221-.7984Z" fill="hsl(74 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(80, 225)">
+<g style="transform:translate(5px, 6.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M 5 2.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(76 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(76 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M1 8.74A3.6 1.8 90 012.62 5.5a3.6 1.8 90 01.99 3.24Zm2.7 0A3.6 1.8 90 002.7 5.5a4.5 1.35 0 015.14 0A3.6 1.8 90 019.37 8.74v.5359.0063H6.223c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H.823V8.74Zm1.3074-.4921c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75Z" fill="hsl(76 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(80, 250)">
+<g style="transform:translate(5px, 5.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M 5 2.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(78 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(78 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.6844 4.5156 3 6H2L0 5.0688l1.0781 3.65H0v.5625l3.7938.0062c.2062.5533.6233.9719 1.2156.9719.5925 0 1.0902-.4183 1.2187-.9719L10 9.2844V8.7188H8.9L10 5 8 6H7L6.3656 4.5156H3.6844Zm1.325 3.7438c.414 0 .75.336.75.75s-.336.75-.75.75-.75-.336-.75-.75.336-.75.75-.75Z" fill="hsl(78 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(80, 275)">
+<g style="transform:translate(5px, 9.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M 5 2.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(80 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(80 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(80 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(100, 25)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.5 5A2.5.5 0 007.5 5 2.5.5 0 002.5 5L2.5 7.92A2.5.5 0 007.5 7.92L7.5 5" fill="hsl(80 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L0 9 0 8.5 1 8.5 2 1 2 0 8 0 8 1 9 8.5 10 8.5 10 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(80 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(100, 50)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.5 5A2.5.5 0 007.5 5 2.5.5 0 002.5 5L2.5 7.92A2.5.5 0 007.5 7.92L7.5 5" fill="hsl(82 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L1 9 1 8.5 4 8.5 4 0 6 0 6 8.5 9 8.5 9 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(82 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(100, 75)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.5 5A2.5.5 0 007.5 5 2.5.5 0 002.5 5L2.5 7.92A2.5.5 0 007.5 7.92L7.5 5" fill="hsl(84 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.75 9V0h.5V9Z" fill="hsl(84 80% 40%)" stroke="#000" stroke-width="0.1" />
+</g>
+</g>
+<g transform="translate(100, 100)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.5 5A2.5.5 0 007.5 5 2.5.5 0 002.5 5L2.5 7.92A2.5.5 0 007.5 7.92L7.5 5" fill="hsl(86 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0063 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.4139 0 .75-.336.75-.75s-.3361-.75-.75-.75ZM6.3594 5.2406ZM6.6 4.5313v.0093c1.2999.9961 2.0322 2.5541 1.9781 4.175h.6282V9.275v.0063H6.2219c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2157-.9656H.8219V8.7156h.7812C2.0236 6.302 4.1343 4.522 6.6 4.5313Z" fill="hsl(86 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(100, 125)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.5 5A2.5.5 0 007.5 5 2.5.5 0 002.5 5L2.5 7.92A2.5.5 0 007.5 7.92L7.5 5" fill="hsl(88 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.1418 4.1416 1.6199 8.7166H.823V9.2822H3.7918C3.9205 9.8355 4.4151 10.2478 5.0074 10.2478 5.5999 10.2478 6.0945 9.8357 6.223 9.2822H9.2074V9.2759 8.7165H8.4386L9.3386 6.0977ZM5.0074 8.2479C5.4214 8.2479 5.7574 8.5839 5.7574 8.9979 5.7574 9.4119 5.4214 9.7479 5.0074 9.7479 4.5934 9.7479 4.2574 9.4119 4.2574 8.9979 4.2574 8.5839 4.5934 8.2479 5.0074 8.2479Z" fill="hsl(88 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(100, 150)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.5 5A2.5.5 0 007.5 5 2.5.5 0 002.5 5L2.5 7.92A2.5.5 0 007.5 7.92L7.5 5" fill="hsl(90 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0094 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75ZM5.5 4.3656c1.1247.0034 2.2053.6228 2.7813 1.6.4864.8254.5759 1.852.2624 2.75h.6657V9.275v.0062H6.225c-.1285.5536-.6231.9657-1.2156.9657-.5923 0-1.0869-.4124-1.2156-.9657L1.5969 9.2781V8.7156h.8406c-.316-.9044-.2229-1.9375.2719-2.7656C3.2912 4.9763 4.3753 4.3622 5.5 4.3656Z" fill="hsl(90 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(100, 175)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.5 5A2.5.5 0 007.5 5 2.5.5 0 002.5 5L2.5 7.92A2.5.5 0 007.5 7.92L7.5 5" fill="hsl(92 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="m8.899.65L7.1272.0812 4.454 5.4538 1.4759 8.7132H.6978l-.0125.5656H3.7915c.1287.5533.6233.9657 1.2156.9657.5925 0 1.0871-.4121 1.2156-.9657H8.6352V8.7132H7.857L7.6102 6.4788ZM5.7559 8.9956c0 .414-.336.75-.75.75-.414 0-.75-.336-.75-.75s.336-.75.75-.75c.414 0 .75.336.75.75Z" fill="hsl(92 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(100, 200)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.5 5A2.5.5 0 007.5 5 2.5.5 0 002.5 5L2.5 7.92A2.5.5 0 007.5 7.92L7.5 5" fill="hsl(94 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.9995 8.2476c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75-.336-.75-.75-.75ZM7.008.226l1.721.602L6.163 8.516c.028.047.047.1.0521.2004l.8313-.0031v.5656l-.8313.0031c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H2.9276l.0125-.5656h.8438c.1068-.4604.3711-.7134.6221-.7984Z" fill="hsl(94 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(100, 225)">
+<g style="transform:translate(5px, 6.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.5 5A2.5.5 0 007.5 5 2.5.5 0 002.5 5L2.5 7.92A2.5.5 0 007.5 7.92L7.5 5" fill="hsl(96 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M1 8.74A3.6 1.8 90 012.62 5.5a3.6 1.8 90 01.99 3.24Zm2.7 0A3.6 1.8 90 002.7 5.5a4.5 1.35 0 015.14 0A3.6 1.8 90 019.37 8.74v.5359.0063H6.223c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H.823V8.74Zm1.3074-.4921c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75Z" fill="hsl(96 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(100, 250)">
+<g style="transform:translate(5px, 5.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.5 5A2.5.5 0 007.5 5 2.5.5 0 002.5 5L2.5 7.92A2.5.5 0 007.5 7.92L7.5 5" fill="hsl(98 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.6844 4.5156 3 6H2L0 5.0688l1.0781 3.65H0v.5625l3.7938.0062c.2062.5533.6233.9719 1.2156.9719.5925 0 1.0902-.4183 1.2187-.9719L10 9.2844V8.7188H8.9L10 5 8 6H7L6.3656 4.5156H3.6844Zm1.325 3.7438c.414 0 .75.336.75.75s-.336.75-.75.75-.75-.336-.75-.75.336-.75.75-.75Z" fill="hsl(98 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(100, 275)">
+<g style="transform:translate(5px, 9.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.5 5A2.5.5 0 007.5 5 2.5.5 0 002.5 5L2.5 7.92A2.5.5 0 007.5 7.92L7.5 5" fill="hsl(100 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(100 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(120, 25)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M3 8V3H7V8Z" fill="hsl(100 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L0 9 0 8.5 1 8.5 2 1 2 0 8 0 8 1 9 8.5 10 8.5 10 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(100 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(120, 50)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M3 8V3H7V8Z" fill="hsl(102 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L1 9 1 8.5 4 8.5 4 0 6 0 6 8.5 9 8.5 9 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(102 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(120, 75)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M3 8V3H7V8Z" fill="hsl(104 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.75 9V0h.5V9Z" fill="hsl(104 80% 40%)" stroke="#000" stroke-width="0.1" />
+</g>
+</g>
+<g transform="translate(120, 100)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M3 8V3H7V8Z" fill="hsl(106 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0063 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.4139 0 .75-.336.75-.75s-.3361-.75-.75-.75ZM6.3594 5.2406ZM6.6 4.5313v.0093c1.2999.9961 2.0322 2.5541 1.9781 4.175h.6282V9.275v.0063H6.2219c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2157-.9656H.8219V8.7156h.7812C2.0236 6.302 4.1343 4.522 6.6 4.5313Z" fill="hsl(106 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(120, 125)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M3 8V3H7V8Z" fill="hsl(108 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.1418 4.1416 1.6199 8.7166H.823V9.2822H3.7918C3.9205 9.8355 4.4151 10.2478 5.0074 10.2478 5.5999 10.2478 6.0945 9.8357 6.223 9.2822H9.2074V9.2759 8.7165H8.4386L9.3386 6.0977ZM5.0074 8.2479C5.4214 8.2479 5.7574 8.5839 5.7574 8.9979 5.7574 9.4119 5.4214 9.7479 5.0074 9.7479 4.5934 9.7479 4.2574 9.4119 4.2574 8.9979 4.2574 8.5839 4.5934 8.2479 5.0074 8.2479Z" fill="hsl(108 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(120, 150)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M3 8V3H7V8Z" fill="hsl(110 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0094 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75ZM5.5 4.3656c1.1247.0034 2.2053.6228 2.7813 1.6.4864.8254.5759 1.852.2624 2.75h.6657V9.275v.0062H6.225c-.1285.5536-.6231.9657-1.2156.9657-.5923 0-1.0869-.4124-1.2156-.9657L1.5969 9.2781V8.7156h.8406c-.316-.9044-.2229-1.9375.2719-2.7656C3.2912 4.9763 4.3753 4.3622 5.5 4.3656Z" fill="hsl(110 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(120, 175)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M3 8V3H7V8Z" fill="hsl(112 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="m8.899.65L7.1272.0812 4.454 5.4538 1.4759 8.7132H.6978l-.0125.5656H3.7915c.1287.5533.6233.9657 1.2156.9657.5925 0 1.0871-.4121 1.2156-.9657H8.6352V8.7132H7.857L7.6102 6.4788ZM5.7559 8.9956c0 .414-.336.75-.75.75-.414 0-.75-.336-.75-.75s.336-.75.75-.75c.414 0 .75.336.75.75Z" fill="hsl(112 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(120, 200)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M3 8V3H7V8Z" fill="hsl(114 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.9995 8.2476c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75-.336-.75-.75-.75ZM7.008.226l1.721.602L6.163 8.516c.028.047.047.1.0521.2004l.8313-.0031v.5656l-.8313.0031c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H2.9276l.0125-.5656h.8438c.1068-.4604.3711-.7134.6221-.7984Z" fill="hsl(114 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(120, 225)">
+<g style="transform:translate(5px, 6.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M3 8V3H7V8Z" fill="hsl(116 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M1 8.74A3.6 1.8 90 012.62 5.5a3.6 1.8 90 01.99 3.24Zm2.7 0A3.6 1.8 90 002.7 5.5a4.5 1.35 0 015.14 0A3.6 1.8 90 019.37 8.74v.5359.0063H6.223c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H.823V8.74Zm1.3074-.4921c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75Z" fill="hsl(116 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(120, 250)">
+<g style="transform:translate(5px, 5.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M3 8V3H7V8Z" fill="hsl(118 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.6844 4.5156 3 6H2L0 5.0688l1.0781 3.65H0v.5625l3.7938.0062c.2062.5533.6233.9719 1.2156.9719.5925 0 1.0902-.4183 1.2187-.9719L10 9.2844V8.7188H8.9L10 5 8 6H7L6.3656 4.5156H3.6844Zm1.325 3.7438c.414 0 .75.336.75.75s-.336.75-.75.75-.75-.336-.75-.75.336-.75.75-.75Z" fill="hsl(118 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(120, 275)">
+<g style="transform:translate(5px, 9.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M3 8V3H7V8Z" fill="hsl(120 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(120 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(140, 25)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.8787 4.5858 3.5858 3.8787 5 5.2929 6.4142 3.8787 7.1213 4.5858 5.7071 6 7.1213 7.4142 6.4142 8.1213 5 6.7071 3.5858 8.1213 2.8787 7.4142 4.2929 6Z" fill="hsl(120 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L0 9 0 8.5 1 8.5 2 1 2 0 8 0 8 1 9 8.5 10 8.5 10 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(120 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(140, 50)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.8787 4.5858 3.5858 3.8787 5 5.2929 6.4142 3.8787 7.1213 4.5858 5.7071 6 7.1213 7.4142 6.4142 8.1213 5 6.7071 3.5858 8.1213 2.8787 7.4142 4.2929 6Z" fill="hsl(122 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L1 9 1 8.5 4 8.5 4 0 6 0 6 8.5 9 8.5 9 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(122 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(140, 75)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.8787 4.5858 3.5858 3.8787 5 5.2929 6.4142 3.8787 7.1213 4.5858 5.7071 6 7.1213 7.4142 6.4142 8.1213 5 6.7071 3.5858 8.1213 2.8787 7.4142 4.2929 6Z" fill="hsl(124 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.75 9V0h.5V9Z" fill="hsl(124 80% 40%)" stroke="#000" stroke-width="0.1" />
+</g>
+</g>
+<g transform="translate(140, 100)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.8787 4.5858 3.5858 3.8787 5 5.2929 6.4142 3.8787 7.1213 4.5858 5.7071 6 7.1213 7.4142 6.4142 8.1213 5 6.7071 3.5858 8.1213 2.8787 7.4142 4.2929 6Z" fill="hsl(126 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0063 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.4139 0 .75-.336.75-.75s-.3361-.75-.75-.75ZM6.3594 5.2406ZM6.6 4.5313v.0093c1.2999.9961 2.0322 2.5541 1.9781 4.175h.6282V9.275v.0063H6.2219c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2157-.9656H.8219V8.7156h.7812C2.0236 6.302 4.1343 4.522 6.6 4.5313Z" fill="hsl(126 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(140, 125)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.8787 4.5858 3.5858 3.8787 5 5.2929 6.4142 3.8787 7.1213 4.5858 5.7071 6 7.1213 7.4142 6.4142 8.1213 5 6.7071 3.5858 8.1213 2.8787 7.4142 4.2929 6Z" fill="hsl(128 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.1418 4.1416 1.6199 8.7166H.823V9.2822H3.7918C3.9205 9.8355 4.4151 10.2478 5.0074 10.2478 5.5999 10.2478 6.0945 9.8357 6.223 9.2822H9.2074V9.2759 8.7165H8.4386L9.3386 6.0977ZM5.0074 8.2479C5.4214 8.2479 5.7574 8.5839 5.7574 8.9979 5.7574 9.4119 5.4214 9.7479 5.0074 9.7479 4.5934 9.7479 4.2574 9.4119 4.2574 8.9979 4.2574 8.5839 4.5934 8.2479 5.0074 8.2479Z" fill="hsl(128 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(140, 150)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.8787 4.5858 3.5858 3.8787 5 5.2929 6.4142 3.8787 7.1213 4.5858 5.7071 6 7.1213 7.4142 6.4142 8.1213 5 6.7071 3.5858 8.1213 2.8787 7.4142 4.2929 6Z" fill="hsl(130 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0094 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75ZM5.5 4.3656c1.1247.0034 2.2053.6228 2.7813 1.6.4864.8254.5759 1.852.2624 2.75h.6657V9.275v.0062H6.225c-.1285.5536-.6231.9657-1.2156.9657-.5923 0-1.0869-.4124-1.2156-.9657L1.5969 9.2781V8.7156h.8406c-.316-.9044-.2229-1.9375.2719-2.7656C3.2912 4.9763 4.3753 4.3622 5.5 4.3656Z" fill="hsl(130 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(140, 175)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.8787 4.5858 3.5858 3.8787 5 5.2929 6.4142 3.8787 7.1213 4.5858 5.7071 6 7.1213 7.4142 6.4142 8.1213 5 6.7071 3.5858 8.1213 2.8787 7.4142 4.2929 6Z" fill="hsl(132 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="m8.899.65L7.1272.0812 4.454 5.4538 1.4759 8.7132H.6978l-.0125.5656H3.7915c.1287.5533.6233.9657 1.2156.9657.5925 0 1.0871-.4121 1.2156-.9657H8.6352V8.7132H7.857L7.6102 6.4788ZM5.7559 8.9956c0 .414-.336.75-.75.75-.414 0-.75-.336-.75-.75s.336-.75.75-.75c.414 0 .75.336.75.75Z" fill="hsl(132 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(140, 200)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.8787 4.5858 3.5858 3.8787 5 5.2929 6.4142 3.8787 7.1213 4.5858 5.7071 6 7.1213 7.4142 6.4142 8.1213 5 6.7071 3.5858 8.1213 2.8787 7.4142 4.2929 6Z" fill="hsl(134 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.9995 8.2476c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75-.336-.75-.75-.75ZM7.008.226l1.721.602L6.163 8.516c.028.047.047.1.0521.2004l.8313-.0031v.5656l-.8313.0031c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H2.9276l.0125-.5656h.8438c.1068-.4604.3711-.7134.6221-.7984Z" fill="hsl(134 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(140, 225)">
+<g style="transform:translate(5px, 6.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.8787 4.5858 3.5858 3.8787 5 5.2929 6.4142 3.8787 7.1213 4.5858 5.7071 6 7.1213 7.4142 6.4142 8.1213 5 6.7071 3.5858 8.1213 2.8787 7.4142 4.2929 6Z" fill="hsl(136 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M1 8.74A3.6 1.8 90 012.62 5.5a3.6 1.8 90 01.99 3.24Zm2.7 0A3.6 1.8 90 002.7 5.5a4.5 1.35 0 015.14 0A3.6 1.8 90 019.37 8.74v.5359.0063H6.223c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H.823V8.74Zm1.3074-.4921c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75Z" fill="hsl(136 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(140, 250)">
+<g style="transform:translate(5px, 5.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.8787 4.5858 3.5858 3.8787 5 5.2929 6.4142 3.8787 7.1213 4.5858 5.7071 6 7.1213 7.4142 6.4142 8.1213 5 6.7071 3.5858 8.1213 2.8787 7.4142 4.2929 6Z" fill="hsl(138 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.6844 4.5156 3 6H2L0 5.0688l1.0781 3.65H0v.5625l3.7938.0062c.2062.5533.6233.9719 1.2156.9719.5925 0 1.0902-.4183 1.2187-.9719L10 9.2844V8.7188H8.9L10 5 8 6H7L6.3656 4.5156H3.6844Zm1.325 3.7438c.414 0 .75.336.75.75s-.336.75-.75.75-.75-.336-.75-.75.336-.75.75-.75Z" fill="hsl(138 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(140, 275)">
+<g style="transform:translate(5px, 9.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.8787 4.5858 3.5858 3.8787 5 5.2929 6.4142 3.8787 7.1213 4.5858 5.7071 6 7.1213 7.4142 6.4142 8.1213 5 6.7071 3.5858 8.1213 2.8787 7.4142 4.2929 6Z" fill="hsl(140 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(140 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(160, 25)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.5 6.5V5.5H4.5V3.5H5.5V5.5H7.5V6.5H5.5V8.5H4.5V6.5Z" fill="hsl(140 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L0 9 0 8.5 1 8.5 2 1 2 0 8 0 8 1 9 8.5 10 8.5 10 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(140 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(160, 50)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.5 6.5V5.5H4.5V3.5H5.5V5.5H7.5V6.5H5.5V8.5H4.5V6.5Z" fill="hsl(142 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L1 9 1 8.5 4 8.5 4 0 6 0 6 8.5 9 8.5 9 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(142 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(160, 75)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.5 6.5V5.5H4.5V3.5H5.5V5.5H7.5V6.5H5.5V8.5H4.5V6.5Z" fill="hsl(144 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.75 9V0h.5V9Z" fill="hsl(144 80% 40%)" stroke="#000" stroke-width="0.1" />
+</g>
+</g>
+<g transform="translate(160, 100)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.5 6.5V5.5H4.5V3.5H5.5V5.5H7.5V6.5H5.5V8.5H4.5V6.5Z" fill="hsl(146 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0063 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.4139 0 .75-.336.75-.75s-.3361-.75-.75-.75ZM6.3594 5.2406ZM6.6 4.5313v.0093c1.2999.9961 2.0322 2.5541 1.9781 4.175h.6282V9.275v.0063H6.2219c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2157-.9656H.8219V8.7156h.7812C2.0236 6.302 4.1343 4.522 6.6 4.5313Z" fill="hsl(146 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(160, 125)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.5 6.5V5.5H4.5V3.5H5.5V5.5H7.5V6.5H5.5V8.5H4.5V6.5Z" fill="hsl(148 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.1418 4.1416 1.6199 8.7166H.823V9.2822H3.7918C3.9205 9.8355 4.4151 10.2478 5.0074 10.2478 5.5999 10.2478 6.0945 9.8357 6.223 9.2822H9.2074V9.2759 8.7165H8.4386L9.3386 6.0977ZM5.0074 8.2479C5.4214 8.2479 5.7574 8.5839 5.7574 8.9979 5.7574 9.4119 5.4214 9.7479 5.0074 9.7479 4.5934 9.7479 4.2574 9.4119 4.2574 8.9979 4.2574 8.5839 4.5934 8.2479 5.0074 8.2479Z" fill="hsl(148 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(160, 150)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.5 6.5V5.5H4.5V3.5H5.5V5.5H7.5V6.5H5.5V8.5H4.5V6.5Z" fill="hsl(150 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0094 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75ZM5.5 4.3656c1.1247.0034 2.2053.6228 2.7813 1.6.4864.8254.5759 1.852.2624 2.75h.6657V9.275v.0062H6.225c-.1285.5536-.6231.9657-1.2156.9657-.5923 0-1.0869-.4124-1.2156-.9657L1.5969 9.2781V8.7156h.8406c-.316-.9044-.2229-1.9375.2719-2.7656C3.2912 4.9763 4.3753 4.3622 5.5 4.3656Z" fill="hsl(150 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(160, 175)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.5 6.5V5.5H4.5V3.5H5.5V5.5H7.5V6.5H5.5V8.5H4.5V6.5Z" fill="hsl(152 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="m8.899.65L7.1272.0812 4.454 5.4538 1.4759 8.7132H.6978l-.0125.5656H3.7915c.1287.5533.6233.9657 1.2156.9657.5925 0 1.0871-.4121 1.2156-.9657H8.6352V8.7132H7.857L7.6102 6.4788ZM5.7559 8.9956c0 .414-.336.75-.75.75-.414 0-.75-.336-.75-.75s.336-.75.75-.75c.414 0 .75.336.75.75Z" fill="hsl(152 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(160, 200)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.5 6.5V5.5H4.5V3.5H5.5V5.5H7.5V6.5H5.5V8.5H4.5V6.5Z" fill="hsl(154 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.9995 8.2476c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75-.336-.75-.75-.75ZM7.008.226l1.721.602L6.163 8.516c.028.047.047.1.0521.2004l.8313-.0031v.5656l-.8313.0031c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H2.9276l.0125-.5656h.8438c.1068-.4604.3711-.7134.6221-.7984Z" fill="hsl(154 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(160, 225)">
+<g style="transform:translate(5px, 6.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.5 6.5V5.5H4.5V3.5H5.5V5.5H7.5V6.5H5.5V8.5H4.5V6.5Z" fill="hsl(156 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M1 8.74A3.6 1.8 90 012.62 5.5a3.6 1.8 90 01.99 3.24Zm2.7 0A3.6 1.8 90 002.7 5.5a4.5 1.35 0 015.14 0A3.6 1.8 90 019.37 8.74v.5359.0063H6.223c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H.823V8.74Zm1.3074-.4921c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75Z" fill="hsl(156 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(160, 250)">
+<g style="transform:translate(5px, 5.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.5 6.5V5.5H4.5V3.5H5.5V5.5H7.5V6.5H5.5V8.5H4.5V6.5Z" fill="hsl(158 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.6844 4.5156 3 6H2L0 5.0688l1.0781 3.65H0v.5625l3.7938.0062c.2062.5533.6233.9719 1.2156.9719.5925 0 1.0902-.4183 1.2187-.9719L10 9.2844V8.7188H8.9L10 5 8 6H7L6.3656 4.5156H3.6844Zm1.325 3.7438c.414 0 .75.336.75.75s-.336.75-.75.75-.75-.336-.75-.75.336-.75.75-.75Z" fill="hsl(158 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(160, 275)">
+<g style="transform:translate(5px, 9.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.5 6.5V5.5H4.5V3.5H5.5V5.5H7.5V6.5H5.5V8.5H4.5V6.5Z" fill="hsl(160 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(160 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(180, 25)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 7.5 0 2.5 0Z" fill="hsl(160 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(160 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L0 9 0 8.5 1 8.5 2 1 2 0 8 0 8 1 9 8.5 10 8.5 10 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(160 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(180, 50)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 7.5 0 2.5 0Z" fill="hsl(162 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(162 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L1 9 1 8.5 4 8.5 4 0 6 0 6 8.5 9 8.5 9 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(162 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(180, 75)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 7.5 0 2.5 0Z" fill="hsl(164 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(164 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.75 9V0h.5V9Z" fill="hsl(164 80% 40%)" stroke="#000" stroke-width="0.1" />
+</g>
+</g>
+<g transform="translate(180, 100)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 7.5 0 2.5 0Z" fill="hsl(166 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(166 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0063 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.4139 0 .75-.336.75-.75s-.3361-.75-.75-.75ZM6.3594 5.2406ZM6.6 4.5313v.0093c1.2999.9961 2.0322 2.5541 1.9781 4.175h.6282V9.275v.0063H6.2219c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2157-.9656H.8219V8.7156h.7812C2.0236 6.302 4.1343 4.522 6.6 4.5313Z" fill="hsl(166 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(180, 125)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 7.5 0 2.5 0Z" fill="hsl(168 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(168 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.1418 4.1416 1.6199 8.7166H.823V9.2822H3.7918C3.9205 9.8355 4.4151 10.2478 5.0074 10.2478 5.5999 10.2478 6.0945 9.8357 6.223 9.2822H9.2074V9.2759 8.7165H8.4386L9.3386 6.0977ZM5.0074 8.2479C5.4214 8.2479 5.7574 8.5839 5.7574 8.9979 5.7574 9.4119 5.4214 9.7479 5.0074 9.7479 4.5934 9.7479 4.2574 9.4119 4.2574 8.9979 4.2574 8.5839 4.5934 8.2479 5.0074 8.2479Z" fill="hsl(168 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(180, 150)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 7.5 0 2.5 0Z" fill="hsl(170 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(170 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0094 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75ZM5.5 4.3656c1.1247.0034 2.2053.6228 2.7813 1.6.4864.8254.5759 1.852.2624 2.75h.6657V9.275v.0062H6.225c-.1285.5536-.6231.9657-1.2156.9657-.5923 0-1.0869-.4124-1.2156-.9657L1.5969 9.2781V8.7156h.8406c-.316-.9044-.2229-1.9375.2719-2.7656C3.2912 4.9763 4.3753 4.3622 5.5 4.3656Z" fill="hsl(170 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(180, 175)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 7.5 0 2.5 0Z" fill="hsl(172 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(172 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="m8.899.65L7.1272.0812 4.454 5.4538 1.4759 8.7132H.6978l-.0125.5656H3.7915c.1287.5533.6233.9657 1.2156.9657.5925 0 1.0871-.4121 1.2156-.9657H8.6352V8.7132H7.857L7.6102 6.4788ZM5.7559 8.9956c0 .414-.336.75-.75.75-.414 0-.75-.336-.75-.75s.336-.75.75-.75c.414 0 .75.336.75.75Z" fill="hsl(172 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(180, 200)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 7.5 0 2.5 0Z" fill="hsl(174 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(174 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.9995 8.2476c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75-.336-.75-.75-.75ZM7.008.226l1.721.602L6.163 8.516c.028.047.047.1.0521.2004l.8313-.0031v.5656l-.8313.0031c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H2.9276l.0125-.5656h.8438c.1068-.4604.3711-.7134.6221-.7984Z" fill="hsl(174 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(180, 225)">
+<g style="transform:translate(5px, 6.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 7.5 0 2.5 0Z" fill="hsl(176 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(176 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M1 8.74A3.6 1.8 90 012.62 5.5a3.6 1.8 90 01.99 3.24Zm2.7 0A3.6 1.8 90 002.7 5.5a4.5 1.35 0 015.14 0A3.6 1.8 90 019.37 8.74v.5359.0063H6.223c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H.823V8.74Zm1.3074-.4921c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75Z" fill="hsl(176 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(180, 250)">
+<g style="transform:translate(5px, 5.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 7.5 0 2.5 0Z" fill="hsl(178 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(178 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.6844 4.5156 3 6H2L0 5.0688l1.0781 3.65H0v.5625l3.7938.0062c.2062.5533.6233.9719 1.2156.9719.5925 0 1.0902-.4183 1.2187-.9719L10 9.2844V8.7188H8.9L10 5 8 6H7L6.3656 4.5156H3.6844Zm1.325 3.7438c.414 0 .75.336.75.75s-.336.75-.75.75-.75-.336-.75-.75.336-.75.75-.75Z" fill="hsl(178 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(180, 275)">
+<g style="transform:translate(5px, 9.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 7.5 0 2.5 0Z" fill="hsl(180 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(180 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(180 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(200, 25)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 0 7.5 4 2.5 4Z" fill="hsl(180 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(180 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L0 9 0 8.5 1 8.5 2 1 2 0 8 0 8 1 9 8.5 10 8.5 10 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(180 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(200, 50)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 0 7.5 4 2.5 4Z" fill="hsl(182 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(182 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L1 9 1 8.5 4 8.5 4 0 6 0 6 8.5 9 8.5 9 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(182 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(200, 75)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 0 7.5 4 2.5 4Z" fill="hsl(184 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(184 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.75 9V0h.5V9Z" fill="hsl(184 80% 40%)" stroke="#000" stroke-width="0.1" />
+</g>
+</g>
+<g transform="translate(200, 100)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 0 7.5 4 2.5 4Z" fill="hsl(186 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(186 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0063 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.4139 0 .75-.336.75-.75s-.3361-.75-.75-.75ZM6.3594 5.2406ZM6.6 4.5313v.0093c1.2999.9961 2.0322 2.5541 1.9781 4.175h.6282V9.275v.0063H6.2219c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2157-.9656H.8219V8.7156h.7812C2.0236 6.302 4.1343 4.522 6.6 4.5313Z" fill="hsl(186 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(200, 125)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 0 7.5 4 2.5 4Z" fill="hsl(188 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(188 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.1418 4.1416 1.6199 8.7166H.823V9.2822H3.7918C3.9205 9.8355 4.4151 10.2478 5.0074 10.2478 5.5999 10.2478 6.0945 9.8357 6.223 9.2822H9.2074V9.2759 8.7165H8.4386L9.3386 6.0977ZM5.0074 8.2479C5.4214 8.2479 5.7574 8.5839 5.7574 8.9979 5.7574 9.4119 5.4214 9.7479 5.0074 9.7479 4.5934 9.7479 4.2574 9.4119 4.2574 8.9979 4.2574 8.5839 4.5934 8.2479 5.0074 8.2479Z" fill="hsl(188 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(200, 150)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 0 7.5 4 2.5 4Z" fill="hsl(190 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(190 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0094 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75ZM5.5 4.3656c1.1247.0034 2.2053.6228 2.7813 1.6.4864.8254.5759 1.852.2624 2.75h.6657V9.275v.0062H6.225c-.1285.5536-.6231.9657-1.2156.9657-.5923 0-1.0869-.4124-1.2156-.9657L1.5969 9.2781V8.7156h.8406c-.316-.9044-.2229-1.9375.2719-2.7656C3.2912 4.9763 4.3753 4.3622 5.5 4.3656Z" fill="hsl(190 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(200, 175)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 0 7.5 4 2.5 4Z" fill="hsl(192 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(192 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="m8.899.65L7.1272.0812 4.454 5.4538 1.4759 8.7132H.6978l-.0125.5656H3.7915c.1287.5533.6233.9657 1.2156.9657.5925 0 1.0871-.4121 1.2156-.9657H8.6352V8.7132H7.857L7.6102 6.4788ZM5.7559 8.9956c0 .414-.336.75-.75.75-.414 0-.75-.336-.75-.75s.336-.75.75-.75c.414 0 .75.336.75.75Z" fill="hsl(192 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(200, 200)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 0 7.5 4 2.5 4Z" fill="hsl(194 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(194 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.9995 8.2476c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75-.336-.75-.75-.75ZM7.008.226l1.721.602L6.163 8.516c.028.047.047.1.0521.2004l.8313-.0031v.5656l-.8313.0031c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H2.9276l.0125-.5656h.8438c.1068-.4604.3711-.7134.6221-.7984Z" fill="hsl(194 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(200, 225)">
+<g style="transform:translate(5px, 6.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 0 7.5 4 2.5 4Z" fill="hsl(196 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(196 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M1 8.74A3.6 1.8 90 012.62 5.5a3.6 1.8 90 01.99 3.24Zm2.7 0A3.6 1.8 90 002.7 5.5a4.5 1.35 0 015.14 0A3.6 1.8 90 019.37 8.74v.5359.0063H6.223c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H.823V8.74Zm1.3074-.4921c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75Z" fill="hsl(196 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(200, 250)">
+<g style="transform:translate(5px, 5.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 0 7.5 4 2.5 4Z" fill="hsl(198 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(198 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.6844 4.5156 3 6H2L0 5.0688l1.0781 3.65H0v.5625l3.7938.0062c.2062.5533.6233.9719 1.2156.9719.5925 0 1.0902-.4183 1.2187-.9719L10 9.2844V8.7188H8.9L10 5 8 6H7L6.3656 4.5156H3.6844Zm1.325 3.7438c.414 0 .75.336.75.75s-.336.75-.75.75-.75-.336-.75-.75.336-.75.75-.75Z" fill="hsl(198 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(200, 275)">
+<g style="transform:translate(5px, 9.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 0 7.5 4 2.5 4Z" fill="hsl(200 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(200 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(200 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(220, 25)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.1716 6 5 3.1716 7.8284 6 5 8.8284Z" fill="hsl(200 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L0 9 0 8.5 1 8.5 2 1 2 0 8 0 8 1 9 8.5 10 8.5 10 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(200 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(220, 50)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.1716 6 5 3.1716 7.8284 6 5 8.8284Z" fill="hsl(202 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L1 9 1 8.5 4 8.5 4 0 6 0 6 8.5 9 8.5 9 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(202 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(220, 75)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.1716 6 5 3.1716 7.8284 6 5 8.8284Z" fill="hsl(204 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.75 9V0h.5V9Z" fill="hsl(204 80% 40%)" stroke="#000" stroke-width="0.1" />
+</g>
+</g>
+<g transform="translate(220, 100)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.1716 6 5 3.1716 7.8284 6 5 8.8284Z" fill="hsl(206 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0063 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.4139 0 .75-.336.75-.75s-.3361-.75-.75-.75ZM6.3594 5.2406ZM6.6 4.5313v.0093c1.2999.9961 2.0322 2.5541 1.9781 4.175h.6282V9.275v.0063H6.2219c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2157-.9656H.8219V8.7156h.7812C2.0236 6.302 4.1343 4.522 6.6 4.5313Z" fill="hsl(206 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(220, 125)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.1716 6 5 3.1716 7.8284 6 5 8.8284Z" fill="hsl(208 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.1418 4.1416 1.6199 8.7166H.823V9.2822H3.7918C3.9205 9.8355 4.4151 10.2478 5.0074 10.2478 5.5999 10.2478 6.0945 9.8357 6.223 9.2822H9.2074V9.2759 8.7165H8.4386L9.3386 6.0977ZM5.0074 8.2479C5.4214 8.2479 5.7574 8.5839 5.7574 8.9979 5.7574 9.4119 5.4214 9.7479 5.0074 9.7479 4.5934 9.7479 4.2574 9.4119 4.2574 8.9979 4.2574 8.5839 4.5934 8.2479 5.0074 8.2479Z" fill="hsl(208 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(220, 150)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.1716 6 5 3.1716 7.8284 6 5 8.8284Z" fill="hsl(210 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0094 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75ZM5.5 4.3656c1.1247.0034 2.2053.6228 2.7813 1.6.4864.8254.5759 1.852.2624 2.75h.6657V9.275v.0062H6.225c-.1285.5536-.6231.9657-1.2156.9657-.5923 0-1.0869-.4124-1.2156-.9657L1.5969 9.2781V8.7156h.8406c-.316-.9044-.2229-1.9375.2719-2.7656C3.2912 4.9763 4.3753 4.3622 5.5 4.3656Z" fill="hsl(210 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(220, 175)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.1716 6 5 3.1716 7.8284 6 5 8.8284Z" fill="hsl(212 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="m8.899.65L7.1272.0812 4.454 5.4538 1.4759 8.7132H.6978l-.0125.5656H3.7915c.1287.5533.6233.9657 1.2156.9657.5925 0 1.0871-.4121 1.2156-.9657H8.6352V8.7132H7.857L7.6102 6.4788ZM5.7559 8.9956c0 .414-.336.75-.75.75-.414 0-.75-.336-.75-.75s.336-.75.75-.75c.414 0 .75.336.75.75Z" fill="hsl(212 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(220, 200)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.1716 6 5 3.1716 7.8284 6 5 8.8284Z" fill="hsl(214 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.9995 8.2476c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75-.336-.75-.75-.75ZM7.008.226l1.721.602L6.163 8.516c.028.047.047.1.0521.2004l.8313-.0031v.5656l-.8313.0031c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H2.9276l.0125-.5656h.8438c.1068-.4604.3711-.7134.6221-.7984Z" fill="hsl(214 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(220, 225)">
+<g style="transform:translate(5px, 6.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.1716 6 5 3.1716 7.8284 6 5 8.8284Z" fill="hsl(216 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M1 8.74A3.6 1.8 90 012.62 5.5a3.6 1.8 90 01.99 3.24Zm2.7 0A3.6 1.8 90 002.7 5.5a4.5 1.35 0 015.14 0A3.6 1.8 90 019.37 8.74v.5359.0063H6.223c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H.823V8.74Zm1.3074-.4921c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75Z" fill="hsl(216 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(220, 250)">
+<g style="transform:translate(5px, 5.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.1716 6 5 3.1716 7.8284 6 5 8.8284Z" fill="hsl(218 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.6844 4.5156 3 6H2L0 5.0688l1.0781 3.65H0v.5625l3.7938.0062c.2062.5533.6233.9719 1.2156.9719.5925 0 1.0902-.4183 1.2187-.9719L10 9.2844V8.7188H8.9L10 5 8 6H7L6.3656 4.5156H3.6844Zm1.325 3.7438c.414 0 .75.336.75.75s-.336.75-.75.75-.75-.336-.75-.75.336-.75.75-.75Z" fill="hsl(218 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(220, 275)">
+<g style="transform:translate(5px, 9.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.1716 6 5 3.1716 7.8284 6 5 8.8284Z" fill="hsl(220 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(220 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(240, 25)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 0 7.5 4 2.5 4Z" fill="hsl(220 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(220 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L0 9 0 8.5 1 8.5 2 1 2 0 8 0 8 1 9 8.5 10 8.5 10 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(220 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(240, 50)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 0 7.5 4 2.5 4Z" fill="hsl(222 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(222 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L1 9 1 8.5 4 8.5 4 0 6 0 6 8.5 9 8.5 9 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(222 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(240, 75)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 0 7.5 4 2.5 4Z" fill="hsl(224 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(224 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.75 9V0h.5V9Z" fill="hsl(224 80% 40%)" stroke="#000" stroke-width="0.1" />
+</g>
+</g>
+<g transform="translate(240, 100)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 0 7.5 4 2.5 4Z" fill="hsl(226 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(226 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0063 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.4139 0 .75-.336.75-.75s-.3361-.75-.75-.75ZM6.3594 5.2406ZM6.6 4.5313v.0093c1.2999.9961 2.0322 2.5541 1.9781 4.175h.6282V9.275v.0063H6.2219c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2157-.9656H.8219V8.7156h.7812C2.0236 6.302 4.1343 4.522 6.6 4.5313Z" fill="hsl(226 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(240, 125)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 0 7.5 4 2.5 4Z" fill="hsl(228 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(228 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.1418 4.1416 1.6199 8.7166H.823V9.2822H3.7918C3.9205 9.8355 4.4151 10.2478 5.0074 10.2478 5.5999 10.2478 6.0945 9.8357 6.223 9.2822H9.2074V9.2759 8.7165H8.4386L9.3386 6.0977ZM5.0074 8.2479C5.4214 8.2479 5.7574 8.5839 5.7574 8.9979 5.7574 9.4119 5.4214 9.7479 5.0074 9.7479 4.5934 9.7479 4.2574 9.4119 4.2574 8.9979 4.2574 8.5839 4.5934 8.2479 5.0074 8.2479Z" fill="hsl(228 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(240, 150)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 0 7.5 4 2.5 4Z" fill="hsl(230 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(230 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0094 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75ZM5.5 4.3656c1.1247.0034 2.2053.6228 2.7813 1.6.4864.8254.5759 1.852.2624 2.75h.6657V9.275v.0062H6.225c-.1285.5536-.6231.9657-1.2156.9657-.5923 0-1.0869-.4124-1.2156-.9657L1.5969 9.2781V8.7156h.8406c-.316-.9044-.2229-1.9375.2719-2.7656C3.2912 4.9763 4.3753 4.3622 5.5 4.3656Z" fill="hsl(230 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(240, 175)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 0 7.5 4 2.5 4Z" fill="hsl(232 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(232 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="m8.899.65L7.1272.0812 4.454 5.4538 1.4759 8.7132H.6978l-.0125.5656H3.7915c.1287.5533.6233.9657 1.2156.9657.5925 0 1.0871-.4121 1.2156-.9657H8.6352V8.7132H7.857L7.6102 6.4788ZM5.7559 8.9956c0 .414-.336.75-.75.75-.414 0-.75-.336-.75-.75s.336-.75.75-.75c.414 0 .75.336.75.75Z" fill="hsl(232 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(240, 200)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 0 7.5 4 2.5 4Z" fill="hsl(234 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(234 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.9995 8.2476c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75-.336-.75-.75-.75ZM7.008.226l1.721.602L6.163 8.516c.028.047.047.1.0521.2004l.8313-.0031v.5656l-.8313.0031c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H2.9276l.0125-.5656h.8438c.1068-.4604.3711-.7134.6221-.7984Z" fill="hsl(234 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(240, 225)">
+<g style="transform:translate(5px, 6.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 0 7.5 4 2.5 4Z" fill="hsl(236 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(236 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M1 8.74A3.6 1.8 90 012.62 5.5a3.6 1.8 90 01.99 3.24Zm2.7 0A3.6 1.8 90 002.7 5.5a4.5 1.35 0 015.14 0A3.6 1.8 90 019.37 8.74v.5359.0063H6.223c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H.823V8.74Zm1.3074-.4921c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75Z" fill="hsl(236 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(240, 250)">
+<g style="transform:translate(5px, 5.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 0 7.5 4 2.5 4Z" fill="hsl(238 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(238 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.6844 4.5156 3 6H2L0 5.0688l1.0781 3.65H0v.5625l3.7938.0062c.2062.5533.6233.9719 1.2156.9719.5925 0 1.0902-.4183 1.2187-.9719L10 9.2844V8.7188H8.9L10 5 8 6H7L6.3656 4.5156H3.6844Zm1.325 3.7438c.414 0 .75.336.75.75s-.336.75-.75.75-.75-.336-.75-.75.336-.75.75-.75Z" fill="hsl(238 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(240, 275)">
+<g style="transform:translate(5px, 9.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 0 7.5 4 2.5 4Z" fill="hsl(240 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(240 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(240 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(260, 25)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 7.5 0 2.5 0Z" fill="hsl(240 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(240 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L0 9 0 8.5 1 8.5 2 1 2 0 8 0 8 1 9 8.5 10 8.5 10 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(240 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(260, 50)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 7.5 0 2.5 0Z" fill="hsl(242 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(242 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L1 9 1 8.5 4 8.5 4 0 6 0 6 8.5 9 8.5 9 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(242 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(260, 75)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 7.5 0 2.5 0Z" fill="hsl(244 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(244 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.75 9V0h.5V9Z" fill="hsl(244 80% 40%)" stroke="#000" stroke-width="0.1" />
+</g>
+</g>
+<g transform="translate(260, 100)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 7.5 0 2.5 0Z" fill="hsl(246 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(246 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0063 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.4139 0 .75-.336.75-.75s-.3361-.75-.75-.75ZM6.3594 5.2406ZM6.6 4.5313v.0093c1.2999.9961 2.0322 2.5541 1.9781 4.175h.6282V9.275v.0063H6.2219c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2157-.9656H.8219V8.7156h.7812C2.0236 6.302 4.1343 4.522 6.6 4.5313Z" fill="hsl(246 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(260, 125)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 7.5 0 2.5 0Z" fill="hsl(248 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(248 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.1418 4.1416 1.6199 8.7166H.823V9.2822H3.7918C3.9205 9.8355 4.4151 10.2478 5.0074 10.2478 5.5999 10.2478 6.0945 9.8357 6.223 9.2822H9.2074V9.2759 8.7165H8.4386L9.3386 6.0977ZM5.0074 8.2479C5.4214 8.2479 5.7574 8.5839 5.7574 8.9979 5.7574 9.4119 5.4214 9.7479 5.0074 9.7479 4.5934 9.7479 4.2574 9.4119 4.2574 8.9979 4.2574 8.5839 4.5934 8.2479 5.0074 8.2479Z" fill="hsl(248 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(260, 150)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 7.5 0 2.5 0Z" fill="hsl(250 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(250 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0094 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75ZM5.5 4.3656c1.1247.0034 2.2053.6228 2.7813 1.6.4864.8254.5759 1.852.2624 2.75h.6657V9.275v.0062H6.225c-.1285.5536-.6231.9657-1.2156.9657-.5923 0-1.0869-.4124-1.2156-.9657L1.5969 9.2781V8.7156h.8406c-.316-.9044-.2229-1.9375.2719-2.7656C3.2912 4.9763 4.3753 4.3622 5.5 4.3656Z" fill="hsl(250 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(260, 175)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 7.5 0 2.5 0Z" fill="hsl(252 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(252 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="m8.899.65L7.1272.0812 4.454 5.4538 1.4759 8.7132H.6978l-.0125.5656H3.7915c.1287.5533.6233.9657 1.2156.9657.5925 0 1.0871-.4121 1.2156-.9657H8.6352V8.7132H7.857L7.6102 6.4788ZM5.7559 8.9956c0 .414-.336.75-.75.75-.414 0-.75-.336-.75-.75s.336-.75.75-.75c.414 0 .75.336.75.75Z" fill="hsl(252 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(260, 200)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 7.5 0 2.5 0Z" fill="hsl(254 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(254 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.9995 8.2476c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75-.336-.75-.75-.75ZM7.008.226l1.721.602L6.163 8.516c.028.047.047.1.0521.2004l.8313-.0031v.5656l-.8313.0031c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H2.9276l.0125-.5656h.8438c.1068-.4604.3711-.7134.6221-.7984Z" fill="hsl(254 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(260, 225)">
+<g style="transform:translate(5px, 6.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 7.5 0 2.5 0Z" fill="hsl(256 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(256 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M1 8.74A3.6 1.8 90 012.62 5.5a3.6 1.8 90 01.99 3.24Zm2.7 0A3.6 1.8 90 002.7 5.5a4.5 1.35 0 015.14 0A3.6 1.8 90 019.37 8.74v.5359.0063H6.223c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H.823V8.74Zm1.3074-.4921c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75Z" fill="hsl(256 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(260, 250)">
+<g style="transform:translate(5px, 5.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 7.5 0 2.5 0Z" fill="hsl(258 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(258 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.6844 4.5156 3 6H2L0 5.0688l1.0781 3.65H0v.5625l3.7938.0062c.2062.5533.6233.9719 1.2156.9719.5925 0 1.0902-.4183 1.2187-.9719L10 9.2844V8.7188H8.9L10 5 8 6H7L6.3656 4.5156H3.6844Zm1.325 3.7438c.414 0 .75.336.75.75s-.336.75-.75.75-.75-.336-.75-.75.336-.75.75-.75Z" fill="hsl(258 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(260, 275)">
+<g style="transform:translate(5px, 9.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 7.5 0 2.5 0Z" fill="hsl(260 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(260 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(260 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(280, 25)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M4.5 8 4.5 5 3.6 5.9 2.96 5.34 5 3.3 7.04 5.34 6.4 5.9 5.53 5 5.5 8Z" fill="hsl(260 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L0 9 0 8.5 1 8.5 2 1 2 0 8 0 8 1 9 8.5 10 8.5 10 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(260 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(280, 50)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M4.5 8 4.5 5 3.6 5.9 2.96 5.34 5 3.3 7.04 5.34 6.4 5.9 5.53 5 5.5 8Z" fill="hsl(262 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L1 9 1 8.5 4 8.5 4 0 6 0 6 8.5 9 8.5 9 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(262 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(280, 75)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M4.5 8 4.5 5 3.6 5.9 2.96 5.34 5 3.3 7.04 5.34 6.4 5.9 5.53 5 5.5 8Z" fill="hsl(264 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.75 9V0h.5V9Z" fill="hsl(264 80% 40%)" stroke="#000" stroke-width="0.1" />
+</g>
+</g>
+<g transform="translate(280, 100)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M4.5 8 4.5 5 3.6 5.9 2.96 5.34 5 3.3 7.04 5.34 6.4 5.9 5.53 5 5.5 8Z" fill="hsl(266 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0063 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.4139 0 .75-.336.75-.75s-.3361-.75-.75-.75ZM6.3594 5.2406ZM6.6 4.5313v.0093c1.2999.9961 2.0322 2.5541 1.9781 4.175h.6282V9.275v.0063H6.2219c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2157-.9656H.8219V8.7156h.7812C2.0236 6.302 4.1343 4.522 6.6 4.5313Z" fill="hsl(266 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(280, 125)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M4.5 8 4.5 5 3.6 5.9 2.96 5.34 5 3.3 7.04 5.34 6.4 5.9 5.53 5 5.5 8Z" fill="hsl(268 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.1418 4.1416 1.6199 8.7166H.823V9.2822H3.7918C3.9205 9.8355 4.4151 10.2478 5.0074 10.2478 5.5999 10.2478 6.0945 9.8357 6.223 9.2822H9.2074V9.2759 8.7165H8.4386L9.3386 6.0977ZM5.0074 8.2479C5.4214 8.2479 5.7574 8.5839 5.7574 8.9979 5.7574 9.4119 5.4214 9.7479 5.0074 9.7479 4.5934 9.7479 4.2574 9.4119 4.2574 8.9979 4.2574 8.5839 4.5934 8.2479 5.0074 8.2479Z" fill="hsl(268 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(280, 150)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M4.5 8 4.5 5 3.6 5.9 2.96 5.34 5 3.3 7.04 5.34 6.4 5.9 5.53 5 5.5 8Z" fill="hsl(270 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0094 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75ZM5.5 4.3656c1.1247.0034 2.2053.6228 2.7813 1.6.4864.8254.5759 1.852.2624 2.75h.6657V9.275v.0062H6.225c-.1285.5536-.6231.9657-1.2156.9657-.5923 0-1.0869-.4124-1.2156-.9657L1.5969 9.2781V8.7156h.8406c-.316-.9044-.2229-1.9375.2719-2.7656C3.2912 4.9763 4.3753 4.3622 5.5 4.3656Z" fill="hsl(270 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(280, 175)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M4.5 8 4.5 5 3.6 5.9 2.96 5.34 5 3.3 7.04 5.34 6.4 5.9 5.53 5 5.5 8Z" fill="hsl(272 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="m8.899.65L7.1272.0812 4.454 5.4538 1.4759 8.7132H.6978l-.0125.5656H3.7915c.1287.5533.6233.9657 1.2156.9657.5925 0 1.0871-.4121 1.2156-.9657H8.6352V8.7132H7.857L7.6102 6.4788ZM5.7559 8.9956c0 .414-.336.75-.75.75-.414 0-.75-.336-.75-.75s.336-.75.75-.75c.414 0 .75.336.75.75Z" fill="hsl(272 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(280, 200)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M4.5 8 4.5 5 3.6 5.9 2.96 5.34 5 3.3 7.04 5.34 6.4 5.9 5.53 5 5.5 8Z" fill="hsl(274 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.9995 8.2476c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75-.336-.75-.75-.75ZM7.008.226l1.721.602L6.163 8.516c.028.047.047.1.0521.2004l.8313-.0031v.5656l-.8313.0031c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H2.9276l.0125-.5656h.8438c.1068-.4604.3711-.7134.6221-.7984Z" fill="hsl(274 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(280, 225)">
+<g style="transform:translate(5px, 6.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M4.5 8 4.5 5 3.6 5.9 2.96 5.34 5 3.3 7.04 5.34 6.4 5.9 5.53 5 5.5 8Z" fill="hsl(276 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M1 8.74A3.6 1.8 90 012.62 5.5a3.6 1.8 90 01.99 3.24Zm2.7 0A3.6 1.8 90 002.7 5.5a4.5 1.35 0 015.14 0A3.6 1.8 90 019.37 8.74v.5359.0063H6.223c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H.823V8.74Zm1.3074-.4921c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75Z" fill="hsl(276 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(280, 250)">
+<g style="transform:translate(5px, 5.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M4.5 8 4.5 5 3.6 5.9 2.96 5.34 5 3.3 7.04 5.34 6.4 5.9 5.53 5 5.5 8Z" fill="hsl(278 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.6844 4.5156 3 6H2L0 5.0688l1.0781 3.65H0v.5625l3.7938.0062c.2062.5533.6233.9719 1.2156.9719.5925 0 1.0902-.4183 1.2187-.9719L10 9.2844V8.7188H8.9L10 5 8 6H7L6.3656 4.5156H3.6844Zm1.325 3.7438c.414 0 .75.336.75.75s-.336.75-.75.75-.75-.336-.75-.75.336-.75.75-.75Z" fill="hsl(278 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(280, 275)">
+<g style="transform:translate(5px, 9.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M4.5 8 4.5 5 3.6 5.9 2.96 5.34 5 3.3 7.04 5.34 6.4 5.9 5.53 5 5.5 8Z" fill="hsl(280 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(280 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(300, 25)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 5.5 3.6 4.1 3 4.7 4.5 6.2 4.5 8 5.5 8 5.5 6.2 7 4.7 6.4 4.1Z" fill="hsl(280 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L0 9 0 8.5 1 8.5 2 1 2 0 8 0 8 1 9 8.5 10 8.5 10 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(280 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(300, 50)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 5.5 3.6 4.1 3 4.7 4.5 6.2 4.5 8 5.5 8 5.5 6.2 7 4.7 6.4 4.1Z" fill="hsl(282 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L1 9 1 8.5 4 8.5 4 0 6 0 6 8.5 9 8.5 9 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(282 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(300, 75)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 5.5 3.6 4.1 3 4.7 4.5 6.2 4.5 8 5.5 8 5.5 6.2 7 4.7 6.4 4.1Z" fill="hsl(284 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.75 9V0h.5V9Z" fill="hsl(284 80% 40%)" stroke="#000" stroke-width="0.1" />
+</g>
+</g>
+<g transform="translate(300, 100)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 5.5 3.6 4.1 3 4.7 4.5 6.2 4.5 8 5.5 8 5.5 6.2 7 4.7 6.4 4.1Z" fill="hsl(286 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0063 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.4139 0 .75-.336.75-.75s-.3361-.75-.75-.75ZM6.3594 5.2406ZM6.6 4.5313v.0093c1.2999.9961 2.0322 2.5541 1.9781 4.175h.6282V9.275v.0063H6.2219c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2157-.9656H.8219V8.7156h.7812C2.0236 6.302 4.1343 4.522 6.6 4.5313Z" fill="hsl(286 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(300, 125)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 5.5 3.6 4.1 3 4.7 4.5 6.2 4.5 8 5.5 8 5.5 6.2 7 4.7 6.4 4.1Z" fill="hsl(288 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.1418 4.1416 1.6199 8.7166H.823V9.2822H3.7918C3.9205 9.8355 4.4151 10.2478 5.0074 10.2478 5.5999 10.2478 6.0945 9.8357 6.223 9.2822H9.2074V9.2759 8.7165H8.4386L9.3386 6.0977ZM5.0074 8.2479C5.4214 8.2479 5.7574 8.5839 5.7574 8.9979 5.7574 9.4119 5.4214 9.7479 5.0074 9.7479 4.5934 9.7479 4.2574 9.4119 4.2574 8.9979 4.2574 8.5839 4.5934 8.2479 5.0074 8.2479Z" fill="hsl(288 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(300, 150)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 5.5 3.6 4.1 3 4.7 4.5 6.2 4.5 8 5.5 8 5.5 6.2 7 4.7 6.4 4.1Z" fill="hsl(290 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0094 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75ZM5.5 4.3656c1.1247.0034 2.2053.6228 2.7813 1.6.4864.8254.5759 1.852.2624 2.75h.6657V9.275v.0062H6.225c-.1285.5536-.6231.9657-1.2156.9657-.5923 0-1.0869-.4124-1.2156-.9657L1.5969 9.2781V8.7156h.8406c-.316-.9044-.2229-1.9375.2719-2.7656C3.2912 4.9763 4.3753 4.3622 5.5 4.3656Z" fill="hsl(290 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(300, 175)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 5.5 3.6 4.1 3 4.7 4.5 6.2 4.5 8 5.5 8 5.5 6.2 7 4.7 6.4 4.1Z" fill="hsl(292 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="m8.899.65L7.1272.0812 4.454 5.4538 1.4759 8.7132H.6978l-.0125.5656H3.7915c.1287.5533.6233.9657 1.2156.9657.5925 0 1.0871-.4121 1.2156-.9657H8.6352V8.7132H7.857L7.6102 6.4788ZM5.7559 8.9956c0 .414-.336.75-.75.75-.414 0-.75-.336-.75-.75s.336-.75.75-.75c.414 0 .75.336.75.75Z" fill="hsl(292 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(300, 200)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 5.5 3.6 4.1 3 4.7 4.5 6.2 4.5 8 5.5 8 5.5 6.2 7 4.7 6.4 4.1Z" fill="hsl(294 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.9995 8.2476c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75-.336-.75-.75-.75ZM7.008.226l1.721.602L6.163 8.516c.028.047.047.1.0521.2004l.8313-.0031v.5656l-.8313.0031c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H2.9276l.0125-.5656h.8438c.1068-.4604.3711-.7134.6221-.7984Z" fill="hsl(294 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(300, 225)">
+<g style="transform:translate(5px, 6.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 5.5 3.6 4.1 3 4.7 4.5 6.2 4.5 8 5.5 8 5.5 6.2 7 4.7 6.4 4.1Z" fill="hsl(296 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M1 8.74A3.6 1.8 90 012.62 5.5a3.6 1.8 90 01.99 3.24Zm2.7 0A3.6 1.8 90 002.7 5.5a4.5 1.35 0 015.14 0A3.6 1.8 90 019.37 8.74v.5359.0063H6.223c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H.823V8.74Zm1.3074-.4921c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75Z" fill="hsl(296 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(300, 250)">
+<g style="transform:translate(5px, 5.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 5.5 3.6 4.1 3 4.7 4.5 6.2 4.5 8 5.5 8 5.5 6.2 7 4.7 6.4 4.1Z" fill="hsl(298 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.6844 4.5156 3 6H2L0 5.0688l1.0781 3.65H0v.5625l3.7938.0062c.2062.5533.6233.9719 1.2156.9719.5925 0 1.0902-.4183 1.2187-.9719L10 9.2844V8.7188H8.9L10 5 8 6H7L6.3656 4.5156H3.6844Zm1.325 3.7438c.414 0 .75.336.75.75s-.336.75-.75.75-.75-.336-.75-.75.336-.75.75-.75Z" fill="hsl(298 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(300, 275)">
+<g style="transform:translate(5px, 9.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 5.5 3.6 4.1 3 4.7 4.5 6.2 4.5 8 5.5 8 5.5 6.2 7 4.7 6.4 4.1Z" fill="hsl(300 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(300 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(320, 25)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M4.7 8V2C5.23 1.374 5.993 1.374 6.704 2 7.461 2.774 8.121 2.706 8.839 1.983V4.276C8.121 4.994 7.541 4.914 6.846 4.276 6.095 3.548 5.776 3.753 5.3 4.258V8Z" fill="hsl(300 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L0 9 0 8.5 1 8.5 2 1 2 0 8 0 8 1 9 8.5 10 8.5 10 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(300 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(320, 50)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M4.7 8V2C5.23 1.374 5.993 1.374 6.704 2 7.461 2.774 8.121 2.706 8.839 1.983V4.276C8.121 4.994 7.541 4.914 6.846 4.276 6.095 3.548 5.776 3.753 5.3 4.258V8Z" fill="hsl(302 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L1 9 1 8.5 4 8.5 4 0 6 0 6 8.5 9 8.5 9 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(302 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(320, 75)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M4.7 8V2C5.23 1.374 5.993 1.374 6.704 2 7.461 2.774 8.121 2.706 8.839 1.983V4.276C8.121 4.994 7.541 4.914 6.846 4.276 6.095 3.548 5.776 3.753 5.3 4.258V8Z" fill="hsl(304 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.75 9V0h.5V9Z" fill="hsl(304 80% 40%)" stroke="#000" stroke-width="0.1" />
+</g>
+</g>
+<g transform="translate(320, 100)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M4.7 8V2C5.23 1.374 5.993 1.374 6.704 2 7.461 2.774 8.121 2.706 8.839 1.983V4.276C8.121 4.994 7.541 4.914 6.846 4.276 6.095 3.548 5.776 3.753 5.3 4.258V8Z" fill="hsl(306 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0063 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.4139 0 .75-.336.75-.75s-.3361-.75-.75-.75ZM6.3594 5.2406ZM6.6 4.5313v.0093c1.2999.9961 2.0322 2.5541 1.9781 4.175h.6282V9.275v.0063H6.2219c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2157-.9656H.8219V8.7156h.7812C2.0236 6.302 4.1343 4.522 6.6 4.5313Z" fill="hsl(306 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(320, 125)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M4.7 8V2C5.23 1.374 5.993 1.374 6.704 2 7.461 2.774 8.121 2.706 8.839 1.983V4.276C8.121 4.994 7.541 4.914 6.846 4.276 6.095 3.548 5.776 3.753 5.3 4.258V8Z" fill="hsl(308 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.1418 4.1416 1.6199 8.7166H.823V9.2822H3.7918C3.9205 9.8355 4.4151 10.2478 5.0074 10.2478 5.5999 10.2478 6.0945 9.8357 6.223 9.2822H9.2074V9.2759 8.7165H8.4386L9.3386 6.0977ZM5.0074 8.2479C5.4214 8.2479 5.7574 8.5839 5.7574 8.9979 5.7574 9.4119 5.4214 9.7479 5.0074 9.7479 4.5934 9.7479 4.2574 9.4119 4.2574 8.9979 4.2574 8.5839 4.5934 8.2479 5.0074 8.2479Z" fill="hsl(308 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(320, 150)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M4.7 8V2C5.23 1.374 5.993 1.374 6.704 2 7.461 2.774 8.121 2.706 8.839 1.983V4.276C8.121 4.994 7.541 4.914 6.846 4.276 6.095 3.548 5.776 3.753 5.3 4.258V8Z" fill="hsl(310 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0094 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75ZM5.5 4.3656c1.1247.0034 2.2053.6228 2.7813 1.6.4864.8254.5759 1.852.2624 2.75h.6657V9.275v.0062H6.225c-.1285.5536-.6231.9657-1.2156.9657-.5923 0-1.0869-.4124-1.2156-.9657L1.5969 9.2781V8.7156h.8406c-.316-.9044-.2229-1.9375.2719-2.7656C3.2912 4.9763 4.3753 4.3622 5.5 4.3656Z" fill="hsl(310 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(320, 175)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M4.7 8V2C5.23 1.374 5.993 1.374 6.704 2 7.461 2.774 8.121 2.706 8.839 1.983V4.276C8.121 4.994 7.541 4.914 6.846 4.276 6.095 3.548 5.776 3.753 5.3 4.258V8Z" fill="hsl(312 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="m8.899.65L7.1272.0812 4.454 5.4538 1.4759 8.7132H.6978l-.0125.5656H3.7915c.1287.5533.6233.9657 1.2156.9657.5925 0 1.0871-.4121 1.2156-.9657H8.6352V8.7132H7.857L7.6102 6.4788ZM5.7559 8.9956c0 .414-.336.75-.75.75-.414 0-.75-.336-.75-.75s.336-.75.75-.75c.414 0 .75.336.75.75Z" fill="hsl(312 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(320, 200)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M4.7 8V2C5.23 1.374 5.993 1.374 6.704 2 7.461 2.774 8.121 2.706 8.839 1.983V4.276C8.121 4.994 7.541 4.914 6.846 4.276 6.095 3.548 5.776 3.753 5.3 4.258V8Z" fill="hsl(314 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.9995 8.2476c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75-.336-.75-.75-.75ZM7.008.226l1.721.602L6.163 8.516c.028.047.047.1.0521.2004l.8313-.0031v.5656l-.8313.0031c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H2.9276l.0125-.5656h.8438c.1068-.4604.3711-.7134.6221-.7984Z" fill="hsl(314 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(320, 225)">
+<g style="transform:translate(5px, 6.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M4.7 8V2C5.23 1.374 5.993 1.374 6.704 2 7.461 2.774 8.121 2.706 8.839 1.983V4.276C8.121 4.994 7.541 4.914 6.846 4.276 6.095 3.548 5.776 3.753 5.3 4.258V8Z" fill="hsl(316 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M1 8.74A3.6 1.8 90 012.62 5.5a3.6 1.8 90 01.99 3.24Zm2.7 0A3.6 1.8 90 002.7 5.5a4.5 1.35 0 015.14 0A3.6 1.8 90 019.37 8.74v.5359.0063H6.223c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H.823V8.74Zm1.3074-.4921c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75Z" fill="hsl(316 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(320, 250)">
+<g style="transform:translate(5px, 5.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M4.7 8V2C5.23 1.374 5.993 1.374 6.704 2 7.461 2.774 8.121 2.706 8.839 1.983V4.276C8.121 4.994 7.541 4.914 6.846 4.276 6.095 3.548 5.776 3.753 5.3 4.258V8Z" fill="hsl(318 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.6844 4.5156 3 6H2L0 5.0688l1.0781 3.65H0v.5625l3.7938.0062c.2062.5533.6233.9719 1.2156.9719.5925 0 1.0902-.4183 1.2187-.9719L10 9.2844V8.7188H8.9L10 5 8 6H7L6.3656 4.5156H3.6844Zm1.325 3.7438c.414 0 .75.336.75.75s-.336.75-.75.75-.75-.336-.75-.75.336-.75.75-.75Z" fill="hsl(318 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(320, 275)">
+<g style="transform:translate(5px, 9.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M4.7 8V2C5.23 1.374 5.993 1.374 6.704 2 7.461 2.774 8.121 2.706 8.839 1.983V4.276C8.121 4.994 7.541 4.914 6.846 4.276 6.095 3.548 5.776 3.753 5.3 4.258V8Z" fill="hsl(320 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(320 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(340, 25)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M3 8V4H7V8Z" fill="hsl(320 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L0 9 0 8.5 1 8.5 2 1 2 0 8 0 8 1 9 8.5 10 8.5 10 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(320 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(340, 50)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M3 8V4H7V8Z" fill="hsl(322 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L1 9 1 8.5 4 8.5 4 0 6 0 6 8.5 9 8.5 9 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(322 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(340, 75)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M3 8V4H7V8Z" fill="hsl(324 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.75 9V0h.5V9Z" fill="hsl(324 80% 40%)" stroke="#000" stroke-width="0.1" />
+</g>
+</g>
+<g transform="translate(340, 100)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M3 8V4H7V8Z" fill="hsl(326 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0063 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.4139 0 .75-.336.75-.75s-.3361-.75-.75-.75ZM6.3594 5.2406ZM6.6 4.5313v.0093c1.2999.9961 2.0322 2.5541 1.9781 4.175h.6282V9.275v.0063H6.2219c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2157-.9656H.8219V8.7156h.7812C2.0236 6.302 4.1343 4.522 6.6 4.5313Z" fill="hsl(326 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(340, 125)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M3 8V4H7V8Z" fill="hsl(328 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.1418 4.1416 1.6199 8.7166H.823V9.2822H3.7918C3.9205 9.8355 4.4151 10.2478 5.0074 10.2478 5.5999 10.2478 6.0945 9.8357 6.223 9.2822H9.2074V9.2759 8.7165H8.4386L9.3386 6.0977ZM5.0074 8.2479C5.4214 8.2479 5.7574 8.5839 5.7574 8.9979 5.7574 9.4119 5.4214 9.7479 5.0074 9.7479 4.5934 9.7479 4.2574 9.4119 4.2574 8.9979 4.2574 8.5839 4.5934 8.2479 5.0074 8.2479Z" fill="hsl(328 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(340, 150)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M3 8V4H7V8Z" fill="hsl(330 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0094 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75ZM5.5 4.3656c1.1247.0034 2.2053.6228 2.7813 1.6.4864.8254.5759 1.852.2624 2.75h.6657V9.275v.0062H6.225c-.1285.5536-.6231.9657-1.2156.9657-.5923 0-1.0869-.4124-1.2156-.9657L1.5969 9.2781V8.7156h.8406c-.316-.9044-.2229-1.9375.2719-2.7656C3.2912 4.9763 4.3753 4.3622 5.5 4.3656Z" fill="hsl(330 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(340, 175)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M3 8V4H7V8Z" fill="hsl(332 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="m8.899.65L7.1272.0812 4.454 5.4538 1.4759 8.7132H.6978l-.0125.5656H3.7915c.1287.5533.6233.9657 1.2156.9657.5925 0 1.0871-.4121 1.2156-.9657H8.6352V8.7132H7.857L7.6102 6.4788ZM5.7559 8.9956c0 .414-.336.75-.75.75-.414 0-.75-.336-.75-.75s.336-.75.75-.75c.414 0 .75.336.75.75Z" fill="hsl(332 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(340, 200)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M3 8V4H7V8Z" fill="hsl(334 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.9995 8.2476c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75-.336-.75-.75-.75ZM7.008.226l1.721.602L6.163 8.516c.028.047.047.1.0521.2004l.8313-.0031v.5656l-.8313.0031c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H2.9276l.0125-.5656h.8438c.1068-.4604.3711-.7134.6221-.7984Z" fill="hsl(334 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(340, 225)">
+<g style="transform:translate(5px, 6.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M3 8V4H7V8Z" fill="hsl(336 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M1 8.74A3.6 1.8 90 012.62 5.5a3.6 1.8 90 01.99 3.24Zm2.7 0A3.6 1.8 90 002.7 5.5a4.5 1.35 0 015.14 0A3.6 1.8 90 019.37 8.74v.5359.0063H6.223c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H.823V8.74Zm1.3074-.4921c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75Z" fill="hsl(336 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(340, 250)">
+<g style="transform:translate(5px, 5.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M3 8V4H7V8Z" fill="hsl(338 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.6844 4.5156 3 6H2L0 5.0688l1.0781 3.65H0v.5625l3.7938.0062c.2062.5533.6233.9719 1.2156.9719.5925 0 1.0902-.4183 1.2187-.9719L10 9.2844V8.7188H8.9L10 5 8 6H7L6.3656 4.5156H3.6844Zm1.325 3.7438c.414 0 .75.336.75.75s-.336.75-.75.75-.75-.336-.75-.75.336-.75.75-.75Z" fill="hsl(338 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(340, 275)">
+<g style="transform:translate(5px, 9.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M3 8V4H7V8Z" fill="hsl(340 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(340 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(360, 25)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(340 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L0 9 0 8.5 1 8.5 2 1 2 0 8 0 8 1 9 8.5 10 8.5 10 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(340 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(360, 50)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(342 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L1 9 1 8.5 4 8.5 4 0 6 0 6 8.5 9 8.5 9 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(342 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(360, 75)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(344 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.75 9V0h.5V9Z" fill="hsl(344 80% 40%)" stroke="#000" stroke-width="0.1" />
+</g>
+</g>
+<g transform="translate(360, 100)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(346 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0063 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.4139 0 .75-.336.75-.75s-.3361-.75-.75-.75ZM6.3594 5.2406ZM6.6 4.5313v.0093c1.2999.9961 2.0322 2.5541 1.9781 4.175h.6282V9.275v.0063H6.2219c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2157-.9656H.8219V8.7156h.7812C2.0236 6.302 4.1343 4.522 6.6 4.5313Z" fill="hsl(346 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(360, 125)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(348 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.1418 4.1416 1.6199 8.7166H.823V9.2822H3.7918C3.9205 9.8355 4.4151 10.2478 5.0074 10.2478 5.5999 10.2478 6.0945 9.8357 6.223 9.2822H9.2074V9.2759 8.7165H8.4386L9.3386 6.0977ZM5.0074 8.2479C5.4214 8.2479 5.7574 8.5839 5.7574 8.9979 5.7574 9.4119 5.4214 9.7479 5.0074 9.7479 4.5934 9.7479 4.2574 9.4119 4.2574 8.9979 4.2574 8.5839 4.5934 8.2479 5.0074 8.2479Z" fill="hsl(348 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(360, 150)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(350 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0094 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75ZM5.5 4.3656c1.1247.0034 2.2053.6228 2.7813 1.6.4864.8254.5759 1.852.2624 2.75h.6657V9.275v.0062H6.225c-.1285.5536-.6231.9657-1.2156.9657-.5923 0-1.0869-.4124-1.2156-.9657L1.5969 9.2781V8.7156h.8406c-.316-.9044-.2229-1.9375.2719-2.7656C3.2912 4.9763 4.3753 4.3622 5.5 4.3656Z" fill="hsl(350 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(360, 175)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(352 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="m8.899.65L7.1272.0812 4.454 5.4538 1.4759 8.7132H.6978l-.0125.5656H3.7915c.1287.5533.6233.9657 1.2156.9657.5925 0 1.0871-.4121 1.2156-.9657H8.6352V8.7132H7.857L7.6102 6.4788ZM5.7559 8.9956c0 .414-.336.75-.75.75-.414 0-.75-.336-.75-.75s.336-.75.75-.75c.414 0 .75.336.75.75Z" fill="hsl(352 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(360, 200)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(354 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.9995 8.2476c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75-.336-.75-.75-.75ZM7.008.226l1.721.602L6.163 8.516c.028.047.047.1.0521.2004l.8313-.0031v.5656l-.8313.0031c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H2.9276l.0125-.5656h.8438c.1068-.4604.3711-.7134.6221-.7984Z" fill="hsl(354 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(360, 225)">
+<g style="transform:translate(5px, 6.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(356 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M1 8.74A3.6 1.8 90 012.62 5.5a3.6 1.8 90 01.99 3.24Zm2.7 0A3.6 1.8 90 002.7 5.5a4.5 1.35 0 015.14 0A3.6 1.8 90 019.37 8.74v.5359.0063H6.223c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H.823V8.74Zm1.3074-.4921c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75Z" fill="hsl(356 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(360, 250)">
+<g style="transform:translate(5px, 5.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(358 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.6844 4.5156 3 6H2L0 5.0688l1.0781 3.65H0v.5625l3.7938.0062c.2062.5533.6233.9719 1.2156.9719.5925 0 1.0902-.4183 1.2187-.9719L10 9.2844V8.7188H8.9L10 5 8 6H7L6.3656 4.5156H3.6844Zm1.325 3.7438c.414 0 .75.336.75.75s-.336.75-.75.75-.75-.336-.75-.75.336-.75.75-.75Z" fill="hsl(358 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(360, 275)">
+<g style="transform:translate(5px, 9.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(360 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(360 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(380, 25)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(360 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L0 9 0 8.5 1 8.5 2 1 2 0 8 0 8 1 9 8.5 10 8.5 10 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(360 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(380, 50)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(362 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L1 9 1 8.5 4 8.5 4 0 6 0 6 8.5 9 8.5 9 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(362 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(380, 75)">
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(364 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.75 9V0h.5V9Z" fill="hsl(364 80% 40%)" stroke="#000" stroke-width="0.1" />
+</g>
+</g>
+<g transform="translate(380, 100)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(366 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0063 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.4139 0 .75-.336.75-.75s-.3361-.75-.75-.75ZM6.3594 5.2406ZM6.6 4.5313v.0093c1.2999.9961 2.0322 2.5541 1.9781 4.175h.6282V9.275v.0063H6.2219c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2157-.9656H.8219V8.7156h.7812C2.0236 6.302 4.1343 4.522 6.6 4.5313Z" fill="hsl(366 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(380, 125)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(368 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.1418 4.1416 1.6199 8.7166H.823V9.2822H3.7918C3.9205 9.8355 4.4151 10.2478 5.0074 10.2478 5.5999 10.2478 6.0945 9.8357 6.223 9.2822H9.2074V9.2759 8.7165H8.4386L9.3386 6.0977ZM5.0074 8.2479C5.4214 8.2479 5.7574 8.5839 5.7574 8.9979 5.7574 9.4119 5.4214 9.7479 5.0074 9.7479 4.5934 9.7479 4.2574 9.4119 4.2574 8.9979 4.2574 8.5839 4.5934 8.2479 5.0074 8.2479Z" fill="hsl(368 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(380, 150)">
+<g style="transform:translate(10px, 5px) rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(370 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0094 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75ZM5.5 4.3656c1.1247.0034 2.2053.6228 2.7813 1.6.4864.8254.5759 1.852.2624 2.75h.6657V9.275v.0062H6.225c-.1285.5536-.6231.9657-1.2156.9657-.5923 0-1.0869-.4124-1.2156-.9657L1.5969 9.2781V8.7156h.8406c-.316-.9044-.2229-1.9375.2719-2.7656C3.2912 4.9763 4.3753 4.3622 5.5 4.3656Z" fill="hsl(370 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(380, 175)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(372 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="m8.899.65L7.1272.0812 4.454 5.4538 1.4759 8.7132H.6978l-.0125.5656H3.7915c.1287.5533.6233.9657 1.2156.9657.5925 0 1.0871-.4121 1.2156-.9657H8.6352V8.7132H7.857L7.6102 6.4788ZM5.7559 8.9956c0 .414-.336.75-.75.75-.414 0-.75-.336-.75-.75s.336-.75.75-.75c.414 0 .75.336.75.75Z" fill="hsl(372 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(380, 200)">
+<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(374 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M4.9995 8.2476c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75-.336-.75-.75-.75ZM7.008.226l1.721.602L6.163 8.516c.028.047.047.1.0521.2004l.8313-.0031v.5656l-.8313.0031c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H2.9276l.0125-.5656h.8438c.1068-.4604.3711-.7134.6221-.7984Z" fill="hsl(374 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(380, 225)">
+<g style="transform:translate(5px, 6.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(376 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M1 8.74A3.6 1.8 90 012.62 5.5a3.6 1.8 90 01.99 3.24Zm2.7 0A3.6 1.8 90 002.7 5.5a4.5 1.35 0 015.14 0A3.6 1.8 90 019.37 8.74v.5359.0063H6.223c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H.823V8.74Zm1.3074-.4921c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75Z" fill="hsl(376 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(380, 250)">
+<g style="transform:translate(5px, 5.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(378 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M3.6844 4.5156 3 6H2L0 5.0688l1.0781 3.65H0v.5625l3.7938.0062c.2062.5533.6233.9719 1.2156.9719.5925 0 1.0902-.4183 1.2187-.9719L10 9.2844V8.7188H8.9L10 5 8 6H7L6.3656 4.5156H3.6844Zm1.325 3.7438c.414 0 .75.336.75.75s-.336.75-.75.75-.75-.336-.75-.75.336-.75.75-.75Z" fill="hsl(378 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(380, 275)">
+<g style="transform:translate(5px, 9.5px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(380 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(380 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(400, 25)">
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L0 9 0 8.5 1 8.5 2 1 2 0 8 0 8 1 9 8.5 10 8.5 10 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(380 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(400, 50)">
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L1 9 1 8.5 4 8.5 4 0 6 0 6 8.5 9 8.5 9 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="hsl(382 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(400, 75)">
+<g style="transform:translate(5px, 11px)">
+<path d="M4.75 9V0h.5V9Z" fill="hsl(384 80% 40%)" stroke="#000" stroke-width="0.1" />
+</g>
+</g>
+<g transform="translate(400, 100)">
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0063 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.4139 0 .75-.336.75-.75s-.3361-.75-.75-.75ZM6.3594 5.2406ZM6.6 4.5313v.0093c1.2999.9961 2.0322 2.5541 1.9781 4.175h.6282V9.275v.0063H6.2219c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2157-.9656H.8219V8.7156h.7812C2.0236 6.302 4.1343 4.522 6.6 4.5313Z" fill="hsl(386 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(400, 125)">
+<g style="transform:translate(5px, 11px)">
+<path d="M3.1418 4.1416 1.6199 8.7166H.823V9.2822H3.7918C3.9205 9.8355 4.4151 10.2478 5.0074 10.2478 5.5999 10.2478 6.0945 9.8357 6.223 9.2822H9.2074V9.2759 8.7165H8.4386L9.3386 6.0977ZM5.0074 8.2479C5.4214 8.2479 5.7574 8.5839 5.7574 8.9979 5.7574 9.4119 5.4214 9.7479 5.0074 9.7479 4.5934 9.7479 4.2574 9.4119 4.2574 8.9979 4.2574 8.5839 4.5934 8.2479 5.0074 8.2479Z" fill="hsl(388 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(400, 150)">
+<g style="transform:translate(5px, 11px)">
+<path d="M5.0094 8.2469c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75ZM5.5 4.3656c1.1247.0034 2.2053.6228 2.7813 1.6.4864.8254.5759 1.852.2624 2.75h.6657V9.275v.0062H6.225c-.1285.5536-.6231.9657-1.2156.9657-.5923 0-1.0869-.4124-1.2156-.9657L1.5969 9.2781V8.7156h.8406c-.316-.9044-.2229-1.9375.2719-2.7656C3.2912 4.9763 4.3753 4.3622 5.5 4.3656Z" fill="hsl(390 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(400, 175)">
+<g style="transform:translate(5px, 11px)">
+<path d="m8.899.65L7.1272.0812 4.454 5.4538 1.4759 8.7132H.6978l-.0125.5656H3.7915c.1287.5533.6233.9657 1.2156.9657.5925 0 1.0871-.4121 1.2156-.9657H8.6352V8.7132H7.857L7.6102 6.4788ZM5.7559 8.9956c0 .414-.336.75-.75.75-.414 0-.75-.336-.75-.75s.336-.75.75-.75c.414 0 .75.336.75.75Z" fill="hsl(392 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(400, 200)">
+<g style="transform:translate(5px, 11px)">
+<path d="M4.9995 8.2476c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75-.336-.75-.75-.75ZM7.008.226l1.721.602L6.163 8.516c.028.047.047.1.0521.2004l.8313-.0031v.5656l-.8313.0031c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H2.9276l.0125-.5656h.8438c.1068-.4604.3711-.7134.6221-.7984Z" fill="hsl(394 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(400, 225)">
+<g style="transform:translate(5px, 11px)">
+<path d="M1 8.74A3.6 1.8 90 012.62 5.5a3.6 1.8 90 01.99 3.24Zm2.7 0A3.6 1.8 90 002.7 5.5a4.5 1.35 0 015.14 0A3.6 1.8 90 019.37 8.74v.5359.0063H6.223c-.1285.5535-.6231.9656-1.2156.9656-.5923 0-1.0869-.4123-1.2156-.9656H.823V8.74Zm1.3074-.4921c-.414 0-.75.336-.75.75s.336.75.75.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75Z" fill="hsl(396 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(400, 250)">
+<g style="transform:translate(5px, 11px)">
+<path d="M3.6844 4.5156 3 6H2L0 5.0688l1.0781 3.65H0v.5625l3.7938.0062c.2062.5533.6233.9719 1.2156.9719.5925 0 1.0902-.4183 1.2187-.9719L10 9.2844V8.7188H8.9L10 5 8 6H7L6.3656 4.5156H3.6844Zm1.325 3.7438c.414 0 .75.336.75.75s-.336.75-.75.75-.75-.336-.75-.75.336-.75.75-.75Z" fill="hsl(398 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(400, 275)">
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(400 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+</svg>

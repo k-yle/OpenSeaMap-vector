@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 40">
+<defs>
+<pattern id="pattern-vertical-I2ZjMC12aW9sZXQ" width="1" height="1" patternContentUnits="objectBoundingBox" patternTransform="">
+<rect x="0" y="0" width="0.5" height="1" fill="#fc0" />
+<rect x="0.5" y="0" width="0.5" height="1" fill="violet" />
+</pattern>
+</defs>
+<g style="transform:translate(5px, 2px)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 0 7.5 4 2.5 4Z" fill="red" stroke="#000" stroke-width="0.3" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="blue" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M6 9C6 10 4 10 4 9L1 9 1 8.5 4 8.5 4 0 6 0 6 8.5 9 8.5 9 9ZM6 9C6 8 4 8 4 9 4 10 6 10 6 9Z" fill="url(#pattern-vertical-I2ZjMC12aW9sZXQ)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 2px)">
+<path fill="green" d="m4.3466 18.0706c-.0712-.3234.1336-.6438.457-.715.3234-.0712.6438.1336.715.457.0712.3234-.1336.6438-.457.715-.3234.0712-.6438-.1336-.715-.457zm2.1836 1.295 6.2233 3.9228.4552.2886.3632.377.2175.4955.0559.5464-.1114.5275-.2728.4661-.4167.3662-.5058.2274-.5209.0493-.4775-.1503-.4356-.2958-.4116-.3741-.0808-.0792-4.082-6.3676z" />
+</g>
+<g style="transform:translate(8px, 10px)">
+<path stroke="#a30075" d="M-2.6981 18.2153A12.0081 12.008 90 01-6.8233 11.0982M-.8707 16.0422A9.167 9.167 90 01-4.0245 10.6113M1.0203 13.8215A6.249 6.2489 90 01-1.1512 10.106" />
+</g>
+</svg>

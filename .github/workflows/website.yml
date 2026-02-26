@@ -20,6 +20,18 @@ jobs:
       - run: . ./sprite.sh
 
       - run: npm install
+        working-directory: packages/navmark-renderer
+
+      - run: npm run lint
+        working-directory: packages/navmark-renderer
+
+      - run: npm test
+        working-directory: packages/navmark-renderer
+
+      - run: npm run build
+        working-directory: packages/navmark-renderer
+
+      - run: npm install
         working-directory: packages/website
 
       - run: npm run lint

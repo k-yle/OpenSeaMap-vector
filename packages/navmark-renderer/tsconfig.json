@@ -1,0 +1,9 @@
+{
+  "extends": "eslint-config-kyle/tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "lib": ["esnext", "dom"],
+    "jsxImportSource": "jsx-to-xml"
+  },
+  "include": ["src"]
+}
