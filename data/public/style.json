@@ -236,10 +236,10 @@
           ["get", "name"]
         ],
         "icon-image": "berth",
-        "icon-size": 0.25,
+        "icon-size": 0.2,
         "symbol-placement": "point",
         "icon-keep-upright": true,
-        "text-size": 10,
+        "text-size": 9,
         "icon-anchor": "center",
         "text-anchor": "center"
       },

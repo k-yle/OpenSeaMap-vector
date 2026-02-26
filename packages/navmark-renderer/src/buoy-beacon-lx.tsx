@@ -107,7 +107,7 @@ export async function renderBuoyBeaconLx(
 ): Promise<ImageData | undefined> {
   const { svg, defs, width, height } = BuoyBeaconLxComponent(tags);
 
-  const scale = window.devicePixelRatio || 2;
+  const scale = 2 * (window.devicePixelRatio || 2);
 
   const final = (
     <svg
