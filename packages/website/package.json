@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@openseamap-vector/navmark-renderer": "file:../navmark-renderer",
+    "get-region": "^1.0.0",
     "light-characteristics": "^1.0.0",
     "maplibre-gl": "^5.18.0",
     "pmtiles": "^4.4.0",

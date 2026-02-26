@@ -5,6 +5,7 @@ import { PMTiles, Protocol } from 'pmtiles';
 import { PMTILES_URL, getStyle } from './style.js';
 import { onStyleImageMissing } from './onStyleImageMissing.js';
 import { MapPopup } from './components/MapPopup.js';
+import { HOME_LOCATION } from './util/region.js';
 
 const protocol = new Protocol();
 addProtocol('pmtiles', protocol.tile);
@@ -17,6 +18,7 @@ export const App: React.FC = () => {
   const mapRef = useRef<Map>(null);
 
   useEffect(() => {
+    const [zoom, lon, lat] = HOME_LOCATION;
     getStyle()
       .then((style) => {
         if (mapRef.current) return; // already inited
@@ -35,8 +37,8 @@ export const App: React.FC = () => {
 
         const map = new Map({
           container: 'map',
-          zoom: 17,
-          center: { lat: -36.840648, lon: 174.768936 },
+          zoom,
+          center: { lat, lon },
           style,
           hash: 'map',
         });
