@@ -14,9 +14,13 @@ export const isColourPattern = (
 ): str is ColourPattern => !!str && str in COLOUR_PATTERNS;
 
 // top-to-bottom, then left-to-right, then background, then border.
-export function createPattern(colours: string[], colourPattern: ColourPattern) {
+export function createPattern(
+  colours: string[],
+  colourPattern: ColourPattern,
+  rotate: number,
+) {
   // the ID is to de-duplicate identical patterns
-  const patternId = `pattern-${colourPattern}-${btoa(colours.join('-')).replaceAll(/\W/g, '')}`;
+  const patternId = `pattern-${colourPattern}-${btoa(colours.join('-')).replaceAll(/\W/g, '')}-${rotate}`;
 
   switch (colourPattern) {
     case 'horizontal': {
@@ -26,6 +30,7 @@ export function createPattern(colours: string[], colourPattern: ColourPattern) {
           width={1}
           height={1}
           patternContentUnits="objectBoundingBox"
+          patternTransform={`rotate(${rotate})`}
         >
           {colours.map((colour, i) => (
             <rect
@@ -49,7 +54,7 @@ export function createPattern(colours: string[], colourPattern: ColourPattern) {
           width={1}
           height={1}
           patternContentUnits="objectBoundingBox"
-          patternTransform={colourPattern === 'diagonal' ? 'rotate(45)' : ''}
+          patternTransform={`rotate(${rotate + (colourPattern === 'diagonal' ? 45 : 0)})`}
         >
           {colours.map((colour, i) => (
             <rect
@@ -72,6 +77,7 @@ export function createPattern(colours: string[], colourPattern: ColourPattern) {
           width={1}
           height={1}
           patternContentUnits="objectBoundingBox"
+          patternTransform={`rotate(${rotate})`}
         >
           <rect
             x={0}
@@ -114,6 +120,7 @@ export function createPattern(colours: string[], colourPattern: ColourPattern) {
             width={1}
             height={1}
             patternContentUnits="objectBoundingBox"
+            patternTransform={`rotate(${rotate})`}
           >
             <rect
               x={0}
@@ -147,6 +154,7 @@ export function createPattern(colours: string[], colourPattern: ColourPattern) {
           width={1}
           height={1}
           patternContentUnits="objectBoundingBox"
+          patternTransform={`rotate(${rotate})`}
         >
           <rect x={0} y={0} width={1} height={1} fill={colours[0] || 'none'} />
           <path d={path} fill={colours[1] || 'none'} />

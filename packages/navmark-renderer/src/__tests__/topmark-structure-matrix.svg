@@ -34,7 +34,7 @@
 <text x="10" y="262.5" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">super-buoy</text>
 <text x="10" y="287.5" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">none</text>
 <g transform="translate(20, 25)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(0 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -43,7 +43,7 @@
 </g>
 </g>
 <g transform="translate(20, 50)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(2 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -52,7 +52,7 @@
 </g>
 </g>
 <g transform="translate(20, 75)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(4 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -88,7 +88,7 @@
 </g>
 </g>
 <g transform="translate(20, 175)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(12 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -97,7 +97,7 @@
 </g>
 </g>
 <g transform="translate(20, 200)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(14 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -106,7 +106,7 @@
 </g>
 </g>
 <g transform="translate(20, 225)">
-<g style="transform:translate(5px, 6.5px)">
+<g style="transform:translate(5px, 6.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(16 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -115,7 +115,7 @@
 </g>
 </g>
 <g transform="translate(20, 250)">
-<g style="transform:translate(5px, 5.5px)">
+<g style="transform:translate(5px, 5.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(18 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -124,7 +124,7 @@
 </g>
 </g>
 <g transform="translate(20, 275)">
-<g style="transform:translate(5px, 9.5px)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(20 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -133,7 +133,7 @@
 </g>
 </g>
 <g transform="translate(40, 25)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(20 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -142,7 +142,7 @@
 </g>
 </g>
 <g transform="translate(40, 50)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(22 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -151,7 +151,7 @@
 </g>
 </g>
 <g transform="translate(40, 75)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(24 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -187,7 +187,7 @@
 </g>
 </g>
 <g transform="translate(40, 175)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(32 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -196,7 +196,7 @@
 </g>
 </g>
 <g transform="translate(40, 200)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(34 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -205,7 +205,7 @@
 </g>
 </g>
 <g transform="translate(40, 225)">
-<g style="transform:translate(5px, 6.5px)">
+<g style="transform:translate(5px, 6.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(36 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -214,7 +214,7 @@
 </g>
 </g>
 <g transform="translate(40, 250)">
-<g style="transform:translate(5px, 5.5px)">
+<g style="transform:translate(5px, 5.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(38 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -223,7 +223,7 @@
 </g>
 </g>
 <g transform="translate(40, 275)">
-<g style="transform:translate(5px, 9.5px)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(40 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -232,7 +232,7 @@
 </g>
 </g>
 <g transform="translate(60, 25)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(40 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -241,7 +241,7 @@
 </g>
 </g>
 <g transform="translate(60, 50)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(42 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -250,7 +250,7 @@
 </g>
 </g>
 <g transform="translate(60, 75)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(44 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -286,7 +286,7 @@
 </g>
 </g>
 <g transform="translate(60, 175)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(52 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -295,7 +295,7 @@
 </g>
 </g>
 <g transform="translate(60, 200)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(54 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -304,7 +304,7 @@
 </g>
 </g>
 <g transform="translate(60, 225)">
-<g style="transform:translate(5px, 6.5px)">
+<g style="transform:translate(5px, 6.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(56 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -313,7 +313,7 @@
 </g>
 </g>
 <g transform="translate(60, 250)">
-<g style="transform:translate(5px, 5.5px)">
+<g style="transform:translate(5px, 5.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(58 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -322,7 +322,7 @@
 </g>
 </g>
 <g transform="translate(60, 275)">
-<g style="transform:translate(5px, 9.5px)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(60 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -331,7 +331,7 @@
 </g>
 </g>
 <g transform="translate(80, 25)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M 5 2.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(60 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(60 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -341,7 +341,7 @@
 </g>
 </g>
 <g transform="translate(80, 50)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M 5 2.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(62 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(62 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -351,7 +351,7 @@
 </g>
 </g>
 <g transform="translate(80, 75)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M 5 2.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(64 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(64 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -391,7 +391,7 @@
 </g>
 </g>
 <g transform="translate(80, 175)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M 5 2.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(72 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(72 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -401,7 +401,7 @@
 </g>
 </g>
 <g transform="translate(80, 200)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M 5 2.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(74 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(74 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -411,7 +411,7 @@
 </g>
 </g>
 <g transform="translate(80, 225)">
-<g style="transform:translate(5px, 6.5px)">
+<g style="transform:translate(5px, 6.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M 5 2.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(76 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(76 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -421,7 +421,7 @@
 </g>
 </g>
 <g transform="translate(80, 250)">
-<g style="transform:translate(5px, 5.5px)">
+<g style="transform:translate(5px, 5.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M 5 2.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(78 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(78 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -431,7 +431,7 @@
 </g>
 </g>
 <g transform="translate(80, 275)">
-<g style="transform:translate(5px, 9.5px)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M 5 2.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(80 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(80 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -441,7 +441,7 @@
 </g>
 </g>
 <g transform="translate(100, 25)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.5 5A2.5.5 0 007.5 5 2.5.5 0 002.5 5L2.5 7.92A2.5.5 0 007.5 7.92L7.5 5" fill="hsl(80 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -450,7 +450,7 @@
 </g>
 </g>
 <g transform="translate(100, 50)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.5 5A2.5.5 0 007.5 5 2.5.5 0 002.5 5L2.5 7.92A2.5.5 0 007.5 7.92L7.5 5" fill="hsl(82 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -459,7 +459,7 @@
 </g>
 </g>
 <g transform="translate(100, 75)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.5 5A2.5.5 0 007.5 5 2.5.5 0 002.5 5L2.5 7.92A2.5.5 0 007.5 7.92L7.5 5" fill="hsl(84 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -495,7 +495,7 @@
 </g>
 </g>
 <g transform="translate(100, 175)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.5 5A2.5.5 0 007.5 5 2.5.5 0 002.5 5L2.5 7.92A2.5.5 0 007.5 7.92L7.5 5" fill="hsl(92 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -504,7 +504,7 @@
 </g>
 </g>
 <g transform="translate(100, 200)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.5 5A2.5.5 0 007.5 5 2.5.5 0 002.5 5L2.5 7.92A2.5.5 0 007.5 7.92L7.5 5" fill="hsl(94 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -513,7 +513,7 @@
 </g>
 </g>
 <g transform="translate(100, 225)">
-<g style="transform:translate(5px, 6.5px)">
+<g style="transform:translate(5px, 6.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.5 5A2.5.5 0 007.5 5 2.5.5 0 002.5 5L2.5 7.92A2.5.5 0 007.5 7.92L7.5 5" fill="hsl(96 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -522,7 +522,7 @@
 </g>
 </g>
 <g transform="translate(100, 250)">
-<g style="transform:translate(5px, 5.5px)">
+<g style="transform:translate(5px, 5.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.5 5A2.5.5 0 007.5 5 2.5.5 0 002.5 5L2.5 7.92A2.5.5 0 007.5 7.92L7.5 5" fill="hsl(98 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -531,7 +531,7 @@
 </g>
 </g>
 <g transform="translate(100, 275)">
-<g style="transform:translate(5px, 9.5px)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.5 5A2.5.5 0 007.5 5 2.5.5 0 002.5 5L2.5 7.92A2.5.5 0 007.5 7.92L7.5 5" fill="hsl(100 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -540,7 +540,7 @@
 </g>
 </g>
 <g transform="translate(120, 25)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M3 8V3H7V8Z" fill="hsl(100 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -549,7 +549,7 @@
 </g>
 </g>
 <g transform="translate(120, 50)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M3 8V3H7V8Z" fill="hsl(102 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -558,7 +558,7 @@
 </g>
 </g>
 <g transform="translate(120, 75)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M3 8V3H7V8Z" fill="hsl(104 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -594,7 +594,7 @@
 </g>
 </g>
 <g transform="translate(120, 175)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M3 8V3H7V8Z" fill="hsl(112 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -603,7 +603,7 @@
 </g>
 </g>
 <g transform="translate(120, 200)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M3 8V3H7V8Z" fill="hsl(114 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -612,7 +612,7 @@
 </g>
 </g>
 <g transform="translate(120, 225)">
-<g style="transform:translate(5px, 6.5px)">
+<g style="transform:translate(5px, 6.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M3 8V3H7V8Z" fill="hsl(116 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -621,7 +621,7 @@
 </g>
 </g>
 <g transform="translate(120, 250)">
-<g style="transform:translate(5px, 5.5px)">
+<g style="transform:translate(5px, 5.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M3 8V3H7V8Z" fill="hsl(118 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -630,7 +630,7 @@
 </g>
 </g>
 <g transform="translate(120, 275)">
-<g style="transform:translate(5px, 9.5px)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M3 8V3H7V8Z" fill="hsl(120 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -639,7 +639,7 @@
 </g>
 </g>
 <g transform="translate(140, 25)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.8787 4.5858 3.5858 3.8787 5 5.2929 6.4142 3.8787 7.1213 4.5858 5.7071 6 7.1213 7.4142 6.4142 8.1213 5 6.7071 3.5858 8.1213 2.8787 7.4142 4.2929 6Z" fill="hsl(120 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -648,7 +648,7 @@
 </g>
 </g>
 <g transform="translate(140, 50)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.8787 4.5858 3.5858 3.8787 5 5.2929 6.4142 3.8787 7.1213 4.5858 5.7071 6 7.1213 7.4142 6.4142 8.1213 5 6.7071 3.5858 8.1213 2.8787 7.4142 4.2929 6Z" fill="hsl(122 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -657,7 +657,7 @@
 </g>
 </g>
 <g transform="translate(140, 75)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.8787 4.5858 3.5858 3.8787 5 5.2929 6.4142 3.8787 7.1213 4.5858 5.7071 6 7.1213 7.4142 6.4142 8.1213 5 6.7071 3.5858 8.1213 2.8787 7.4142 4.2929 6Z" fill="hsl(124 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -693,7 +693,7 @@
 </g>
 </g>
 <g transform="translate(140, 175)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.8787 4.5858 3.5858 3.8787 5 5.2929 6.4142 3.8787 7.1213 4.5858 5.7071 6 7.1213 7.4142 6.4142 8.1213 5 6.7071 3.5858 8.1213 2.8787 7.4142 4.2929 6Z" fill="hsl(132 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -702,7 +702,7 @@
 </g>
 </g>
 <g transform="translate(140, 200)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.8787 4.5858 3.5858 3.8787 5 5.2929 6.4142 3.8787 7.1213 4.5858 5.7071 6 7.1213 7.4142 6.4142 8.1213 5 6.7071 3.5858 8.1213 2.8787 7.4142 4.2929 6Z" fill="hsl(134 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -711,7 +711,7 @@
 </g>
 </g>
 <g transform="translate(140, 225)">
-<g style="transform:translate(5px, 6.5px)">
+<g style="transform:translate(5px, 6.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.8787 4.5858 3.5858 3.8787 5 5.2929 6.4142 3.8787 7.1213 4.5858 5.7071 6 7.1213 7.4142 6.4142 8.1213 5 6.7071 3.5858 8.1213 2.8787 7.4142 4.2929 6Z" fill="hsl(136 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -720,7 +720,7 @@
 </g>
 </g>
 <g transform="translate(140, 250)">
-<g style="transform:translate(5px, 5.5px)">
+<g style="transform:translate(5px, 5.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.8787 4.5858 3.5858 3.8787 5 5.2929 6.4142 3.8787 7.1213 4.5858 5.7071 6 7.1213 7.4142 6.4142 8.1213 5 6.7071 3.5858 8.1213 2.8787 7.4142 4.2929 6Z" fill="hsl(138 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -729,7 +729,7 @@
 </g>
 </g>
 <g transform="translate(140, 275)">
-<g style="transform:translate(5px, 9.5px)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.8787 4.5858 3.5858 3.8787 5 5.2929 6.4142 3.8787 7.1213 4.5858 5.7071 6 7.1213 7.4142 6.4142 8.1213 5 6.7071 3.5858 8.1213 2.8787 7.4142 4.2929 6Z" fill="hsl(140 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -738,7 +738,7 @@
 </g>
 </g>
 <g transform="translate(160, 25)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.5 6.5V5.5H4.5V3.5H5.5V5.5H7.5V6.5H5.5V8.5H4.5V6.5Z" fill="hsl(140 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -747,7 +747,7 @@
 </g>
 </g>
 <g transform="translate(160, 50)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.5 6.5V5.5H4.5V3.5H5.5V5.5H7.5V6.5H5.5V8.5H4.5V6.5Z" fill="hsl(142 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -756,7 +756,7 @@
 </g>
 </g>
 <g transform="translate(160, 75)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.5 6.5V5.5H4.5V3.5H5.5V5.5H7.5V6.5H5.5V8.5H4.5V6.5Z" fill="hsl(144 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -792,7 +792,7 @@
 </g>
 </g>
 <g transform="translate(160, 175)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.5 6.5V5.5H4.5V3.5H5.5V5.5H7.5V6.5H5.5V8.5H4.5V6.5Z" fill="hsl(152 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -801,7 +801,7 @@
 </g>
 </g>
 <g transform="translate(160, 200)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.5 6.5V5.5H4.5V3.5H5.5V5.5H7.5V6.5H5.5V8.5H4.5V6.5Z" fill="hsl(154 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -810,7 +810,7 @@
 </g>
 </g>
 <g transform="translate(160, 225)">
-<g style="transform:translate(5px, 6.5px)">
+<g style="transform:translate(5px, 6.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.5 6.5V5.5H4.5V3.5H5.5V5.5H7.5V6.5H5.5V8.5H4.5V6.5Z" fill="hsl(156 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -819,7 +819,7 @@
 </g>
 </g>
 <g transform="translate(160, 250)">
-<g style="transform:translate(5px, 5.5px)">
+<g style="transform:translate(5px, 5.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.5 6.5V5.5H4.5V3.5H5.5V5.5H7.5V6.5H5.5V8.5H4.5V6.5Z" fill="hsl(158 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -828,7 +828,7 @@
 </g>
 </g>
 <g transform="translate(160, 275)">
-<g style="transform:translate(5px, 9.5px)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.5 6.5V5.5H4.5V3.5H5.5V5.5H7.5V6.5H5.5V8.5H4.5V6.5Z" fill="hsl(160 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -837,7 +837,7 @@
 </g>
 </g>
 <g transform="translate(180, 25)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 7.5 0 2.5 0Z" fill="hsl(160 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(160 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -847,7 +847,7 @@
 </g>
 </g>
 <g transform="translate(180, 50)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 7.5 0 2.5 0Z" fill="hsl(162 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(162 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -857,7 +857,7 @@
 </g>
 </g>
 <g transform="translate(180, 75)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 7.5 0 2.5 0Z" fill="hsl(164 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(164 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -897,7 +897,7 @@
 </g>
 </g>
 <g transform="translate(180, 175)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 7.5 0 2.5 0Z" fill="hsl(172 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(172 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -907,7 +907,7 @@
 </g>
 </g>
 <g transform="translate(180, 200)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 7.5 0 2.5 0Z" fill="hsl(174 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(174 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -917,7 +917,7 @@
 </g>
 </g>
 <g transform="translate(180, 225)">
-<g style="transform:translate(5px, 6.5px)">
+<g style="transform:translate(5px, 6.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 7.5 0 2.5 0Z" fill="hsl(176 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(176 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -927,7 +927,7 @@
 </g>
 </g>
 <g transform="translate(180, 250)">
-<g style="transform:translate(5px, 5.5px)">
+<g style="transform:translate(5px, 5.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 7.5 0 2.5 0Z" fill="hsl(178 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(178 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -937,7 +937,7 @@
 </g>
 </g>
 <g transform="translate(180, 275)">
-<g style="transform:translate(5px, 9.5px)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 7.5 0 2.5 0Z" fill="hsl(180 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(180 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -947,7 +947,7 @@
 </g>
 </g>
 <g transform="translate(200, 25)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 0 7.5 4 2.5 4Z" fill="hsl(180 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(180 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -957,7 +957,7 @@
 </g>
 </g>
 <g transform="translate(200, 50)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 0 7.5 4 2.5 4Z" fill="hsl(182 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(182 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -967,7 +967,7 @@
 </g>
 </g>
 <g transform="translate(200, 75)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 0 7.5 4 2.5 4Z" fill="hsl(184 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(184 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -1007,7 +1007,7 @@
 </g>
 </g>
 <g transform="translate(200, 175)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 0 7.5 4 2.5 4Z" fill="hsl(192 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(192 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -1017,7 +1017,7 @@
 </g>
 </g>
 <g transform="translate(200, 200)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 0 7.5 4 2.5 4Z" fill="hsl(194 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(194 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -1027,7 +1027,7 @@
 </g>
 </g>
 <g transform="translate(200, 225)">
-<g style="transform:translate(5px, 6.5px)">
+<g style="transform:translate(5px, 6.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 0 7.5 4 2.5 4Z" fill="hsl(196 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(196 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -1037,7 +1037,7 @@
 </g>
 </g>
 <g transform="translate(200, 250)">
-<g style="transform:translate(5px, 5.5px)">
+<g style="transform:translate(5px, 5.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 0 7.5 4 2.5 4Z" fill="hsl(198 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(198 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -1047,7 +1047,7 @@
 </g>
 </g>
 <g transform="translate(200, 275)">
-<g style="transform:translate(5px, 9.5px)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 0 7.5 4 2.5 4Z" fill="hsl(200 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(200 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -1057,7 +1057,7 @@
 </g>
 </g>
 <g transform="translate(220, 25)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.1716 6 5 3.1716 7.8284 6 5 8.8284Z" fill="hsl(200 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1066,7 +1066,7 @@
 </g>
 </g>
 <g transform="translate(220, 50)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.1716 6 5 3.1716 7.8284 6 5 8.8284Z" fill="hsl(202 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1075,7 +1075,7 @@
 </g>
 </g>
 <g transform="translate(220, 75)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.1716 6 5 3.1716 7.8284 6 5 8.8284Z" fill="hsl(204 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1111,7 +1111,7 @@
 </g>
 </g>
 <g transform="translate(220, 175)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.1716 6 5 3.1716 7.8284 6 5 8.8284Z" fill="hsl(212 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1120,7 +1120,7 @@
 </g>
 </g>
 <g transform="translate(220, 200)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.1716 6 5 3.1716 7.8284 6 5 8.8284Z" fill="hsl(214 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1129,7 +1129,7 @@
 </g>
 </g>
 <g transform="translate(220, 225)">
-<g style="transform:translate(5px, 6.5px)">
+<g style="transform:translate(5px, 6.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.1716 6 5 3.1716 7.8284 6 5 8.8284Z" fill="hsl(216 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1138,7 +1138,7 @@
 </g>
 </g>
 <g transform="translate(220, 250)">
-<g style="transform:translate(5px, 5.5px)">
+<g style="transform:translate(5px, 5.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.1716 6 5 3.1716 7.8284 6 5 8.8284Z" fill="hsl(218 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1147,7 +1147,7 @@
 </g>
 </g>
 <g transform="translate(220, 275)">
-<g style="transform:translate(5px, 9.5px)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.1716 6 5 3.1716 7.8284 6 5 8.8284Z" fill="hsl(220 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1156,7 +1156,7 @@
 </g>
 </g>
 <g transform="translate(240, 25)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 0 7.5 4 2.5 4Z" fill="hsl(220 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(220 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -1166,7 +1166,7 @@
 </g>
 </g>
 <g transform="translate(240, 50)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 0 7.5 4 2.5 4Z" fill="hsl(222 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(222 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -1176,7 +1176,7 @@
 </g>
 </g>
 <g transform="translate(240, 75)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 0 7.5 4 2.5 4Z" fill="hsl(224 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(224 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -1216,7 +1216,7 @@
 </g>
 </g>
 <g transform="translate(240, 175)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 0 7.5 4 2.5 4Z" fill="hsl(232 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(232 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -1226,7 +1226,7 @@
 </g>
 </g>
 <g transform="translate(240, 200)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 0 7.5 4 2.5 4Z" fill="hsl(234 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(234 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -1236,7 +1236,7 @@
 </g>
 </g>
 <g transform="translate(240, 225)">
-<g style="transform:translate(5px, 6.5px)">
+<g style="transform:translate(5px, 6.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 0 7.5 4 2.5 4Z" fill="hsl(236 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(236 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -1246,7 +1246,7 @@
 </g>
 </g>
 <g transform="translate(240, 250)">
-<g style="transform:translate(5px, 5.5px)">
+<g style="transform:translate(5px, 5.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 0 7.5 4 2.5 4Z" fill="hsl(238 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(238 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -1256,7 +1256,7 @@
 </g>
 </g>
 <g transform="translate(240, 275)">
-<g style="transform:translate(5px, 9.5px)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 0 7.5 4 2.5 4Z" fill="hsl(240 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(240 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -1266,7 +1266,7 @@
 </g>
 </g>
 <g transform="translate(260, 25)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 7.5 0 2.5 0Z" fill="hsl(240 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(240 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -1276,7 +1276,7 @@
 </g>
 </g>
 <g transform="translate(260, 50)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 7.5 0 2.5 0Z" fill="hsl(242 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(242 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -1286,7 +1286,7 @@
 </g>
 </g>
 <g transform="translate(260, 75)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 7.5 0 2.5 0Z" fill="hsl(244 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(244 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -1326,7 +1326,7 @@
 </g>
 </g>
 <g transform="translate(260, 175)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 7.5 0 2.5 0Z" fill="hsl(252 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(252 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -1336,7 +1336,7 @@
 </g>
 </g>
 <g transform="translate(260, 200)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 7.5 0 2.5 0Z" fill="hsl(254 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(254 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -1346,7 +1346,7 @@
 </g>
 </g>
 <g transform="translate(260, 225)">
-<g style="transform:translate(5px, 6.5px)">
+<g style="transform:translate(5px, 6.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 7.5 0 2.5 0Z" fill="hsl(256 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(256 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -1356,7 +1356,7 @@
 </g>
 </g>
 <g transform="translate(260, 250)">
-<g style="transform:translate(5px, 5.5px)">
+<g style="transform:translate(5px, 5.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 7.5 0 2.5 0Z" fill="hsl(258 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(258 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -1366,7 +1366,7 @@
 </g>
 </g>
 <g transform="translate(260, 275)">
-<g style="transform:translate(5px, 9.5px)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 7.5 0 2.5 0Z" fill="hsl(260 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(260 80% 40%)" stroke="#000" stroke-width="0.3" />
@@ -1376,7 +1376,7 @@
 </g>
 </g>
 <g transform="translate(280, 25)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M4.5 8 4.5 5 3.6 5.9 2.96 5.34 5 3.3 7.04 5.34 6.4 5.9 5.53 5 5.5 8Z" fill="hsl(260 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1385,7 +1385,7 @@
 </g>
 </g>
 <g transform="translate(280, 50)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M4.5 8 4.5 5 3.6 5.9 2.96 5.34 5 3.3 7.04 5.34 6.4 5.9 5.53 5 5.5 8Z" fill="hsl(262 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1394,7 +1394,7 @@
 </g>
 </g>
 <g transform="translate(280, 75)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M4.5 8 4.5 5 3.6 5.9 2.96 5.34 5 3.3 7.04 5.34 6.4 5.9 5.53 5 5.5 8Z" fill="hsl(264 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1430,7 +1430,7 @@
 </g>
 </g>
 <g transform="translate(280, 175)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M4.5 8 4.5 5 3.6 5.9 2.96 5.34 5 3.3 7.04 5.34 6.4 5.9 5.53 5 5.5 8Z" fill="hsl(272 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1439,7 +1439,7 @@
 </g>
 </g>
 <g transform="translate(280, 200)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M4.5 8 4.5 5 3.6 5.9 2.96 5.34 5 3.3 7.04 5.34 6.4 5.9 5.53 5 5.5 8Z" fill="hsl(274 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1448,7 +1448,7 @@
 </g>
 </g>
 <g transform="translate(280, 225)">
-<g style="transform:translate(5px, 6.5px)">
+<g style="transform:translate(5px, 6.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M4.5 8 4.5 5 3.6 5.9 2.96 5.34 5 3.3 7.04 5.34 6.4 5.9 5.53 5 5.5 8Z" fill="hsl(276 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1457,7 +1457,7 @@
 </g>
 </g>
 <g transform="translate(280, 250)">
-<g style="transform:translate(5px, 5.5px)">
+<g style="transform:translate(5px, 5.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M4.5 8 4.5 5 3.6 5.9 2.96 5.34 5 3.3 7.04 5.34 6.4 5.9 5.53 5 5.5 8Z" fill="hsl(278 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1466,7 +1466,7 @@
 </g>
 </g>
 <g transform="translate(280, 275)">
-<g style="transform:translate(5px, 9.5px)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M4.5 8 4.5 5 3.6 5.9 2.96 5.34 5 3.3 7.04 5.34 6.4 5.9 5.53 5 5.5 8Z" fill="hsl(280 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1475,7 +1475,7 @@
 </g>
 </g>
 <g transform="translate(300, 25)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 5.5 3.6 4.1 3 4.7 4.5 6.2 4.5 8 5.5 8 5.5 6.2 7 4.7 6.4 4.1Z" fill="hsl(280 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1484,7 +1484,7 @@
 </g>
 </g>
 <g transform="translate(300, 50)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 5.5 3.6 4.1 3 4.7 4.5 6.2 4.5 8 5.5 8 5.5 6.2 7 4.7 6.4 4.1Z" fill="hsl(282 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1493,7 +1493,7 @@
 </g>
 </g>
 <g transform="translate(300, 75)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 5.5 3.6 4.1 3 4.7 4.5 6.2 4.5 8 5.5 8 5.5 6.2 7 4.7 6.4 4.1Z" fill="hsl(284 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1529,7 +1529,7 @@
 </g>
 </g>
 <g transform="translate(300, 175)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 5.5 3.6 4.1 3 4.7 4.5 6.2 4.5 8 5.5 8 5.5 6.2 7 4.7 6.4 4.1Z" fill="hsl(292 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1538,7 +1538,7 @@
 </g>
 </g>
 <g transform="translate(300, 200)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 5.5 3.6 4.1 3 4.7 4.5 6.2 4.5 8 5.5 8 5.5 6.2 7 4.7 6.4 4.1Z" fill="hsl(294 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1547,7 +1547,7 @@
 </g>
 </g>
 <g transform="translate(300, 225)">
-<g style="transform:translate(5px, 6.5px)">
+<g style="transform:translate(5px, 6.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 5.5 3.6 4.1 3 4.7 4.5 6.2 4.5 8 5.5 8 5.5 6.2 7 4.7 6.4 4.1Z" fill="hsl(296 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1556,7 +1556,7 @@
 </g>
 </g>
 <g transform="translate(300, 250)">
-<g style="transform:translate(5px, 5.5px)">
+<g style="transform:translate(5px, 5.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 5.5 3.6 4.1 3 4.7 4.5 6.2 4.5 8 5.5 8 5.5 6.2 7 4.7 6.4 4.1Z" fill="hsl(298 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1565,7 +1565,7 @@
 </g>
 </g>
 <g transform="translate(300, 275)">
-<g style="transform:translate(5px, 9.5px)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 5.5 3.6 4.1 3 4.7 4.5 6.2 4.5 8 5.5 8 5.5 6.2 7 4.7 6.4 4.1Z" fill="hsl(300 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1574,7 +1574,7 @@
 </g>
 </g>
 <g transform="translate(320, 25)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M4.7 8V2C5.23 1.374 5.993 1.374 6.704 2 7.461 2.774 8.121 2.706 8.839 1.983V4.276C8.121 4.994 7.541 4.914 6.846 4.276 6.095 3.548 5.776 3.753 5.3 4.258V8Z" fill="hsl(300 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1583,7 +1583,7 @@
 </g>
 </g>
 <g transform="translate(320, 50)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M4.7 8V2C5.23 1.374 5.993 1.374 6.704 2 7.461 2.774 8.121 2.706 8.839 1.983V4.276C8.121 4.994 7.541 4.914 6.846 4.276 6.095 3.548 5.776 3.753 5.3 4.258V8Z" fill="hsl(302 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1592,7 +1592,7 @@
 </g>
 </g>
 <g transform="translate(320, 75)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M4.7 8V2C5.23 1.374 5.993 1.374 6.704 2 7.461 2.774 8.121 2.706 8.839 1.983V4.276C8.121 4.994 7.541 4.914 6.846 4.276 6.095 3.548 5.776 3.753 5.3 4.258V8Z" fill="hsl(304 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1628,7 +1628,7 @@
 </g>
 </g>
 <g transform="translate(320, 175)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M4.7 8V2C5.23 1.374 5.993 1.374 6.704 2 7.461 2.774 8.121 2.706 8.839 1.983V4.276C8.121 4.994 7.541 4.914 6.846 4.276 6.095 3.548 5.776 3.753 5.3 4.258V8Z" fill="hsl(312 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1637,7 +1637,7 @@
 </g>
 </g>
 <g transform="translate(320, 200)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M4.7 8V2C5.23 1.374 5.993 1.374 6.704 2 7.461 2.774 8.121 2.706 8.839 1.983V4.276C8.121 4.994 7.541 4.914 6.846 4.276 6.095 3.548 5.776 3.753 5.3 4.258V8Z" fill="hsl(314 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1646,7 +1646,7 @@
 </g>
 </g>
 <g transform="translate(320, 225)">
-<g style="transform:translate(5px, 6.5px)">
+<g style="transform:translate(5px, 6.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M4.7 8V2C5.23 1.374 5.993 1.374 6.704 2 7.461 2.774 8.121 2.706 8.839 1.983V4.276C8.121 4.994 7.541 4.914 6.846 4.276 6.095 3.548 5.776 3.753 5.3 4.258V8Z" fill="hsl(316 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1655,7 +1655,7 @@
 </g>
 </g>
 <g transform="translate(320, 250)">
-<g style="transform:translate(5px, 5.5px)">
+<g style="transform:translate(5px, 5.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M4.7 8V2C5.23 1.374 5.993 1.374 6.704 2 7.461 2.774 8.121 2.706 8.839 1.983V4.276C8.121 4.994 7.541 4.914 6.846 4.276 6.095 3.548 5.776 3.753 5.3 4.258V8Z" fill="hsl(318 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1664,7 +1664,7 @@
 </g>
 </g>
 <g transform="translate(320, 275)">
-<g style="transform:translate(5px, 9.5px)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M4.7 8V2C5.23 1.374 5.993 1.374 6.704 2 7.461 2.774 8.121 2.706 8.839 1.983V4.276C8.121 4.994 7.541 4.914 6.846 4.276 6.095 3.548 5.776 3.753 5.3 4.258V8Z" fill="hsl(320 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1673,7 +1673,7 @@
 </g>
 </g>
 <g transform="translate(340, 25)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M3 8V4H7V8Z" fill="hsl(320 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1682,7 +1682,7 @@
 </g>
 </g>
 <g transform="translate(340, 50)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M3 8V4H7V8Z" fill="hsl(322 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1691,7 +1691,7 @@
 </g>
 </g>
 <g transform="translate(340, 75)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M3 8V4H7V8Z" fill="hsl(324 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1727,7 +1727,7 @@
 </g>
 </g>
 <g transform="translate(340, 175)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M3 8V4H7V8Z" fill="hsl(332 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1736,7 +1736,7 @@
 </g>
 </g>
 <g transform="translate(340, 200)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M3 8V4H7V8Z" fill="hsl(334 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1745,7 +1745,7 @@
 </g>
 </g>
 <g transform="translate(340, 225)">
-<g style="transform:translate(5px, 6.5px)">
+<g style="transform:translate(5px, 6.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M3 8V4H7V8Z" fill="hsl(336 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1754,7 +1754,7 @@
 </g>
 </g>
 <g transform="translate(340, 250)">
-<g style="transform:translate(5px, 5.5px)">
+<g style="transform:translate(5px, 5.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M3 8V4H7V8Z" fill="hsl(338 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1763,7 +1763,7 @@
 </g>
 </g>
 <g transform="translate(340, 275)">
-<g style="transform:translate(5px, 9.5px)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M3 8V4H7V8Z" fill="hsl(340 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1772,7 +1772,7 @@
 </g>
 </g>
 <g transform="translate(360, 25)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(340 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1781,7 +1781,7 @@
 </g>
 </g>
 <g transform="translate(360, 50)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(342 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1790,7 +1790,7 @@
 </g>
 </g>
 <g transform="translate(360, 75)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(344 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1826,7 +1826,7 @@
 </g>
 </g>
 <g transform="translate(360, 175)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(352 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1835,7 +1835,7 @@
 </g>
 </g>
 <g transform="translate(360, 200)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(354 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1844,7 +1844,7 @@
 </g>
 </g>
 <g transform="translate(360, 225)">
-<g style="transform:translate(5px, 6.5px)">
+<g style="transform:translate(5px, 6.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(356 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1853,7 +1853,7 @@
 </g>
 </g>
 <g transform="translate(360, 250)">
-<g style="transform:translate(5px, 5.5px)">
+<g style="transform:translate(5px, 5.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(358 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1862,7 +1862,7 @@
 </g>
 </g>
 <g transform="translate(360, 275)">
-<g style="transform:translate(5px, 9.5px)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(360 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1871,7 +1871,7 @@
 </g>
 </g>
 <g transform="translate(380, 25)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(360 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1880,7 +1880,7 @@
 </g>
 </g>
 <g transform="translate(380, 50)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(362 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1889,7 +1889,7 @@
 </g>
 </g>
 <g transform="translate(380, 75)">
-<g style="transform:translate(5px, 2px)">
+<g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(364 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1925,7 +1925,7 @@
 </g>
 </g>
 <g transform="translate(380, 175)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(372 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1934,7 +1934,7 @@
 </g>
 </g>
 <g transform="translate(380, 200)">
-<g style="transform:translate(11.7px, 0.2px)rotate(20deg)">
+<g style="transform:translate(11.7px, 0.2px) rotate(20deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(374 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1943,7 +1943,7 @@
 </g>
 </g>
 <g transform="translate(380, 225)">
-<g style="transform:translate(5px, 6.5px)">
+<g style="transform:translate(5px, 6.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(376 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1952,7 +1952,7 @@
 </g>
 </g>
 <g transform="translate(380, 250)">
-<g style="transform:translate(5px, 5.5px)">
+<g style="transform:translate(5px, 5.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(378 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
@@ -1961,7 +1961,7 @@
 </g>
 </g>
 <g transform="translate(380, 275)">
-<g style="transform:translate(5px, 9.5px)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(380 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>

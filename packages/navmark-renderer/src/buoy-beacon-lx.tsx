@@ -66,6 +66,7 @@ export function BuoyBeaconLxComponent(tags: Tags): CompositeSvg & Dimensions {
         isColourPattern(topmarkColourPattern)
           ? topmarkColourPattern
           : undefined,
+        structure.transform.rotate,
       )
     : undefined;
 
@@ -84,7 +85,8 @@ export function BuoyBeaconLxComponent(tags: Tags): CompositeSvg & Dimensions {
 
   // the topmark might need to be rotated and translated so
   // that it sits exactly on top of the structure.
-  const topmarkTransform = STRUCTURES[structureShape][2];
+  const { translateX, translateY, rotate } = STRUCTURES[structureShape][2];
+  const topmarkTransform = `translate(${translateX}px, ${translateY}px) rotate(${rotate}deg)`;
 
   const svg = (
     <>

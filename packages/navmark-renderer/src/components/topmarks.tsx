@@ -64,13 +64,18 @@ export function createTopmark(
   shape: TopmarkShape,
   colours: string[],
   colourPattern: ColourPattern | undefined,
+  rotation: number,
 ): CompositeSvg {
   const path = TOPMARK_SHAPES[shape];
 
   const mast = <rect x="4.5" y="7" width="1" height="3" fill="#999" />;
 
   if (colourPattern) {
-    const { patternId, pattern } = createPattern(colours, colourPattern);
+    const { patternId, pattern } = createPattern(
+      colours,
+      colourPattern,
+      rotation,
+    );
     const svg = path.map((p) => (
       <path
         d={p}

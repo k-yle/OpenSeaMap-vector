@@ -29,7 +29,7 @@ describe(createTopmark, () => {
     for (const [x, shape] of shapes.entries()) {
       for (const [y, pattern] of patterns.entries()) {
         const colours = TEST_COLOURS.slice(0, count);
-        const result = createTopmark(shape, colours, pattern);
+        const result = createTopmark(shape, colours, pattern, 0);
         Object.assign(defs, result.defs);
         out.push(
           <g transform={`translate(${(x + 1) * 10}, ${(y + 1) * 10})`}>

@@ -35,3 +35,9 @@ export interface Dimensions {
   width: number;
   height: number;
 }
+
+export interface Transform {
+  translateX: number;
+  translateY: number;
+  rotate: number;
+}
