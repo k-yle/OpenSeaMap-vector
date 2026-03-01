@@ -8,6 +8,7 @@ import java.util.Set;
 
 public class Seamarks implements Profile {
   private Set<String> NON_SEAMARK_FEATURE_KEYS = Set.of(
+    "aeroway",
     "amenity",
     "barrier",
     "canoe",
