@@ -28,6 +28,7 @@ public class Seamarks implements Profile {
     "fixme",
     "access",
     "direction",
+    "distance",
     "vhf",
     "fee",
     "charge",

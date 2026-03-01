@@ -445,33 +445,48 @@
       "type": "symbol",
       "source": "seamarks",
       "source-layer": "seamarks",
-      "filter": ["any", ["==", "seamark:type", "distance_mark"]],
+      "filter": [
+        "any",
+        ["==", "seamark:type", "distance_mark"],
+        ["==", "waterway", "milestone"]
+      ],
       "layout": {
         "icon-allow-overlap": true,
         "icon-ignore-placement": true,
         "text-optional": true,
         "text-allow-overlap": false,
         "text-field": [
-          "concat",
-          ["get", "seamark:distance_mark:distance"],
+          "case",
+          ["has", "distance"],
+          ["concat", ["get", "distance"], "km"],
           [
-            "match",
-            ["get", "seamark:distance_mark:units"],
-            "metres",
-            "m",
-            "feet",
-            "ft",
-            "kilometres",
-            "km",
-            "hectometres",
-            "hm",
-            "statute_miles",
-            "mi",
-            "nautical_miles",
-            "nm",
-            "m"
+            "concat",
+            [
+              "case",
+              ["has", "seamark:distance_mark:distance"],
+              ["get", "seamark:distance_mark:distance"],
+              "?"
+            ],
+            [
+              "match",
+              ["get", "seamark:distance_mark:units"],
+              "metres",
+              "m",
+              "feet",
+              "ft",
+              "kilometres",
+              "km",
+              "hectometres",
+              "hm",
+              "statute_miles",
+              "mi",
+              "nautical_miles",
+              "nm",
+              "m"
+            ]
           ]
         ],
+
         "text-size": 10,
         "text-radial-offset": 0.5,
         "text-anchor": "top"
