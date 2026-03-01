@@ -8,5 +8,8 @@ export default defineConfig({
     cors: true,
     port: 1673,
   },
+  esbuild: {
+    target: 'es2022',
+  },
   base: '/OpenSeaMap-vector',
 });

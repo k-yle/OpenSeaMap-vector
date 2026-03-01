@@ -1,5 +1,8 @@
 import type { Dimensions } from './types.def.js';
 
+// @ts-expect-error --  polyfill for safari
+Symbol.dispose ||= Symbol('dispose');
+
 export async function svgToCanvas(svg: string, { width, height }: Dimensions) {
   // svg -> blob
   const blob = new Blob([svg], { type: 'image/svg+xml' });
