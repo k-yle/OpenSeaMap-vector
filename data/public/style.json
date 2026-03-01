@@ -349,22 +349,31 @@
       "type": "symbol",
       "source": "seamarks",
       "source-layer": "seamarks",
-      "filter": ["any", ["==", "seamark:type", "harbour"]],
+      "filter": [
+        "any",
+        ["==", "seamark:type", "harbour"],
+        ["==", "leisure", "marina"]
+      ],
       "layout": {
         "icon-allow-overlap": true,
         "icon-ignore-placement": true,
         "text-optional": true,
         "text-allow-overlap": false,
         "icon-image": [
-          "match",
-          ["get", "seamark:harbour:category"],
-          "fishing",
-          "harbour_fishing",
-          "marina",
+          "case",
+          ["has", "leisure"],
           "harbour_marina",
-          "marina_no_facilities",
-          "harbour_marina",
-          "harbour_generic"
+          [
+            "match",
+            ["get", "seamark:harbour:category"],
+            "fishing",
+            "harbour_fishing",
+            "marina",
+            "harbour_marina",
+            "marina_no_facilities",
+            "harbour_marina",
+            "harbour_generic"
+          ]
         ],
         "icon-size": 0.2,
         "icon-keep-upright": false,
@@ -643,35 +652,86 @@
       "minzoom": 11
     },
     {
+      "id": "waterway=access_point[symbol]",
+      "type": "symbol",
+      "source": "seamarks",
+      "source-layer": "seamarks",
+      "filter": [
+        "any",
+        ["==", "waterway", "access_point"],
+        ["==", "canoe", "egress"],
+        ["==", "canoe", "put_in"],
+        ["==", "canoe", "put_in;egress"]
+      ],
+      "layout": {
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "text-optional": true,
+        "text-allow-overlap": false,
+        "icon-image": "small_craft_facility/kayak",
+        "icon-size": 0.3,
+        "icon-keep-upright": false,
+        "text-field": [
+          "coalesce",
+          ["get", "seamark:name"],
+          ["get", "ref"],
+          ["get", "name"],
+          ["get", "operator"]
+        ],
+        "text-size": 10,
+        "text-max-width": 20,
+        "text-justify": "left",
+        "text-anchor": "left",
+        "text-radial-offset": 1.1
+      },
+      "minzoom": 11
+    },
+    {
       "id": "small_craft_facility[symbol]",
       "type": "symbol",
       "source": "seamarks",
       "source-layer": "seamarks",
-      "filter": ["any", ["==", "seamark:type", "small_craft_facility"]],
+      "filter": [
+        "any",
+        ["==", "seamark:type", "small_craft_facility"],
+        ["==", "leisure", "slipway"],
+        ["==", "waterway", "fuel"],
+        ["==", "waterway", "sanitary_dump_station"]
+      ],
       "layout": {
         "icon-allow-overlap": true,
         "icon-ignore-placement": true,
         "text-optional": true,
         "text-allow-overlap": false,
         "icon-image": [
-          "match",
-          ["get", "seamark:small_craft_facility:category"],
-          "boat_hoist",
-          "small_craft_facility/boat_hoist",
-          "boatyard",
-          "small_craft_facility/boatyard",
-          "fuel_station",
-          "small_craft_facility/fuel_station",
-          "pump-out",
-          "small_craft_facility/pump_out",
-          "slipway",
+          "case",
+          ["==", ["get", "leisure"], "slipway"],
           "small_craft_facility/slipway",
-          "visitor_berth",
-          "small_craft_facility/visitor_berth",
-          "visitor_mooring",
-          "small_craft_facility/visitor_mooring",
-          ""
+          ["==", ["get", "waterway"], "fuel"],
+          "small_craft_facility/fuel_station",
+          ["==", ["get", "waterway"], "sanitary_dump_station"],
+          "small_craft_facility/pump_out",
+          [
+            "match",
+            ["get", "seamark:small_craft_facility:category"],
+            "boat_hoist",
+            "small_craft_facility/boat_hoist",
+            "boatyard",
+            "small_craft_facility/boatyard",
+            "fuel_station",
+            "small_craft_facility/fuel_station",
+            "pump-out",
+            "small_craft_facility/pump_out",
+            "slipway",
+            "small_craft_facility/slipway",
+            "visitor_berth",
+            "small_craft_facility/visitor_berth",
+            "visitor_mooring",
+            "small_craft_facility/visitor_mooring",
+            ""
+          ]
         ],
+
         "icon-size": 0.3,
         "icon-keep-upright": false,
         "text-field": [
@@ -738,7 +798,7 @@
         "text-max-width": 20,
         "text-justify": "left",
         "text-anchor": "left",
-        "text-radial-offset": 0.9
+        "text-radial-offset": 1
       },
       "minzoom": 11
     },

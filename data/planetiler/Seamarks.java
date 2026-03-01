@@ -7,7 +7,19 @@ import java.util.Set;
 
 
 public class Seamarks implements Profile {
-  private Set<String> OTHER_TAGS_SET = Set.of(
+  private Set<String> NON_SEAMARK_FEATURE_KEYS = Set.of(
+    "amenity",
+    "barrier",
+    "canoe",
+    "industrial",
+    "leisure",
+    "lock",
+    "man_made",
+    "portage",
+    "waterway"
+  );
+
+  private Set<String> NON_SEAMARK_ATTRIBUTES = Set.of(
     "name",
     "ref",
     "description",
@@ -78,7 +90,8 @@ public class Seamarks implements Profile {
     return (
       key.startsWith("seamark:")
       || key.startsWith("name:")
-      || OTHER_TAGS_SET.contains(key)
+      || NON_SEAMARK_ATTRIBUTES.contains(key)
+      || NON_SEAMARK_FEATURE_KEYS.contains(key)
     );
   }
 
@@ -105,6 +118,7 @@ public class Seamarks implements Profile {
 
   private int getMinZoom(SourceFeature feature) {
     var seamarkType = (String) feature.getTag("seamark:type");
+    if (seamarkType == null) seamarkType = "";
 
     // TSS's get shown at the lowest zoom level
     if (seamarkType.startsWith("separation_")) return 2;
@@ -113,11 +127,31 @@ public class Seamarks implements Profile {
     return 8;
   }
 
+  private boolean shouldIncludeFeature(SourceFeature feature) {
+    // keep everything with a seamark:type tag
+    if (feature.hasTag("seamark:type")) return true;
+
+    // keep everything with a primary key that we support
+    // osmium filters by value already, so we can just
+    // fitler by key.
+    for (var entry : feature.tags().entrySet()) {
+      if (NON_SEAMARK_FEATURE_KEYS.contains(entry.getKey())) {
+        return true;
+      }
+    }
+
+    // do not include everything else
+    return false;
+    // TODO: is this even possible? what could have slipped
+    //       thru osmium filter-tags?
+  }
+
   @Override
   public void processFeature(SourceFeature feature, FeatureCollector collector) {
-    if (!feature.hasTag("seamark:type")) return;
+    if (!shouldIncludeFeature(feature)) return;
 
     var seamarkType = (String) feature.getTag("seamark:type");
+    if (seamarkType == null) seamarkType = "";
 
     // figure out the geometry first
     FeatureCollector.Feature collected = null;
