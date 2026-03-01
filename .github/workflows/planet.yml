@@ -74,7 +74,7 @@ jobs:
       - name: Merge into a single pbf file
         run: |
           docker run --rm -v $(pwd):/data \
-            iboates/osmium:latest \
+            iboates/osmium:1.19.0 \
             merge \
             /data/data/tmp_pbf/africa.pbf \
             /data/data/tmp_pbf/antarctica.pbf \
