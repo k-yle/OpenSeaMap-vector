@@ -248,6 +248,81 @@
       "paint": { "text-color": "#a30075" }
     },
     {
+      "id": "berth[extra text]",
+      "type": "symbol",
+      "source": "seamarks",
+      "source-layer": "seamarks",
+      "filter": ["any", ["==", "seamark:type", "berth"]],
+      "layout": {
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "text-optional": true,
+        "text-allow-overlap": false,
+        "icon-size": 0.3,
+        "icon-keep-upright": false,
+        "text-field": [
+          "format",
+          ["coalesce", ["get", "name"], ["get", "operator"]],
+          {},
+          ["case", ["any", ["has", "name"], ["has", "operator"]], "\n", ""],
+          {},
+          [
+            "case",
+            [
+              "any",
+              ["has", "maxstay"],
+              ["has", "maxdraft"],
+              ["has", "maxlength"],
+              ["has", "maxwidth"],
+              ["has", "maxweight"]
+            ],
+            [
+              "concat",
+              "max",
+              [
+                "case",
+                ["has", "maxstay"],
+                ["concat", ". ", ["get", "maxstay"]],
+                ""
+              ],
+              [
+                "case",
+                ["has", "maxweight"],
+                ["concat", ". ", ["get", "maxweight"], "t"],
+                ""
+              ],
+              [
+                "case",
+                ["has", "maxdraft"],
+                ["concat", ". ", ["get", "maxdraft"], "m draft"],
+                ""
+              ],
+              [
+                "case",
+                ["has", "maxlength"],
+                ["concat", ". ", ["get", "maxlength"], "m LOA"],
+                ""
+              ],
+              [
+                "case",
+                ["has", "maxwidth"],
+                ["concat", ". ", ["get", "maxwidth"], "m wide"],
+                ""
+              ]
+            ],
+            ""
+          ],
+          {}
+        ],
+        "text-size": 10,
+        "text-max-width": 20,
+        "text-justify": "center",
+        "text-anchor": "top",
+        "text-radial-offset": 1
+      },
+      "minzoom": 15
+    },
+    {
       "id": "anchorage[line]",
       "type": "line",
       "source": "seamarks",
@@ -486,7 +561,6 @@
             ]
           ]
         ],
-
         "text-size": 10,
         "text-radial-offset": 0.5,
         "text-anchor": "top"
@@ -731,7 +805,6 @@
       },
       "minzoom": 11
     },
-
     {
       "id": "waterway=access_point[symbol]",
       "type": "symbol",
@@ -821,7 +894,6 @@
             ""
           ]
         ],
-
         "icon-size": 0.3,
         "icon-keep-upright": false,
         "text-field": [
@@ -919,6 +991,7 @@
         ["==", "seamark:type", "light_float"],
         ["==", "seamark:type", "light_vessel"],
         ["==", "seamark:type", "virtual_aton"],
+        ["==", "seamark:type", "mooring"],
         ["==", "seamark:type", "platform"],
         ["==", "seamark:type", "topmark"]
       ],
@@ -1212,7 +1285,6 @@
       },
       "minzoom": 11
     },
-
     {
       "id": "cable_overhead[symbol]",
       "type": "symbol",
