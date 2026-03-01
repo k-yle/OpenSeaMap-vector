@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { Map, Popup, addProtocol } from 'maplibre-gl';
+import * as Diplomat from '@americana/diplomat';
 import { PMTiles, Protocol } from 'pmtiles';
 import { PIXEL_RATIO } from '@openseamap-vector/navmark-renderer';
 import { PMTILES_URL, getStyle } from './style.js';
@@ -13,6 +14,8 @@ addProtocol('pmtiles', protocol.tile);
 
 const pmTiles = new PMTiles(PMTILES_URL);
 protocol.add(pmTiles);
+
+/* eslint-disable @eslint-react/web-api/no-leaked-event-listener -- this is the root component, it never gets unmounted */
 
 export const App: React.FC = () => {
   const domRef = useRef<HTMLDivElement>(null);
@@ -45,6 +48,25 @@ export const App: React.FC = () => {
           pixelRatio: PIXEL_RATIO,
         });
         mapRef.current = map;
+
+        function localise() {
+          Diplomat.localizeStyle(map, undefined, { glossLocalNames: true });
+        }
+
+        window.addEventListener('hashchange', (event) => {
+          const oldLanguage = Diplomat.getLanguageFromURL(
+            new URL(event.oldURL),
+          );
+          const newLanguage = Diplomat.getLanguageFromURL(
+            new URL(event.newURL),
+          );
+
+          if (oldLanguage !== newLanguage) localise();
+        });
+
+        window.addEventListener('languagechange', localise);
+
+        map.once('styledata', localise);
 
         map.on('styleimagemissing', onStyleImageMissing);
 

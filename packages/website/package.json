@@ -9,6 +9,7 @@
     "test": "echo ok"
   },
   "dependencies": {
+    "@americana/diplomat": "^0.4.0",
     "@openseamap-vector/navmark-renderer": "file:../navmark-renderer",
     "get-region": "^1.0.0",
     "light-characteristics": "^1.0.0",
