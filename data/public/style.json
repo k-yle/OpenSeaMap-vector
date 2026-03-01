@@ -1200,7 +1200,7 @@
       "minzoom": 11
     },
     {
-      "id": "cable_overhead",
+      "id": "cable_overhead[line]",
       "type": "line",
       "source": "seamarks",
       "source-layer": "seamarks",
@@ -1210,6 +1210,35 @@
         "line-width": 2,
         "line-dasharray": [3, 3, 1, 3]
       },
+      "minzoom": 11
+    },
+
+    {
+      "id": "cable_overhead[symbol]",
+      "type": "symbol",
+      "source": "seamarks",
+      "source-layer": "seamarks",
+      "layout": {
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "text-optional": true,
+        "text-allow-overlap": false,
+        "text-field": [
+          "case",
+          ["has", "seamark:cable_overhead:clearance_height_safe"],
+          [
+            "concat",
+            ["get", "seamark:cable_overhead:clearance_height_safe"],
+            "m"
+          ],
+          ""
+        ],
+        "symbol-placement": "line-center",
+        "text-size": 10,
+        "text-justify": "center",
+        "text-anchor": "bottom"
+      },
+      "filter": ["any", ["==", "seamark:type", "cable_overhead"]],
       "minzoom": 11
     },
     {
