@@ -1,6 +1,6 @@
 import type { Dimensions } from './types.def.js';
 
-export async function svgToRaster(svg: string, { width, height }: Dimensions) {
+export async function svgToCanvas(svg: string, { width, height }: Dimensions) {
   // svg -> blob
   const blob = new Blob([svg], { type: 'image/svg+xml' });
   const blobUrl = URL.createObjectURL(blob);
@@ -20,12 +20,24 @@ export async function svgToRaster(svg: string, { width, height }: Dimensions) {
   const ctx = canvas.getContext('2d')!;
   ctx.drawImage(img, 0, 0);
 
-  // canvas -> png
-  const pixelBuffer = ctx.getImageData(0, 0, canvas.width, canvas.height);
-
-  // cleanup
   URL.revokeObjectURL(blobUrl);
-  canvas.remove();
+  img.remove();
+
+  return Object.assign(ctx, {
+    [Symbol.dispose]: () => canvas.remove(),
+  });
+}
+
+export async function svgToRaster(svg: string, dimensions: Dimensions) {
+  using ctx = await svgToCanvas(svg, dimensions);
+
+  // canvas -> png
+  const pixelBuffer = ctx.getImageData(
+    0,
+    0,
+    ctx.canvas.width,
+    ctx.canvas.height,
+  );
 
   return pixelBuffer;
 }

@@ -12,6 +12,7 @@ import { createTopmark, isTopmarkShape } from './components/topmarks.js';
 import { svgToRaster } from './util/svgToRaster.js';
 import { isColourPattern } from './components/colour-pattern.js';
 import { svgToString } from './util/svgToString.js';
+import { PIXEL_RATIO } from './util/pixelRatio.js';
 
 export function BuoyBeaconLxComponent(tags: Tags): CompositeSvg & Dimensions {
   let type = tags['seamark:type'];
@@ -107,7 +108,7 @@ export async function renderBuoyBeaconLx(
 ): Promise<ImageData | undefined> {
   const { svg, defs, width, height } = BuoyBeaconLxComponent(tags);
 
-  const scale = 2 * (window.devicePixelRatio || 2);
+  const scale = 2 * PIXEL_RATIO;
 
   const final = (
     <svg

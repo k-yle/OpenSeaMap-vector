@@ -10,7 +10,9 @@
     "test": "vitest"
   },
   "devDependencies": {
+    "@types/node": "^25.3.1",
     "@types/react": "^19.2.13",
+    "@vitest/browser-webdriverio": "^4.0.18",
     "eslint": "^9.39.2",
     "eslint-config-kyle": "^28.0.1",
     "jsx-to-xml": "^0.0.0",

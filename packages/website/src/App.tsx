@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { Map, Popup, addProtocol } from 'maplibre-gl';
 import { PMTiles, Protocol } from 'pmtiles';
+import { PIXEL_RATIO } from '@openseamap-vector/navmark-renderer';
 import { PMTILES_URL, getStyle } from './style.js';
 import { onStyleImageMissing } from './onStyleImageMissing.js';
 import { MapPopup } from './components/MapPopup.js';
@@ -41,6 +42,7 @@ export const App: React.FC = () => {
           center: { lat, lon },
           style,
           hash: 'map',
+          pixelRatio: PIXEL_RATIO,
         });
         mapRef.current = map;
 

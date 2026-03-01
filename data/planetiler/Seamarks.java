@@ -10,6 +10,9 @@ public class Seamarks implements Profile {
   private Set<String> OTHER_TAGS_SET = Set.of(
     "name",
     "ref",
+    "description",
+    "direction",
+    "vhf",
     "fee",
     "charge",
     "toll",
@@ -19,10 +22,12 @@ public class Seamarks implements Profile {
     "operator:wikidata",
     "wikidata",
     "wikipedia",
+    "maxspeed",
     "maxstay",
     "maxdraft",
     "maxlength",
     "maxwidth",
+    "maxheight",
     "maxweight"
   );
 

@@ -2,7 +2,9 @@
   "extends": "eslint-config-kyle/tsconfig.base.json",
   "compilerOptions": {
     "rootDir": "src",
+    "types": ["node"], // just for e2e tests
     "lib": ["esnext", "dom"],
+    "jsx": "react-jsx",
     "jsxImportSource": "jsx-to-xml"
   },
   "include": ["src"]

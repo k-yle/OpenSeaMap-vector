@@ -25,6 +25,12 @@ The following unit test snapshots show the complexity involved, just for a small
 ![](./packages/navmark-renderer/src/__tests__/topmark4.svg)
 ![](./packages/navmark-renderer/src/__tests__/structure4.svg)
 
+For [notices](https://osm.wiki/Seamarks/CEVNI_Notice_Marks) (traffic signs), the SVG templates define the coordinates where the text should be placed, and this text is drawn using [an HTML `<canvas />`](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API):
+
+| Templates                                                                           | Rendered with text                                                                                                          |
+| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| <img height="400" src="./packages/navmark-renderer/src/__tests__/notice-all.svg" /> | <img src="./packages/navmark-renderer/src/__tests__/__screenshots__/notice.cy.tsx/notice-2-chrome-darwin.png" height="50"/> |
+
 # Usage
 
 Besides from [viewing the map](https://kyle.kiwi/OpenSeaMap-vector), various parts of this project could be re-used in your own app.

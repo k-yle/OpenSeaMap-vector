@@ -33,6 +33,7 @@ export async function getStyle() {
   const ALL_ATTRIBUTES = [
     'addition',
     'category',
+    'channel',
     'colour_pattern',
     'colour',
     'condition',
@@ -59,7 +60,17 @@ export async function getStyle() {
 
   const ARRAY_KEYS = new Set(['notice', 'light']);
 
-  const ALL_KEYS = ['seamark:type', 'seamark:name'];
+  const ALL_KEYS = [
+    'seamark:type',
+    'seamark:name',
+
+    // required for notice marks:
+    'maxspeed',
+    'maxheight',
+    'maxwidth',
+    'maxdraft',
+    'vhf',
+  ];
 
   const dynamicLayer = (styleJson as StyleSpecification).layers
     .filter((l) => l.type === 'symbol')

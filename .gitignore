@@ -6,6 +6,7 @@ wget-log
 # JS
 node_modules
 *.tsbuildinfo
+.vitest*
 
 # generated data
 *.jar
