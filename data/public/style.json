@@ -700,6 +700,39 @@
       "minzoom": 11
     },
     {
+      "id": "turning_basin[symbol]",
+      "type": "symbol",
+      "source": "seamarks",
+      "source-layer": "seamarks",
+      "filter": [
+        "any",
+        ["==", "seamark:type", "turning_basin"],
+        ["==", "waterway", "turning_point"]
+      ],
+      "layout": {
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "text-optional": true,
+        "text-allow-overlap": false,
+        "icon-image": "turning_basin",
+        "icon-size": 0.3,
+        "icon-keep-upright": false,
+        "text-field": [
+          "coalesce",
+          ["get", "seamark:name"],
+          ["get", "ref"],
+          ["get", "name"]
+        ],
+        "text-size": 10,
+        "text-max-width": 20,
+        "text-justify": "left",
+        "text-anchor": "left",
+        "text-radial-offset": 1.1
+      },
+      "minzoom": 11
+    },
+
+    {
       "id": "waterway=access_point[symbol]",
       "type": "symbol",
       "source": "seamarks",
