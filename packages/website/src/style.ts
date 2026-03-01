@@ -48,6 +48,7 @@ export async function getStyle() {
     'group',
     'height',
     'impact',
+    'information',
     'period',
     'product',
     'range',

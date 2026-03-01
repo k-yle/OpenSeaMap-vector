@@ -8,7 +8,7 @@ import type { Tags } from './util/types.def.js';
 interface NoticeDefintion {
   svg: React.ReactNode;
   text?: {
-    getValue(tags: Tags): string | undefined;
+    getValue(tags: Tags, slot: string): string | undefined;
     placement: TextConfig;
   };
 }
@@ -153,7 +153,12 @@ export const NOTICES = {
     // A5a
     svg: [WHITE_WITH_RED_BORDER, RED_LINE],
     text: {
-      getValue: () => '?', // there's no documented way to tag the value 😆
+      getValue(tags, slot) {
+        return (
+          tags[`seamark:notice:${slot}information`]?.match(/^[\d.]+$/)?.[0] ||
+          '?'
+        );
+      },
       placement: { x: 4, y: 4, width: 52, height: 52, color: '#000' },
     },
   },
@@ -366,10 +371,14 @@ export const NOTICES = {
     // B6
     svg: WHITE_WITH_RED_BORDER,
     text: {
-      getValue(tags) {
+      getValue(tags, slot) {
         // only match values that use knots, and return only
         // the number, not the unit.
-        return tags['maxspeed']?.match(/^([\d.]+) ?(kt|kn)$/)?.[1] || '?';
+        return (
+          tags['maxspeed']?.match(/^([\d.]+) ?(kt|kn)$/)?.[1] ||
+          tags[`seamark:notice:${slot}information`]?.match(/^[\d.]+$/)?.[0] ||
+          '?'
+        );
       },
       placement: { x: 4, y: 4, width: 52, height: 52, color: '#000' },
     },
@@ -410,8 +419,18 @@ export const NOTICES = {
     // B11
     svg: [WHITE_WITH_RED_BORDER, <path d={VHF} />],
     text: {
-      getValue(tags) {
-        return tags['seamark:notice:channel'] || tags['vhf'] || '?';
+      getValue(tags, slot) {
+        return (
+          tags[`seamark:notice:${slot}channel`] ||
+          tags['vhf'] ||
+          tags[`seamark:notice:${slot}information`]?.match(
+            /^(Kanal |UKW )?([\d.]+)$/,
+          )?.[2] ||
+          tags['seamark:notice:information']?.match(
+            /^(Kanal |UKW )?([\d.]+)$/,
+          )?.[2] ||
+          '?'
+        );
       },
       placement: { x: 4, y: 26, width: 52, height: 26, color: '#000' },
     },
@@ -425,18 +444,26 @@ export const NOTICES = {
     // C1
     svg: [WHITE_WITH_RED_BORDER, <path d="M45 51H15L30 35Z" />],
     text: {
-      getValue(tags) {
-        return tags['maxdraft'] || '?';
+      getValue(tags, slot) {
+        return (
+          tags['maxdraft'] ||
+          tags[`seamark:notice:${slot}information`]?.match(/^[\d.]+$/)?.[0] ||
+          '?'
+        );
       },
-      placement: { x: 4, y: 26, width: 52, height: 26, color: '#000' },
+      placement: { x: 4, y: 8, width: 52, height: 26, color: '#000' },
     },
   },
   limited_headroom: {
     // C2
     svg: [WHITE_WITH_RED_BORDER, <path d="M45 9H15L30 25Z" />],
     text: {
-      getValue(tags) {
-        return tags['maxheight'] || '?';
+      getValue(tags, slot) {
+        return (
+          tags['maxheight'] ||
+          tags[`seamark:notice:${slot}information`]?.match(/^[\d.]+$/)?.[0] ||
+          '?'
+        );
       },
       placement: { x: 4, y: 24, width: 52, height: 26, color: '#000' },
     },
@@ -445,8 +472,12 @@ export const NOTICES = {
     // C3
     svg: [WHITE_WITH_RED_BORDER, <path d="M9 45V15L25 30ZM51 45V15L35 30Z" />],
     text: {
-      getValue(tags) {
-        return tags['maxwidth'] || '?';
+      getValue(tags, slot) {
+        return (
+          tags['maxwidth'] ||
+          tags[`seamark:notice:${slot}information`]?.match(/^[\d.]+$/)?.[0] ||
+          '?'
+        );
       },
       placement: { x: 4, y: 26, width: 52, height: 26, color: '#000' },
     },
@@ -459,24 +490,26 @@ export const NOTICES = {
     // C5a
     svg: [WHITE_WITH_RED_BORDER, <path d="M29 51H9V9H29L48 31Z" />],
     text: {
-      getValue(tags) {
+      getValue(tags, slot) {
         return (
-          tags['seamark:notice:information']?.match(/^[\d.]+$/)?.[0] || '?'
+          tags[`seamark:notice:${slot}information`]?.match(/^[\d.]+$/)?.[0] ||
+          '?'
         );
       },
-      placement: { x: 4, y: 26, width: 52, height: 26, color: '#fff' },
+      placement: { x: 0, y: 10, width: 40, height: 40, color: '#fff' },
     },
   },
   channel_distance_right: {
     // C5b
     svg: [WHITE_WITH_RED_BORDER, <path d="M31 51H51V9H31L12 31Z" />],
     text: {
-      getValue(tags) {
+      getValue(tags, slot) {
         return (
-          tags['seamark:notice:information']?.match(/^[\d.]+$/)?.[0] || '?'
+          tags[`seamark:notice:${slot}information`]?.match(/^[\d.]+$/)?.[0] ||
+          '?'
         );
       },
-      placement: { x: 4, y: 26, width: 52, height: 26, color: '#fff' },
+      placement: { x: 20, y: 10, width: 40, height: 40, color: '#fff' },
     },
   },
 
@@ -612,13 +645,28 @@ export const NOTICES = {
     // E5.1
     svg: [BLUE_BG],
     text: {
-      getValue: () => '?', // there's no documented way to tag the value 😆
+      getValue(tags, slot) {
+        return (
+          tags[`seamark:notice:${slot}information`]?.match(/^[\d.]+$/)?.[0] ||
+          '?'
+        );
+      },
       placement: { x: 4, y: 4, width: 52, height: 52, color: '#fff' },
     },
   },
   berthing_lateral_limits: {
     // E5.2
     svg: [BLUE_BG],
+    text: {
+      getValue(tags, slot) {
+        return (
+          tags[`seamark:notice:${slot}information`]?.match(
+            /^[\d.]+-[\d.]+$/,
+          )?.[0] || '?'
+        );
+      },
+      placement: { x: 4, y: 4, width: 52, height: 52, color: '#fff' },
+    },
   },
   berth_rafting_limit: {
     // E5.3
@@ -944,8 +992,18 @@ export const NOTICES = {
     // E23
     svg: [BLUE_BG, <path fill="#fff" d={VHF} />],
     text: {
-      getValue(tags) {
-        return tags['seamark:notice:channel'] || tags['vhf'] || '?';
+      getValue(tags, slot) {
+        return (
+          tags[`seamark:notice:${slot}channel`] ||
+          tags['vhf'] ||
+          tags[`seamark:notice:${slot}information`]?.match(
+            /^(Kanal |UKW )?([\d.]+)$/,
+          )?.[2] ||
+          tags['seamark:notice:information']?.match(
+            /^(Kanal |UKW )?([\d.]+)$/,
+          )?.[2] ||
+          '?'
+        );
       },
       placement: { x: 4, y: 26, width: 52, height: 26, color: '#fff' },
     },
@@ -1007,10 +1065,17 @@ export function renderNoticeSvg(
     .filter(
       ([key]) => key.startsWith('seamark:notice:') && key.endsWith(':category'),
     )
-    .map(([, value]) => value);
+    .map(([key, id]) => ({
+      // slot is either an empty string or '1:', '2:', ...
+      slot: key.split('notice:')[1]!.split('category')[0]!,
+      id,
+    }));
 
   const symbols = values.map(
-    (id): NoticeDefintion => (isNotice(id) ? NOTICES[id] : NOTICES.unknown),
+    ({ slot, id }): { slot: string; notice: NoticeDefintion } => ({
+      slot,
+      notice: isNotice(id) ? NOTICES[id] : NOTICES.unknown,
+    }),
   );
   if (!symbols.length) return undefined;
 
@@ -1030,14 +1095,16 @@ export function renderNoticeSvg(
     >
       {symbols.length === 1 ? (
         // one symbol is easy
-        symbols[0]!.svg
+        symbols[0]!.notice.svg
       ) : (
         // multiple symbols need to be spaced out
         <>
           {symbols.map((symbol, index) => {
             const { x, y } = getGridPosition(index, symbolsPerRow);
             return (
-              <g style={`transform:translate(${x}px, ${y}px)`}>{symbol.svg}</g>
+              <g style={`transform:translate(${x}px, ${y}px)`}>
+                {symbol.notice.svg}
+              </g>
             );
           })}
         </>
@@ -1064,13 +1131,13 @@ export async function renderNoticeMark(
 
   // draw text
   for (const [index, symbol] of symbols.entries()) {
-    if (!symbol.text) continue;
+    if (!symbol.notice.text) continue;
 
     const origin = getGridPosition(index, symbolsPerRow);
-    const value = symbol.text.getValue(tags);
+    const value = symbol.notice.text.getValue(tags, symbol.slot);
     if (!value) continue; // missing the OSM key which defines the value
 
-    const placement = symbol.text.placement;
+    const placement = symbol.notice.text.placement;
 
     renderTextWithinBbox(ctx, value, {
       ...placement,

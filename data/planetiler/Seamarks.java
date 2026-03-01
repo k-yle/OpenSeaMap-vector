@@ -11,6 +11,8 @@ public class Seamarks implements Profile {
     "name",
     "ref",
     "description",
+    "note",
+    "fixme",
     "direction",
     "vhf",
     "fee",
