@@ -725,11 +725,18 @@
       "source": "seamarks",
       "source-layer": "seamarks",
       "filter": [
-        "any",
-        ["==", "seamark:type", "small_craft_facility"],
-        ["==", "leisure", "slipway"],
-        ["==", "waterway", "fuel"],
-        ["==", "waterway", "sanitary_dump_station"]
+        "all",
+        [
+          "any",
+          ["==", "seamark:type", "small_craft_facility"],
+          ["==", "amenity", "boat_storage"],
+          ["==", "leisure", "slipway"],
+          ["==", "waterway", "fuel"],
+          ["==", "waterway", "sanitary_dump_station"]
+        ],
+        ["!=", "access", "private"],
+        ["!=", "access", "permit"],
+        ["!=", "access", "no"]
       ],
       "layout": {
         "icon-allow-overlap": true,
@@ -738,6 +745,8 @@
         "text-allow-overlap": false,
         "icon-image": [
           "case",
+          ["==", ["get", "amenity"], "boat_storage"],
+          "small_craft_facility/boat_storage",
           ["==", ["get", "leisure"], "slipway"],
           "small_craft_facility/slipway",
           ["==", ["get", "waterway"], "fuel"],
