@@ -90,7 +90,7 @@ export function BuoyBeaconLxComponent(tags: Tags): CompositeSvg & Dimensions {
       .map((c) => COLOUR_OVERRIDES[c] || c) || [];
   const light =
     lightColour?.length || tags['seamark:light:1:colour']
-      ? createLightDroplet(lightColour.join(';'))
+      ? createLightDroplet(lightColour.length === 1 ? lightColour[0]! : '#f0f')
       : undefined;
 
   const fogSignal = tags['seamark:fog_signal:category']
