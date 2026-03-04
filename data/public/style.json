@@ -276,7 +276,12 @@
         "icon-keep-upright": false,
         "text-field": [
           "format",
-          ["coalesce", ["get", "name"], ["get", "operator"]],
+          [
+            "coalesce",
+            ["get", "seamark:name"],
+            ["get", "name"],
+            ["get", "operator"]
+          ],
           {},
           ["case", ["any", ["has", "name"], ["has", "operator"]], "\n", ""],
           {},
