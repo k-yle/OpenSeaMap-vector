@@ -19,6 +19,9 @@ export const MapPopup: React.FC<{
   const id = bigintToOsmId(feature.id!);
 
   const usDodRef = feature.properties['seamark:light:reference'];
+  const mmsi = Object.entries(feature.properties).find(([key]) =>
+    key.endsWith(':mmsi'),
+  )?.[1];
   const { wikidata, wikipedia } = feature.properties;
   return (
     <>
@@ -42,6 +45,18 @@ export const MapPopup: React.FC<{
             rel="noopener"
           >
             List of Lights
+          </a>
+        </>
+      )}
+      {mmsi && (
+        <>
+          {' | '}
+          <a
+            href={`https://vesselfinder.com/vessels/details/${mmsi}`}
+            target="_blank"
+            rel="noopener"
+          >
+            MMSI
           </a>
         </>
       )}
