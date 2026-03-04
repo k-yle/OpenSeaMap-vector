@@ -182,18 +182,32 @@
         "symbol-placement": "point",
         "icon-anchor": "center",
         "text-field": [
-          "coalesce",
-          ["get", "seamark:name"],
-          ["get", "ref"],
-          ["get", "name"]
+          "concat",
+          [
+            "coalesce",
+            ["get", "seamark:name"],
+            ["get", "ref"],
+            ["get", "name"]
+          ],
+          [
+            "case",
+            ["has", "wreck:date_sunk"],
+            ["concat", " (", ["get", "wreck:date_sunk"], ")"],
+            ""
+          ]
         ],
+
         "text-size": 10,
         "text-justify": "center",
         "text-anchor": "top",
         "text-radial-offset": 0.7
       },
       "minzoom": 11,
-      "filter": ["any", ["==", "seamark:type", "wreck"]]
+      "filter": [
+        "any",
+        ["==", "seamark:type", "wreck"],
+        ["==", "historic", "wreck"]
+      ]
     },
     {
       "id": "minor_berth[symbol]",
