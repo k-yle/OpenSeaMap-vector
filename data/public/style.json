@@ -1028,6 +1028,13 @@
         "text-field": [
           "format",
           [
+            "case",
+            ["==", ["get", "seamark:type"], "virtual_aton"],
+            "V-AIS\n",
+            ""
+          ],
+          {},
+          [
             "coalesce",
             ["get", "seamark:name"],
             ["get", "ref"],

@@ -60,6 +60,22 @@ export type TopmarkShape = keyof typeof TOPMARK_SHAPES;
 export const isTopmarkShape = (str: string | undefined): str is TopmarkShape =>
   !!str && str in TOPMARK_SHAPES;
 
+/** Virtial AtoNs are rendered with the topmark of the feature they represent */
+export const VAtoN_TOPMARKS: Record<string, TopmarkShape> = {
+  north_cardinal: '2 cones up',
+  south_cardinal: '2 cones down',
+  east_cardinal: '2 cones base together',
+  west_cardinal: '2 cones point together',
+  port_lateral: 'board',
+  starboard_lateral: 'cone, point up',
+  preferred_starboard: 'board',
+  preferred_port: 'cone, point up',
+  isolated_danger: '2 spheres',
+  safe_water: 'sphere',
+  special_purpose: 'x-shape',
+  wreck: 'cross',
+};
+
 export function createTopmark(
   shape: TopmarkShape,
   colours: string[],

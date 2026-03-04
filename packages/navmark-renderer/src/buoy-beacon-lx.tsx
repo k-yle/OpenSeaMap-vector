@@ -8,7 +8,11 @@ import {
 import { createLightDroplet } from './components/lights.js';
 import { createFogSignal } from './components/fog-signal.js';
 import { COLOUR_OVERRIDES } from './components/colours.js';
-import { createTopmark, isTopmarkShape } from './components/topmarks.js';
+import {
+  VAtoN_TOPMARKS,
+  createTopmark,
+  isTopmarkShape,
+} from './components/topmarks.js';
 import { svgToRaster } from './util/svgToRaster.js';
 import { isColourPattern } from './components/colour-pattern.js';
 import { svgToString } from './util/svgToString.js';
@@ -44,6 +48,7 @@ export function BuoyBeaconLxComponent(tags: Tags): CompositeSvg & Dimensions {
     structureColourPattern = 'saltire';
     structureColour.push('#555');
   }
+  if (type === 'virtual_aton') structureShape = type;
 
   const structure = createStructure(
     structureShape,
@@ -53,7 +58,12 @@ export function BuoyBeaconLxComponent(tags: Tags): CompositeSvg & Dimensions {
       : undefined,
   );
   const topmarkShape =
-    tags['seamark:topmark:shape'] || tags['seamark:daymark:shape'];
+    tags['seamark:topmark:shape'] ||
+    tags['seamark:daymark:shape'] ||
+    (type === 'virtual_aton'
+      ? VAtoN_TOPMARKS[tags['seamark:virtual_aton:category']!]
+      : undefined);
+
   const topmarkColourPattern =
     tags['seamark:topmark:colour_pattern'] ||
     tags['seamark:daymark:colour_pattern'];

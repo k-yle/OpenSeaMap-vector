@@ -1,4 +1,5 @@
 import type { CompositeSvg, Transform } from '../util/types.def.js';
+import { circle } from './circle.js';
 import { type ColourPattern, createPattern } from './colour-pattern.js';
 
 /** map OSM tags which are synonyms of more common structures */
@@ -64,11 +65,12 @@ export const STRUCTURES = {
   ],
 
   // other
-  none: [
-    'M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z',
+  virtual_aton: [
+    circle(5, 9, 1) + circle(5, 9, 3),
     0.3,
-    { translateX: 5, translateY: 9.5, rotate: 0 },
+    { translateX: 5, translateY: 7, rotate: 0 },
   ],
+  none: [circle(5, 9, 1), 0.3, { translateX: 5, translateY: 9.5, rotate: 0 }],
 } satisfies Record<
   string,
   [path: string, strokeWidth: number, transform: Transform]

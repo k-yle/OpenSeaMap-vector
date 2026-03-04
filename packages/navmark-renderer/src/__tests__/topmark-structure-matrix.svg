@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 325">
 <defs />
-<rect x="0" y="0" width="420" height="300" fill="#fff" />
+<rect x="0" y="0" width="420" height="325" fill="#fff" />
 <text x="30" y="6.25" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">cone, point up</text>
 <text x="50" y="18.75" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">cone, point down</text>
 <text x="70" y="6.25" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">sphere</text>
@@ -32,7 +32,8 @@
 <text x="10" y="212.5" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">spar</text>
 <text x="10" y="237.5" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">barrel</text>
 <text x="10" y="262.5" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">super-buoy</text>
-<text x="10" y="287.5" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">none</text>
+<text x="10" y="287.5" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">virtual_aton</text>
+<text x="10" y="312.5" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">none</text>
 <g transform="translate(20, 25)">
 <g style="transform:translate(5px, 2px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
@@ -124,12 +125,21 @@
 </g>
 </g>
 <g transform="translate(20, 275)">
-<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<g style="transform:translate(5px, 7px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(20 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 <g style="transform:translate(5px, 11px)">
-<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(20 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0M 5 9 m 3, 0 a 3,3 0 1,1 -6,0 a 3,3 0 1,1 6,0" fill="hsl(20 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(20, 300)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(22 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0" fill="hsl(22 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 </g>
 <g transform="translate(40, 25)">
@@ -223,12 +233,21 @@
 </g>
 </g>
 <g transform="translate(40, 275)">
-<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<g style="transform:translate(5px, 7px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(40 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 <g style="transform:translate(5px, 11px)">
-<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(40 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0M 5 9 m 3, 0 a 3,3 0 1,1 -6,0 a 3,3 0 1,1 6,0" fill="hsl(40 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(40, 300)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(42 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0" fill="hsl(42 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 </g>
 <g transform="translate(60, 25)">
@@ -322,12 +341,21 @@
 </g>
 </g>
 <g transform="translate(60, 275)">
-<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<g style="transform:translate(5px, 7px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(60 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 <g style="transform:translate(5px, 11px)">
-<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(60 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0M 5 9 m 3, 0 a 3,3 0 1,1 -6,0 a 3,3 0 1,1 6,0" fill="hsl(60 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(60, 300)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(62 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0" fill="hsl(62 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 </g>
 <g transform="translate(80, 25)">
@@ -431,13 +459,23 @@
 </g>
 </g>
 <g transform="translate(80, 275)">
-<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<g style="transform:translate(5px, 7px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M 5 2.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(80 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(80 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 <g style="transform:translate(5px, 11px)">
-<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(80 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0M 5 9 m 3, 0 a 3,3 0 1,1 -6,0 a 3,3 0 1,1 6,0" fill="hsl(80 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(80, 300)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M 5 2.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(82 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 6.5 m 2, 0 a 2,2 0 1,1 -4,0 a 2,2 0 1,1 4,0" fill="hsl(82 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0" fill="hsl(82 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 </g>
 <g transform="translate(100, 25)">
@@ -531,12 +569,21 @@
 </g>
 </g>
 <g transform="translate(100, 275)">
-<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<g style="transform:translate(5px, 7px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.5 5A2.5.5 0 007.5 5 2.5.5 0 002.5 5L2.5 7.92A2.5.5 0 007.5 7.92L7.5 5" fill="hsl(100 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 <g style="transform:translate(5px, 11px)">
-<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(100 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0M 5 9 m 3, 0 a 3,3 0 1,1 -6,0 a 3,3 0 1,1 6,0" fill="hsl(100 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(100, 300)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.5 5A2.5.5 0 007.5 5 2.5.5 0 002.5 5L2.5 7.92A2.5.5 0 007.5 7.92L7.5 5" fill="hsl(102 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0" fill="hsl(102 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 </g>
 <g transform="translate(120, 25)">
@@ -630,12 +677,21 @@
 </g>
 </g>
 <g transform="translate(120, 275)">
-<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<g style="transform:translate(5px, 7px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M3 8V3H7V8Z" fill="hsl(120 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 <g style="transform:translate(5px, 11px)">
-<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(120 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0M 5 9 m 3, 0 a 3,3 0 1,1 -6,0 a 3,3 0 1,1 6,0" fill="hsl(120 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(120, 300)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M3 8V3H7V8Z" fill="hsl(122 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0" fill="hsl(122 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 </g>
 <g transform="translate(140, 25)">
@@ -729,12 +785,21 @@
 </g>
 </g>
 <g transform="translate(140, 275)">
-<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<g style="transform:translate(5px, 7px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.8787 4.5858 3.5858 3.8787 5 5.2929 6.4142 3.8787 7.1213 4.5858 5.7071 6 7.1213 7.4142 6.4142 8.1213 5 6.7071 3.5858 8.1213 2.8787 7.4142 4.2929 6Z" fill="hsl(140 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 <g style="transform:translate(5px, 11px)">
-<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(140 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0M 5 9 m 3, 0 a 3,3 0 1,1 -6,0 a 3,3 0 1,1 6,0" fill="hsl(140 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(140, 300)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.8787 4.5858 3.5858 3.8787 5 5.2929 6.4142 3.8787 7.1213 4.5858 5.7071 6 7.1213 7.4142 6.4142 8.1213 5 6.7071 3.5858 8.1213 2.8787 7.4142 4.2929 6Z" fill="hsl(142 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0" fill="hsl(142 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 </g>
 <g transform="translate(160, 25)">
@@ -828,12 +893,21 @@
 </g>
 </g>
 <g transform="translate(160, 275)">
-<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<g style="transform:translate(5px, 7px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.5 6.5V5.5H4.5V3.5H5.5V5.5H7.5V6.5H5.5V8.5H4.5V6.5Z" fill="hsl(160 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 <g style="transform:translate(5px, 11px)">
-<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(160 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0M 5 9 m 3, 0 a 3,3 0 1,1 -6,0 a 3,3 0 1,1 6,0" fill="hsl(160 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(160, 300)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.5 6.5V5.5H4.5V3.5H5.5V5.5H7.5V6.5H5.5V8.5H4.5V6.5Z" fill="hsl(162 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0" fill="hsl(162 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 </g>
 <g transform="translate(180, 25)">
@@ -937,13 +1011,23 @@
 </g>
 </g>
 <g transform="translate(180, 275)">
-<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<g style="transform:translate(5px, 7px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 7.5 0 2.5 0Z" fill="hsl(180 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(180 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 <g style="transform:translate(5px, 11px)">
-<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(180 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0M 5 9 m 3, 0 a 3,3 0 1,1 -6,0 a 3,3 0 1,1 6,0" fill="hsl(180 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(180, 300)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 7.5 0 2.5 0Z" fill="hsl(182 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(182 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0" fill="hsl(182 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 </g>
 <g transform="translate(200, 25)">
@@ -1047,13 +1131,23 @@
 </g>
 </g>
 <g transform="translate(200, 275)">
-<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<g style="transform:translate(5px, 7px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 0 7.5 4 2.5 4Z" fill="hsl(200 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(200 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 <g style="transform:translate(5px, 11px)">
-<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(200 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0M 5 9 m 3, 0 a 3,3 0 1,1 -6,0 a 3,3 0 1,1 6,0" fill="hsl(200 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(200, 300)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 0 7.5 4 2.5 4Z" fill="hsl(202 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(202 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0" fill="hsl(202 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 </g>
 <g transform="translate(220, 25)">
@@ -1147,12 +1241,21 @@
 </g>
 </g>
 <g transform="translate(220, 275)">
-<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<g style="transform:translate(5px, 7px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M2.1716 6 5 3.1716 7.8284 6 5 8.8284Z" fill="hsl(220 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 <g style="transform:translate(5px, 11px)">
-<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(220 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0M 5 9 m 3, 0 a 3,3 0 1,1 -6,0 a 3,3 0 1,1 6,0" fill="hsl(220 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(220, 300)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M2.1716 6 5 3.1716 7.8284 6 5 8.8284Z" fill="hsl(222 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0" fill="hsl(222 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 </g>
 <g transform="translate(240, 25)">
@@ -1256,13 +1359,23 @@
 </g>
 </g>
 <g transform="translate(240, 275)">
-<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<g style="transform:translate(5px, 7px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 0 7.5 4 2.5 4Z" fill="hsl(240 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(240 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 <g style="transform:translate(5px, 11px)">
-<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(240 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0M 5 9 m 3, 0 a 3,3 0 1,1 -6,0 a 3,3 0 1,1 6,0" fill="hsl(240 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(240, 300)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 0 7.5 4 2.5 4Z" fill="hsl(242 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(242 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0" fill="hsl(242 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 </g>
 <g transform="translate(260, 25)">
@@ -1366,13 +1479,23 @@
 </g>
 </g>
 <g transform="translate(260, 275)">
-<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<g style="transform:translate(5px, 7px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 7.5 0 2.5 0Z" fill="hsl(260 80% 40%)" stroke="#000" stroke-width="0.3" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(260 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 <g style="transform:translate(5px, 11px)">
-<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(260 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0M 5 9 m 3, 0 a 3,3 0 1,1 -6,0 a 3,3 0 1,1 6,0" fill="hsl(260 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(260, 300)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 7.5 0 2.5 0Z" fill="hsl(262 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(262 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0" fill="hsl(262 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 </g>
 <g transform="translate(280, 25)">
@@ -1466,12 +1589,21 @@
 </g>
 </g>
 <g transform="translate(280, 275)">
-<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<g style="transform:translate(5px, 7px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M4.5 8 4.5 5 3.6 5.9 2.96 5.34 5 3.3 7.04 5.34 6.4 5.9 5.53 5 5.5 8Z" fill="hsl(280 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 <g style="transform:translate(5px, 11px)">
-<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(280 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0M 5 9 m 3, 0 a 3,3 0 1,1 -6,0 a 3,3 0 1,1 6,0" fill="hsl(280 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(280, 300)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M4.5 8 4.5 5 3.6 5.9 2.96 5.34 5 3.3 7.04 5.34 6.4 5.9 5.53 5 5.5 8Z" fill="hsl(282 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0" fill="hsl(282 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 </g>
 <g transform="translate(300, 25)">
@@ -1565,12 +1697,21 @@
 </g>
 </g>
 <g transform="translate(300, 275)">
-<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<g style="transform:translate(5px, 7px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 5.5 3.6 4.1 3 4.7 4.5 6.2 4.5 8 5.5 8 5.5 6.2 7 4.7 6.4 4.1Z" fill="hsl(300 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 <g style="transform:translate(5px, 11px)">
-<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(300 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0M 5 9 m 3, 0 a 3,3 0 1,1 -6,0 a 3,3 0 1,1 6,0" fill="hsl(300 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(300, 300)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 5.5 3.6 4.1 3 4.7 4.5 6.2 4.5 8 5.5 8 5.5 6.2 7 4.7 6.4 4.1Z" fill="hsl(302 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0" fill="hsl(302 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 </g>
 <g transform="translate(320, 25)">
@@ -1664,12 +1805,21 @@
 </g>
 </g>
 <g transform="translate(320, 275)">
-<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<g style="transform:translate(5px, 7px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M4.7 8V2C5.23 1.374 5.993 1.374 6.704 2 7.461 2.774 8.121 2.706 8.839 1.983V4.276C8.121 4.994 7.541 4.914 6.846 4.276 6.095 3.548 5.776 3.753 5.3 4.258V8Z" fill="hsl(320 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 <g style="transform:translate(5px, 11px)">
-<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(320 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0M 5 9 m 3, 0 a 3,3 0 1,1 -6,0 a 3,3 0 1,1 6,0" fill="hsl(320 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(320, 300)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M4.7 8V2C5.23 1.374 5.993 1.374 6.704 2 7.461 2.774 8.121 2.706 8.839 1.983V4.276C8.121 4.994 7.541 4.914 6.846 4.276 6.095 3.548 5.776 3.753 5.3 4.258V8Z" fill="hsl(322 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0" fill="hsl(322 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 </g>
 <g transform="translate(340, 25)">
@@ -1763,12 +1913,21 @@
 </g>
 </g>
 <g transform="translate(340, 275)">
-<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<g style="transform:translate(5px, 7px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M3 8V4H7V8Z" fill="hsl(340 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 <g style="transform:translate(5px, 11px)">
-<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(340 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0M 5 9 m 3, 0 a 3,3 0 1,1 -6,0 a 3,3 0 1,1 6,0" fill="hsl(340 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(340, 300)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M3 8V4H7V8Z" fill="hsl(342 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0" fill="hsl(342 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 </g>
 <g transform="translate(360, 25)">
@@ -1862,12 +2021,21 @@
 </g>
 </g>
 <g transform="translate(360, 275)">
-<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<g style="transform:translate(5px, 7px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 4 2.5 8 7.5 8Z" fill="hsl(360 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 <g style="transform:translate(5px, 11px)">
-<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(360 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0M 5 9 m 3, 0 a 3,3 0 1,1 -6,0 a 3,3 0 1,1 6,0" fill="hsl(360 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(360, 300)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 4 2.5 8 7.5 8Z" fill="hsl(362 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0" fill="hsl(362 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 </g>
 <g transform="translate(380, 25)">
@@ -1961,12 +2129,21 @@
 </g>
 </g>
 <g transform="translate(380, 275)">
-<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<g style="transform:translate(5px, 7px) rotate(0deg)">
 <rect x="4.5" y="7" width="1" height="3" fill="#999" />
 <path d="M5 8 2.5 4 7.5 4Z" fill="hsl(380 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 <g style="transform:translate(5px, 11px)">
-<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(380 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0M 5 9 m 3, 0 a 3,3 0 1,1 -6,0 a 3,3 0 1,1 6,0" fill="hsl(380 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(380, 300)">
+<g style="transform:translate(5px, 9.5px) rotate(0deg)">
+<rect x="4.5" y="7" width="1" height="3" fill="#999" />
+<path d="M5 8 2.5 4 7.5 4Z" fill="hsl(382 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+<g style="transform:translate(5px, 11px)">
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0" fill="hsl(382 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 </g>
 <g transform="translate(400, 25)">
@@ -2021,7 +2198,12 @@
 </g>
 <g transform="translate(400, 275)">
 <g style="transform:translate(5px, 11px)">
-<path d="M6 9C6 10 4 10 4 9 4 8 6 8 6 9Z" fill="hsl(400 80% 40%)" stroke="#000" stroke-width="0.3" />
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0M 5 9 m 3, 0 a 3,3 0 1,1 -6,0 a 3,3 0 1,1 6,0" fill="hsl(400 80% 40%)" stroke="#000" stroke-width="0.3" />
+</g>
+</g>
+<g transform="translate(400, 300)">
+<g style="transform:translate(5px, 11px)">
+<path d="M 5 9 m 1, 0 a 1,1 0 1,1 -2,0 a 1,1 0 1,1 2,0" fill="hsl(402 80% 40%)" stroke="#000" stroke-width="0.3" />
 </g>
 </g>
 </svg>
