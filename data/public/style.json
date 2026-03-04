@@ -702,22 +702,31 @@
         "text-field": [
           "format",
           [
-            "concat",
-            "SS(",
+            "case",
             [
-              "match",
-              ["get", "seamark:signal_station_traffic:category"],
-              "bridge_passage",
-              "Bridge",
-              "port_entry_departure",
-              "Port",
-              [
-                "coalesce",
-                ["get", "seamark:signal_station_traffic:category"],
-                ["get", "seamark:signal_station_warning:category"]
-              ]
+              "any",
+              ["has", "seamark:signal_station_traffic:category"],
+              ["has", "seamark:signal_station_warning:category"]
             ],
-            ")"
+            [
+              "concat",
+              "SS(",
+              [
+                "match",
+                ["get", "seamark:signal_station_traffic:category"],
+                "bridge_passage",
+                "Bridge",
+                "port_entry_departure",
+                "Port",
+                [
+                  "coalesce",
+                  ["get", "seamark:signal_station_traffic:category"],
+                  ["get", "seamark:signal_station_warning:category"]
+                ]
+              ],
+              ")"
+            ],
+            ""
           ],
           {},
           "\n",
