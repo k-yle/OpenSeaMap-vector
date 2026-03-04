@@ -65,8 +65,14 @@ export const STRUCTURES = {
   ],
 
   // other
+  // (these are not valid tag values for :category)
   virtual_aton: [
     circle(5, 9, 1) + circle(5, 9, 3),
+    0.3,
+    { translateX: 5, translateY: 7, rotate: 0 },
+  ],
+  light_major: [
+    `M4.13 7.83H1.43L3.59 9.45 2.81 12.03 5 10.5 7.19 12.03 6.41 9.45 8.57 7.83H5.87L5 5.25Z${circle(5, 9, 1)}`,
     0.3,
     { translateX: 5, translateY: 7, rotate: 0 },
   ],

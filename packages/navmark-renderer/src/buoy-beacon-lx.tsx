@@ -35,10 +35,14 @@ export function BuoyBeaconLxComponent(tags: Tags): CompositeSvg & Dimensions {
   // fallback to the most generic shape from each category
   if (!structureShape && type?.startsWith('beacon_')) structureShape = 'pile';
   if (!structureShape && type?.startsWith('buoy_')) structureShape = 'pillar';
+  if (!structureShape && type === 'light_major') structureShape = 'light_major';
   structureShape ||= 'none'; // lastly, fallback to no structure (e.g. lone daymarks or lights)
 
   let structureColourPattern = tags[`seamark:${type}:colour_pattern`];
   const structureColour = tags[`seamark:${type}:colour`]?.split(';') || [];
+  if (structureShape === 'light_major' && !structureColour.length) {
+    structureColour.push('#000');
+  }
 
   if (
     _shape === 'lattice' &&
