@@ -33,7 +33,7 @@
 <text x="10" y="237.5" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">barrel</text>
 <text x="10" y="262.5" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">super-buoy</text>
 <text x="10" y="287.5" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">virtual_aton</text>
-<text x="10" y="312.5" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">light_major</text>
+<text x="10" y="312.5" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">lx</text>
 <text x="10" y="337.5" fill="#000" text-anchor="middle" font-style="bold" font-size="3" font-family="sans-serif">none</text>
 <g transform="translate(20, 25)">
 <g style="transform:translate(5px, 2px) rotate(0deg)">

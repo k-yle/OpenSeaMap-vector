@@ -90,7 +90,7 @@
 <text x="95" y="5" fill="#000" text-anchor="middle" font-style="bold" font-size="1" font-family="sans-serif">barrel</text>
 <text x="105" y="5" fill="#000" text-anchor="middle" font-style="bold" font-size="1" font-family="sans-serif">super-buoy</text>
 <text x="115" y="5" fill="#000" text-anchor="middle" font-style="bold" font-size="1" font-family="sans-serif">virtual_aton</text>
-<text x="125" y="5" fill="#000" text-anchor="middle" font-style="bold" font-size="1" font-family="sans-serif">light_major</text>
+<text x="125" y="5" fill="#000" text-anchor="middle" font-style="bold" font-size="1" font-family="sans-serif">lx</text>
 <text x="135" y="5" fill="#000" text-anchor="middle" font-style="bold" font-size="1" font-family="sans-serif">none</text>
 <text x="5" y="15" fill="#000" text-anchor="middle" font-style="bold" font-size="1" font-family="sans-serif">horizontal</text>
 <text x="5" y="25" fill="#000" text-anchor="middle" font-style="bold" font-size="1" font-family="sans-serif">vertical</text>
