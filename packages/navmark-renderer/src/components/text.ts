@@ -1,3 +1,5 @@
+import { PIXEL_RATIO } from '../util/pixelRatio.js';
+
 export interface TextConfig {
   x: number;
   y: number;
@@ -58,8 +60,12 @@ export function renderTextWithinBbox(
 
   // needs to consider the different in height between the bbox and
   // the actual text height, so that the text is vertically centered
-  const anchorY =
+  let anchorY =
     config.y + (config.height - measured.actualBoundingBoxDescent) / 2;
+
+  // hack for safari, to workaround https://github.com/web-platform-tests/interop/issues/1091
+  // the top-baseline for text is off by a few pixels in safari...
+  if ('GestureEvent' in globalThis) anchorY -= 1.5 * PIXEL_RATIO;
 
   if (DEBUG) {
     const padding = 2;
