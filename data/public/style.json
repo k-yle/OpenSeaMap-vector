@@ -275,16 +275,18 @@
         "icon-size": 0.3,
         "icon-keep-upright": false,
         "text-field": [
-          "format",
+          "concat",
           [
-            "coalesce",
-            ["get", "seamark:name"],
-            ["get", "name"],
-            ["get", "operator"]
+            "case",
+            [
+              "all",
+              ["has", "name"],
+              ["!=", ["get", "name"], ["get", "seamark:name"]],
+              ["!=", ["get", "name"], ["get", "ref"]]
+            ],
+            ["concat", ["get", "name"], "\n"],
+            ""
           ],
-          {},
-          ["case", ["any", ["has", "name"], ["has", "operator"]], "\n", ""],
-          {},
           [
             "case",
             [
@@ -330,8 +332,7 @@
               ]
             ],
             ""
-          ],
-          {}
+          ]
         ],
         "text-size": 10,
         "text-max-width": 20,
@@ -799,7 +800,7 @@
         "text-anchor": "left",
         "text-radial-offset": 1.1
       },
-      "minzoom": 11
+      "minzoom": 15
     },
     {
       "id": "turning_basin[symbol]",
