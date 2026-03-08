@@ -3,6 +3,7 @@ import {
   renderBuoyBeaconLx,
   renderNoticeMark,
 } from '@openseamap-vector/navmark-renderer';
+import { getBurgee } from './external/wikidata.js';
 
 const inflight: { [id: string]: Promise<void> } = {};
 
@@ -14,10 +15,14 @@ export async function onStyleImageMissing(
     try {
       const parsed = Object.fromEntries(new URLSearchParams(event.id.slice(1)));
 
+      const burgeeKey = '_burgee_';
+
       const buffer =
-        parsed['seamark:type'] === 'notice'
-          ? await renderNoticeMark(parsed)
-          : await renderBuoyBeaconLx(parsed);
+        '_burgee_' in parsed
+          ? await getBurgee(parsed[burgeeKey])
+          : parsed['seamark:type'] === 'notice'
+            ? await renderNoticeMark(parsed)
+            : await renderBuoyBeaconLx(parsed);
 
       if (!buffer) return;
 

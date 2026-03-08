@@ -8,6 +8,14 @@ const SPAM =
 
 const original = console.warn;
 console.warn = (...args: unknown[]) => {
-  if (typeof args[0] === 'string' && args[0].includes(SPAM)) return;
+  if (
+    typeof args[0] === 'string' &&
+    args[0].includes(SPAM) &&
+    // these ones are expected to be missing:
+    !/^'Image "&(seamark:type|_burgee_)/.test(args[0])
+    // all others should still show a warning
+  ) {
+    return;
+  }
   original(...args);
 };

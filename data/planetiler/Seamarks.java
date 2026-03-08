@@ -12,11 +12,13 @@ public class Seamarks implements Profile {
     "amenity",
     "barrier",
     "canoe",
+    "club",
     "historic",
     "industrial",
     "leisure",
     "lock",
     "man_made",
+    "sport",
     "portage",
     "waterway"
   );
@@ -49,26 +51,6 @@ public class Seamarks implements Profile {
     "maxwidth",
     "maxheight",
     "maxweight"
-  );
-
-  private Set<String> AREA_TYPES = Set.of(
-    "anchorage",
-    "anchor_berth",
-    "cable_area",
-    "dredged_area",
-    "dumping_ground",
-    "fairway",
-    "harbour",
-    "hulk",
-    "marine_farm",
-    "production_area",
-    "restricted_area",
-    "seaplane_landing_area",
-    "separation_roundabout",
-    "separation_zone",
-    "turning_basin",
-    "obstruction", // can also be a line
-    "sea_area" // can also be a line
   );
 
 
@@ -163,7 +145,7 @@ public class Seamarks implements Profile {
     FeatureCollector.Feature collected = null;
     if (feature.isPoint()) {
       collected = collector.point("seamarks");
-    } else if (feature.canBePolygon() && AREA_TYPES.contains(seamarkType)) {
+    } else if (feature.canBePolygon()) {
       // it's a closed way, and we expect this to be an area.
       collected = collector.polygon("seamarks");
     } else if (feature.canBeLine()) {

@@ -27,6 +27,53 @@
       "type": "raster"
     },
     {
+      "id": "burgee[symbol]",
+      "type": "symbol",
+      "source": "seamarks",
+      "source-layer": "seamarks",
+      "filter": ["any", ["==", "club", "sailing"], ["==", "sport", "sailing"]],
+      "layout": {
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "text-optional": true,
+        "text-allow-overlap": false,
+        "symbol-spacing": 5,
+        "icon-image": "small_craft_facility/yacht_club",
+        "icon-size": 0.3,
+        "icon-rotation-alignment": "map",
+        "icon-keep-upright": false,
+        "text-field": [
+          "coalesce",
+          ["get", "seamark:name"],
+          ["get", "ref"],
+          ["get", "name"]
+        ],
+        "text-size": 10,
+        "text-justify": "center",
+        "text-anchor": "top",
+        "text-radial-offset": 1.4
+      },
+      "minzoom": 11
+    },
+    {
+      "id": "DYNAMIC_burgee[symbol]",
+      "type": "symbol",
+      "source": "seamarks",
+      "source-layer": "seamarks",
+      "filter": ["any", ["==", "club", "sailing"], ["==", "sport", "sailing"]],
+      "layout": {
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "symbol-spacing": 5,
+        "icon-image": ["concat", "&_burgee_=", ["get", "wikidata"]],
+        "icon-size": 0.3,
+        "icon-rotation-alignment": "map",
+        "icon-keep-upright": false,
+        "icon-offset": [100, 0]
+      },
+      "minzoom": 11
+    },
+    {
       "id": "pilot_boarding[symbol]",
       "type": "symbol",
       "source": "seamarks",
