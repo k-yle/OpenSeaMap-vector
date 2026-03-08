@@ -1,6 +1,13 @@
 import { useEffect, useRef } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
-import { Map, Popup, addProtocol } from 'maplibre-gl';
+import {
+  GeolocateControl,
+  Map,
+  Popup,
+  ScaleControl,
+  type Unit,
+  addProtocol,
+} from 'maplibre-gl';
 import * as Diplomat from '@americana/diplomat';
 import { PMTiles, Protocol } from 'pmtiles';
 import { PIXEL_RATIO } from '@openseamap-vector/navmark-renderer';
@@ -48,6 +55,28 @@ export const App: React.FC = () => {
           pixelRatio: PIXEL_RATIO,
         });
         mapRef.current = map;
+
+        map.addControl(
+          new GeolocateControl({
+            positionOptions: {
+              enableHighAccuracy: true,
+            },
+            trackUserLocation: true,
+          }),
+        );
+
+        // clicking the toggle cycles thru all 3 units
+        const scaleOptions: Unit[] = ['nautical', 'metric', 'imperial'];
+        let scaleIndex = 0;
+        const scale = new ScaleControl({
+          maxWidth: 80,
+          unit: scaleOptions[scaleIndex],
+        });
+        map.addControl(scale);
+        scale._container.style.cursor = 'pointer';
+        scale._container.addEventListener('click', () => {
+          scale.setUnit(scaleOptions[++scaleIndex % scaleOptions.length]!);
+        });
 
         function localise() {
           Diplomat.localizeStyle(map, undefined, { glossLocalNames: true });
