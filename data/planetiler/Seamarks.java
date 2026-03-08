@@ -67,7 +67,7 @@ public class Seamarks implements Profile {
     "separation_roundabout",
     "separation_zone",
     "turning_basin",
-    // "obstruction", // can also be a line
+    "obstruction", // can also be a line
     "sea_area" // can also be a line
   );
 

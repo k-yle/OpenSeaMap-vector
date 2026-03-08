@@ -1301,7 +1301,11 @@
       "type": "fill",
       "source": "seamarks",
       "source-layer": "seamarks",
-      "filter": ["any", ["==", "seamark:type", "obstruction"]],
+      "filter": [
+        "all",
+        ["==", "seamark:type", "obstruction"],
+        ["!=", "seamark:obstruction:category", "boom"]
+      ],
       "paint": {
         "fill-color": "#be94f7",
         "fill-opacity": 0.3
