@@ -196,7 +196,6 @@
             ""
           ]
         ],
-
         "text-size": 10,
         "text-justify": "center",
         "text-anchor": "top",
@@ -1454,6 +1453,84 @@
         "circle-stroke-width": 1
       },
       "minzoom": 14
+    },
+    {
+      "id": "linear_barrier[line]",
+      "type": "line",
+      "source": "seamarks",
+      "source-layer": "seamarks",
+      "filter": [
+        "any",
+        [
+          "all",
+          ["==", "seamark:type", "obstruction"],
+          ["==", "seamark:obstruction:category", "boom"]
+        ],
+        ["==", "waterway", "floating_barrier"],
+        ["==", "waterway", "debris_screen"],
+        ["==", "waterway", "check_dam"],
+        ["==", "waterway", "floodgate"],
+        ["==", "waterway", "lock_gate"],
+        ["==", "waterway", "security_lock"],
+        ["==", "waterway", "sluice_gate"],
+        ["==", "waterway", "weir"],
+        ["==", "waterway", "dam"],
+        ["==", "barrier", "floating_boom"],
+        ["==", "barrier", "shark_net"]
+      ],
+      "minzoom": 11
+    },
+
+    {
+      "id": "linear_barrier[text]",
+      "type": "symbol",
+      "source": "seamarks",
+      "source-layer": "seamarks",
+      "layout": {
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "text-optional": true,
+        "text-allow-overlap": false,
+        "text-field": [
+          "case",
+          ["has", "name"],
+          ["get", "name"],
+          ["==", ["get", "barrier"], "shark_net"],
+          "Shark Net",
+          [
+            "any",
+            ["==", ["get", "waterway"], "floating_barrier"],
+            ["==", ["get", "barrier"], "floating_boom"],
+            ["==", ["get", "seamark:obstruction:category"], "boom"]
+          ],
+          "Boom",
+          ["get", "waterway"]
+        ],
+        "symbol-placement": "line-center",
+        "text-size": 10,
+        "text-justify": "center",
+        "text-anchor": "bottom"
+      },
+      "filter": [
+        "any",
+        [
+          "all",
+          ["==", "seamark:type", "obstruction"],
+          ["==", "seamark:obstruction:category", "boom"]
+        ],
+        ["==", "waterway", "floating_barrier"],
+        ["==", "waterway", "debris_screen"],
+        ["==", "waterway", "check_dam"],
+        ["==", "waterway", "floodgate"],
+        ["==", "waterway", "lock_gate"],
+        ["==", "waterway", "security_lock"],
+        ["==", "waterway", "sluice_gate"],
+        ["==", "waterway", "weir"],
+        ["==", "waterway", "dam"],
+        ["==", "barrier", "floating_boom"],
+        ["==", "barrier", "shark_net"]
+      ],
+      "minzoom": 11
     }
   ],
   "id": "r1k713j",
