@@ -13,6 +13,7 @@ public class Seamarks implements Profile {
     "barrier",
     "canoe",
     "club",
+    "emergency",
     "historic",
     "industrial",
     "leisure",

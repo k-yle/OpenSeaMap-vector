@@ -734,6 +734,7 @@
       "source-layer": "seamarks",
       "filter": [
         "any",
+        ["==", "emergency", "water_rescue"],
         ["==", "seamark:type", "rescue_station"],
         ["==", "seamark:type", "coastguard_station"]
       ],
