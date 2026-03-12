@@ -4,23 +4,28 @@ import {
   renderNoticeMark,
 } from '@openseamap-vector/navmark-renderer';
 
+const inflight: { [id: string]: Promise<void> } = {};
+
 export async function onStyleImageMissing(
   this: Map,
   event: MapLibreEvent & { id: string },
 ) {
-  try {
-    const parsed = Object.fromEntries(new URLSearchParams(event.id.slice(1)));
+  inflight[event.id] ||= (async () => {
+    try {
+      const parsed = Object.fromEntries(new URLSearchParams(event.id.slice(1)));
 
-    const buffer =
-      parsed['seamark:type'] === 'notice'
-        ? await renderNoticeMark(parsed)
-        : await renderBuoyBeaconLx(parsed);
+      const buffer =
+        parsed['seamark:type'] === 'notice'
+          ? await renderNoticeMark(parsed)
+          : await renderBuoyBeaconLx(parsed);
 
-    if (!buffer) return;
+      if (!buffer) return;
 
-    if (this.hasImage(event.id)) return; // abort if already loaded
-    this.addImage(event.id, buffer, { pixelRatio: this.getPixelRatio() });
-  } catch (ex) {
-    console.error(ex);
-  }
+      if (this.hasImage(event.id)) return; // abort if already loaded
+      this.addImage(event.id, buffer, { pixelRatio: this.getPixelRatio() });
+    } catch (ex) {
+      console.error(ex);
+    }
+    delete inflight[event.id];
+  })();
 }
