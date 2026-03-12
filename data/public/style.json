@@ -31,7 +31,12 @@
       "type": "symbol",
       "source": "seamarks",
       "source-layer": "seamarks",
-      "filter": ["any", ["==", "club", "sailing"], ["==", "sport", "sailing"]],
+      "filter": [
+        "any",
+        ["==", "club", "sailing"],
+        ["==", "sport", "sailing"],
+        ["==", "scout", "sea"]
+      ],
       "layout": {
         "icon-allow-overlap": true,
         "icon-ignore-placement": true,
@@ -60,12 +65,27 @@
       "type": "symbol",
       "source": "seamarks",
       "source-layer": "seamarks",
-      "filter": ["any", ["==", "club", "sailing"], ["==", "sport", "sailing"]],
+      "filter": [
+        "any",
+        ["==", "club", "sailing"],
+        ["==", "sport", "sailing"],
+        ["==", "scout", "sea"]
+      ],
       "layout": {
         "icon-allow-overlap": true,
         "icon-ignore-placement": true,
         "symbol-spacing": 5,
-        "icon-image": ["concat", "&_burgee_=", ["get", "wikidata"]],
+        "icon-image": [
+          "concat",
+          "&_burgee_=",
+          [
+            "coalesce",
+            ["get", "wikidata"],
+            ["get", "network:wikidata"],
+            ["get", "operator:wikidata"],
+            ["get", "brand:wikidata"]
+          ]
+        ],
         "icon-size": 0.3,
         "icon-rotation-alignment": "map",
         "icon-keep-upright": false,
