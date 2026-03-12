@@ -1575,7 +1575,7 @@
           ["has", "name"],
           ["get", "name"],
           ["==", ["get", "barrier"], "shark_net"],
-          "Shark Net",
+          "🦈 Shark Net 🦈",
           [
             "any",
             ["==", ["get", "waterway"], "floating_barrier"],
