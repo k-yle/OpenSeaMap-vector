@@ -25,7 +25,7 @@ public class Seamarks implements Profile {
     "waterway"
   );
 
-  private Set<String> NON_SEAMARK_ATTRIBUTES = Set.of(
+  private Set<String> ATTRIBUTES = Set.of(
     "name",
     "ref",
     "description",
@@ -55,6 +55,12 @@ public class Seamarks implements Profile {
     "maxweight"
   );
 
+  private Set<String> ATTRIBUTE_PREFIXES = Set.of(
+    "fuel:",
+    "name:",
+    "seamark:"
+  );
+
 
   /**
    * using the de-facto standard approach:
@@ -77,10 +83,13 @@ public class Seamarks implements Profile {
   }
 
   private boolean shouldKeepTag(String key) {
+    for (var prefix : ATTRIBUTE_PREFIXES) {
+      if (key.startsWith(prefix)) {
+        return true;
+      }
+    }
     return (
-      key.startsWith("seamark:")
-      || key.startsWith("name:")
-      || NON_SEAMARK_ATTRIBUTES.contains(key)
+      ATTRIBUTES.contains(key)
       || NON_SEAMARK_FEATURE_KEYS.contains(key)
     );
   }
@@ -101,6 +110,9 @@ public class Seamarks implements Profile {
     }
     if (tags.containsKey("seamark:light:1:colour")) {
       collected.setAttr("_lx", LightCharacteristics.encodeComplexLx(tags));
+    }
+    if ("fuel".equals(tags.get("waterway")) || "fuel_station".equals(tags.get("seamark:small_craft_facility:category"))) {
+      collected.setAttr("_fuel", Fuel.generateFuelLabel(tags));
     }
 
     collected.setId(createFeatureId(feature));
