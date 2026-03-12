@@ -129,7 +129,13 @@
         "icon-anchor": "center"
       },
       "minzoom": 11,
-      "filter": ["any", ["==", "seamark:type", "waterway_gauge"]]
+      "filter": [
+        "any",
+        ["==", "seamark:type", "waterway_gauge"],
+        ["==", "seamark:signal_station_warning:category", "tide_gauge"],
+        ["==", "seamark:signal_station_warning:category", "depth"],
+        ["==", "seamark:signal_station_warning:category", "water_level_gauge"]
+      ]
     },
     {
       "id": "marine_farm[symbol]",
@@ -692,7 +698,13 @@
       "filter": [
         "any",
         ["==", "seamark:type", "signal_station_traffic"],
-        ["==", "seamark:type", "signal_station_warning"]
+        [
+          "all",
+          ["==", "seamark:type", "signal_station_warning"],
+          ["!=", "seamark:signal_station_warning:category", "tide_gauge"],
+          ["!=", "seamark:signal_station_warning:category", "depth"],
+          ["!=", "seamark:signal_station_warning:category", "water_level_gauge"]
+        ]
       ],
       "layout": {
         "icon-allow-overlap": true,
