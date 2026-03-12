@@ -918,12 +918,19 @@
       "source": "seamarks",
       "source-layer": "seamarks",
       "filter": [
-        "any",
-        ["==", "waterway", "access_point"],
-        ["==", "canoe", "egress"],
-        ["==", "canoe", "put_in"],
-        ["==", "canoe", "put_in;egress"]
+        "all",
+        [
+          "any",
+          ["==", "waterway", "access_point"],
+          ["==", "canoe", "egress"],
+          ["==", "canoe", "put_in"],
+          ["==", "canoe", "put_in;egress"]
+        ],
+        ["!=", "access", "private"],
+        ["!=", "access", "permit"],
+        ["!=", "access", "no"]
       ],
+
       "layout": {
         "icon-allow-overlap": true,
         "icon-ignore-placement": true,
