@@ -48,4 +48,26 @@ class LightCharacteristicsTest {
     );
     assertEquals("VQ+LFl.R.5s6m\nBell: .2s4M", LightCharacteristics.encodeComplexLx(tags));
   }
+
+  @Test
+  void complex_sectors_and_fog_signal() {
+    Map<String, Object> tags = Map.ofEntries(
+        //
+        Map.entry("seamark:fog_signal:category", "horn"), //
+        Map.entry("seamark:fog_signal:group", "1"), //
+        Map.entry("seamark:fog_signal:period", "8"), //
+        Map.entry("seamark:light:1:category", "vertical"), //
+        Map.entry("seamark:light:1:character", "F"), //
+        Map.entry("seamark:light:1:colour", "yellow;green;red"), //
+        Map.entry("seamark:light:1:height", "49"), //
+        Map.entry("seamark:light:1:multiple", "4"), //
+        Map.entry("seamark:light:2:category", "air_obstruction"), //
+        Map.entry("seamark:light:2:character", "Q"), //
+        Map.entry("seamark:light:2:colour", "red"), //
+        Map.entry("seamark:light:2:group", "1"), //
+        Map.entry("seamark:light:2:period", "1") //
+    );
+    assertEquals("4F.YGR.49m(vert)\nAeroQ(1)R.1s\nHorn: .8s",
+        LightCharacteristics.encodeComplexLx(tags));
+  }
 }
