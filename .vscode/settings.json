@@ -1,5 +1,9 @@
 {
+  "files.exclude": {
+    "target": true
+  },
   "java.project.sourcePaths": ["data/planetiler"],
-  "java.project.referencedLibraries": ["data/planetiler/*.jar"],
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.import.maven.enabled": true,
   "java.compile.nullAnalysis.mode": "automatic"
 }

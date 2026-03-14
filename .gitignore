@@ -8,8 +8,10 @@ node_modules
 *.tsbuildinfo
 .vitest*
 
+# Java
+target
+
 # generated data
-*.jar
 *.pbf
 *.pmtiles
 data/public/icons*

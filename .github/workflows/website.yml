@@ -17,6 +17,15 @@ jobs:
         with:
           node-version: 25.x
 
+      - name: Install Java
+        uses: actions/setup-java@v4
+        with:
+          java-version: "22"
+          distribution: "temurin"
+          cache: maven
+
+      - run: mvn test
+
       - run: . ./sprite.sh
 
       - run: npm install
