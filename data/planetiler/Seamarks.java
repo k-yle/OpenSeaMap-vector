@@ -137,6 +137,12 @@ public class Seamarks implements Profile {
       return true;
     }
 
+    // for charging_stations, only keep boat-related ones.
+    if (feature.getTag("amenity") != null && feature.getTag("amenity").equals("charging_station")
+        && !feature.hasTag("boat")) {
+      return false;
+    }
+
     // keep everything with a primary key that we support
     // osmium filters by value already, so we can just
     // fitler by key.

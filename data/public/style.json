@@ -961,6 +961,35 @@
       "minzoom": 11
     },
     {
+      "id": "amenity=charging_station[symbol]",
+      "type": "symbol",
+      "source": "seamarks",
+      "source-layer": "seamarks",
+      "filter": ["all", ["==", "amenity", "charging_station"]],
+      "layout": {
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "text-optional": true,
+        "text-allow-overlap": false,
+        "icon-image": "small_craft_facility/ev_charger",
+        "icon-size": 0.3,
+        "icon-keep-upright": false,
+        "text-field": [
+          "coalesce",
+          ["get", "seamark:name"],
+          ["get", "ref"],
+          ["get", "name"],
+          ["get", "operator"]
+        ],
+        "text-size": 10,
+        "text-max-width": 20,
+        "text-justify": "left",
+        "text-anchor": "left",
+        "text-radial-offset": 1.1
+      },
+      "minzoom": 11
+    },
+    {
       "id": "small_craft_facility[symbol]",
       "type": "symbol",
       "source": "seamarks",
