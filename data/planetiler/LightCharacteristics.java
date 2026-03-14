@@ -11,6 +11,11 @@ import java.util.Set;
  * maplibre-gl. So we have to pre-calculate this string, and embed it into the tiles.
  */
 public class LightCharacteristics {
+  /** temporary, until we support i18n */
+  private static String capitalize(String str) {
+    return str.substring(0, 1).toUpperCase() + str.substring(1);
+  }
+
   static Map<String, String> COLOUR_MAP = Map.ofEntries(
       //
       Map.entry("white", "W"), //
@@ -28,42 +33,45 @@ public class LightCharacteristics {
   );
 
   /** the default function, converts OSM tags to a string like `VQ(6)LFl.W.10s3m2M` */
-  public static String encodeLx(Map<String, Object> tags, String index) {
+  private static String encodeLx(Map<String, Object> tags, String index, String type) {
     var str = "";
 
-    var CATLIT = (String) tags.get("seamark:light:" + index + "category");
+    var CATLIT = (String) tags.get("seamark:" + type + ":" + index + "category");
     if (CATLIT == null) {
       CATLIT = "";
     }
-    var MLTYLT = (String) tags.get("seamark:light:" + index + "multiple");
+    var MLTYLT = (String) tags.get("seamark:" + type + ":" + index + "multiple");
     if (MLTYLT == null) {
       MLTYLT = "";
     }
-    var LITCHR = (String) tags.get("seamark:light:" + index + "character");
+    var LITCHR = (String) tags.get("seamark:" + type + ":" + index + "character");
     if (LITCHR == null) {
       LITCHR = "";
     }
-    var SIGGRP = (String) tags.get("seamark:light:" + index + "group");
+    var SIGGRP = (String) tags.get("seamark:" + type + ":" + index + "group");
     if (SIGGRP == null) {
       SIGGRP = "";
     }
-    var COLOUR = (String) tags.get("seamark:light:" + index + "colour");
+    var COLOUR = (String) tags.get("seamark:" + type + ":" + index + "colour");
     if (COLOUR == null) {
       COLOUR = "";
     }
-    var SIGPER = (String) tags.get("seamark:light:" + index + "period");
+    var SIGPER = (String) tags.get("seamark:" + type + ":" + index + "period");
     if (SIGPER == null) {
       SIGPER = "";
     }
-    var HEIGHT = (String) tags.get("seamark:light:" + index + "height");
+    var HEIGHT = (String) tags.get("seamark:" + type + ":" + index + "height");
     if (HEIGHT == null) {
       HEIGHT = "";
     }
-    var VALMXR = (String) tags.get("seamark:light:" + index + "range");
+    var VALMXR = (String) tags.get("seamark:" + type + ":" + index + "range");
     if (VALMXR == null) {
       VALMXR = "";
     }
 
+    if (CATLIT != "" && type == "fog_signal") {
+      str += capitalize(CATLIT) + ": ";
+    }
     if (CATLIT == "directional") {
       str += "Dir";
     }
@@ -103,7 +111,8 @@ public class LightCharacteristics {
     }
 
     // add another dot, unless the previous group was empty
-    if (str != "" && str.charAt(str.length() - 1) != '.') {
+    if (str != "" && str.charAt(str.length() - 1) != '.'
+        && !(str.length() > 2 && str.substring(str.length() - 2) == ": ")) {
       str += ".";
     }
 
@@ -118,7 +127,8 @@ public class LightCharacteristics {
     }
 
     // turns out we didn"t need that separator
-    if (str != "" && str.charAt(str.length() - 1) == '.') {
+    var chars = Set.of('.', ':', ' ');
+    while (str != "" && chars.contains(str.charAt(str.length() - 1))) {
       str = str.substring(0, str.length() - 1);
     }
 
@@ -150,13 +160,23 @@ public class LightCharacteristics {
    */
   public static String encodeComplexLx(Map<String, Object> tags) {
     Set<String> sectors = new HashSet<>();
+
+    // single light
+    if (tags.containsKey("seamark:light:colour")) {
+      sectors.add(encodeLx(tags, "", "light"));
+    }
+
+    // multiple sectored lights
     var i = 1;
     while (tags.containsKey("seamark:light:" + i + ":colour")) {
-      sectors.add(encodeLx(tags, i++ + ":"));
+      sectors.add(encodeLx(tags, i++ + ":", "light"));
     }
+
+    // fog signal
+    if (tags.containsKey("seamark:fog_signal:category")) {
+      sectors.add(encodeLx(tags, "", "fog_signal"));
+    }
+
     return String.join("\n", sectors);
   }
-
-  // TODO: if there's a fog signal, include it on a new line:
-  // https://taginfo.openstreetmap.org/search?q=seamark:fog_signal:
 }
