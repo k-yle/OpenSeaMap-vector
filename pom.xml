@@ -60,7 +60,7 @@
                   src="https://google.github.io/styleguide/eclipse-java-google-style.xml"
                   dest="${project.basedir}/.vscode/java-formatter.xml"
                   verbose="true"
-                  skipExisting="false"
+                  skipExisting="true"
                 />
               </target>
             </configuration>
