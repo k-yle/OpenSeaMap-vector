@@ -496,6 +496,7 @@
       "source-layer": "seamarks",
       "filter": [
         "any",
+        ["==", "leisure", "swimming_area"],
         ["==", "seamark:type", "restricted_area"],
         ["==", "seamark:type", "cable_area"],
         ["==", "seamark:type", "pipeline_area"],
@@ -1298,6 +1299,7 @@
       "source-layer": "seamarks",
       "filter": [
         "any",
+        ["==", "leisure", "swimming_area"],
         ["==", "seamark:type", "restricted_area"],
         ["==", "seamark:type", "cable_area"],
         ["==", "seamark:type", "pipeline_area"],
