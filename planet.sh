@@ -10,6 +10,7 @@ echo "running osmium tags-filter…"
 [ -f ./data/public/seamarks.pbf ] || docker run --rm -v $(pwd):/data \
   iboates/osmium:1.19.0 \
   tags-filter \
+  --progress \
   -e /data/data/osmium-tags-filter.ini \
   /data/data/full.pbf \
   --output=/data/data/public/seamarks.pbf
