@@ -10,6 +10,7 @@ node_modules
 
 # Java
 target
+java-formatter.xml
 
 # generated data
 *.pbf

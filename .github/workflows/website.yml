@@ -24,6 +24,7 @@ jobs:
           distribution: "temurin"
           cache: maven
 
+      - run: mvn -B -ntp validate
       - run: mvn test
 
       - run: . ./sprite.sh
