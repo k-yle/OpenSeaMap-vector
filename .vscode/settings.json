@@ -5,5 +5,10 @@
   "java.project.sourcePaths": ["data/planetiler"],
   "java.configuration.updateBuildConfiguration": "automatic",
   "java.import.maven.enabled": true,
+  "java.format.settings.url": "https://google.github.io/styleguide/eclipse-java-google-style.xml",
+  "java.format.settings.profile": "GoogleStyle",
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
   "java.compile.nullAnalysis.mode": "automatic"
 }
