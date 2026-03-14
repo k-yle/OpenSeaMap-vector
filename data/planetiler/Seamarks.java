@@ -1,5 +1,6 @@
 import com.onthegomap.planetiler.*;
 import com.onthegomap.planetiler.reader.osm.*;
+import jakarta.annotation.Nullable;
 import com.onthegomap.planetiler.config.*;
 import com.onthegomap.planetiler.reader.*;
 import java.nio.file.Path;
@@ -8,57 +9,58 @@ import java.util.Set;
 
 public class Seamarks implements Profile {
   private Set<String> NON_SEAMARK_FEATURE_KEYS = Set.of(
-    "aeroway",
-    "amenity",
-    "barrier",
-    "canoe",
-    "club",
-    "emergency",
-    "historic",
-    "industrial",
-    "leisure",
-    "lock",
-    "man_made",
-    "scout",
-    "sport",
-    "portage",
-    "waterway"
+      //
+      "aeroway", //
+      "amenity", //
+      "barrier", //
+      "canoe", //
+      "club", //
+      "emergency", //
+      "historic", //
+      "industrial", //
+      "leisure", "lock", //
+      "man_made", //
+      "scout", //
+      "sport", //
+      "portage", //
+      "waterway" //
   );
 
   private Set<String> ATTRIBUTES = Set.of(
-    "name",
-    "ref",
-    "description",
-    "note",
-    "fixme",
-    "access",
-    "direction",
-    "distance",
-    "vhf",
-    "fee",
-    "charge",
-    "toll",
-    "vessel",
-    "vessel:mmsi",
-    "operator",
-    "operator:wikidata",
-    "wikidata",
-    "wikipedia",
-    "wreck:type",
-    "wreck:date_sunk",
-    "maxspeed",
-    "maxstay",
-    "maxdraft",
-    "maxlength",
-    "maxwidth",
-    "maxheight",
-    "maxweight"
+      //
+      "name", //
+      "ref", //
+      "description", //
+      "note", //
+      "fixme", //
+      "access", //
+      "direction", //
+      "distance", //
+      "vhf", //
+      "fee", //
+      "charge", //
+      "toll", "vessel", //
+      "vessel:mmsi", //
+      "operator", //
+      "operator:wikidata", //
+      "wikidata", //
+      "wikipedia", //
+      "wreck:type", //
+      "wreck:date_sunk", //
+      "maxspeed", //
+      "maxstay", //
+      "maxdraft", //
+      "maxlength", //
+      "maxwidth", //
+      "maxheight", //
+      "maxweight" //
   );
 
   private Set<String> ATTRIBUTE_PREFIXES = Set.of(
-    "fuel:",
-    "name:",
-    "seamark:"
+      //
+      "fuel:", //
+      "name:", //
+      "seamark:" //
   );
 
 
@@ -88,10 +90,7 @@ public class Seamarks implements Profile {
         return true;
       }
     }
-    return (
-      ATTRIBUTES.contains(key)
-      || NON_SEAMARK_FEATURE_KEYS.contains(key)
-    );
+    return (ATTRIBUTES.contains(key) || NON_SEAMARK_FEATURE_KEYS.contains(key));
   }
 
   /** adds every relevant OSM tag as an attribute */
@@ -111,7 +110,8 @@ public class Seamarks implements Profile {
     if (tags.containsKey("seamark:light:1:colour")) {
       collected.setAttr("_lx", LightCharacteristics.encodeComplexLx(tags));
     }
-    if ("fuel".equals(tags.get("waterway")) || "fuel_station".equals(tags.get("seamark:small_craft_facility:category"))) {
+    if ("fuel".equals(tags.get("waterway"))
+        || "fuel_station".equals(tags.get("seamark:small_craft_facility:category"))) {
       collected.setAttr("_fuel", Fuel.generateFuelLabel(tags));
     }
 
@@ -120,10 +120,14 @@ public class Seamarks implements Profile {
 
   private int getMinZoom(SourceFeature feature) {
     var seamarkType = (String) feature.getTag("seamark:type");
-    if (seamarkType == null) seamarkType = "";
+    if (seamarkType == null) {
+      seamarkType = "";
+    }
 
     // TSS's get shown at the lowest zoom level
-    if (seamarkType.startsWith("separation_")) return 2;
+    if (seamarkType.startsWith("separation_")) {
+      return 2;
+    }
 
     // every else shown from z8 onwards (TBC)
     return 8;
@@ -131,7 +135,9 @@ public class Seamarks implements Profile {
 
   private boolean shouldIncludeFeature(SourceFeature feature) {
     // keep everything with a seamark:type tag
-    if (feature.hasTag("seamark:type")) return true;
+    if (feature.hasTag("seamark:type")) {
+      return true;
+    }
 
     // keep everything with a primary key that we support
     // osmium filters by value already, so we can just
@@ -145,15 +151,14 @@ public class Seamarks implements Profile {
     // do not include everything else
     return false;
     // TODO: is this even possible? what could have slipped
-    //       thru osmium filter-tags?
+    // thru osmium filter-tags?
   }
 
   @Override
   public void processFeature(SourceFeature feature, FeatureCollector collector) {
-    if (!shouldIncludeFeature(feature)) return;
-
-    var seamarkType = (String) feature.getTag("seamark:type");
-    if (seamarkType == null) seamarkType = "";
+    if (!shouldIncludeFeature(feature)) {
+      return;
+    }
 
     // figure out the geometry first
     FeatureCollector.Feature collected = null;
@@ -167,7 +172,9 @@ public class Seamarks implements Profile {
       collected = collector.line("seamarks");
     }
 
-    if (collected == null) return;
+    if (collected == null) {
+      return;
+    }
 
     addAllTags(collected, feature);
     collected.setMinZoom(getMinZoom(feature));
@@ -194,11 +201,8 @@ public class Seamarks implements Profile {
   }
 
   public static void main(String[] args) {
-    Planetiler
-      .create(Arguments.fromArgs(args))
-      .addOsmSource("osm", Path.of("data/public/seamarks.pbf"))
-      .overwriteOutput(Path.of("data/public/seamarks.pmtiles"))
-      .setProfile(new Seamarks())
-      .run();
+    Planetiler.create(Arguments.fromArgs(args))
+        .addOsmSource("osm", Path.of("data/public/seamarks.pbf"))
+        .overwriteOutput(Path.of("data/public/seamarks.pmtiles")).setProfile(new Seamarks()).run();
   }
 }
