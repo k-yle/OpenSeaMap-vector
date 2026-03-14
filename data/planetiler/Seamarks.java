@@ -1,6 +1,5 @@
 import com.onthegomap.planetiler.*;
 import com.onthegomap.planetiler.reader.osm.*;
-import jakarta.annotation.Nullable;
 import com.onthegomap.planetiler.config.*;
 import com.onthegomap.planetiler.reader.*;
 import java.nio.file.Path;
@@ -18,7 +17,8 @@ public class Seamarks implements Profile {
       "emergency", //
       "historic", //
       "industrial", //
-      "leisure", "lock", //
+      "leisure", //
+      "lock", //
       "man_made", //
       "scout", //
       "sport", //
@@ -39,7 +39,8 @@ public class Seamarks implements Profile {
       "vhf", //
       "fee", //
       "charge", //
-      "toll", "vessel", //
+      "toll", //
+      "vessel", //
       "vessel:mmsi", //
       "operator", //
       "operator:wikidata", //

@@ -118,8 +118,9 @@ public class LightCharacteristics {
     }
 
     // turns out we didn"t need that separator
-    if (str != "" && str.charAt(str.length() - 1) == '.')
+    if (str != "" && str.charAt(str.length() - 1) == '.') {
       str = str.substring(0, str.length() - 1);
+    }
 
     if (CATLIT == "vertical") {
       str += "(vert)";
