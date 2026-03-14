@@ -10,8 +10,8 @@ public class Fuel {
   }
 
   /**
-   * converts tags like `fuel:diesel=yes` + `fuel:octane_95=yes`
-   * into a user-friendly string like `"Diesel, 95"`
+   * converts tags like `fuel:diesel=yes` + `fuel:octane_95=yes` into a user-friendly string like
+   * `"Diesel, 95"`
    */
   public static String generateFuelLabel(Map<String, Object> tags) {
     var fuelTypes = new ArrayList<String>();
