@@ -13,14 +13,14 @@ jobs:
     strategy:
       matrix:
         continent:
-          - africa # 7 GB
+          # - africa # 7 GB
           - antarctica # 0 GB
-          - asia # 14 GB
+          # - asia # 14 GB
           - australia-oceania # 1 GB
           - central-america # 1 GB
-          - europe # 31 GB
-          - north-america # 17 GB
-          - south-america # 3 GB
+          # - europe # 31 GB
+          # - north-america # 17 GB
+          # - south-america # 3 GB
 
     steps:
       - name: Free up disk space
@@ -37,6 +37,13 @@ jobs:
       - name: Download the planet file for ${{ matrix.continent }}
         run: curl -Lo ./data/full.pbf "https://download.geofabrik.de/${{ matrix.continent }}-latest.osm.pbf"
 
+      - name: Run osmium fileinfo
+        run: |
+          docker run --rm -v $(pwd):/data \
+            iboates/osmium:1.19.0 \
+            fileinfo \
+            /data/data/full.pbf \
+
       - name: Run osmium filter-tags
         run: . ./planet.sh
 
@@ -44,7 +51,7 @@ jobs:
         run: mv data/public/seamarks.pbf "data/${{ matrix.continent }}.pbf"
 
       - name: Store the slimmed-down planet file as an artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: planet-${{ matrix.continent }}
           path: data/${{ matrix.continent }}.pbf
@@ -76,16 +83,9 @@ jobs:
           docker run --rm -v $(pwd):/data \
             iboates/osmium:1.19.0 \
             merge \
-            /data/data/tmp_pbf/africa.pbf \
-            /data/data/tmp_pbf/antarctica.pbf \
-            /data/data/tmp_pbf/asia.pbf \
-            /data/data/tmp_pbf/australia-oceania.pbf \
-            /data/data/tmp_pbf/central-america.pbf \
-            /data/data/tmp_pbf/europe.pbf \
-            /data/data/tmp_pbf/north-america.pbf \
-            /data/data/tmp_pbf/south-america.pbf \
+            --progress \
+            /data/data/tmp_pbf/*.pbf \
             -o /data/data/public/seamarks.pbf
-        # TODO: don't list every file name here, use a wildcard or xargs or something
 
       - name: Run planetiler
         run: . ./tiles.sh
