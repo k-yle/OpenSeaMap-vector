@@ -39,10 +39,10 @@ jobs:
 
       - name: Download osmium & print fileinfo
         run: |
-          docker run --rm -v $(pwd):/data \
+          docker run --rm -v $(pwd):/cwd \
             iboates/osmium:1.19.0 \
             fileinfo \
-            /data/data/full.pbf \
+            /cwd/data/full.pbf \
 
       - name: Run osmium filter-tags
         run: . ./planet.sh
@@ -80,12 +80,12 @@ jobs:
 
       - name: Merge into a single pbf file
         run: |
-          docker run --rm -v $(pwd):/data \
+          docker run --rm -v $(pwd):/cwd \
             iboates/osmium:1.19.0 \
             merge \
             --progress \
-            $(printf '/data/%s ' data/tmp_pbf/*.pbf) \
-            -o /data/data/public/seamarks.pbf
+            $(printf '/cwd/%s ' data/tmp_pbf/*.pbf) \
+            -o /cwd/data/public/seamarks.pbf
 
       - name: Run planetiler
         run: . ./tiles.sh

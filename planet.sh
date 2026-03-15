@@ -7,10 +7,10 @@ echo "downloading the OSM planet file…"
 
 # full.pbf -> seamarks.pbf (if it doesn't exist)
 echo "running osmium tags-filter…"
-[ -f ./data/public/seamarks.pbf ] || docker run --rm -v $(pwd):/data \
+[ -f ./data/public/seamarks.pbf ] || docker run --rm -v $(pwd):/cwd \
   iboates/osmium:1.19.0 \
   tags-filter \
   --progress \
-  -e /data/data/osmium-tags-filter.ini \
-  /data/data/full.pbf \
-  --output=/data/data/public/seamarks.pbf
+  -e /cwd/data/osmium-tags-filter.ini \
+  /cwd/data/full.pbf \
+  --output=/cwd/data/public/seamarks.pbf
