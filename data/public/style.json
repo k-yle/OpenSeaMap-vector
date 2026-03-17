@@ -33,6 +33,7 @@
       "source-layer": "seamarks",
       "filter": [
         "any",
+        ["==", "seamark:small_craft_facility:category", "nautical_club"],
         ["==", "club", "yachting"],
         ["==", "club", "sailing"],
         ["==", "sport", "sailing"],
@@ -1006,6 +1007,7 @@
           ["==", "waterway", "water_point"],
           ["==", "waterway", "sanitary_dump_station"]
         ],
+        ["!=", "seamark:small_craft_facility:category", "nautical_club"],
         ["!=", "access", "private"],
         ["!=", "access", "permit"],
         ["!=", "access", "no"]

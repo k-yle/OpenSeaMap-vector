@@ -31,7 +31,8 @@ export async function getBurgee(
   // fetch the image
   const fileId = fileName.replaceAll(' ', '_');
   const [h0, h1] = md5(fileId);
-  const imageUrl = `https://upload.wikimedia.org/wikipedia/commons/thumb/${h0}/${h0}${h1}/${fileId}/250px-${fileId}`;
+  let imageUrl = `https://upload.wikimedia.org/wikipedia/commons/thumb/${h0}/${h0}${h1}/${fileId}/250px-${fileId}`;
+  if (imageUrl.endsWith('.svg')) imageUrl += '.png';
 
   const img = new Image();
   img.crossOrigin = 'anonymous';
