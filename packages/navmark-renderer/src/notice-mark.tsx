@@ -1,6 +1,5 @@
 /* eslint-disable dot-notation */
 import { type TextConfig, renderTextWithinBbox } from './components/text.js';
-import { PIXEL_RATIO } from './util/pixelRatio.js';
 import { svgToCanvas } from './util/svgToRaster.js';
 import { svgToString } from './util/svgToString.js';
 import type { Tags } from './util/types.def.js';
@@ -1109,7 +1108,7 @@ function getGridPosition(index: number, symbolsPerRow: number) {
 
 export function renderNoticeSvg(
   tags: Tags,
-  _scaleFactor: number,
+  scale: number,
   symbolsPerRow: number,
 ) {
   const values = Object.entries(tags)
@@ -1134,8 +1133,6 @@ export function renderNoticeSvg(
   // if >1 symbol, then show 2 symbols per line
   const width = SIZE * Math.min(symbols.length, symbolsPerRow);
   const height = SIZE * Math.ceil(symbols.length / symbolsPerRow);
-
-  const scale = PIXEL_RATIO * _scaleFactor;
 
   const svg = (
     <svg
@@ -1167,13 +1164,13 @@ export function renderNoticeSvg(
 
 export async function renderNoticeMark(
   tags: Tags,
-  _scaleFactor = 0.25,
+  scale: number,
   symbolsPerRow = 2,
 ): Promise<ImageData | undefined> {
-  const result = renderNoticeSvg(tags, _scaleFactor, symbolsPerRow);
+  const result = renderNoticeSvg(tags, scale, symbolsPerRow);
   if (!result) return undefined;
 
-  const { svg, width, height, scale, symbols } = result;
+  const { svg, width, height, symbols } = result;
 
   using ctx = await svgToCanvas(svgToString(svg), {
     width: width * scale,
@@ -1190,7 +1187,7 @@ export async function renderNoticeMark(
 
     const placement = symbol.notice.text.placement;
 
-    renderTextWithinBbox(ctx, value, {
+    renderTextWithinBbox(ctx, value, scale, {
       ...placement,
       width: scale * placement.width,
       height: scale * placement.height,

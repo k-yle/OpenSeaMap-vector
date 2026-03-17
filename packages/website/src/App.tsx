@@ -10,8 +10,7 @@ import {
 } from 'maplibre-gl';
 import * as Diplomat from '@americana/diplomat';
 import { PMTiles, Protocol } from 'pmtiles';
-import { PIXEL_RATIO } from '@openseamap-vector/navmark-renderer';
-import { PMTILES_URL, getStyle } from './style.js';
+import { PMTILES_URL, SCALE, getStyle } from './style.js';
 import { onStyleImageMissing } from './onStyleImageMissing.js';
 import { MapPopup } from './components/MapPopup.js';
 import { HOME_LOCATION } from './util/region.js';
@@ -52,7 +51,7 @@ export const App: React.FC = () => {
           center: { lat, lon },
           style,
           hash: 'map',
-          pixelRatio: PIXEL_RATIO,
+          pixelRatio: SCALE,
         });
         mapRef.current = map;
 

@@ -14,7 +14,7 @@ describe(renderNoticeMark, () => {
   it('can render a single icon', () => {
     const svg = renderNoticeSvg(
       { 'seamark:notice:category': 'overhead_cable' },
-      1,
+      2,
       1,
     )!;
 
@@ -27,7 +27,7 @@ describe(renderNoticeMark, () => {
     for (const id in NOTICES) {
       tags[`seamark:notice:${++i}:category`] = id;
     }
-    const svg = renderNoticeSvg(tags, 1, 12)!;
+    const svg = renderNoticeSvg(tags, 2, 12)!;
 
     expect(svgToString(svg!.svg)).toMatchFileSnapshot('notice-all.svg');
   });

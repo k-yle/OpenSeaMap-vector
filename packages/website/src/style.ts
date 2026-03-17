@@ -15,6 +15,8 @@ const SELF_BASE_URL = isLocalhost
 
 export const PMTILES_URL = `${CDN_BASE_URL}/seamarks.pmtiles`;
 
+export const SCALE = globalThis.devicePixelRatio || 2;
+
 export async function getStyle() {
   const styleJson: typeof styleJsonType = await fetch(styleJsonUrl).then((r) =>
     r.json(),

@@ -1,5 +1,3 @@
-import { PIXEL_RATIO } from '../util/pixelRatio.js';
-
 export interface TextConfig {
   x: number;
   y: number;
@@ -28,6 +26,7 @@ const DEBUG = false;
 export function renderTextWithinBbox(
   ctx: CanvasRenderingContext2D,
   text: string,
+  scale: number,
   config: TextConfig,
 ) {
   ctx.textAlign = 'center';
@@ -65,7 +64,7 @@ export function renderTextWithinBbox(
 
   // hack for safari, to workaround https://github.com/web-platform-tests/interop/issues/1091
   // the top-baseline for text is off by a few pixels in safari...
-  if ('GestureEvent' in globalThis) anchorY -= 1.5 * PIXEL_RATIO;
+  if ('GestureEvent' in globalThis) anchorY -= 1.5 * scale;
 
   if (DEBUG) {
     const padding = 2;

@@ -1,9 +1,7 @@
 import type { Map, MapLibreEvent } from 'maplibre-gl';
-import {
-  renderBuoyBeaconLx,
-  renderNoticeMark,
-} from '@openseamap-vector/navmark-renderer';
+import { render } from '@openseamap-vector/navmark-renderer';
 import { getBurgee } from './external/wikidata.js';
+import { SCALE } from './style.js';
 
 const inflight: { [id: string]: Promise<void> } = {};
 
@@ -20,9 +18,7 @@ export async function onStyleImageMissing(
       const buffer =
         '_burgee_' in parsed
           ? await getBurgee(parsed[burgeeKey])
-          : parsed['seamark:type'] === 'notice'
-            ? await renderNoticeMark(parsed)
-            : await renderBuoyBeaconLx(parsed);
+          : await render(parsed, SCALE);
 
       if (!buffer) return;
 
