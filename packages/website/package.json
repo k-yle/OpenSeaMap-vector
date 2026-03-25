@@ -4,13 +4,14 @@
   "type": "module",
   "scripts": {
     "start": "vite",
-    "build": "vite build && rm -rf ./dist/*.pmtiles && rm -rf ./dist/*.pbf",
+    "build": "VITE_BUILD_MODE=lib vite build && vite build && rm -rf ./dist/*.pmtiles && rm -rf ./dist/*.pbf",
     "lint": "eslint . && tsc",
     "test": "echo ok"
   },
   "dependencies": {
     "@americana/diplomat": "^0.4.0",
     "@openseamap-vector/navmark-renderer": "file:../navmark-renderer",
+    "@openstreetmap/id-plugin-sdk": "github:k-yle/iD#plugin-sdk",
     "get-region": "^1.0.0",
     "light-characteristics": "^1.0.0",
     "maplibre-gl": "^5.18.0",
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "@types/md5": "^2.3.6",
+    "@types/node": "^25.5.0",
     "@types/react": "^19.2.13",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.3",
