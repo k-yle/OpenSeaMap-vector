@@ -920,6 +920,37 @@
       "minzoom": 11
     },
     {
+      "id": "beach[symbol]",
+      "type": "symbol",
+      "source": "seamarks",
+      "source-layer": "seamarks",
+      "filter": [
+        "all",
+        ["==", "natural", "beach"],
+        ["!=", "access", "no"],
+        ["!=", "access", "private"],
+        ["!=", "access", "permit"],
+        ["!=", "access", "customers"]
+      ],
+      "layout": {
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "text-optional": true,
+        "text-allow-overlap": false,
+        "symbol-spacing": 5,
+        "icon-image": "small_craft_facility/beach",
+        "icon-size": 0.3,
+        "icon-rotation-alignment": "map",
+        "icon-keep-upright": false,
+        "text-field": ["get", "name"],
+        "text-size": 10,
+        "text-justify": "center",
+        "text-anchor": "top",
+        "text-radial-offset": 1.4
+      },
+      "minzoom": 11
+    },
+    {
       "id": "waterway=access_point[symbol]",
       "type": "symbol",
       "source": "seamarks",
