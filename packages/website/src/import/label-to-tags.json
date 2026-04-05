@@ -1,0 +1,1383 @@
+{
+  "101": {
+    "seamark:type": "beacon_lateral",
+    "seamark:beacon_lateral:category": "starboard",
+    "seamark:beacon_lateral:colour": "green",
+    "seamark:beacon_lateral:shape": "pile",
+    "description": "Starboard Pile - Beacon NTM"
+  },
+  "102": {
+    "seamark:type": "beacon_lateral",
+    "seamark:beacon_lateral:category": "starboard",
+    "seamark:beacon_lateral:colour": "green",
+    "seamark:topmark:colour": "green",
+    "seamark:topmark:shape": "cone, point up",
+    "seamark:beacon_lateral:shape": "pile",
+    "description": "Starboard Pile - Beacon with TM"
+  },
+  "111": {
+    "seamark:type": "beacon_lateral",
+    "seamark:beacon_lateral:category": "port",
+    "seamark:beacon_lateral:colour": "red",
+    "seamark:beacon_lateral:shape": "pile",
+    "description": "Port Pile - Beacon NTM"
+  },
+  "112": {
+    "seamark:type": "beacon_lateral",
+    "seamark:beacon_lateral:category": "port",
+    "seamark:beacon_lateral:colour": "red",
+    "seamark:topmark:colour": "red",
+    "seamark:topmark:shape": "cylinder",
+    "seamark:beacon_lateral:shape": "pile",
+    "description": "Port Pile - Beacon with TM"
+  },
+  "113": {
+    "seamark:type": "beacon_lateral",
+    "seamark:beacon_lateral:category": "port",
+    "seamark:beacon_lateral:colour": "red",
+    "seamark:beacon_lateral:shape": "pile",
+    "description": "Port - pile beacon"
+  },
+  "114": {
+    "seamark:type": "beacon_lateral",
+    "seamark:beacon_lateral:category": "port",
+    "seamark:beacon_lateral:colour": "red",
+    "seamark:beacon_lateral:shape": "pile",
+    "description": "Port - pile beacon"
+  },
+  "121": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones up",
+    "seamark:type": "beacon_cardinal",
+    "seamark:beacon_cardinal:category": "north",
+    "seamark:beacon_cardinal:colour": "black;yellow",
+    "seamark:beacon_cardinal:colour_pattern": "horizontal",
+    "seamark:beacon_cardinal:shape": "pile",
+    "description": "North cardinal - pile beacon"
+  },
+  "122": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones down",
+    "seamark:type": "beacon_cardinal",
+    "seamark:beacon_cardinal:category": "south",
+    "seamark:beacon_cardinal:colour": "yellow;black",
+    "seamark:beacon_cardinal:colour_pattern": "horizontal",
+    "seamark:beacon_cardinal:shape": "pile",
+    "description": "South cardinal - pile beacon"
+  },
+  "123": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones base together",
+    "seamark:type": "beacon_cardinal",
+    "seamark:beacon_cardinal:category": "east",
+    "seamark:beacon_cardinal:colour": "black;yellow;black",
+    "seamark:beacon_cardinal:colour_pattern": "horizontal",
+    "seamark:beacon_cardinal:shape": "pile",
+    "description": "East cardinal - pile beacon"
+  },
+  "124": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones point together",
+    "seamark:type": "beacon_cardinal",
+    "seamark:beacon_cardinal:category": "west",
+    "seamark:beacon_cardinal:colour": "yellow;black;yellow",
+    "seamark:beacon_cardinal:colour_pattern": "horizontal",
+    "seamark:beacon_cardinal:shape": "pile",
+    "description": "West cardinal - pile beacon"
+  },
+  "125": {
+    "seamark:type": "beacon_isolated_danger",
+    "seamark:beacon_isolated_danger:colour": "black;red;black",
+    "seamark:beacon_isolated_danger:colour_pattern": "horizontal",
+    "seamark:beacon_isolated_danger:shape": "pile",
+    "description": "Isolated danger - pile beacon"
+  },
+  "126": {
+    "seamark:type": "beacon_special_purpose",
+    "seamark:beacon_special_purpose:colour": "yellow",
+    "seamark:beacon_special_purpose:shape": "pile",
+    "description": "Special - pile beacon"
+  },
+  "127": {
+    "seamark:type": "beacon_safe_water",
+    "seamark:beacon_safe_water:shape": "pile",
+    "description": "Safe water - pile beacon"
+  },
+  "151": {
+    "seamark:type": "beacon_special_purpose",
+    "seamark:beacon_special_purpose:category": "leading;front",
+    "seamark:topmark:shape": "triangle, point up",
+    "description": "Front leading - triangle beacon"
+  },
+  "152": {
+    "seamark:type": "beacon_special_purpose",
+    "seamark:beacon_special_purpose:category": "leading;rear",
+    "seamark:topmark:shape": "triangle, point down",
+    "description": "Rear leading - triangle beacon"
+  },
+  "153": {
+    "seamark:type": "beacon_special_purpose",
+    "seamark:beacon_special_purpose:category": "leading",
+    "description": "Leading oblong - beacon"
+  },
+  "202": {
+    "seamark:type": "beacon_lateral",
+    "seamark:beacon_lateral:category": "starboard",
+    "seamark:beacon_lateral:colour": "green",
+    "seamark:beacon_lateral:shape": "pole",
+    "description": "Starboard pipe - beacon"
+  },
+  "212": {
+    "seamark:type": "beacon_lateral",
+    "seamark:beacon_lateral:category": "port",
+    "seamark:beacon_lateral:colour": "red",
+    "seamark:beacon_lateral:shape": "pole",
+    "description": "Port pipe - beacon"
+  },
+  "221": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones up",
+    "seamark:type": "beacon_cardinal",
+    "seamark:beacon_cardinal:category": "north",
+    "seamark:beacon_cardinal:colour": "black;yellow",
+    "seamark:beacon_cardinal:colour_pattern": "horizontal",
+    "seamark:beacon_cardinal:shape": "pole",
+    "description": "Nth cardinal - pipe beacon"
+  },
+  "222": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones down",
+    "seamark:type": "beacon_cardinal",
+    "seamark:beacon_cardinal:category": "south",
+    "seamark:beacon_cardinal:colour": "yellow;black",
+    "seamark:beacon_cardinal:colour_pattern": "horizontal",
+    "seamark:beacon_cardinal:shape": "pole",
+    "description": "Sth cardinal - pipe beacon"
+  },
+  "223": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones base together",
+    "seamark:type": "beacon_cardinal",
+    "seamark:beacon_cardinal:category": "east",
+    "seamark:beacon_cardinal:colour": "black;yellow;black",
+    "seamark:beacon_cardinal:colour_pattern": "horizontal",
+    "seamark:beacon_cardinal:shape": "pole",
+    "description": "East cardinal - pipe beacon"
+  },
+  "224": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones point together",
+    "seamark:type": "beacon_cardinal",
+    "seamark:beacon_cardinal:category": "west",
+    "seamark:beacon_cardinal:colour": "yellow;black;yellow",
+    "seamark:beacon_cardinal:colour_pattern": "horizontal",
+    "seamark:beacon_cardinal:shape": "pole",
+    "description": "West cardinal - pipe beacon"
+  },
+  "225": {
+    "seamark:type": "beacon_isolated_danger",
+    "seamark:beacon_isolated_danger:colour": "black;red;black",
+    "seamark:beacon_isolated_danger:colour_pattern": "horizontal",
+    "seamark:beacon_isolated_danger:shape": "pole",
+    "description": "Isolated danger - pipe beacon"
+  },
+  "226": {
+    "seamark:type": "beacon_special_purpose",
+    "seamark:beacon_special_purpose:colour": "yellow",
+    "seamark:beacon_special_purpose:shape": "pole",
+    "description": "Special pipe - beacon"
+  },
+  "227": {
+    "seamark:type": "beacon_safe_water",
+    "seamark:beacon_safe_water:shape": "pole",
+    "description": "Safe water - pipe beacon"
+  },
+  "251": {
+    "seamark:type": "beacon_special_purpose",
+    "seamark:beacon_special_purpose:shape": "pole",
+    "seamark:beacon_special_purpose:category": "leading;front",
+    "seamark:topmark:shape": "triangle, point up",
+    "description": "Front lead triangle - pipe beacon"
+  },
+  "252": {
+    "seamark:type": "beacon_special_purpose",
+    "seamark:beacon_special_purpose:shape": "pole",
+    "seamark:beacon_special_purpose:category": "leading;rear",
+    "seamark:topmark:shape": "triangle, point down",
+    "description": "Rear lead triangle - pipe beacon"
+  },
+  "253": {
+    "seamark:type": "beacon_special_purpose",
+    "seamark:beacon_special_purpose:shape": "pole",
+    "seamark:beacon_special_purpose:category": "leading",
+    "description": "Leading oblong - pipe beacon"
+  },
+  "301": {
+    "seamark:type": "beacon_lateral",
+    "seamark:beacon_lateral:category": "starboard",
+    "seamark:beacon_lateral:colour": "green",
+    "seamark:light:colour": "green",
+    "description": "Lit stbd. beacon - no top mark"
+  },
+  "302": {
+    "seamark:type": "beacon_lateral",
+    "seamark:beacon_lateral:category": "starboard",
+    "seamark:beacon_lateral:colour": "green",
+    "seamark:topmark:colour": "green",
+    "seamark:topmark:shape": "cone, point up",
+    "seamark:light:colour": "green",
+    "description": "Lit Starboard - Beacon with TM"
+  },
+  "311": {
+    "seamark:type": "beacon_lateral",
+    "seamark:beacon_lateral:category": "port",
+    "seamark:beacon_lateral:colour": "red",
+    "seamark:light:colour": "red",
+    "description": "Lit port beacon - no top mark"
+  },
+  "312": {
+    "seamark:type": "beacon_lateral",
+    "seamark:beacon_lateral:category": "port",
+    "seamark:beacon_lateral:colour": "red",
+    "seamark:topmark:colour": "red",
+    "seamark:topmark:shape": "cylinder",
+    "seamark:light:colour": "red",
+    "description": "Lit Port - Beacon with TM"
+  },
+  "315": {
+    "seamark:type": "beacon_special_purpose",
+    "seamark:light:colour": "unknown",
+    "description": "White light - beacon"
+  },
+  "316": {
+    "seamark:type": "beacon_special_purpose",
+    "seamark:light:colour": "unknown",
+    "description": "Yellow light - beacon"
+  },
+  "317": {
+    "seamark:type": "beacon_special_purpose",
+    "seamark:light:colour": "unknown",
+    "description": "Blue light - beacon"
+  },
+  "321": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones up",
+    "seamark:type": "beacon_cardinal",
+    "seamark:beacon_cardinal:category": "north",
+    "seamark:beacon_cardinal:colour": "black;yellow",
+    "seamark:beacon_cardinal:colour_pattern": "horizontal",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "1",
+    "description": "Lit north - cardinal beacon"
+  },
+  "322": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones down",
+    "seamark:type": "beacon_cardinal",
+    "seamark:beacon_cardinal:category": "south",
+    "seamark:beacon_cardinal:colour": "yellow;black",
+    "seamark:beacon_cardinal:colour_pattern": "horizontal",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "6",
+    "description": "Lit south - cardinal beacon"
+  },
+  "323": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones base together",
+    "seamark:type": "beacon_cardinal",
+    "seamark:beacon_cardinal:category": "east",
+    "seamark:beacon_cardinal:colour": "black;yellow;black",
+    "seamark:beacon_cardinal:colour_pattern": "horizontal",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "description": "Lit east - cardinal beacon"
+  },
+  "324": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones point together",
+    "seamark:type": "beacon_cardinal",
+    "seamark:beacon_cardinal:category": "west",
+    "seamark:beacon_cardinal:colour": "yellow;black;yellow",
+    "seamark:beacon_cardinal:colour_pattern": "horizontal",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "9",
+    "description": "Lit west - cardinal beacon"
+  },
+  "325": {
+    "seamark:type": "beacon_isolated_danger",
+    "seamark:beacon_isolated_danger:colour": "black;red;black",
+    "seamark:beacon_isolated_danger:colour_pattern": "horizontal",
+    "seamark:light:colour": "white",
+    "description": "Lit isolated - danger beacon"
+  },
+  "326": {
+    "seamark:type": "beacon_special_purpose",
+    "seamark:beacon_special_purpose:colour": "yellow",
+    "seamark:light:colour": "yellow",
+    "description": "Lit special - mark beacon"
+  },
+  "327": {
+    "seamark:type": "beacon_safe_water",
+    "seamark:light:colour": "white",
+    "description": "Lit safe - water beacon"
+  },
+  "341": {},
+  "342": {
+    "seamark:type": "beacon_special_purpose",
+    "description": "Sectored beacon - white red green"
+  },
+  "351": {
+    "seamark:type": "beacon_special_purpose",
+    "seamark:light:colour": "unknown",
+    "seamark:beacon_special_purpose:category": "leading;front",
+    "seamark:light:category": "leading;front",
+    "seamark:topmark:shape": "triangle, point up",
+    "description": "Lit front lead - triangle beacon"
+  },
+  "352": {
+    "seamark:type": "beacon_special_purpose",
+    "seamark:light:colour": "unknown",
+    "seamark:beacon_special_purpose:category": "leading;rear",
+    "seamark:light:category": "leading;rear",
+    "seamark:topmark:shape": "triangle, point down",
+    "description": "Lit rear lead - triangle beacon"
+  },
+  "353": {
+    "seamark:type": "beacon_special_purpose",
+    "seamark:light:colour": "unknown",
+    "seamark:beacon_special_purpose:category": "leading",
+    "seamark:light:category": "leading",
+    "description": "Lit lead - oblong beacon"
+  },
+  "354": {
+    "seamark:type": "beacon_special_purpose",
+    "seamark:light:colour": "unknown",
+    "seamark:beacon_special_purpose:category": "leading;front",
+    "seamark:light:category": "leading;front",
+    "seamark:topmark:shape": "triangle, point up",
+    "description": "Lit front lead - triangle beacon"
+  },
+  "355": {
+    "seamark:type": "beacon_special_purpose",
+    "seamark:light:colour": "unknown",
+    "seamark:beacon_special_purpose:category": "leading;rear",
+    "seamark:light:category": "leading;rear",
+    "seamark:topmark:shape": "triangle, point down",
+    "description": "Lit rear lead - triangle beacon"
+  },
+  "356": {
+    "seamark:type": "beacon_special_purpose",
+    "seamark:light:colour": "unknown",
+    "seamark:beacon_special_purpose:category": "leading",
+    "seamark:light:category": "leading",
+    "description": "Lit lead - oblong beacon"
+  },
+  "357": {
+    "seamark:type": "beacon_special_purpose",
+    "seamark:light:colour": "unknown",
+    "seamark:beacon_special_purpose:category": "leading;front",
+    "seamark:light:category": "leading;front",
+    "seamark:topmark:shape": "triangle, point up",
+    "description": "Lit front lead - triangle beacon"
+  },
+  "358": {
+    "seamark:type": "beacon_special_purpose",
+    "seamark:light:colour": "unknown",
+    "seamark:beacon_special_purpose:category": "leading;rear",
+    "seamark:light:category": "leading;rear",
+    "seamark:topmark:shape": "triangle, point down",
+    "description": "Lit rear lead - triangle beacon"
+  },
+  "359": {
+    "seamark:type": "beacon_special_purpose",
+    "seamark:light:colour": "unknown",
+    "seamark:beacon_special_purpose:category": "leading",
+    "seamark:light:category": "leading",
+    "description": "Lit lead - oblong beacon"
+  },
+  "360": {
+    "seamark:type": "beacon_special_purpose",
+    "seamark:light:colour": "unknown",
+    "seamark:beacon_special_purpose:category": "leading;front",
+    "seamark:light:category": "leading;front",
+    "seamark:topmark:shape": "triangle, point up",
+    "description": "Lit front lead - triangle beacon"
+  },
+  "361": {
+    "seamark:type": "beacon_special_purpose",
+    "seamark:light:colour": "unknown",
+    "seamark:beacon_special_purpose:category": "leading;rear",
+    "seamark:light:category": "leading;rear",
+    "seamark:topmark:shape": "triangle, point down",
+    "description": "Lit rear lead - triangle beacon"
+  },
+  "362": {
+    "seamark:type": "beacon_special_purpose",
+    "seamark:light:colour": "unknown",
+    "seamark:beacon_special_purpose:category": "leading",
+    "seamark:light:category": "leading",
+    "description": "Lit lead - oblong beacon"
+  },
+  "401": {
+    "seamark:type": "buoy_lateral",
+    "seamark:buoy_lateral:category": "starboard",
+    "seamark:buoy_lateral:colour": "green",
+    "description": "Starboard Buoy - No Top Mark"
+  },
+  "402": {
+    "seamark:type": "buoy_lateral",
+    "seamark:buoy_lateral:category": "starboard",
+    "seamark:buoy_lateral:colour": "green",
+    "seamark:topmark:colour": "green",
+    "seamark:topmark:shape": "cone, point up",
+    "description": "Starboard Buoy - with Top Mark"
+  },
+  "403": {
+    "seamark:type": "buoy_lateral",
+    "seamark:buoy_lateral:category": "starboard",
+    "seamark:buoy_lateral:colour": "green",
+    "seamark:buoy_lateral:shape": "aqua",
+    "description": "Starboard - Aqua Buoy"
+  },
+  "404": {
+    "seamark:type": "buoy_lateral",
+    "seamark:buoy_lateral:category": "starboard",
+    "seamark:buoy_lateral:colour": "green",
+    "seamark:buoy_lateral:material": "steel",
+    "description": "Starboard - Steel Buoy"
+  },
+  "411": {
+    "seamark:type": "buoy_lateral",
+    "seamark:buoy_lateral:category": "port",
+    "seamark:buoy_lateral:colour": "red",
+    "description": "Port Buoy - No Top Mark"
+  },
+  "412": {
+    "seamark:type": "buoy_lateral",
+    "seamark:buoy_lateral:category": "port",
+    "seamark:buoy_lateral:colour": "red",
+    "seamark:topmark:colour": "red",
+    "seamark:topmark:shape": "cylinder",
+    "description": "Port Buoy - with Top Mark"
+  },
+  "413": {
+    "seamark:type": "buoy_lateral",
+    "seamark:buoy_lateral:category": "port",
+    "seamark:buoy_lateral:colour": "red",
+    "seamark:buoy_lateral:shape": "aqua",
+    "description": "Port - Aqua Buoy"
+  },
+  "414": {
+    "seamark:type": "buoy_lateral",
+    "seamark:buoy_lateral:category": "port",
+    "seamark:buoy_lateral:colour": "red",
+    "seamark:buoy_lateral:material": "steel",
+    "description": "Port - Steel Buoy"
+  },
+  "421": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones up",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "north",
+    "seamark:buoy_cardinal:colour": "black;yellow",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:buoy_cardinal:material": "steel",
+    "description": "North Cardinal - Steel Buoy"
+  },
+  "422": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones down",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "south",
+    "seamark:buoy_cardinal:colour": "yellow;black",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:buoy_cardinal:material": "steel",
+    "description": "South Cardinal - Steel Buoy"
+  },
+  "423": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones base together",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "east",
+    "seamark:buoy_cardinal:colour": "black;yellow;black",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:buoy_cardinal:material": "steel",
+    "description": "East Cardinal - Steel Buoy"
+  },
+  "424": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones point together",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "west",
+    "seamark:buoy_cardinal:colour": "yellow;black;yellow",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:buoy_cardinal:material": "steel",
+    "description": "West Cardinal - Steel Buoy"
+  },
+  "425": {
+    "seamark:type": "buoy_isolated_danger",
+    "seamark:buoy_isolated_danger:colour": "black;red;black",
+    "seamark:buoy_isolated_danger:colour_pattern": "horizontal",
+    "seamark:buoy_isolated_danger:material": "steel",
+    "description": "Iso.Danger - Steel Buoy"
+  },
+  "426": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:colour": "yellow",
+    "seamark:buoy_special_purpose:material": "steel",
+    "description": "Special Mark - Steel Buoy"
+  },
+  "427": {
+    "seamark:type": "buoy_safe_water",
+    "seamark:buoy_safe_water:material": "steel",
+    "description": "Safe Water Mark - Steel Buoy"
+  },
+  "431": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones up",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "north",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:buoy_cardinal:shape": "aqua",
+    "description": "North Cardinal - Aqua Buoy"
+  },
+  "432": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones down",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "south",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:buoy_cardinal:shape": "aqua",
+    "description": "South Cardinal - Aqua Buoy"
+  },
+  "433": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones base together",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "east",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:buoy_cardinal:shape": "aqua",
+    "description": "East Cardinal - Aqua Buoy"
+  },
+  "434": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones point together",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "west",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:buoy_cardinal:shape": "aqua",
+    "description": "West Cardinal - Aqua Buoy"
+  },
+  "435": {
+    "seamark:type": "buoy_isolated_danger",
+    "seamark:buoy_isolated_danger:colour": "black;red;black",
+    "seamark:buoy_isolated_danger:colour_pattern": "horizontal",
+    "seamark:buoy_isolated_danger:shape": "aqua",
+    "description": "Iso.Danger - Aqua Buoy"
+  },
+  "436": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:shape": "aqua",
+    "description": "Special Mark - Aqua Buoy"
+  },
+  "437": {
+    "seamark:type": "buoy_safe_water",
+    "seamark:buoy_safe_water:shape": "aqua",
+    "description": "Safe Water Mark - Aqua Buoy"
+  },
+  "441": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones up",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "north",
+    "seamark:buoy_cardinal:colour": "black;yellow",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:buoy_cardinal:shape": "pillar",
+    "description": "Nth.Cardinal - Pillar Buoy"
+  },
+  "442": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones down",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "south",
+    "seamark:buoy_cardinal:colour": "yellow;black",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:buoy_cardinal:shape": "pillar",
+    "description": "Sth.Cardinal - Pillar Buoy"
+  },
+  "443": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones base together",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "east",
+    "seamark:buoy_cardinal:colour": "black;yellow;black",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:buoy_cardinal:shape": "pillar",
+    "description": "East Cardinal - Pillar Buoy"
+  },
+  "444": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones point together",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "west",
+    "seamark:buoy_cardinal:colour": "yellow;black;yellow",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:buoy_cardinal:shape": "pillar",
+    "description": "West Cardinal - Pillar Buoy"
+  },
+  "445": {
+    "seamark:type": "buoy_isolated_danger",
+    "seamark:buoy_isolated_danger:colour": "black;red;black",
+    "seamark:buoy_isolated_danger:colour_pattern": "horizontal",
+    "seamark:buoy_isolated_danger:shape": "pillar",
+    "description": "Iso.Danger - Pillar Buoy"
+  },
+  "446": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:colour": "yellow",
+    "seamark:buoy_special_purpose:shape": "pillar",
+    "description": "Special Mark - Pillar Buoy"
+  },
+  "447": {
+    "seamark:type": "buoy_safe_water",
+    "seamark:buoy_safe_water:shape": "pillar",
+    "description": "Safe Water Mark - Pillar Buoy"
+  },
+  "451": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones up",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "north",
+    "seamark:buoy_cardinal:colour": "black;yellow",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:buoy_cardinal:shape": "conical",
+    "description": "Nth.Cardinal - Conical Buoy"
+  },
+  "452": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones down",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "south",
+    "seamark:buoy_cardinal:colour": "yellow;black",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:buoy_cardinal:shape": "conical",
+    "description": "Sth.Cardinal - Conical Buoy"
+  },
+  "453": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones base together",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "east",
+    "seamark:buoy_cardinal:colour": "black;yellow;black",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:buoy_cardinal:shape": "conical",
+    "description": "East Cardinal - Conical Buoy"
+  },
+  "454": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones point together",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "west",
+    "seamark:buoy_cardinal:colour": "yellow;black;yellow",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:buoy_cardinal:shape": "conical",
+    "description": "West Cardinal - Conical Buoy"
+  },
+  "455": {
+    "seamark:type": "buoy_isolated_danger",
+    "seamark:buoy_isolated_danger:colour": "black;red;black",
+    "seamark:buoy_isolated_danger:colour_pattern": "horizontal",
+    "seamark:buoy_isolated_danger:shape": "conical",
+    "description": "Iso.Danger - Conical Buoy"
+  },
+  "457": {
+    "seamark:type": "buoy_safe_water",
+    "seamark:buoy_safe_water:shape": "conical",
+    "description": "Safe Water Mark - Conical Buoy"
+  },
+  "461": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones up",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "north",
+    "seamark:buoy_cardinal:colour": "black;yellow",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:buoy_cardinal:shape": "can",
+    "description": "Nth.Cardinal - Can Buoy"
+  },
+  "462": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones down",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "south",
+    "seamark:buoy_cardinal:colour": "yellow;black",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:buoy_cardinal:shape": "can",
+    "description": "Sth.Cardinal - Can Buoy"
+  },
+  "463": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones base together",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "east",
+    "seamark:buoy_cardinal:colour": "black;yellow;black",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:buoy_cardinal:shape": "can",
+    "description": "East Cardinal - Can Buoy"
+  },
+  "464": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones point together",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "west",
+    "seamark:buoy_cardinal:colour": "yellow;black;yellow",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:buoy_cardinal:shape": "can",
+    "description": "West Cardinal - Can Buoy"
+  },
+  "465": {
+    "seamark:type": "buoy_isolated_danger",
+    "seamark:buoy_isolated_danger:colour": "black;red;black",
+    "seamark:buoy_isolated_danger:colour_pattern": "horizontal",
+    "seamark:buoy_isolated_danger:shape": "can",
+    "description": "Iso.Danger - Can Buoy"
+  },
+  "467": {
+    "seamark:type": "buoy_safe_water",
+    "seamark:buoy_safe_water:shape": "can",
+    "description": "Safe Water Mark - Can Buoy"
+  },
+  "468": {
+    "seamark:type": "buoy_lateral",
+    "seamark:buoy_lateral:category": "preferred_channel_starboard",
+    "description": "Preferred Channel - to Stbd Buoy"
+  },
+  "469": {
+    "seamark:type": "buoy_lateral",
+    "seamark:buoy_lateral:category": "preferred_channel_port",
+    "description": "Preferred Channel - to Port Buoy"
+  },
+  "470": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:colour": "yellow",
+    "seamark:buoy_special_purpose:shape": "conical",
+    "description": "Special Mark - Conical Buoy"
+  },
+  "471": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:colour": "yellow",
+    "seamark:buoy_special_purpose:shape": "conical",
+    "description": "Special Mark - Conical Buoy"
+  },
+  "472": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:colour": "yellow",
+    "seamark:buoy_special_purpose:shape": "can",
+    "description": "Special Mark - Can Buoy"
+  },
+  "473": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:shape": "aqua",
+    "description": "Special Mark - Aqua Buoy"
+  },
+  "474": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:colour": "yellow",
+    "seamark:buoy_special_purpose:shape": "conical",
+    "description": "Special Mark - Conical Buoy NTM"
+  },
+  "475": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:colour": "yellow",
+    "seamark:buoy_special_purpose:shape": "can",
+    "description": "Special Mark - Can Buoy NTM"
+  },
+  "476": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:colour": "yellow",
+    "seamark:buoy_special_purpose:shape": "conical",
+    "description": "Special Mark - Conical Buoy NTM"
+  },
+  "481": {
+    "seamark:type": "buoy_installation",
+    "description": "Steel - mooring buoy"
+  },
+  "484": {
+    "seamark:type": "mooring",
+    "seamark:mooring:category": "buoy",
+    "seamark:mooring:colour": "orange",
+    "description": "Orange Beehive - Mooring Buoy"
+  },
+  "488": {},
+  "501": {
+    "seamark:type": "buoy_lateral",
+    "seamark:buoy_lateral:category": "starboard",
+    "seamark:buoy_lateral:colour": "green",
+    "seamark:light:colour": "green",
+    "description": "Lit Stbd Buoy - No Top Mark"
+  },
+  "502": {
+    "seamark:type": "buoy_lateral",
+    "seamark:buoy_lateral:category": "starboard",
+    "seamark:buoy_lateral:colour": "green",
+    "seamark:topmark:colour": "green",
+    "seamark:topmark:shape": "cone, point up",
+    "seamark:light:colour": "green",
+    "description": "Lit Stbd Buoy - with Top Mark"
+  },
+  "503": {
+    "seamark:type": "buoy_lateral",
+    "seamark:light:colour": "green",
+    "seamark:buoy_lateral:category": "starboard",
+    "seamark:buoy_lateral:colour": "green",
+    "seamark:buoy_lateral:shape": "aqua",
+    "description": "Lit Starboard - Aqua Buoy"
+  },
+  "504": {
+    "seamark:type": "buoy_lateral",
+    "seamark:buoy_lateral:category": "starboard",
+    "seamark:buoy_lateral:colour": "green",
+    "seamark:light:colour": "green",
+    "seamark:buoy_lateral:material": "steel",
+    "description": "Lit starboard - steel buoy"
+  },
+  "511": {
+    "seamark:type": "buoy_lateral",
+    "seamark:buoy_lateral:category": "port",
+    "seamark:buoy_lateral:colour": "red",
+    "seamark:light:colour": "red",
+    "description": "Lit Port Buoy - No Top Mark"
+  },
+  "512": {
+    "seamark:type": "buoy_lateral",
+    "seamark:buoy_lateral:category": "port",
+    "seamark:buoy_lateral:colour": "red",
+    "seamark:topmark:colour": "red",
+    "seamark:topmark:shape": "cylinder",
+    "seamark:light:colour": "red",
+    "description": "Lit Port Buoy - with Top Mark"
+  },
+  "513": {
+    "seamark:type": "buoy_lateral",
+    "seamark:light:colour": "red",
+    "seamark:buoy_lateral:category": "port",
+    "seamark:buoy_lateral:colour": "red",
+    "seamark:buoy_lateral:shape": "aqua",
+    "description": "Lit Port - Aqua Buoy"
+  },
+  "514": {
+    "seamark:type": "buoy_lateral",
+    "seamark:buoy_lateral:category": "port",
+    "seamark:buoy_lateral:colour": "red",
+    "seamark:light:colour": "red",
+    "seamark:buoy_lateral:material": "steel",
+    "description": "Lit Port - Steel Buoy"
+  },
+  "521": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones up",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "north",
+    "seamark:buoy_cardinal:colour": "black;yellow",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "1",
+    "seamark:buoy_cardinal:material": "steel",
+    "description": "Lit Nth.Cardinal - Steel Buoy"
+  },
+  "522": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones down",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "south",
+    "seamark:buoy_cardinal:colour": "yellow;black",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "6",
+    "seamark:buoy_cardinal:material": "steel",
+    "description": "Lit Sth.Cardinal - Steel Buoy"
+  },
+  "523": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones base together",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "east",
+    "seamark:buoy_cardinal:colour": "black;yellow;black",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "seamark:buoy_cardinal:material": "steel",
+    "description": "Lit East Cardinal - Steel Buoy"
+  },
+  "524": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones point together",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "west",
+    "seamark:buoy_cardinal:colour": "yellow;black;yellow",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "9",
+    "seamark:buoy_cardinal:material": "steel",
+    "description": "Lit West Cardinal - Steel Buoy"
+  },
+  "525": {
+    "seamark:type": "buoy_isolated_danger",
+    "seamark:buoy_isolated_danger:colour": "black;red;black",
+    "seamark:buoy_isolated_danger:colour_pattern": "horizontal",
+    "seamark:light:colour": "white",
+    "seamark:buoy_isolated_danger:material": "steel",
+    "description": "Lit Iso.Danger - Steel Buoy"
+  },
+  "526": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:colour": "yellow",
+    "seamark:light:colour": "yellow",
+    "seamark:buoy_special_purpose:material": "steel",
+    "description": "Lit Special Mark - Steel Buoy"
+  },
+  "527": {
+    "seamark:type": "buoy_safe_water",
+    "seamark:light:colour": "white",
+    "seamark:buoy_safe_water:material": "steel",
+    "description": "Lit Safe Water - Steel Buoy"
+  },
+  "531": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones up",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "north",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:light:colour": "unknown",
+    "seamark:light:group": "1",
+    "seamark:buoy_cardinal:shape": "aqua",
+    "description": "Lit Nth. Card - Aqua Buoy"
+  },
+  "532": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones down",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "south",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:light:colour": "unknown",
+    "seamark:light:group": "6",
+    "seamark:buoy_cardinal:shape": "aqua",
+    "description": "Lit Sth. Card - Aqua Buoy"
+  },
+  "533": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones base together",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "east",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:light:colour": "unknown",
+    "seamark:light:group": "3",
+    "seamark:buoy_cardinal:shape": "aqua",
+    "description": "Lit East Card - Aqua Buoy"
+  },
+  "534": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones point together",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "west",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:light:colour": "unknown",
+    "seamark:light:group": "9",
+    "seamark:buoy_cardinal:shape": "aqua",
+    "description": "Lit West Card - Aqua Buoy"
+  },
+  "535": {
+    "seamark:type": "buoy_isolated_danger",
+    "seamark:light:colour": "white",
+    "seamark:buoy_isolated_danger:colour": "black;red;black",
+    "seamark:buoy_isolated_danger:colour_pattern": "horizontal",
+    "seamark:buoy_isolated_danger:shape": "aqua",
+    "description": "Lit Iso Danger - Aqua Buoy"
+  },
+  "536": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:light:colour": "unknown",
+    "seamark:buoy_special_purpose:shape": "aqua",
+    "description": "Lit Spec. Mark - Aqua Buoy"
+  },
+  "537": {
+    "seamark:type": "buoy_safe_water",
+    "seamark:light:colour": "unknown",
+    "seamark:buoy_safe_water:shape": "aqua",
+    "description": "Lit Safe Water - Aqua Buoy"
+  },
+  "541": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones up",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "north",
+    "seamark:buoy_cardinal:colour": "black;yellow",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "1",
+    "seamark:buoy_cardinal:shape": "pillar",
+    "description": "Lit Nth.Cardinal - Pillar Buoy"
+  },
+  "542": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones down",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "south",
+    "seamark:buoy_cardinal:colour": "yellow;black",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "6",
+    "seamark:buoy_cardinal:shape": "pillar",
+    "description": "Lit Sth.Cardinal - Pillar Buoy"
+  },
+  "543": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones base together",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "east",
+    "seamark:buoy_cardinal:colour": "black;yellow;black",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "seamark:buoy_cardinal:shape": "pillar",
+    "description": "Lit East Cardinal - Pillar Buoy"
+  },
+  "544": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones point together",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "west",
+    "seamark:buoy_cardinal:colour": "yellow;black;yellow",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "9",
+    "seamark:buoy_cardinal:shape": "pillar",
+    "description": "Lit West Cardinal - Pillar Buoy"
+  },
+  "545": {
+    "seamark:type": "buoy_isolated_danger",
+    "seamark:buoy_isolated_danger:colour": "black;red;black",
+    "seamark:buoy_isolated_danger:colour_pattern": "horizontal",
+    "seamark:light:colour": "white",
+    "seamark:buoy_isolated_danger:shape": "pillar",
+    "description": "Lit Iso.Danger - Pillar Buoy"
+  },
+  "546": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:colour": "yellow",
+    "seamark:light:colour": "yellow",
+    "seamark:buoy_special_purpose:shape": "pillar",
+    "description": "Lit Special Mark - Pillar Buoy"
+  },
+  "547": {
+    "seamark:type": "buoy_safe_water",
+    "seamark:light:colour": "white",
+    "seamark:buoy_safe_water:shape": "pillar",
+    "description": "Lit Safe Water Mark - Pillar Buoy"
+  },
+  "551": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones up",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "north",
+    "seamark:buoy_cardinal:colour": "black;yellow",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "1",
+    "seamark:buoy_cardinal:shape": "conical",
+    "description": "Lit Nth.Cardinal - Conical Buoy"
+  },
+  "552": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones down",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "south",
+    "seamark:buoy_cardinal:colour": "yellow;black",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "6",
+    "seamark:buoy_cardinal:shape": "conical",
+    "description": "Lit Sth.Cardinal - Conical Buoy"
+  },
+  "553": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones base together",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "east",
+    "seamark:buoy_cardinal:colour": "black;yellow;black",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "seamark:buoy_cardinal:shape": "conical",
+    "description": "Lit East Cardinal - Conical Buoy"
+  },
+  "554": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones point together",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "west",
+    "seamark:buoy_cardinal:colour": "yellow;black;yellow",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "9",
+    "seamark:buoy_cardinal:shape": "conical",
+    "description": "Lit West Cardinal - Conical Buoy"
+  },
+  "555": {
+    "seamark:type": "buoy_isolated_danger",
+    "seamark:buoy_isolated_danger:colour": "black;red;black",
+    "seamark:buoy_isolated_danger:colour_pattern": "horizontal",
+    "seamark:light:colour": "white",
+    "seamark:buoy_isolated_danger:shape": "conical",
+    "description": "Lit Iso.Danger - Conical Buoy"
+  },
+  "557": {
+    "seamark:type": "buoy_safe_water",
+    "seamark:light:colour": "white",
+    "seamark:buoy_safe_water:shape": "conical",
+    "description": "Lit Safe Water - Conical Buoy"
+  },
+  "561": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones up",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "north",
+    "seamark:buoy_cardinal:colour": "black;yellow",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "1",
+    "seamark:buoy_cardinal:shape": "can",
+    "description": "Lit Nth.Cardinal - Can Buoy"
+  },
+  "562": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones down",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "south",
+    "seamark:buoy_cardinal:colour": "yellow;black",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "6",
+    "seamark:buoy_cardinal:shape": "can",
+    "description": "Lit Sth.Cardinal - Can Buoy"
+  },
+  "563": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones base together",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "east",
+    "seamark:buoy_cardinal:colour": "black;yellow;black",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "seamark:buoy_cardinal:shape": "can",
+    "description": "Lit East Cardinal - Can Buoy"
+  },
+  "564": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones point together",
+    "seamark:type": "buoy_cardinal",
+    "seamark:buoy_cardinal:category": "west",
+    "seamark:buoy_cardinal:colour": "yellow;black;yellow",
+    "seamark:buoy_cardinal:colour_pattern": "horizontal",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "9",
+    "seamark:buoy_cardinal:shape": "can",
+    "description": "Lit West Cardinal - Can Buoy"
+  },
+  "565": {
+    "seamark:type": "buoy_isolated_danger",
+    "seamark:buoy_isolated_danger:colour": "black;red;black",
+    "seamark:buoy_isolated_danger:colour_pattern": "horizontal",
+    "seamark:light:colour": "white",
+    "seamark:buoy_isolated_danger:shape": "can",
+    "description": "Lit Iso.Danger - Can Buoy"
+  },
+  "567": {
+    "seamark:type": "buoy_safe_water",
+    "seamark:light:colour": "white",
+    "seamark:buoy_safe_water:shape": "can",
+    "description": "Lit Safe Water - Can Buoy"
+  },
+  "568": {
+    "seamark:type": "buoy_lateral",
+    "seamark:buoy_lateral:category": "preferred_channel_starboard",
+    "seamark:light:colour": "unknown",
+    "description": "Lit Pref.Channel - to Stbd Buoy"
+  },
+  "569": {
+    "seamark:type": "buoy_lateral",
+    "seamark:buoy_lateral:category": "preferred_channel_port",
+    "seamark:light:colour": "unknown",
+    "description": "Lit Pref.Channel - to Port Buoy"
+  },
+  "571": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:colour": "yellow",
+    "seamark:light:colour": "yellow",
+    "seamark:buoy_special_purpose:shape": "conical",
+    "description": "Lit Special Mark - Conical Buoy"
+  },
+  "572": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:colour": "yellow",
+    "seamark:light:colour": "yellow",
+    "seamark:buoy_special_purpose:shape": "can",
+    "description": "Lit Special Mark - Can Buoy"
+  },
+  "573": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:colour": "yellow",
+    "seamark:light:colour": "yellow",
+    "seamark:buoy_special_purpose:shape": "conical",
+    "description": "Lit Special Mark - Conical Buoy"
+  },
+  "574": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:colour": "yellow",
+    "seamark:light:colour": "yellow",
+    "seamark:buoy_special_purpose:shape": "conical",
+    "description": "Lit Special Mark - Conical Buoy NTM"
+  },
+  "575": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:colour": "yellow",
+    "seamark:light:colour": "yellow",
+    "seamark:buoy_special_purpose:shape": "can",
+    "description": "Lit Special Mark - Can Buoy NTM"
+  },
+  "576": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:colour": "yellow",
+    "seamark:light:colour": "yellow",
+    "seamark:buoy_special_purpose:shape": "conical",
+    "description": "Lit Special Mark - Conical Buoy NTM"
+  },
+  "581": {
+    "seamark:type": "buoy_installation",
+    "seamark:buoy_installation:colour": "yellow",
+    "seamark:light:colour": "unknown",
+    "description": "Lit Steel Mooring - Buoy Yel.Light"
+  },
+  "582": {
+    "seamark:type": "buoy_installation",
+    "seamark:buoy_installation:colour": "white",
+    "seamark:light:colour": "unknown",
+    "description": "Lit Steel Mooring - Buoy White Lig*"
+  },
+  "601": {
+    "seamark:type": "daymark",
+    "seamark:daymark:category": "starboard",
+    "seamark:daymark:colour": "green",
+    "description": "Starboard mark"
+  },
+  "602": {
+    "seamark:type": "daymark",
+    "seamark:daymark:category": "port",
+    "seamark:daymark:colour": "red",
+    "description": "Port mark"
+  },
+  "603": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:colour": "green",
+    "seamark:buoy_special_purpose:shape": "aqua",
+    "description": "Green Aqua - Buoy"
+  },
+  "604": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:colour": "red",
+    "seamark:buoy_special_purpose:shape": "aqua",
+    "description": "Red Aqua - Buoy"
+  },
+  "605": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:colour": "yellow",
+    "seamark:buoy_special_purpose:shape": "aqua",
+    "description": "Yellow Aqua - Buoy"
+  },
+  "606": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:colour": "green",
+    "seamark:light:colour": "unknown",
+    "seamark:buoy_special_purpose:shape": "aqua",
+    "description": "Lit Green - Aqua Buoy"
+  },
+  "607": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:colour": "red",
+    "seamark:light:colour": "unknown",
+    "seamark:buoy_special_purpose:shape": "aqua",
+    "description": "Lit Red - Aqua Buoy"
+  },
+  "608": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:colour": "yellow",
+    "seamark:light:colour": "unknown",
+    "seamark:buoy_special_purpose:shape": "aqua",
+    "description": "Lit Yellow - Aqua Buoy"
+  },
+  "609": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:colour": "blue",
+    "seamark:buoy_special_purpose:shape": "aqua",
+    "description": "Blue Aqua - Buoy"
+  },
+  "610": {
+    "seamark:type": "buoy_special_purpose",
+    "seamark:buoy_special_purpose:colour": "blue",
+    "seamark:light:colour": "unknown",
+    "seamark:buoy_special_purpose:shape": "aqua",
+    "description": "Lit Blue - Aqua Buoy"
+  },
+  "611": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones up",
+    "seamark:type": "daymark_cardinal",
+    "seamark:daymark_cardinal:category": "north",
+    "seamark:daymark_cardinal:colour": "black;yellow",
+    "seamark:daymark_cardinal:colour_pattern": "horizontal",
+    "description": "North cardinal - mark"
+  },
+  "612": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones down",
+    "seamark:type": "daymark_cardinal",
+    "seamark:daymark_cardinal:category": "south",
+    "seamark:daymark_cardinal:colour": "yellow;black",
+    "seamark:daymark_cardinal:colour_pattern": "horizontal",
+    "description": "South cardinal - mark"
+  },
+  "613": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones base together",
+    "seamark:type": "daymark_cardinal",
+    "seamark:daymark_cardinal:category": "east",
+    "seamark:daymark_cardinal:colour": "black;yellow;black",
+    "seamark:daymark_cardinal:colour_pattern": "horizontal",
+    "description": "East cardinal - mark"
+  },
+  "614": {
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 cones point together",
+    "seamark:type": "daymark_cardinal",
+    "seamark:daymark_cardinal:category": "west",
+    "seamark:daymark_cardinal:colour": "yellow;black;yellow",
+    "seamark:daymark_cardinal:colour_pattern": "horizontal",
+    "description": "West cardinal - mark"
+  },
+  "615": {
+    "seamark:type": "daymark_isolated_danger",
+    "seamark:daymark_isolated_danger:colour": "black;red;black",
+    "seamark:daymark_isolated_danger:colour_pattern": "horizontal",
+    "description": "Isolated danger - mark"
+  },
+  "616": {
+    "seamark:type": "daymark",
+    "seamark:daymark:colour": "yellow",
+    "description": "Special mark"
+  },
+  "617": {
+    "seamark:type": "daymark_safe_water",
+    "description": "Safe water - mark"
+  }
+}
