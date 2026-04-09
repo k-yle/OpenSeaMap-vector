@@ -14,3 +14,27 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
+code {
+  font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;
+  font-size: 12px;
+  border-radius: 3px;
+
+  padding: 2px 4px;
+  white-space: nowrap;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+}
+
+code a {
+  color: inherit;
+  text-decoration: none;
+  color: #0645ad;
+}
+code a:hover {
+  text-decoration: underline;
+}
+
+summary {
+  cursor: pointer;
+}

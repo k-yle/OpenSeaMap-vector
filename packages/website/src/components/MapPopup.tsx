@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import type { MapGeoJSONFeature } from 'maplibre-gl';
 import type { OsmFeatureType } from 'osm-api';
 import { bigintToOsmId, osmIdToUrl, osmIdtoEditorUrl } from '../util/osm.js';
@@ -12,9 +13,9 @@ const ICONS: Record<OsmFeatureType, string> = {
   relation: iconRelation,
 };
 
-export const MapPopup: React.FC<{
+export const MapPopup = memo<{
   feature: MapGeoJSONFeature;
-}> = ({ feature }) => {
+}>(({ feature }) => {
   const label = feature.properties['seamark:type'];
   const id = bigintToOsmId(feature.id!);
 
@@ -92,4 +93,5 @@ export const MapPopup: React.FC<{
       </pre>
     </>
   );
-};
+});
+MapPopup.displayName = 'MapPopup';

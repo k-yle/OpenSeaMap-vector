@@ -1,9 +1,10 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { MapPage as App } from './pages/MapPage.js';
+import { App } from './App.js';
 import { NavmarkPreview } from './pages/NavmarkPreview.js';
 import './util/shut-up.js';
 import 'maplibre-gl/dist/maplibre-gl.css';
+import '@mantine/core/styles.css';
 import './index.css';
 
 // we don't use a router, because this app only has a single page,

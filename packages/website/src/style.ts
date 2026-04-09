@@ -25,6 +25,10 @@ export async function getStyle() {
   styleJson.sources.seamarks.url = `pmtiles://${PMTILES_URL}`;
   styleJson.sprite[0]!.url = `${SELF_BASE_URL}/icons`;
 
+  // remove the disclaimer, since we know that in the navbar instead
+  styleJson.sources.basemap.attribution =
+    styleJson.sources.basemap.attribution.split(' &middot; ')[0]!;
+
   /**
    * override the placeholder symbol that we will replace
    * with a complex symbol via styleimagemissing.

@@ -13,27 +13,29 @@
       content="A rewrite of OpenSeaMap, using vector tiles instead of raster tiles"
     />
     <link rel="icon" href="./icon.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      property="og:title"
+      content="OpenSeaMap-vector"
+    />
+    <meta
+      name="twitter:image"
+      property="og:image"
+      content="https://kyle.kiwi/OpenSeaMap-vector/example.png"
+    />
+    <meta
+      name="twitter:description"
+      property="og:description"
+      content="A rewrite of OpenSeaMap, using vector tiles instead of raster tiles"
+    />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'none'; connect-src 'self' https://*.openstreetmap.org https://*.kyle.kiwi https://static.cloudflareinsights.com https://www.wikidata.org; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://*.wikimedia.org; script-src-elem 'self' https://static.cloudflareinsights.com; worker-src blob:"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css"
+      content="default-src 'none'; connect-src 'self' https://*.openstreetmap.org https://*.kyle.kiwi https://static.cloudflareinsights.com https://www.wikidata.org; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://*.openstreetmap.org https://*.wikimedia.org https://raw.githubusercontent.com; script-src-elem 'self' https://static.cloudflareinsights.com; worker-src blob:"
     />
   </head>
   <body>
     <main></main>
-    <a
-      class="github-fork-ribbon"
-      href="https://github.com/k-yle/OpenSeaMap-vector"
-      target="_blank"
-      rel="noopener noreferrer"
-      data-ribbon="Fork me on GitHub"
-      title="Fork me on GitHub"
-    >
-      Fork me on GitHub
-    </a>
     <script type="module" src="./src/index.tsx"></script>
   </body>
 </html>

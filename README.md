@@ -68,3 +68,9 @@ To edit the code for this project on your own computer:
 
 - The map data is sourced from [OpenStreetMap](https://osm.org) and licensed under the [ODbL license](https://osm.org/copyright).
 - The code and icons in _this repository_ licensed under [Creative Commons CC0 license](https://wikidata.org/wiki/Wikidata:Copyright). Many icons are copied from other CC0-licensed projects, such as [Temaki](https://github.com/rapideditor/temaki) and selective icons from [Wikimed](https://commons.wikimedia.org/wiki/Category:SVG_Nautical_Chart_icons)[ia Commons](https://commons.wikimedia.org/wiki/Category:CEVNI_signs_by_function).
+
+# Disclaimer
+
+As usual, data from this map or from OpenStreetMap **should never be used for marine navigation**.
+The contributors of this project take no responsibility for the accuracy of the data.
+Always use official nautical charts.
