@@ -10,10 +10,10 @@ import {
 } from 'maplibre-gl';
 import * as Diplomat from '@americana/diplomat';
 import { PMTiles, Protocol } from 'pmtiles';
-import { PMTILES_URL, SCALE, getStyle } from './style.js';
-import { onStyleImageMissing } from './onStyleImageMissing.js';
-import { MapPopup } from './components/MapPopup.js';
-import { HOME_LOCATION } from './util/region.js';
+import { PMTILES_URL, SCALE, getStyle } from '../style.js';
+import { onStyleImageMissing } from '../onStyleImageMissing.js';
+import { MapPopup } from '../components/MapPopup.js';
+import { HOME_LOCATION } from '../util/region.js';
 
 const protocol = new Protocol();
 addProtocol('pmtiles', protocol.tile);
@@ -23,7 +23,7 @@ protocol.add(pmTiles);
 
 /* eslint-disable @eslint-react/web-api/no-leaked-event-listener -- this is the root component, it never gets unmounted */
 
-export const App: React.FC = () => {
+export const MapPage: React.FC = () => {
   const domRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<Map>(null);
 

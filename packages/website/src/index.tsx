@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { App } from './App.js';
+import { MapPage as App } from './pages/MapPage.js';
 import { NavmarkPreview } from './pages/NavmarkPreview.js';
 import './util/shut-up.js';
 import 'maplibre-gl/dist/maplibre-gl.css';
