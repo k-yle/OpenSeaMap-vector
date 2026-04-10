@@ -71,6 +71,8 @@ export async function getStyle() {
     'seamark:type',
     'seamark:name',
 
+    'man_made', // fallback for lighthouse and offshore_platform
+
     // required for notice marks:
     'maxspeed',
     'maxheight',

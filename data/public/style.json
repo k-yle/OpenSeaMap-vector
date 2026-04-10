@@ -1187,7 +1187,9 @@
         ["==", "seamark:type", "virtual_aton"],
         ["==", "seamark:type", "mooring"],
         ["==", "seamark:type", "platform"],
-        ["==", "seamark:type", "topmark"]
+        ["==", "seamark:type", "topmark"],
+        ["==", "man_made", "lighthouse"],
+        ["==", "man_made", "offshore_platform"]
       ],
       "layout": {
         "icon-allow-overlap": true,

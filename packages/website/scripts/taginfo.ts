@@ -80,6 +80,8 @@ const taginfo: Schema = {
       'platform',
       'topmark',
     ].map((value) => ({ key: 'seamark:type', value })),
+    { key: 'man_made', value: 'lighthouse' },
+    { key: 'man_made', value: 'offshore_platform' },
   ],
 };
 

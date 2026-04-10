@@ -19,7 +19,6 @@ import { svgToString } from './util/svgToString.js';
 
 export function BuoyBeaconLxComponent(tags: Tags): CompositeSvg & Dimensions {
   let type = tags['seamark:type'];
-
   // if the type is light, replace it with the real structure
   if (type?.startsWith('light_')) {
     for (const key in tags) {
@@ -31,6 +30,13 @@ export function BuoyBeaconLxComponent(tags: Tags): CompositeSvg & Dimensions {
 
   const _shape = tags[`seamark:${type}:shape`]!;
   let structureShape = isStructure(_shape) ? _shape : STRUCTURE_MAP[_shape];
+
+  /* eslint-disable dot-notation */
+  if (!type && tags['man_made'] === 'lighthouse') {
+    type = 'beacon_special_purpose';
+    structureShape = 'tower';
+  }
+  if (!type && tags['man_made'] === 'offshore_platform') type = 'platform';
 
   // fallback to the most generic shape from each category
   if (!structureShape && type?.startsWith('beacon_')) structureShape = 'pile';
