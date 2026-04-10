@@ -27,6 +27,7 @@ public class Seamarks implements Profile {
       "waterway" //
   );
 
+  // there's an AST walker which extracts these values in scripts/taginfo.ts
   private Set<String> ATTRIBUTES = Set.of(
       //
       "name", //
