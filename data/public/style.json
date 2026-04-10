@@ -300,7 +300,8 @@
           "coalesce",
           ["get", "seamark:name"],
           ["get", "ref"],
-          ["get", "name"]
+          ["get", "name"],
+          "?"
         ],
         "symbol-placement": "point",
         "text-size": 8,
@@ -324,7 +325,8 @@
           "coalesce",
           ["get", "seamark:name"],
           ["get", "ref"],
-          ["get", "name"]
+          ["get", "name"],
+          "?"
         ],
         "icon-image": "berth",
         "icon-size": 0.2,
