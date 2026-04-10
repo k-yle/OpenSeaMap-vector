@@ -62,6 +62,7 @@ export const MapPage: React.FC = () => {
             },
             trackUserLocation: true,
           }),
+          'bottom-right',
         );
 
         // clicking the toggle cycles thru all 3 units

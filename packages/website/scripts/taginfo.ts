@@ -91,7 +91,7 @@ function renderTags(tags: Tags) {
 }
 
 function loadFromLegend() {
-  const hiddenTags: { [key: string]: { [value: string]: string[] } } = {};
+  const hiddenTags: { [key: string]: { [value: string]: Set<string> } } = {};
   for (const category of LEGEND) {
     for (const item of category.items) {
       for (const [index, tags] of item.tags.entries()) {
@@ -116,8 +116,8 @@ function loadFromLegend() {
         for (const matchTags of item.hiddenIf || []) {
           for (const [k, v] of Object.entries(matchTags)) {
             hiddenTags[k] ||= {};
-            hiddenTags[k][v] ||= [];
-            hiddenTags[k][v].push(item.label);
+            hiddenTags[k][v] ||= new Set();
+            hiddenTags[k][v].add(item.label);
           }
         }
         for (const key of item.labelAttributes || []) {
@@ -136,7 +136,7 @@ function loadFromLegend() {
       taginfo.tags.push({
         key,
         value,
-        description: `Some features are hidden from the map if this tag is present (specifically: ${features.join(', ')})`,
+        description: `Some features are hidden from the map if this tag is present (specifically: ${[...features].join(', ')})`,
       });
     }
   }
