@@ -528,6 +528,11 @@ export const LEGEND: LegendCategory[] = [
         tags: [{ 'seamark:type': 'separation_lane' }],
       },
       {
+        label: 'Separation Divider',
+        icon: 'https://wiki.openstreetmap.org/w/images/7/73/Openseamap_rendering_separation_boundary.png',
+        tags: [{ 'seamark:type': 'separation_line' }],
+      },
+      {
         label: 'Separation Boundary',
         icon: 'https://wiki.openstreetmap.org/w/images/7/73/Openseamap_rendering_separation_boundary.png',
         tags: [{ 'seamark:type': 'separation_boundary' }],

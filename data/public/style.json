@@ -1315,6 +1315,17 @@
       }
     },
     {
+      "id": "separation_line[line]",
+      "type": "line",
+      "source": "seamarks",
+      "source-layer": "seamarks",
+      "filter": ["any", ["==", "seamark:type", "separation_line"]],
+      "paint": {
+        "line-width": 3,
+        "line-color": "#be94f7"
+      }
+    },
+    {
       "id": "separation_boundary[line]",
       "type": "line",
       "source": "seamarks",
