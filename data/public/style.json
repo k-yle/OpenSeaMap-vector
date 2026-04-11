@@ -1359,7 +1359,8 @@
         "any",
         ["==", "building", "ship"],
         ["==", "historic", "ship"],
-        ["==", "seamark:type", "hulk"]
+        ["==", "seamark:type", "hulk"],
+        ["==", "seamark:type", "pontoon"]
       ],
       "paint": {
         "fill-color": "#fc0",
@@ -1466,7 +1467,8 @@
         "any",
         ["==", "building", "ship"],
         ["==", "historic", "ship"],
-        ["==", "seamark:type", "hulk"]
+        ["==", "seamark:type", "hulk"],
+        ["==", "seamark:type", "pontoon"]
       ],
       "minzoom": 16
     },

@@ -419,6 +419,11 @@ export const LEGEND: LegendCategory[] = [
         ],
       },
       {
+        label: 'Swimming Pontoon',
+        icon: 'https://wiki.openstreetmap.org/w/images/f/fe/Openseamap_rendering_hulk.png',
+        tags: [{ 'seamark:type': 'pontoon' }],
+      },
+      {
         label: 'Shipping Channel / Fairway Area',
         icon: 'https://wiki.openstreetmap.org/w/images/d/dc/Openseamap_rendering_fairway.png',
         tags: [{ 'seamark:type': 'fairway' }],
