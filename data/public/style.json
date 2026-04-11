@@ -1163,6 +1163,47 @@
       "minzoom": 11
     },
     {
+      "id": "rounding_mark_direction[symbol]",
+      "type": "symbol",
+      "source": "seamarks",
+      "source-layer": "seamarks",
+      "filter": [
+        "all",
+        [
+          "any",
+          ["==", "seamark:type", "beacon_cardinal"],
+          ["==", "seamark:type", "beacon_isolated_danger"],
+          ["==", "seamark:type", "beacon_lateral"],
+          ["==", "seamark:type", "beacon_safe_water"],
+          ["==", "seamark:type", "beacon_special_purpose"],
+          ["==", "seamark:type", "buoy_cardinal"],
+          ["==", "seamark:type", "buoy_installation"],
+          ["==", "seamark:type", "buoy_isolated_danger"],
+          ["==", "seamark:type", "buoy_lateral"],
+          ["==", "seamark:type", "buoy_safe_water"],
+          ["==", "seamark:type", "buoy_special_purpose"]
+        ],
+        [
+          "any",
+          ["==", "direction", "clockwise"],
+          ["==", "direction", "anticlockwise"]
+        ]
+      ],
+      "layout": {
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-size": 0.5,
+        "icon-rotate": -90,
+        "icon-image": [
+          "case",
+          ["==", ["get", "direction"], "clockwise"],
+          "round_to_starboard",
+          "round_to_port"
+        ]
+      },
+      "minzoom": 11
+    },
+    {
       "id": "DYNAMIC",
       "type": "symbol",
       "source": "seamarks",

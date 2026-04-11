@@ -547,6 +547,20 @@ export const LEGEND: LegendCategory[] = [
       },
     ],
   },
-
+  {
+    categoryName: 'Buoys and Beacons',
+    items: [
+      {
+        label: 'Leave-to-Port',
+        icon: `${ICON_BASE_URL}/round_to_port.svg`,
+        tags: [{ direction: 'clockwise' }],
+      },
+      {
+        label: 'Leave-to-Starboard',
+        icon: `${ICON_BASE_URL}/round_to_starboard.svg`,
+        tags: [{ direction: 'anticlockwise' }],
+      },
+    ],
+  },
   /* TODO: everything from the navmark renderer (notices, beacons, buoys, etc.) */
 ];
