@@ -11,7 +11,12 @@ Inspired by [OpenRailwayMap<b>.app</b>](https://OpenRailwayMap.app) (a vector re
 
 ## Architecture
 
-TODO
+[![](./data/public/flowchart.png)](https://psg1rwze8tq6.feishu.cn/docx/Z8ehdUCIooMNiaxOxgyl3Fj8gwh?openbrd=1&doc_app_id=501&blockId=C91hd0fbDoND0cxzRMPln72Qgme&blockType=whiteboard&blockToken=Za4rwBgPlhJN1xbn4sflyUeTgWg#C91hd0fbDoND0cxzRMPln72Qgme)
+
+Due to [limited disk space](https://github.com/k-yle/OpenSeaMap-vector/blob/d20a97e9/.github/workflows/planet.yml#L26-L30) in GitHub Actions, the initial `.pbf` filtering is processed seperately for each continent, and then merged back together.
+This is [inconvenient](https://github.com/osmcode/osmium-tool/issues/197), but there is no alternative solution which is completely free.
+
+The entire process takes about 90 minutes. More granular timings can be [viewed in GitHub Actions](https://github.com/k-yle/OpenSeaMap-vector/actions/workflows/planet.yml).
 
 ## navmark-renderer
 
