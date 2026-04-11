@@ -34,6 +34,8 @@
       "filter": [
         "any",
         ["==", "seamark:small_craft_facility:category", "nautical_club"],
+        ["==", "club", "boat"],
+        ["==", "club", "boating"],
         ["==", "club", "yachting"],
         ["==", "club", "sailing"],
         ["==", "sport", "sailing"],
@@ -70,6 +72,8 @@
       "source-layer": "seamarks",
       "filter": [
         "any",
+        ["==", "club", "boat"],
+        ["==", "club", "boating"],
         ["==", "club", "yachting"],
         ["==", "club", "sailing"],
         ["==", "sport", "sailing"],

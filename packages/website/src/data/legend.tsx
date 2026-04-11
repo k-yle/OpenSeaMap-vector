@@ -182,6 +182,8 @@ export const LEGEND: LegendCategory[] = [
           { sport: 'sailing' },
           { club: 'sailing' },
           { club: 'yachting' },
+          { club: 'boating' },
+          { club: 'boat' },
           { 'seamark:small_craft_facility:category': 'nautical_club' },
         ],
       },
