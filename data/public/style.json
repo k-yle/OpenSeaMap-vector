@@ -1585,9 +1585,13 @@
       "source": "seamarks",
       "source-layer": "seamarks",
       "filter": [
-        "all",
-        ["==", "seamark:type", "mooring"],
-        ["==", "seamark:mooring:category", "dolphin"]
+        "any",
+        [
+          "all",
+          ["==", "seamark:type", "mooring"],
+          ["==", "seamark:mooring:category", "dolphin"]
+        ],
+        ["==", "man_made", "dolphin"]
       ],
       "paint": {
         "circle-radius": 3,

@@ -357,6 +357,7 @@ export const LEGEND: LegendCategory[] = [
         icon: 'https://wiki.openstreetmap.org/w/images/0/0b/Dolphin.png',
         tags: [
           { 'seamark:type': 'mooring', 'seamark:mooring:category': 'dolphin' },
+          { man_made: 'dolphin' },
         ],
       },
       {
