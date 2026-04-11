@@ -64,7 +64,7 @@ export function renderTextWithinBbox(
 
   // hack for safari, to workaround https://github.com/web-platform-tests/interop/issues/1091
   // the top-baseline for text is off by a few pixels in safari...
-  if ('GestureEvent' in globalThis) anchorY -= 1.5 * scale;
+  if ('GestureEvent' in globalThis) anchorY -= 5 * scale;
 
   if (DEBUG) {
     const padding = 2;
