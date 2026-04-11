@@ -1351,7 +1351,12 @@
       "type": "fill",
       "source": "seamarks",
       "source-layer": "seamarks",
-      "filter": ["any", ["==", "seamark:type", "hulk"]],
+      "filter": [
+        "any",
+        ["==", "building", "ship"],
+        ["==", "historic", "ship"],
+        ["==", "seamark:type", "hulk"]
+      ],
       "paint": {
         "fill-color": "#fc0",
         "fill-outline-color": "#000"
@@ -1453,7 +1458,12 @@
         "text-anchor": "center",
         "text-keep-upright": false
       },
-      "filter": ["all", ["==", "seamark:type", "hulk"]],
+      "filter": [
+        "any",
+        ["==", "building", "ship"],
+        ["==", "historic", "ship"],
+        ["==", "seamark:type", "hulk"]
+      ],
       "minzoom": 16
     },
     {
