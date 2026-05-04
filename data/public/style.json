@@ -1040,6 +1040,7 @@
           ["==", "amenity", "boat_storage"],
           ["==", "leisure", "fishing"],
           ["==", "leisure", "slipway"],
+          ["==", "waterway", "boat_lift"],
           ["==", "waterway", "fuel"],
           ["==", "waterway", "water_point"],
           ["==", "waterway", "sanitary_dump_station"]
@@ -1062,6 +1063,8 @@
           "small_craft_facility/fishing_spot",
           ["==", ["get", "leisure"], "slipway"],
           "small_craft_facility/slipway",
+          ["==", ["get", "waterway"], "boat_lift"],
+          "small_craft_facility/elevator",
           ["==", ["get", "waterway"], "fuel"],
           "small_craft_facility/fuel_station",
           ["==", ["get", "waterway"], "water_point"],

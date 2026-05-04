@@ -64,6 +64,11 @@ export const LEGEND: LegendCategory[] = [
         ],
       },
       {
+        label: 'Boat Lift',
+        icon: `${ICON_BASE_URL}/small_craft_facility/elevator.svg`,
+        tags: [{ waterway: 'boat_lift' }],
+      },
+      {
         label: 'Boat Storage',
         icon: `${ICON_BASE_URL}/small_craft_facility/boat_storage.svg`,
         tags: [{ amenity: 'boat_storage' }],
