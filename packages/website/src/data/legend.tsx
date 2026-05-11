@@ -108,7 +108,7 @@ export const LEGEND: LegendCategory[] = [
       },
       {
         label: 'Marine Fuel Station',
-        icon: `${ICON_BASE_URL}/small_craft_facility/freshwater_tap.svg`,
+        icon: `${ICON_BASE_URL}/small_craft_facility/fuel_station.svg`,
         tags: [
           { waterway: 'fuel' },
           {
