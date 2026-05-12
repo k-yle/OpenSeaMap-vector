@@ -376,6 +376,8 @@
               ["!=", ["get", "name"], ["get", "ref"]]
             ],
             ["concat", ["get", "name"], "\n"],
+            ["has", "seamark:berth:name"],
+            ["concat", ["get", "seamark:berth:name"], "\n"],
             ""
           ],
           [

@@ -42,6 +42,11 @@ const taginfo: Schema = {
       description:
         'Used for feature labels. Alternatively, name=* and/or ref=* can be used ',
     },
+    {
+      key: 'seamark:berth:name',
+      description:
+        'Used for feature labels. Preferably, seamark:name=*, name=* and/or ref=* should be used instead.',
+    },
 
     ...[
       'network:wikidata',
