@@ -43,6 +43,10 @@
           ["==", "club", "sport"],
           ["any", ["==", "sport", "sailing"], ["==", "sport", "rowing"]]
         ],
+        ["==", "amenity", "sailing_school"],
+        ["==", "education", "sailing_school"],
+        ["==", "training", "sailing"],
+        ["==", "training", "maritime"],
         ["==", "scout", "sea"]
       ],
       "layout": {

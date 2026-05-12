@@ -211,6 +211,16 @@ export const LEGEND: LegendCategory[] = [
         ),
       },
       {
+        label: 'Maritime Education / Training',
+        icon: `${ICON_BASE_URL}/small_craft_facility/yacht_club.svg`,
+        tags: [
+          { amenity: 'sailing_school' },
+          { education: 'sailing_school' },
+          { training: 'sailing' },
+          { training: 'maritime' },
+        ],
+      },
+      {
         label: 'Marina',
         icon: `${ICON_BASE_URL}/harbour_marina.svg`,
         tags: [
