@@ -53,7 +53,6 @@
         "symbol-spacing": 5,
         "icon-image": "small_craft_facility/yacht_club",
         "icon-size": 0.3,
-        "icon-rotation-alignment": "map",
         "icon-keep-upright": false,
         "text-field": [
           "coalesce",
@@ -102,7 +101,6 @@
           ]
         ],
         "icon-size": 0.3,
-        "icon-rotation-alignment": "map",
         "icon-keep-upright": false,
         "icon-offset": [100, 0]
       },
@@ -952,7 +950,6 @@
         "symbol-spacing": 5,
         "icon-image": "small_craft_facility/beach",
         "icon-size": 0.3,
-        "icon-rotation-alignment": "map",
         "icon-keep-upright": false,
         "text-field": [
           "let",
