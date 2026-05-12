@@ -78,6 +78,7 @@ export async function getStyle() {
     'maxheight',
     'maxwidth',
     'maxdraft',
+    'maxweight',
     'vhf',
   ];
 

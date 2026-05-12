@@ -623,6 +623,7 @@ export const LEGEND: LegendCategory[] = [
         navigation_restrictions: 'C4. Navigation Restrictions',
         channel_distance_left: 'C5a. Channel Distance Left',
         channel_distance_right: 'C5b. Channel Distance Right',
+        maxweight: 'Maximum Weight/Displacement',
 
         channel_two_way: 'D1a. Channel Two Way',
         channel_one_way: 'D1b. Channel One Way',

@@ -526,6 +526,16 @@ export const NOTICES = {
       placement: { x: 20, y: 10, width: 40, height: 40, color: '#fff' },
     },
   },
+  maxweight: {
+    // no CEVNI code
+    svg: [WHITE_WITH_RED_BORDER, <path d="M15 35H45L30 51Z" />],
+    text: {
+      getValue: (tags) =>
+        Number.isNaN(+tags['maxweight']!) ? '' : `${tags['maxweight']}t`,
+      // TODO: this is so small it's illegible
+      placement: { x: 8, y: 8, width: 41, height: 24, color: '#000' },
+    },
+  },
 
   //
   // D
