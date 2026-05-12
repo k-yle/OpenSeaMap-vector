@@ -32,6 +32,7 @@ public class Seamarks implements Profile {
       //
       "name", //
       "ref", //
+      "noref", //
       "description", //
       "note", //
       "fixme", //

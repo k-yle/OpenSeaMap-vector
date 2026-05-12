@@ -336,7 +336,7 @@
           ["get", "seamark:name"],
           ["get", "ref"],
           ["get", "name"],
-          "?"
+          ["case", ["==", ["get", "noref"], "yes"], "", "?"]
         ],
         "icon-image": "berth",
         "icon-size": 0.2,
