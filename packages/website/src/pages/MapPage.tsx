@@ -14,6 +14,7 @@ import { PMTILES_URL, SCALE, getStyle } from '../style.js';
 import { onStyleImageMissing } from '../onStyleImageMissing.js';
 import { MapPopup } from '../components/MapPopup.js';
 import { HOME_LOCATION } from '../util/region.js';
+import { Stars } from '../components/Stars.js';
 
 const protocol = new Protocol();
 addProtocol('pmtiles', protocol.tile);
@@ -118,5 +119,10 @@ export const MapPage: React.FC = () => {
       .catch(console.error);
   }, []);
 
-  return <div id="map" ref={domRef} />;
+  return (
+    <main>
+      <Stars />
+      <div id="map" ref={domRef} />
+    </main>
+  );
 };
