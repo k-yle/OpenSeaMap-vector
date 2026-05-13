@@ -295,6 +295,11 @@ export const LEGEND: LegendCategory[] = [
         ],
       },
       {
+        label: 'Maritime Police Station',
+        icon: `${ICON_BASE_URL}/rescue_station.svg`,
+        tags: [{ police: 'naval_base' }],
+      },
+      {
         label: 'Radio Signal Station',
         icon: `${ICON_BASE_URL}/signal_station.svg`,
         tags: [

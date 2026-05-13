@@ -792,6 +792,7 @@
       "filter": [
         "any",
         ["==", "emergency", "water_rescue"],
+        ["==", "police", "naval_base"],
         ["==", "seamark:type", "rescue_station"],
         ["==", "seamark:type", "coastguard_station"]
       ],

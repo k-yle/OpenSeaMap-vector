@@ -22,6 +22,7 @@ public class Seamarks implements Profile {
       "lock", //
       "man_made", //
       "natural", //
+      "police", //
       "scout", //
       "sport", //
       "portage", //
