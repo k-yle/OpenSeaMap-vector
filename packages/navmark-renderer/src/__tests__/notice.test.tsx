@@ -11,17 +11,19 @@ import type { Tags } from '../util/types.def.js';
 //
 
 describe(renderNoticeMark, () => {
-  it('can render a single icon', () => {
+  it('can render a single icon', async () => {
     const svg = renderNoticeSvg(
       { 'seamark:notice:category': 'overhead_cable' },
       2,
       1,
     )!;
 
-    expect(svgToString(svg!.svg)).toMatchFileSnapshot('notice-single.svg');
+    await expect(svgToString(svg!.svg)).toMatchFileSnapshot(
+      'notice-single.svg',
+    );
   });
 
-  it('handles a mix of :n: and semicolon-delimeted values', () => {
+  it('handles a mix of :n: and semicolon-delimeted values', async () => {
     const svg = renderNoticeSvg(
       {
         // this is obviously bad tagging, but we can still support it
@@ -33,10 +35,12 @@ describe(renderNoticeMark, () => {
       2,
     )!;
 
-    expect(svgToString(svg!.svg)).toMatchFileSnapshot('notice-semicolon.svg');
+    await expect(svgToString(svg!.svg)).toMatchFileSnapshot(
+      'notice-semicolon.svg',
+    );
   });
 
-  it('can render a grid of every possible icons', () => {
+  it('can render a grid of every possible icons', async () => {
     const tags: Tags = {};
     let i = 0;
     for (const id in NOTICES) {
@@ -44,6 +48,6 @@ describe(renderNoticeMark, () => {
     }
     const svg = renderNoticeSvg(tags, 2, 12)!;
 
-    expect(svgToString(svg!.svg)).toMatchFileSnapshot('notice-all.svg');
+    await expect(svgToString(svg!.svg)).toMatchFileSnapshot('notice-all.svg');
   });
 });

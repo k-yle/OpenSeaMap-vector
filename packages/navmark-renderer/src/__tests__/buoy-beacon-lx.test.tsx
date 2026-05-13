@@ -27,12 +27,12 @@ const crazyColours: Tags = {
 };
 
 describe(BuoyBeaconLxComponent, () => {
-  it('buoy-beacon-lx-1.svg', () => {
+  it('buoy-beacon-lx-1.svg', async () => {
     const svg = render(crazyColours);
-    expect(svg).toMatchFileSnapshot('buoy-beacon-lx-1.svg');
+    await expect(svg).toMatchFileSnapshot('buoy-beacon-lx-1.svg');
   });
 
-  it('generates a test card for every combination of structure + topmark', () => {
+  it('generates a test card for every combination of structure + topmark', async () => {
     const structures = Object.keys(STRUCTURES) as Structure[];
     const topmarks = Object.keys(TOPMARK_SHAPES) as (
       | TopmarkShape
@@ -112,7 +112,7 @@ describe(BuoyBeaconLxComponent, () => {
       </svg>
     );
 
-    expect(svgToString(final)).toMatchFileSnapshot(
+    await expect(svgToString(final)).toMatchFileSnapshot(
       'topmark-structure-matrix.svg',
     );
   });

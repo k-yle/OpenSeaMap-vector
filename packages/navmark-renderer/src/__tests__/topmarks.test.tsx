@@ -82,23 +82,23 @@ describe(createTopmark, () => {
     return svgToString(final);
   }
 
-  it('generates a snapshot for topmarks with 0 colours', () => {
-    expect(createTopmarkTestCard(0)).toMatchFileSnapshot('topmark0.svg');
+  it('generates a snapshot for topmarks with 0 colours', async () => {
+    await expect(createTopmarkTestCard(0)).toMatchFileSnapshot('topmark0.svg');
   });
 
-  it('generates a snapshot for topmarks with 1 colours', () => {
-    expect(createTopmarkTestCard(1)).toMatchFileSnapshot('topmark1.svg');
+  it('generates a snapshot for topmarks with 1 colours', async () => {
+    await expect(createTopmarkTestCard(1)).toMatchFileSnapshot('topmark1.svg');
   });
 
-  it('generates a snapshot for topmarks with 2 colours', () => {
-    expect(createTopmarkTestCard(2)).toMatchFileSnapshot('topmark2.svg');
+  it('generates a snapshot for topmarks with 2 colours', async () => {
+    await expect(createTopmarkTestCard(2)).toMatchFileSnapshot('topmark2.svg');
   });
 
-  it('generates a snapshot for topmarks with 3 colours', () => {
-    expect(createTopmarkTestCard(3)).toMatchFileSnapshot('topmark3.svg');
+  it('generates a snapshot for topmarks with 3 colours', async () => {
+    await expect(createTopmarkTestCard(3)).toMatchFileSnapshot('topmark3.svg');
   });
 
-  it('generates a snapshot for topmarks with 4 colours', () => {
-    expect(createTopmarkTestCard(4)).toMatchFileSnapshot('topmark4.svg');
+  it('generates a snapshot for topmarks with 4 colours', async () => {
+    await expect(createTopmarkTestCard(4)).toMatchFileSnapshot('topmark4.svg');
   });
 });

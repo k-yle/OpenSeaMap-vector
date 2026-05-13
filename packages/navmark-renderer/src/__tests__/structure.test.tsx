@@ -83,23 +83,33 @@ describe(createStructure, () => {
     return svgToString(final);
   }
 
-  it('generates a snapshot for structures with 0 colours', () => {
-    expect(createStructureTestCard(0)).toMatchFileSnapshot('structure0.svg');
+  it('generates a snapshot for structures with 0 colours', async () => {
+    await expect(createStructureTestCard(0)).toMatchFileSnapshot(
+      'structure0.svg',
+    );
   });
 
-  it('generates a snapshot for structures with 1 colours', () => {
-    expect(createStructureTestCard(1)).toMatchFileSnapshot('structure1.svg');
+  it('generates a snapshot for structures with 1 colours', async () => {
+    await expect(createStructureTestCard(1)).toMatchFileSnapshot(
+      'structure1.svg',
+    );
   });
 
-  it('generates a snapshot for structures with 2 colours', () => {
-    expect(createStructureTestCard(2)).toMatchFileSnapshot('structure2.svg');
+  it('generates a snapshot for structures with 2 colours', async () => {
+    await expect(createStructureTestCard(2)).toMatchFileSnapshot(
+      'structure2.svg',
+    );
   });
 
-  it('generates a snapshot for structures with 3 colours', () => {
-    expect(createStructureTestCard(3)).toMatchFileSnapshot('structure3.svg');
+  it('generates a snapshot for structures with 3 colours', async () => {
+    await expect(createStructureTestCard(3)).toMatchFileSnapshot(
+      'structure3.svg',
+    );
   });
 
-  it('generates a snapshot for structures with 4 colours', () => {
-    expect(createStructureTestCard(4)).toMatchFileSnapshot('structure4.svg');
+  it('generates a snapshot for structures with 4 colours', async () => {
+    await expect(createStructureTestCard(4)).toMatchFileSnapshot(
+      'structure4.svg',
+    );
   });
 });
