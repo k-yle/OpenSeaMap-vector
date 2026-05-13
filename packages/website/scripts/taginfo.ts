@@ -47,6 +47,22 @@ const taginfo: Schema = {
       description:
         'Used for feature labels. Preferably, seamark:name=*, name=* and/or ref=* should be used instead.',
     },
+    {
+      key: 'seamark:notice:addition',
+      value: 'left_triangle',
+      description:
+        'Notice Marks with this tag are rendered with an arrow in the left direction',
+      icon_url:
+        'https://github.com/k-yle/OpenSeaMap-vector/raw/main/packages/navmark-renderer/src/__tests__/notice-single-arrow-left.svg',
+    },
+    {
+      key: 'seamark:notice:addition',
+      value: 'right_triangle',
+      description:
+        'Notice Marks with this tag are rendered with an arrow in the right direction',
+      icon_url:
+        'https://github.com/k-yle/OpenSeaMap-vector/raw/main/packages/navmark-renderer/src/__tests__/notice-single-arrow-right.svg',
+    },
 
     ...[
       'network:wikidata',
@@ -91,6 +107,7 @@ const taginfo: Schema = {
     // add various keys with :n:
     ...[
       'seamark:notice:category',
+      'seamark:notice:addition',
       'seamark:light:category',
       'seamark:light:colour',
       'seamark:light:character',

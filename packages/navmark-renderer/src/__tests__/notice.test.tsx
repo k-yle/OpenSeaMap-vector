@@ -23,6 +23,88 @@ describe(renderNoticeMark, () => {
     );
   });
 
+  it('can render a single icon with a left-arrow', async () => {
+    const svg = renderNoticeSvg(
+      {
+        'seamark:notice:category': 'no_motor_craft',
+        'seamark:notice:addition': 'left_triangle',
+      },
+      2,
+      1,
+    )!;
+
+    await expect(svgToString(svg!.svg)).toMatchFileSnapshot(
+      'notice-single-arrow-left.svg',
+    );
+  });
+
+  it('can render a single icon with a right-arrow', async () => {
+    const svg = renderNoticeSvg(
+      {
+        'seamark:notice:category': 'no_motor_craft',
+        'seamark:notice:addition': 'right_triangle',
+      },
+      2,
+      1,
+    )!;
+
+    await expect(svgToString(svg!.svg)).toMatchFileSnapshot(
+      'notice-single-arrow-right.svg',
+    );
+  });
+
+  it('can render a single icon with an arrow in both directions', async () => {
+    const svg = renderNoticeSvg(
+      {
+        'seamark:notice:category': 'no_motor_craft',
+        'seamark:notice:addition': 'right_triangle;left_triangle',
+      },
+      2,
+      1,
+    )!;
+
+    await expect(svgToString(svg!.svg)).toMatchFileSnapshot(
+      'notice-single-arrow-both.svg',
+    );
+  });
+
+  it('can render multiple icon with arrows in various directions', async () => {
+    const svg = renderNoticeSvg(
+      {
+        'seamark:notice:1:category': 'speed_limit',
+        'seamark:notice:1:addition': 'right_triangle',
+        'seamark:notice:2:category': 'speed_limit',
+        'seamark:notice:2:addition': 'left_triangle',
+        'seamark:notice:3:category': 'speed_limit',
+      },
+      2,
+      2,
+    )!;
+
+    await expect(svgToString(svg!.svg)).toMatchFileSnapshot(
+      'notice-multiple-arrows.svg',
+    );
+  });
+
+  it('can render multiple icon with arrows in various directions and gaps', async () => {
+    const svg = renderNoticeSvg(
+      {
+        'seamark:notice:1:category': 'speed_limit',
+        'seamark:notice:1:addition': 'right_triangle',
+        'seamark:notice:2:category': 'speed_limit',
+        'seamark:notice:2:addition': 'left_triangle',
+        'seamark:notice:3:category': 'speed_limit',
+        'seamark:notice:3:addition': 'right_triangle',
+      },
+      2,
+      2,
+    )!;
+
+    await expect(svgToString(svg!.svg)).toMatchFileSnapshot(
+      'notice-multiple-arrows-gaps.svg',
+    );
+  });
+
   it('handles a mix of :n: and semicolon-delimeted values', async () => {
     const svg = renderNoticeSvg(
       {

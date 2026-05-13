@@ -3,8 +3,11 @@ import { type TextConfig, renderTextWithinBbox } from './components/text.js';
 import { svgToCanvas } from './util/svgToRaster.js';
 import { svgToString } from './util/svgToString.js';
 import type { Tags } from './util/types.def.js';
+import { disperseColumns } from './util/disperseColumns.js';
 
 interface NoticeDefintion {
+  /** undefined if it can't have an `:addition` */
+  colour: string | undefined;
   svg: React.ReactNode;
   text?: {
     getValue(tags: Tags, slot: string): string | undefined;
@@ -83,6 +86,7 @@ const FISHING =
 export const NOTICES = {
   no_entry: {
     // A1
+    colour: '#d00',
     svg: (
       <>
         <rect
@@ -102,6 +106,7 @@ export const NOTICES = {
   },
   closed_area: {
     // A1a
+    colour: '#d00',
     svg: (
       <>
         <circle
@@ -122,6 +127,7 @@ export const NOTICES = {
   },
   no_overtaking: {
     // A2
+    colour: '#d00',
     svg: [
       WHITE_WITH_RED_BORDER,
       RED_LINE,
@@ -130,6 +136,7 @@ export const NOTICES = {
   },
   no_convoy_overtaking: {
     // A3
+    colour: '#d00',
     svg: [
       WHITE_WITH_RED_BORDER,
       RED_LINE,
@@ -138,6 +145,7 @@ export const NOTICES = {
   },
   no_passing: {
     // A4
+    colour: '#d00',
     svg: [
       WHITE_WITH_RED_BORDER,
       RED_LINE,
@@ -146,6 +154,7 @@ export const NOTICES = {
   },
   no_convoy_passing: {
     // A4.1
+    colour: '#d00',
     svg: [
       WHITE_WITH_RED_BORDER,
       RED_LINE,
@@ -154,10 +163,12 @@ export const NOTICES = {
   },
   no_berthing: {
     // A5
+    colour: '#d00',
     svg: [WHITE_WITH_RED_BORDER, RED_LINE, <path d={BERTHING} />],
   },
   no_berthing_lateral_limit: {
     // A5a
+    colour: '#d00',
     svg: [WHITE_WITH_RED_BORDER, RED_LINE],
     text: {
       getValue(tags, slot) {
@@ -171,14 +182,17 @@ export const NOTICES = {
   },
   no_anchoring: {
     // A6
+    colour: '#d00',
     svg: [WHITE_WITH_RED_BORDER, RED_LINE, <path d={ANCHORING} />],
   },
   no_mooring: {
     // A7
+    colour: '#d00',
     svg: [WHITE_WITH_RED_BORDER, RED_LINE, <path d={MOORING} />],
   },
   no_turning: {
     // A8
+    colour: '#d00',
     svg: [
       WHITE_WITH_RED_BORDER,
       RED_LINE,
@@ -199,6 +213,7 @@ export const NOTICES = {
   },
   no_wash: {
     // A9
+    colour: '#d00',
     svg: [
       WHITE_WITH_RED_BORDER,
       RED_LINE,
@@ -212,6 +227,7 @@ export const NOTICES = {
   },
   no_passage_left: {
     // A10a
+    colour: '#d00',
     svg: [
       <path
         d="M0 30 30 0 60 30 30 60Z"
@@ -225,6 +241,7 @@ export const NOTICES = {
   },
   no_passage_right: {
     // A10b
+    colour: '#d00',
     svg: [
       <path
         d="M0 30 30 0 60 30 30 60Z"
@@ -237,15 +254,18 @@ export const NOTICES = {
     ],
   },
   no_motor_craft: {
-    // A1
+    // A12
+    colour: '#d00',
     svg: [WHITE_WITH_RED_BORDER, RED_LINE, <path d={MOTOR_CRAFT} />],
   },
   no_sport_craft: {
     // A13
+    colour: '#d00',
     svg: [WHITE_WITH_RED_BORDER, RED_LINE, <path d={SPORT} />],
   },
   no_waterskiing: {
     // A14
+    colour: '#d00',
     svg: [
       WHITE_WITH_RED_BORDER,
       RED_LINE,
@@ -255,6 +275,7 @@ export const NOTICES = {
   },
   no_sailing_craft: {
     // A15
+    colour: '#d00',
     svg: [
       WHITE_WITH_RED_BORDER,
       RED_LINE,
@@ -263,6 +284,7 @@ export const NOTICES = {
   },
   no_unpowered_craft: {
     // A16
+    colour: '#d00',
     svg: [
       WHITE_WITH_RED_BORDER,
       RED_LINE,
@@ -272,10 +294,12 @@ export const NOTICES = {
   },
   no_sailboards: {
     // A17
+    colour: '#d00',
     svg: [WHITE_WITH_RED_BORDER, RED_LINE, <path d={SAILBOARDS} />],
   },
   no_high_speeds: {
     // A18
+    colour: '#d00',
     svg: [
       WHITE_WITH_RED_BORDER,
       RED_LINE,
@@ -285,10 +309,12 @@ export const NOTICES = {
   },
   no_launching_beaching: {
     // A19
+    colour: '#d00',
     svg: [WHITE_WITH_RED_BORDER, RED_LINE, <path d={LAUNCHING} />],
   },
   no_waterbikes: {
     // also A20
+    colour: '#d00',
     svg: [
       WHITE_WITH_RED_BORDER,
       RED_LINE,
@@ -298,14 +324,17 @@ export const NOTICES = {
   },
   no_swimming: {
     // also A20
+    colour: '#d00',
     svg: [WHITE_WITH_RED_BORDER, RED_LINE, <path d={SWIMMING} />],
   },
   no_kitesurfing: {
     // no CEVNI code
+    colour: '#d00',
     svg: [WHITE_WITH_RED_BORDER, RED_LINE, <path d={KITE_SURFING} />],
   },
   no_fishing: {
     // no CEVNI code
+    colour: '#d00',
     svg: [WHITE_WITH_RED_BORDER, RED_LINE, <path d={FISHING} />],
   },
 
@@ -315,15 +344,18 @@ export const NOTICES = {
 
   move_to_left: {
     // B1a
+    colour: '#d00',
     svg: [WHITE_WITH_RED_BORDER, <path d="M23 40V34H49V26H23V20L10 30Z" />],
   },
   move_to_right: {
     // B1b
+    colour: '#d00',
     svg: [WHITE_WITH_RED_BORDER, <path d="M37 40V34H11V26H37V20L50 30Z" />],
   },
 
   move_to_port: {
     // B2a
+    colour: '#d00',
     svg: [
       WHITE_WITH_RED_BORDER,
       <path d="M17 21H23L23 30 35 42 35 49 39 49 39 41 27 29V21H33L25 10Z" />,
@@ -332,6 +364,7 @@ export const NOTICES = {
 
   move_to_starboard: {
     // B2b
+    colour: '#d00',
     svg: [
       WHITE_WITH_RED_BORDER,
       <path d="M43 21H37L37 30 25 42 25 49 21 49 21 41 33 29V21H27L35 10Z" />,
@@ -339,6 +372,7 @@ export const NOTICES = {
   },
   keep_to_port: {
     // B3a
+    colour: '#d00',
     svg: [
       WHITE_WITH_RED_BORDER,
       <path d="M14 21H20L20 49 24 49V21H30L22 10ZM29 39H35L35 38 39 38V39H45L37 50ZM39 36H35V32H39ZM39 30H35V26H39ZM39 24H35V20H39ZM39 18H35V14H39ZM39 12H35V10H39Z" />,
@@ -346,6 +380,7 @@ export const NOTICES = {
   },
   keep_to_starboard: {
     // B3b
+    colour: '#d00',
     svg: [
       WHITE_WITH_RED_BORDER,
       <path d="M46 39H40L40 11 36 11V39H30L38 50ZM31 21H25L25 22 21 22V21H15L23 10ZM21 24H25V28H21ZM21 30H25V34H21ZM21 36H25V40H21ZM21 42H25V46H21ZM21 48H25V50H21Z" />,
@@ -353,6 +388,7 @@ export const NOTICES = {
   },
   cross_to_port: {
     // B4b
+    colour: '#d00',
     svg: [
       WHITE_WITH_RED_BORDER,
       <path d="M13 21H19L19 30 31 42 31 49 35 49 35 41 23 29V21H29L21 10ZM29 49H25V45H29ZM29 43H25V41L27 39 28 39 30 41 29 42ZM34 37H31L30 36 32 34H37ZM39 32H34L37 29H41V30ZM41 27H37V23H41ZM47 21H31L39 10Z" />,
@@ -360,6 +396,7 @@ export const NOTICES = {
   },
   cross_to_starboard: {
     // B4b
+    colour: '#d00',
     svg: [
       WHITE_WITH_RED_BORDER,
       <path d="M47 21H41L41 30 29 42 29 49 25 49 25 41 37 29V21H31L39 10ZM31 49H35V45H31ZM31 43H35V41L33 39 32 39 30 41 31 42ZM26 37H29L30 36 28 34H23ZM21 32H26L23 29H19V30ZM19 27H23V23H19ZM13 21H29L21 10Z" />,
@@ -367,6 +404,7 @@ export const NOTICES = {
   },
   stop: {
     // B5
+    colour: '#d00',
     svg: [
       WHITE_WITH_RED_BORDER,
       <path
@@ -379,6 +417,7 @@ export const NOTICES = {
   },
   speed_limit: {
     // B6
+    colour: '#d00',
     svg: WHITE_WITH_RED_BORDER,
     text: {
       getValue(tags, slot) {
@@ -395,10 +434,12 @@ export const NOTICES = {
   },
   sound_horn: {
     // B7
+    colour: '#d00',
     svg: [WHITE_WITH_RED_BORDER, <circle cx="30" cy="30" r="10" />],
   },
   keep_lookout: {
     // B8
+    colour: '#d00',
     svg: [
       WHITE_WITH_RED_BORDER,
       <path
@@ -411,6 +452,7 @@ export const NOTICES = {
   },
   give_way_junction: {
     // B9a
+    colour: '#d00',
     svg: [
       WHITE_WITH_RED_BORDER,
       <path d="M9 30H51" stroke="#000" stroke-width="10" />,
@@ -419,6 +461,7 @@ export const NOTICES = {
   },
   give_way_crossing: {
     // B9b
+    colour: '#d00',
     svg: [
       WHITE_WITH_RED_BORDER,
       <path d="M9 30H51" stroke="#000" stroke-width="10" />,
@@ -427,6 +470,7 @@ export const NOTICES = {
   },
   make_radio_contact: {
     // B11
+    colour: '#d00',
     svg: [WHITE_WITH_RED_BORDER, <path d={VHF} />],
     text: {
       getValue(tags, slot) {
@@ -447,6 +491,7 @@ export const NOTICES = {
   },
   use_shorepower: {
     // B12
+    colour: '#d00',
     svg: [WHITE_WITH_RED_BORDER, <path d={SHORE_POWER} />],
   },
 
@@ -456,6 +501,7 @@ export const NOTICES = {
 
   limited_depth: {
     // C1
+    colour: '#d00',
     svg: [WHITE_WITH_RED_BORDER, <path d="M45 51H15L30 35Z" />],
     text: {
       getValue(tags, slot) {
@@ -470,6 +516,7 @@ export const NOTICES = {
   },
   limited_headroom: {
     // C2
+    colour: '#d00',
     svg: [WHITE_WITH_RED_BORDER, <path d="M45 9H15L30 25Z" />],
     text: {
       getValue(tags, slot) {
@@ -484,6 +531,7 @@ export const NOTICES = {
   },
   limited_width: {
     // C3
+    colour: '#d00',
     svg: [WHITE_WITH_RED_BORDER, <path d="M9 45V15L25 30ZM51 45V15L35 30Z" />],
     text: {
       getValue(tags, slot) {
@@ -498,10 +546,12 @@ export const NOTICES = {
   },
   navigation_restrictions: {
     // C4
+    colour: '#d00',
     svg: [WHITE_WITH_RED_BORDER],
   },
   channel_distance_left: {
     // C5a
+    colour: '#d00',
     svg: [WHITE_WITH_RED_BORDER, <path d="M29 51H9V9H29L48 31Z" />],
     text: {
       getValue(tags, slot) {
@@ -515,6 +565,7 @@ export const NOTICES = {
   },
   channel_distance_right: {
     // C5b
+    colour: '#d00',
     svg: [WHITE_WITH_RED_BORDER, <path d="M31 51H51V9H31L12 31Z" />],
     text: {
       getValue(tags, slot) {
@@ -528,6 +579,7 @@ export const NOTICES = {
   },
   maxweight: {
     // no CEVNI code
+    colour: '#d00',
     svg: [WHITE_WITH_RED_BORDER, <path d="M15 35H45L30 51Z" />],
     text: {
       getValue: (tags) =>
@@ -543,6 +595,7 @@ export const NOTICES = {
 
   channel_two_way: {
     // D1a
+    colour: undefined, // can't have an addition
     svg: (
       <path
         d="M0 30 30 0 60 30 30 60Z"
@@ -555,6 +608,7 @@ export const NOTICES = {
   },
   channel_one_way: {
     // D1b
+    colour: undefined, // can't have an addition
     svg: (
       <path
         d=" M0 30 15 15 30 30 15 45ZM30 30 45 15 60 30 45 45Z"
@@ -567,6 +621,7 @@ export const NOTICES = {
   },
   opening_to_right: {
     // D2a
+    colour: undefined, // can't have an addition
     svg: [
       <path
         d="M0 30 30 0 60 30 30 60Z"
@@ -580,6 +635,7 @@ export const NOTICES = {
   },
   opening_to_left: {
     // D2b
+    colour: undefined, // can't have an addition
     svg: [
       <path
         d="M0 30 30 0 60 30 30 60Z"
@@ -593,10 +649,12 @@ export const NOTICES = {
   },
   proceed_to_left: {
     // D3a
+    colour: '#0000a0',
     svg: [BLUE_BG, <path fill="#fff" d="M21 40V34H51V26H21V20L7 30Z" />],
   },
   proceed_to_right: {
     // D3b
+    colour: '#0000a0',
     svg: [BLUE_BG, <path fill="#fff" d="M39 40V34H9V26H39V20L53 30Z" />],
   },
 
@@ -606,6 +664,7 @@ export const NOTICES = {
 
   entry_permitted: {
     // E1
+    colour: '#093',
     svg: [
       <rect
         width="58"
@@ -623,6 +682,7 @@ export const NOTICES = {
   },
   overhead_cable: {
     // E2
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path
@@ -633,6 +693,7 @@ export const NOTICES = {
   },
   weir: {
     // E3
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path
@@ -643,6 +704,7 @@ export const NOTICES = {
   },
   ferry_non_independent: {
     // E4a
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path
@@ -653,6 +715,7 @@ export const NOTICES = {
   },
   ferry_independent: {
     // E4b
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path
@@ -663,10 +726,12 @@ export const NOTICES = {
   },
   berthing_permitted: {
     // E5
+    colour: '#0000a0',
     svg: [BLUE_BG, <path fill="#fff" d={BERTHING} />],
   },
   berthing_lateral_limit: {
     // E5.1
+    colour: '#0000a0',
     svg: [BLUE_BG],
     text: {
       getValue(tags, slot) {
@@ -680,6 +745,7 @@ export const NOTICES = {
   },
   berthing_lateral_limits: {
     // E5.2
+    colour: '#0000a0',
     svg: [BLUE_BG],
     text: {
       getValue(tags, slot) {
@@ -694,6 +760,7 @@ export const NOTICES = {
   },
   berth_rafting_limit: {
     // E5.3
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path stroke="#fff" d="M22 17V43M38 17V43" stroke-width="8" />,
@@ -701,14 +768,17 @@ export const NOTICES = {
   },
   berthing_unmarked_pushing: {
     // E5.4
+    colour: '#0000a0',
     svg: [BLUE_BG, <path fill="#fff" d="M6 52H54L30 7Z" />],
   },
   berthing_marked_pushing_1: {
     // E5.5
+    colour: '#0000a0',
     svg: [BLUE_BG, <path fill="#fff" d="M6 52H54L30 7ZM18 33H42L30 50Z" />],
   },
   berthing_marked_pushing_2: {
     // E5.6
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path fill="#fff" d="M6 52H54L30 7ZM22 38H38L30 51ZM22 24H38L30 37Z" />,
@@ -716,6 +786,7 @@ export const NOTICES = {
   },
   berthing_marked_pushing_3: {
     // E5.7
+    colour: '#d00',
     svg: [
       BLUE_BG,
       <path
@@ -726,14 +797,17 @@ export const NOTICES = {
   },
   berthing_unmarked_non_pushing: {
     // E5.8
+    colour: '#0000a0',
     svg: [BLUE_BG, <path fill="#fff" d="M30 53l24-45h-48z" />],
   },
   berthing_marked_non_pushing_1: {
     // E5.9
+    colour: '#0000a0',
     svg: [BLUE_BG, <path fill="#fff" d="M30 53l24-45h-48zM18 11h24l-12 17z" />],
   },
   berthing_marked_non_pushing_2: {
     // E5.10
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path fill="#fff" d="M30 23l8-13H22Zm0 15 8-13H22ZM6 8H54L30 53Z" />,
@@ -741,6 +815,7 @@ export const NOTICES = {
   },
   berthing_marked_non_pushing_3: {
     // E5.11
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path
@@ -751,10 +826,12 @@ export const NOTICES = {
   },
   berthing_unmarked: {
     // E5.12
+    colour: '#0000a0',
     svg: [BLUE_BG, <path fill="#fff" d="M5 30 30 5l25 25-25 25z" />],
   },
   berthing_marked_1: {
     // E5.13
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path fill="#fff" d="M5 30 30 5l25 25-25 25zm25 3 8-13H22z" />,
@@ -762,6 +839,7 @@ export const NOTICES = {
   },
   berthing_marked_2: {
     // E5.14
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path
@@ -772,6 +850,7 @@ export const NOTICES = {
   },
   berthing_marked_3: {
     // E5.15
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path
@@ -782,14 +861,17 @@ export const NOTICES = {
   },
   anchoring_permitted: {
     // E6
+    colour: '#0000a0',
     svg: [BLUE_BG, <path fill="#fff" d={ANCHORING} />],
   },
   mooring_permitted: {
     // E7
+    colour: '#0000a0',
     svg: [BLUE_BG, <path fill="#fff" d={MOORING} />],
   },
   vehicle_loading_berth: {
     // E7.1
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path
@@ -800,6 +882,7 @@ export const NOTICES = {
   },
   turning_area: {
     // E8
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <>
@@ -819,6 +902,7 @@ export const NOTICES = {
   },
   secondary_waterway_crossing: {
     // E9a
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path d="M2 30H58" stroke="#fff" stroke-width="5" />,
@@ -827,6 +911,7 @@ export const NOTICES = {
   },
   secondary_waterway_right: {
     // E9b
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path d="M30 30H58" stroke="#fff" stroke-width="5" />,
@@ -835,6 +920,7 @@ export const NOTICES = {
   },
   secondary_waterway_left: {
     // E9c
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path d="M2 30H30" stroke="#fff" stroke-width="5" />,
@@ -843,6 +929,7 @@ export const NOTICES = {
   },
   main_waterway_right_secondary_ahead: {
     // E9d
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path d="M30 2V35" stroke="#fff" stroke-width="5" />,
@@ -851,6 +938,7 @@ export const NOTICES = {
   },
   main_waterway_left_secondary_ahead: {
     // E9e
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path d="M2 30H35M30 25V58" stroke="#fff" stroke-width="10" />,
@@ -859,6 +947,7 @@ export const NOTICES = {
   },
   main_waterway_right_secondary_left: {
     // E9f
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path d="M2 30H35" stroke="#fff" stroke-width="5" />,
@@ -867,6 +956,7 @@ export const NOTICES = {
   },
   main_waterway_left_secondary_right: {
     // E9g
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path d="M2 30H35M30 25V58" stroke="#fff" stroke-width="10" />,
@@ -875,6 +965,7 @@ export const NOTICES = {
   },
   main_waterway_right_secondary_ahead_left: {
     // E9h
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path d="M2 30H35M30 2V35" stroke="#fff" stroke-width="5" />,
@@ -883,6 +974,7 @@ export const NOTICES = {
   },
   main_waterway_left_secondary_ahead_right: {
     // E9i
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path d="M2 30H35M30 25V58" stroke="#fff" stroke-width="10" />,
@@ -891,6 +983,7 @@ export const NOTICES = {
   },
   main_waterway_crossing: {
     // E10a
+    colour: '0000a0',
     svg: [
       BLUE_BG,
       <path d="M2 30H35M25 30H58" stroke="#fff" stroke-width="10" />,
@@ -899,6 +992,7 @@ export const NOTICES = {
   },
   main_waterway_junction: {
     // E10b
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path d="M2 30H35M25 30H58" stroke="#fff" stroke-width="10" />,
@@ -907,6 +1001,7 @@ export const NOTICES = {
   },
   main_waterway_ahead_right: {
     // E10c
+    colour: '#d00',
     svg: [
       BLUE_BG,
       <path d="M30 2V35M25 30H58" stroke="#fff" stroke-width="10" />,
@@ -915,6 +1010,7 @@ export const NOTICES = {
   },
   main_waterway_ahead_left: {
     // E10d
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path d="M2 30H35M30 2V35" stroke="#fff" stroke-width="10" />,
@@ -923,6 +1019,7 @@ export const NOTICES = {
   },
   main_waterway_ahead_right_secondary_left: {
     // E10e
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path d="M2 30H30M30 25V58" stroke="#fff" stroke-width="5" />,
@@ -931,6 +1028,7 @@ export const NOTICES = {
   },
   main_waterway_ahead_left_secondary_right: {
     // E10f
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path d="M2 30H35M30 2V35" stroke="#fff" stroke-width="10" />,
@@ -939,10 +1037,12 @@ export const NOTICES = {
   },
   prohibition_ends: {
     // E11
+    colour: '#0000a0',
     svg: [BLUE_BG, WHITE_LINE],
   },
   drinking_water: {
     // E13
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path
@@ -953,6 +1053,7 @@ export const NOTICES = {
   },
   telephone: {
     // E14
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path
@@ -963,14 +1064,17 @@ export const NOTICES = {
   },
   motor_craft_permitted: {
     // E15
+    colour: '#0000a0',
     svg: [BLUE_BG, <path fill="#fff" d={MOTOR_CRAFT} />],
   },
   sport_craft_permitted: {
     // E16
+    colour: '#0000a0',
     svg: [BLUE_BG, <path fill="#fff" d={SPORT} />],
   },
   waterskiing_permitted: {
     // E17
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path fill="#fff" d={WATER_SKÏNG} />,
@@ -979,6 +1083,7 @@ export const NOTICES = {
   },
   sailing_craft_permitted: {
     // E18
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path
@@ -989,6 +1094,7 @@ export const NOTICES = {
   },
   unpowered_craft_permitted: {
     // E19
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path fill="#fff" d={UNPOWERED_CRAFT} />,
@@ -997,10 +1103,12 @@ export const NOTICES = {
   },
   sailboards_permitted: {
     // E20
+    colour: '#0000a0',
     svg: [BLUE_BG, <path fill="#fff" d={SAILBOARDS} />],
   },
   high_speeds_permitted: {
     // E21
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path fill="#fff" d={JET_SKI} />,
@@ -1009,10 +1117,12 @@ export const NOTICES = {
   },
   launching_beaching_permitted: {
     // E22
+    colour: '#0000a0',
     svg: [BLUE_BG, <path fill="#fff" d={LAUNCHING} />],
   },
   radio_information: {
     // E23
+    colour: '#0000a0',
     svg: [BLUE_BG, <path fill="#fff" d={VHF} />],
     text: {
       getValue(tags, slot) {
@@ -1033,6 +1143,7 @@ export const NOTICES = {
   },
   waterbikes_permitted: {
     // also E24
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path fill="#fff" d={JET_SKI} />,
@@ -1041,22 +1152,27 @@ export const NOTICES = {
   },
   kitesurfing_permitted: {
     // also E24
+    colour: '#0000a0',
     svg: [BLUE_BG, <path fill="#fff" d={KITE_SURFING} />],
   },
   shorepower_permitted: {
     // E25
+    colour: '#0000a0',
     svg: [BLUE_BG, <path fill="#fff" d={SHORE_POWER} />],
   },
   swimming_information: {
     // E26
+    colour: '#0000a0',
     svg: [BLUE_BG, <path fill="#fff" d={SWIMMING} />],
   },
   fishing_permitted: {
     // no CEVNI code
+    colour: '#0000a0',
     svg: [BLUE_BG, <path fill="#fff" d={FISHING} />],
   },
   submarine_cable: {
     // same as E2
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path
@@ -1066,6 +1182,7 @@ export const NOTICES = {
     ],
   },
   reduce_wash: {
+    colour: '#0000a0',
     svg: [
       BLUE_BG,
       <path
@@ -1082,6 +1199,7 @@ export const NOTICES = {
   //
 
   unknown: {
+    colour: '#ff8040',
     svg: (
       <>
         <rect
@@ -1116,35 +1234,148 @@ function getGridPosition(index: number, symbolsPerRow: number) {
   };
 }
 
+function RenderWithAddition({ symbol }: { symbol: Symboll }) {
+  const isLeft = !!symbol.addition?.includes('left_triangle');
+  const isRight = !!symbol.addition?.includes('right_triangle');
+
+  // if there is an addition, we need to draw it, and then shift
+  // the centerpoint, since the notice is no longer square, and
+  // now extends further to the left or right.
+
+  const svg = symbol.notice.svg;
+
+  if (isLeft && isRight) {
+    return (
+      <>
+        {/* left */}
+        <path
+          stroke="#000"
+          stroke-width="2"
+          d="M 2 30 L 30 4 V 56 Z M 118 30 L 90 4 V 56 Z"
+        />
+        <path
+          fill="#fff"
+          stroke={symbol.notice.colour}
+          stroke-width="4"
+          d="M 6 30 L 30 8 V 52 Z M 114 30 L 90 8 V 52 Z"
+        />
+        <g style="transform:translate(30px, 0px)">{svg}</g>
+      </>
+    );
+  }
+  if (isLeft) {
+    return (
+      <>
+        <path stroke="#000" stroke-width="2" d="M 2 30 L 30 4 V 56 Z" />
+        <path
+          fill="#fff"
+          stroke={symbol.notice.colour}
+          stroke-width="4"
+          d="M 6 30 L 30 8 V 52 Z"
+        />
+        <g style="transform:translate(30px, 0px)">{svg}</g>
+      </>
+    );
+  }
+  if (isRight) {
+    return (
+      <>
+        <path stroke="#000" stroke-width="2" d="M 88 30 L 60 4 V 56 Z" />
+        <path
+          fill="#fff"
+          stroke={symbol.notice.colour}
+          stroke-width="4"
+          d="M 84 30 L 60 8 V 52 Z"
+        />
+        {svg}
+      </>
+    );
+  }
+
+  return <>{svg}</>; // nothing to do
+}
+
+// we currently ignore bottom_board & top_board. these could possibly be
+// rendered too, perhaps with a '…' symbol in a placard.
+const ADDITIONS = { left_triangle: true, right_triangle: true };
+type Addition = keyof typeof ADDITIONS;
+
+interface Symboll {
+  slot: string;
+  notice: NoticeDefintion;
+  addition?: Addition[];
+}
+
 export function renderNoticeSvg(
   tags: Tags,
   scale: number,
-  symbolsPerRow: number,
+  _symbolsPerRow: number,
 ) {
+  let symbolsPerRow = _symbolsPerRow;
+
   const values = Object.entries(tags)
     .filter(
       ([key]) => key.startsWith('seamark:notice:') && key.endsWith(':category'),
     )
     .flatMap(([key, v]) => v.split(';').map((value) => [key, value] as const))
     .filter(([, value]) => !!value)
-    .map(([key, id]) => ({
+    .map(([key, id]) => {
       // slot is either an empty string or '1:', '2:', ...
-      slot: key.split('notice:')[1]!.split('category')[0]!,
-      id,
-    }));
+      const slot = key.split('notice:')[1]!.split('category')[0]!;
+      return {
+        slot,
+        id,
+        addition: tags[`seamark:notice:${slot}addition`]
+          ?.split(';')
+          .filter((v): v is Addition => v in ADDITIONS),
+      };
+    });
 
   const symbols = values.map(
-    ({ slot, id }): { slot: string; notice: NoticeDefintion } => ({
+    ({ slot, id, addition }): Symboll => ({
       slot,
       notice: isNotice(id) ? NOTICES[id] : NOTICES.unknown,
+      addition,
     }),
   );
   if (!symbols.length) return undefined;
 
+  // a `<` or `>` means that the final svg will be wider
+  const someBoth = symbols.some(
+    (s) =>
+      s.addition?.includes('left_triangle') &&
+      s.addition?.includes('right_triangle'),
+  );
+  const leftAdd = symbols.some((s) => s.addition?.includes('left_triangle'));
+  const rightAdd = symbols.some((s) => s.addition?.includes('right_triangle'));
+
+  // if some symbols have an arrow in both direction, then we're forced
+  // to use a single column
+  if (someBoth) symbolsPerRow = 1;
+
+  let sorted: (Symboll | undefined)[] = symbols;
+  if (symbols.length > 1 && symbolsPerRow > 1 && (leftAdd || rightAdd)) {
+    // if there are multiple notices, and some have an addition plate,
+    // then we need to re-order them so that the arrow plate is always
+    // on the very left/right edge of the columns.
+    sorted = disperseColumns(
+      symbols,
+      (s) => {
+        if (s.addition?.includes('left_triangle')) return 'leftmost';
+        if (s.addition?.includes('right_triangle')) return 'rightmost';
+        return 'any';
+      },
+      symbolsPerRow,
+    );
+  }
+
   // if 1 symbol, then centre it
   // if >1 symbol, then show 2 symbols per line
-  const width = SIZE * Math.min(symbols.length, symbolsPerRow);
-  const height = SIZE * Math.ceil(symbols.length / symbolsPerRow);
+  let width = SIZE * Math.min(sorted.length, symbolsPerRow);
+  const height = SIZE * Math.ceil(sorted.length / symbolsPerRow);
+
+  if (leftAdd) width += 30;
+  if (rightAdd) width += 30;
 
   const svg = (
     <svg
@@ -1153,17 +1384,21 @@ export function renderNoticeSvg(
       width={width * scale}
       height={height * scale}
     >
-      {symbols.length === 1 ? (
+      {sorted.length === 1 ? (
         // one symbol is easy
-        symbols[0]!.notice.svg
+        <RenderWithAddition symbol={sorted[0]!} />
       ) : (
         // multiple symbols need to be spaced out
         <>
-          {symbols.map((symbol, index) => {
+          {sorted.map((symbol, index) => {
+            if (!symbol) return null; // gap due to imbalence in :addition
+
             const { x, y } = getGridPosition(index, symbolsPerRow);
+            const shiftX =
+              leftAdd && !symbol.addition?.includes('left_triangle') ? 30 : 0;
             return (
-              <g style={`transform:translate(${x}px, ${y}px)`}>
-                {symbol.notice.svg}
+              <g style={`transform:translate(${x + shiftX}px, ${y}px)`}>
+                <RenderWithAddition symbol={symbol} />
               </g>
             );
           })}
@@ -1171,7 +1406,15 @@ export function renderNoticeSvg(
       )}
     </svg>
   );
-  return { svg, width, height, scale, symbols };
+  return {
+    svg,
+    width,
+    height,
+    scale,
+    symbolsPerRow,
+    symbols: sorted,
+    hasLeftAddition: leftAdd,
+  };
 }
 
 export async function renderNoticeMark(
@@ -1191,9 +1434,13 @@ export async function renderNoticeMark(
 
   // draw text
   for (const [index, symbol] of symbols.entries()) {
+    if (!symbol) continue; // gap
     if (!symbol.notice.text) continue;
 
-    const origin = getGridPosition(index, symbolsPerRow);
+    const origin = getGridPosition(index, result.symbolsPerRow);
+    // if any symbol has a left arrow `<`, then all text is shifted left
+    if (result.hasLeftAddition) origin.x += 30;
+
     const value = symbol.notice.text.getValue(tags, symbol.slot);
     if (!value) continue; // missing the OSM key which defines the value
 

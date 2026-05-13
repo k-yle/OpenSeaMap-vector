@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184 124" width="368" height="248">
+<g style="transform:translate(1px, 1px)">
+<path stroke="#000" stroke-width="2" d="M 2 30 L 30 4 V 56 Z" />
+<path fill="#fff" stroke="#d00" stroke-width="4" d="M 6 30 L 30 8 V 52 Z" />
+<g style="transform:translate(30px, 0px)">
+<rect width="58" height="58" rx="4" ry="4" x="1" y="1" fill="#d00" stroke="#000" stroke-width="2" />
+<rect width="42" height="42" x="9" y="9" fill="#fff" />
+</g>
+</g>
+<g style="transform:translate(93px, 1px)">
+<path stroke="#000" stroke-width="2" d="M 88 30 L 60 4 V 56 Z" />
+<path fill="#fff" stroke="#d00" stroke-width="4" d="M 84 30 L 60 8 V 52 Z" />
+<rect width="58" height="58" rx="4" ry="4" x="1" y="1" fill="#d00" stroke="#000" stroke-width="2" />
+<rect width="42" height="42" x="9" y="9" fill="#fff" />
+</g>
+<g style="transform:translate(93px, 63px)">
+<path stroke="#000" stroke-width="2" d="M 88 30 L 60 4 V 56 Z" />
+<path fill="#fff" stroke="#d00" stroke-width="4" d="M 84 30 L 60 8 V 52 Z" />
+<rect width="58" height="58" rx="4" ry="4" x="1" y="1" fill="#d00" stroke="#000" stroke-width="2" />
+<rect width="42" height="42" x="9" y="9" fill="#fff" />
+</g>
+</svg>
