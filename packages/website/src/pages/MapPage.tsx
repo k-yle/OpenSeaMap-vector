@@ -115,6 +115,13 @@ export const MapPage: React.FC = () => {
             .setMaxWidth('80vw')
             .addTo(map);
         });
+
+        map.on('zoom', () => {
+          // when tiles are loading, we don't want to see the stars bleed
+          // thru the transparent canvas. so only show stars at very low
+          // zoom levels.
+          domRef.current?.classList.toggle('hide-stars', map.getZoom() > 5);
+        });
       })
       .catch(console.error);
   }, []);
@@ -122,7 +129,7 @@ export const MapPage: React.FC = () => {
   return (
     <main>
       <Stars />
-      <div id="map" ref={domRef} />
+      <div id="map" className="hide-stars" ref={domRef} />
     </main>
   );
 };

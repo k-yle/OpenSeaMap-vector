@@ -10,6 +10,11 @@ body {
     Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.hide-stars {
+  /** same shade of blue as the ocean in osm carto */
+  background: #aad3df;
+}
+
 main {
   position: relative;
 }
