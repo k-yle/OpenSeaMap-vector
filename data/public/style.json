@@ -366,13 +366,43 @@
         "text-optional": true,
         "text-allow-overlap": true,
         "text-field": [
-          "coalesce",
-          ["get", "seamark:name"],
-          ["get", "ref"],
-          ["get", "name"],
-          ["case", ["==", ["get", "noref"], "yes"], "", "?"]
+          "let",
+          "name",
+          [
+            "coalesce",
+            ["get", "seamark:name"],
+            ["get", "ref"],
+            ["get", "name"],
+            ["case", ["==", ["get", "noref"], "yes"], "", "?"]
+          ],
+          [
+            "case",
+            [">", ["length", ["var", "name"]], 5],
+            ["concat", ["slice", ["var", "name"], 0, 4], "…"],
+            ["var", "name"]
+          ]
         ],
-        "icon-image": "berth",
+        "icon-image": [
+          "let",
+          "name",
+          [
+            "coalesce",
+            ["get", "seamark:name"],
+            ["get", "ref"],
+            ["get", "name"],
+            ""
+          ],
+          [
+            "case",
+            [">=", ["length", ["var", "name"]], 5],
+            "berth5",
+            [">=", ["length", ["var", "name"]], 4],
+            "berth4",
+            [">=", ["length", ["var", "name"]], 3],
+            "berth3",
+            "berth2"
+          ]
+        ],
         "icon-size": 0.2,
         "symbol-placement": "point",
         "icon-keep-upright": true,
