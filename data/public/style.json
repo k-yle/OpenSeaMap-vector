@@ -1395,21 +1395,22 @@
         "icon-image": "placeholder",
         "icon-rotation-alignment": "map",
         "icon-rotate": [
-          "to-number",
+          "case",
+
+          ["has", "direction"],
           [
-            "case",
+            "+",
+            180,
+            ["to-number", ["at", 0, ["split", ["get", "direction"], ";"]]]
+          ],
 
-            ["has", "direction"],
-            ["+", 180, ["to-number", ["get", "direction"]]],
+          ["has", "seamark:notice:orientation"],
+          ["to-number", ["get", "seamark:notice:orientation"]],
 
-            ["has", "seamark:notice:orientation"],
-            ["to-number", ["get", "seamark:notice:orientation"]],
+          ["has", "seamark:notice:1:orientation"],
+          ["to-number", ["get", "seamark:notice:1:orientation"]],
 
-            ["has", "seamark:notice:1:orientation"],
-            ["to-number", ["get", "seamark:notice:1:orientation"]],
-
-            0
-          ]
+          0
         ],
         "text-field": [
           "format",
