@@ -815,6 +815,48 @@
       "minzoom": 11
     },
     {
+      "id": "calling-in_point-direction[symbol]",
+      "type": "symbol",
+      "source": "seamarks",
+      "source-layer": "seamarks",
+      "filter": [
+        "all",
+        ["==", "seamark:type", "calling-in_point"],
+        [
+          "any",
+          ["has", "direction"],
+          ["has", "seamark:calling-in_point:orientation"]
+        ]
+      ],
+      "layout": {
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-image": "direction-arrow",
+        "icon-size": 1.4,
+        "icon-offset": [0, -15],
+        "icon-rotation-alignment": "map",
+        "icon-rotate": [
+          "case",
+
+          ["has", "seamark:calling-in_point:orientation"],
+          ["to-number", ["get", "seamark:calling-in_point:orientation"]],
+
+          ["has", "direction"],
+          [
+            "+",
+            180,
+            ["to-number", ["at", 0, ["split", ["get", "direction"], ";"]]]
+          ],
+
+          0
+        ],
+        "icon-keep-upright": false,
+        "symbol-placement": "point",
+        "icon-anchor": "center"
+      },
+      "minzoom": 13
+    },
+    {
       "id": "{rescue,coastguard}_station[symbol]",
       "type": "symbol",
       "source": "seamarks",

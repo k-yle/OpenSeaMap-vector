@@ -292,7 +292,10 @@ export const LEGEND: LegendCategory[] = [
         label: 'Radio Calling-in Point',
         icon: `${ICON_BASE_URL}/calling-in_point.svg`,
         tags: [{ 'seamark:type': 'calling-in_point' }],
-        labelAttributes: ['seamark:calling-in_point:channel'],
+        labelAttributes: [
+          'seamark:calling-in_point:channel',
+          'seamark:calling-in_point:orientation',
+        ],
       },
       {
         label: 'Marine Rescue Station',
