@@ -9,7 +9,7 @@
     "test": "echo ok"
   },
   "dependencies": {
-    "@americana/diplomat": "^0.4.0",
+    "@americana/diplomat": "^0.5.0",
     "@mantine/core": "^9.0.1",
     "@mantine/hooks": "^9.0.1",
     "@openseamap-vector/navmark-renderer": "file:../navmark-renderer",
@@ -17,9 +17,9 @@
     "@tabler/icons-react": "^3.41.1",
     "get-region": "^1.0.0",
     "light-characteristics": "^1.0.0",
-    "maplibre-gl": "^5.18.0",
+    "maplibre-gl": "^5.24.0",
     "md5": "^2.3.0",
-    "pmtiles": "^4.4.0",
+    "pmtiles": "^4.4.1",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },
