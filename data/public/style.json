@@ -2060,6 +2060,62 @@
       "minzoom": 11
     },
     {
+      "id": "hazard[symbol]",
+      "type": "symbol",
+      "source": "seamarks",
+      "source-layer": "seamarks",
+      "layout": {
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "text-optional": true,
+        "text-allow-overlap": false,
+        "text-field": ["coalesce", ["get", "name"], ["get", "rapids:name"]],
+        "text-size": 10,
+        "text-justify": "center",
+        "text-anchor": "top",
+        "text-radial-offset": 0.7,
+        "icon-image": "hazard",
+        "icon-size": 0.15,
+        "symbol-placement": "point",
+        "icon-anchor": "center"
+      },
+      "minzoom": 12,
+      "filter": [
+        "any",
+        ["==", ["get", "whitewater"], "hazard"],
+        [
+          "all",
+          ["has", "rapids"],
+          ["!=", ["get", "rapids"], "no"],
+          ["!=", ["get", "rapids"], "0"]
+        ],
+        ["==", ["get", "waterway"], "rapids"],
+        [
+          "all",
+          ["==", ["geometry-type"], "Point"],
+          [
+            "any",
+            [
+              "all",
+              ["==", ["get", "seamark:type"], "obstruction"],
+              ["==", ["get", "seamark:obstruction:category"], "boom"]
+            ],
+            ["==", ["get", "waterway"], "floating_barrier"],
+            ["==", ["get", "waterway"], "debris_screen"],
+            ["==", ["get", "waterway"], "check_dam"],
+            ["==", ["get", "waterway"], "floodgate"],
+            ["==", ["get", "waterway"], "lock_gate"],
+            ["==", ["get", "waterway"], "security_lock"],
+            ["==", ["get", "waterway"], "sluice_gate"],
+            ["==", ["get", "waterway"], "weir"],
+            ["==", ["get", "waterway"], "dam"],
+            ["==", ["get", "barrier"], "floating_boom"],
+            ["==", ["get", "barrier"], "shark_net"]
+          ]
+        ]
+      ]
+    },
+    {
       "id": "portage[line]",
       "type": "line",
       "source": "seamarks",

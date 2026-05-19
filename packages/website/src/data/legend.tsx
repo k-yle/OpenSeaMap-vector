@@ -376,6 +376,17 @@ export const LEGEND: LegendCategory[] = [
         tags: [{ 'seamark:type': 'rock' }],
       },
       {
+        label: 'Rapids & Other Hazards',
+        icon: `${ICON_BASE_URL}/hazard.svg`,
+        tags: [
+          { whitewater: 'hazard' },
+          { waterway: 'rapids' },
+          { water: 'rapids' },
+          { rapids: '*' },
+        ],
+        labelAttributes: ['rapids:name'],
+      },
+      {
         label: 'Shipwreck',
         icon: `${ICON_BASE_URL}/wreck_surface.svg`,
         tags: [{ historic: 'wreck' }, { 'seamark:type': 'wreck' }],

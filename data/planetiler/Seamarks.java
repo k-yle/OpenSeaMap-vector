@@ -47,6 +47,7 @@ public class Seamarks implements Profile {
       "charge", //
       "toll", //
       "opening_hours", //
+      "rapids:name", //
       "vessel", //
       "vessel:mmsi", //
       "operator", //
