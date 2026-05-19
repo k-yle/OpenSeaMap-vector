@@ -1012,44 +1012,35 @@
       "minzoom": 15
     },
     {
-      "id": "mooring-dolphin",
+      "id": "mooring-point",
       "type": "circle",
       "source": "seamarks",
       "source-layer": "seamarks",
       "filter": [
         "all",
-        ["==", ["get", ["geometry-type"]], "Point"],
+        ["==", ["geometry-type"], "Point"],
         [
           "any",
           [
             "all",
             ["==", ["get", "seamark:type"], "mooring"],
-            ["==", ["get", "seamark:mooring:category"], "dolphin"]
+            [
+              "any",
+              ["==", ["get", "seamark:mooring:category"], "dolphin"],
+              ["==", ["get", "seamark:mooring:category"], "bollard"]
+            ]
           ],
           ["==", ["get", "man_made"], "dolphin"]
         ]
       ],
       "paint": {
         "circle-radius": 3,
-        "circle-color": "#fc0",
-        "circle-stroke-color": "#333",
-        "circle-stroke-width": 1
-      },
-      "minzoom": 14
-    },
-    {
-      "id": "mooring-bollard",
-      "type": "circle",
-      "source": "seamarks",
-      "source-layer": "seamarks",
-      "filter": [
-        "all",
-        ["==", "seamark:type", "mooring"],
-        ["==", "seamark:mooring:category", "bollard"]
-      ],
-      "paint": {
-        "circle-radius": 3,
-        "circle-color": "#fff",
+        "circle-color": [
+          "case",
+          ["==", ["get", "seamark:mooring:category"], "bollard"],
+          "#fff",
+          "#fc0"
+        ],
         "circle-stroke-color": "#333",
         "circle-stroke-width": 1
       },
@@ -1737,7 +1728,7 @@
         ["==", ["get", "seamark:type"], "pontoon"],
         [
           "all",
-          ["!=", ["get", ["geometry-type"]], "Point"],
+          ["!=", ["geometry-type"], "Point"],
           [
             "any",
             [
