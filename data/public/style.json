@@ -1155,7 +1155,11 @@
           ["==", "waterway", "access_point"],
           ["==", "canoe", "egress"],
           ["==", "canoe", "put_in"],
-          ["==", "canoe", "put_in;egress"]
+          ["==", "canoe", "put_in;egress"],
+          ["==", "whitewater", "egress"],
+          ["==", "whitewater", "put_in"],
+          ["==", "whitewater", "put_in;egress"],
+          ["==", "whitewater", "put_in_out"]
         ],
         ["!=", "access", "private"],
         ["!=", "access", "permit"],
@@ -2072,6 +2076,7 @@
       "filter": [
         "any",
         ["==", "canoe", "portage"],
+        ["==", "whitewater", "portage_way"],
         ["==", "portage", "yes"],
         ["==", "portage", "designated"]
       ],

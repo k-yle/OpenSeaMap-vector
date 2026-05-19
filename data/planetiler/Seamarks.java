@@ -26,7 +26,8 @@ public class Seamarks implements Profile {
       "scout", //
       "sport", //
       "portage", //
-      "waterway" //
+      "waterway", //
+      "whitewater" //
   );
 
   // there's an AST walker which extracts these values in scripts/taginfo.ts
