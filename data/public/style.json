@@ -143,6 +143,77 @@
       "minzoom": 11
     },
     {
+      "id": "whitewater[line]",
+      "type": "line",
+      "source": "seamarks",
+      "source-layer": "seamarks",
+      "filter": [
+        "any",
+        ["has", "whitewater:section_grade"],
+        ["has", "whitewater:rapid_grade"]
+      ],
+      "paint": {
+        "line-color": [
+          "let",
+          "scale",
+          [
+            "concat",
+            ["get", "whitewater:section_grade"],
+            ["get", "whitewater:rapid_grade"]
+          ],
+          [
+            "case",
+            ["in", "6", ["var", "scale"]],
+            "#f00",
+            ["in", "5", ["var", "scale"]],
+            "#f00",
+            ["in", "4", ["var", "scale"]],
+            "#f70",
+            ["in", "3", ["var", "scale"]],
+            "#da3",
+            ["in", "2", ["var", "scale"]],
+            "#ff0",
+            ["in", "1", ["var", "scale"]],
+            "#061",
+            "transparent"
+          ]
+        ],
+        "line-width": 2
+      },
+      "layout": {
+        "line-cap": "round"
+      },
+      "minzoom": 11
+    },
+
+    {
+      "id": "whitewater[text]",
+      "type": "symbol",
+      "source": "seamarks",
+      "source-layer": "seamarks",
+      "layout": {
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "text-optional": true,
+        "text-allow-overlap": false,
+        "text-field": [
+          "coalesce",
+          ["get", "whitewater:section_name"],
+          ["get", "name"]
+        ],
+        "symbol-placement": "line-center",
+        "text-size": 10,
+        "text-justify": "center",
+        "text-anchor": "bottom"
+      },
+      "filter": [
+        "any",
+        ["has", "whitewater:section_grade"],
+        ["has", "whitewater:rapid_grade"]
+      ],
+      "minzoom": 11
+    },
+    {
       "id": "pilot_boarding[symbol]",
       "type": "symbol",
       "source": "seamarks",

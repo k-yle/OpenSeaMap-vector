@@ -27,7 +27,9 @@ public class Seamarks implements Profile {
       "sport", //
       "portage", //
       "waterway", //
-      "whitewater" //
+      "whitewater", //
+      "whitewater:section_grade", //
+      "whitewater:rapid_grade" //
   );
 
   // there's an AST walker which extracts these values in scripts/taginfo.ts
@@ -56,6 +58,7 @@ public class Seamarks implements Profile {
       "wikipedia", //
       "wreck:type", //
       "wreck:date_sunk", //
+      "whitewater:section_name", //
       "maxspeed", //
       "maxstay", //
       "maxdraft", //

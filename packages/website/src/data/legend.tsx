@@ -246,6 +246,15 @@ export const LEGEND: LegendCategory[] = [
           { whitewater: 'portage_way' },
         ],
       },
+      {
+        label: 'Whitewater Rafting Route',
+        icon: 'https://upload.wikimedia.org/wikipedia/commons/a/af/Classic_Rainbow_Flag.svg',
+        tags: [
+          { 'whitewater:section_grade': '*' },
+          { 'whitewater:rapid_grade': '*' },
+        ],
+        labelAttributes: ['whitewater:section_name'],
+      },
     ],
   },
   {
