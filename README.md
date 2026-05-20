@@ -53,9 +53,9 @@ In paticular, **features related to recreational boating / sailing / paddling**.
 Therefore, there are several differences compared to [the original OpenSeaMap raster style](https://map.openseamap.org):
 
 - Support for normal tags like [`leisure=slipway`](https://osm.wiki/Tag:leisure=slipway), instead of requiring bizzare duplicate tags like [`seamark:small_craft_facility:category=slipway`](https://osm.wiki/Tag:seamark:small_craft_facility:category=slipway). Likewise for [`ref`](https://osm.wiki/Key:ref) instead of [`seamark:berth:name`](https://osm.wiki/Key:seamark:berth:name) or [`seamark:information`](https://osm.wiki/Key:seamark:information).
-- Renders recreational features like [kayak put-ins](https://osm.wiki/Tag:canoe=put_in), [shark nets](https://osm.wiki/Tag:barrier=shark_net), [fishing restrictions](https://osm.wiki/Tag:leisure=fishing), etc.
-- Worldwide support for notice marks (traffic signs) worldwide, not just in Europe.
-- Renders text onto notice marks, such as speed limit signs
+- Renders recreational features like [kayak put-ins](https://osm.wiki/Tag:canoe=put_in), [shark nets](https://osm.wiki/Tag:barrier=shark_net), [fishing restrictions](https://osm.wiki/Tag:leisure=fishing), [whitewater rafting hazards](https://osm.wiki/Key:whitewater), etc.
+- Worldwide support for notice marks (traffic signs), not just in Europe.
+- Renders [text onto notice marks](./packages/navmark-renderer/src/__tests__/__screenshots__/notice.cy.tsx/notice-2-chrome-darwin.png), such as speed limit signs
 - Shows [`access` restrictions](https://osm.wiki/Key:access), [`fee`s](https://osm.wiki/Key:fee), and [`opening_hours`](https://osm.wiki/Key:opening_hours) for recreational facilities like visitor berths.
 - More detailed rendering of buoys, beacons, notice marks, and daymarks.
 - And many more new features! See the map legend for a full list.
