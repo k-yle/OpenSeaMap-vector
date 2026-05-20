@@ -258,8 +258,8 @@ export class EliControl implements IControl {
         attribution: [
           layer.attribution &&
             layer.id !== 'MAPNIK' &&
-            `<a href='${layer.attribution.url}' target='_blank' rel='noopener noreferrer'>${layer.attribution.text}</a>`,
-          "&copy; <a href='https://osm.org/copyright' target='_blank' rel='noopener noreferrer'>OpenStreetMap contributors</a>",
+            layer.attribution.text?.link(layer.attribution.url!),
+          'OpenStreetMap contributors'.link('https://osm.org/copyright'),
         ]
           .filter(Boolean)
           .join(' &middot; '),
