@@ -1219,7 +1219,11 @@
             ],
             [
               "case",
-              ["has", "opening_hours"],
+              [
+                "all",
+                ["has", "opening_hours"],
+                ["!=", ["get", "opening_hours"], "24/7"]
+              ],
               ["concat", ["get", "opening_hours"], "\n"],
               ""
             ]
@@ -1410,7 +1414,11 @@
             ],
             [
               "case",
-              ["has", "opening_hours"],
+              [
+                "all",
+                ["has", "opening_hours"],
+                ["!=", ["get", "opening_hours"], "24/7"]
+              ],
               ["concat", ["get", "opening_hours"], "\n"],
               ""
             ],
