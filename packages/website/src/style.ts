@@ -100,11 +100,17 @@ export async function getStyle() {
     .filter((l) => l.id.startsWith('DYNAMIC_icon_'))!;
 
   for (const dynamicLayer of dynamicLayers) {
-    // walk thru the filter and find every `['==', key, value]`,
+    // walk thru the filter and find every `['==', ['get', 'seamark:type'], value]`,
     // keeping only the values
     const ALL_TYPES = [...walkExpression(dynamicLayer.filter)]
       .filter((exp) => Array.isArray(exp))
-      .filter((exp) => exp[0] === '==' && exp[1] === 'seamark:type')
+      .filter(
+        (exp) =>
+          exp[0] === '==' &&
+          Array.isArray(exp[1]) &&
+          exp[1][0] === 'get' &&
+          exp[1][1] === 'seamark:type',
+      )
       .map((exp) => exp[2])
       .filter((v) => typeof v === 'string');
 
