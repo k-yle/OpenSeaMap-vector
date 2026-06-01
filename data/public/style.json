@@ -1256,6 +1256,7 @@
         ],
         ["!=", ["get", "access"], "private"],
         ["!=", ["get", "access"], "permit"],
+        ["!=", ["get", "access"], "customers"],
         ["!=", ["get", "access"], "no"]
       ],
       "layout": {
@@ -1335,6 +1336,7 @@
         ],
         ["!=", ["get", "access"], "private"],
         ["!=", ["get", "access"], "permit"],
+        ["!=", ["get", "access"], "customers"],
         ["!=", ["get", "access"], "no"]
       ],
       "layout": {
