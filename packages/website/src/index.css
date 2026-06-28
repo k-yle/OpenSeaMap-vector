@@ -22,7 +22,7 @@ body {
 main {
   position: relative;
 }
-main > * {
+main > *:not(button) {
   position: absolute;
   width: 100vw;
   height: 100vh;
