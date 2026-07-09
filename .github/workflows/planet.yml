@@ -2,7 +2,7 @@ name: planet
 
 on:
   schedule:
-    - cron: "6 6 6 * *" # on the 6th day of every month
+    - cron: "2 2 * * 2" # weekly on tuesday
   workflow_dispatch:
 
 jobs:
