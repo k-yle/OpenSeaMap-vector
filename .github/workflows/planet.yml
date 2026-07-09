@@ -79,12 +79,25 @@ jobs:
           merge-multiple: true
 
       - name: Merge into a single pbf file
+        # piping the result through time-filter (with no time argument) is
+        # a workaround for https://github.com/osmcode/osmium-tool/issues/197
+        # required because the geofabrik continent extracts overlap a little
+        # bit, and are sometimes generated on different days. So it's possible
+        # for the same feature to exist in 2 different continent extracts, but
+        # with a different version number
         run: |
           docker run --rm -v $(pwd):/cwd \
             iboates/osmium:1.19.0 \
             merge \
             --progress \
+            --with-history \
             $(printf '/cwd/%s ' data/tmp_pbf/*.pbf) \
+            -f pbf \
+          | docker run --rm -i -v $(pwd):/cwd \
+            iboates/osmium:1.19.0 \
+            time-filter \
+            - \
+            -F pbf \
             -o /cwd/data/public/seamarks.pbf
 
       - name: Run planetiler
