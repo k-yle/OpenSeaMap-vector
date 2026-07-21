@@ -133,3 +133,31 @@ describe(renderNoticeMark, () => {
     await expect(svgToString(svg!.svg)).toMatchFileSnapshot('notice-all.svg');
   });
 });
+
+describe('VHF channel extraction (B.11 / E.23)', () => {
+  const getValue = (tags: Tags) =>
+    NOTICES.make_radio_contact.text!.getValue(tags, '');
+
+  it.for([
+    ['10', '10'],
+    ['Kanal 11', '11'],
+    ['UKW 18', '18'],
+    ['UKW Kanal 18', '18'],
+    ['VHF 10', '10'],
+    ['VHF20', '20'],
+    ['Achtung Lebensgefahr', '?'],
+  ] as const)('extracts %j → %j', ([information, expected]) => {
+    expect(getValue({ 'seamark:notice:information': information })).toBe(
+      expected,
+    );
+  });
+
+  it('prefers the channel key over information', () => {
+    expect(
+      getValue({
+        'seamark:notice:channel': '68',
+        'seamark:notice:information': 'VHF 10',
+      }),
+    ).toBe('68');
+  });
+});

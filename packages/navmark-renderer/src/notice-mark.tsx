@@ -478,10 +478,10 @@ export const NOTICES = {
           tags[`seamark:notice:${slot}channel`] ||
           tags['vhf'] ||
           tags[`seamark:notice:${slot}information`]?.match(
-            /^(Kanal |UKW )?([\d.]+)$/,
+            /^((?:UKW )?Kanal |UKW |VHF ?)?([\d.]+)$/,
           )?.[2] ||
           tags['seamark:notice:information']?.match(
-            /^(Kanal |UKW )?([\d.]+)$/,
+            /^((?:UKW )?Kanal |UKW |VHF ?)?([\d.]+)$/,
           )?.[2] ||
           '?'
         );
@@ -1130,10 +1130,10 @@ export const NOTICES = {
           tags[`seamark:notice:${slot}channel`] ||
           tags['vhf'] ||
           tags[`seamark:notice:${slot}information`]?.match(
-            /^(Kanal |UKW )?([\d.]+)$/,
+            /^((?:UKW )?Kanal |UKW |VHF ?)?([\d.]+)$/,
           )?.[2] ||
           tags['seamark:notice:information']?.match(
-            /^(Kanal |UKW )?([\d.]+)$/,
+            /^((?:UKW )?Kanal |UKW |VHF ?)?([\d.]+)$/,
           )?.[2] ||
           '?'
         );
