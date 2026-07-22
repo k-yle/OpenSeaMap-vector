@@ -2,8 +2,6 @@ name: website
 
 on:
   push:
-    branches:
-      - main
   pull_request:
 
 jobs:
@@ -15,6 +13,9 @@ jobs:
         uses: actions/checkout@v6
         with:
           persist-credentials: false
+
+      - name: Enforce conventional commits
+        uses: webiny/action-conventional-commits@7f91b1595ca1951cdb671ddc9f07a49081ec5b69
 
       - name: Install NodeJS
         uses: actions/setup-node@v6
