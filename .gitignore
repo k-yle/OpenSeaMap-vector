@@ -16,6 +16,7 @@ java-formatter.xml
 *.pbf
 *.pmtiles
 data/public/icons*
+specimens
 dist
 tmp
 *.generated.json

@@ -7,7 +7,7 @@ import { svgToString } from '../util/svgToString.js';
 // are eventually deployed with the website, so they can be accessed
 // by the legend, and by the taginfo file.
 
-const outDir = join(import.meta.dirname, '../../dist/specimens');
+const outDir = join(import.meta.dirname, '../../specimens');
 
 for (const id in NOTICES) {
   const svg = renderNoticeSvg({ 'seamark:notice:category': id }, 2, 1)!;

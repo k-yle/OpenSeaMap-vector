@@ -6,4 +6,4 @@ VITE_BUILD_MODE=lib vite build
 vite build
 rm -rf ./dist/*.pmtiles
 rm -rf ./dist/*.pbf
-cp -r ../navmark-renderer/dist/specimens ./dist/
+cp -r ../navmark-renderer/specimens ./dist/
