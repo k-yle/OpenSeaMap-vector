@@ -8,7 +8,15 @@ import { disperseColumns } from './util/disperseColumns.js';
 interface NoticeDefintion {
   /** undefined if it can't have an `:addition` */
   colour: string | undefined;
-  svg: React.ReactNode;
+  /** if the SVG depends on tags, then you can supply a function */
+  svg: React.ReactNode | ((tags: Tags, slot: string) => React.ReactNode);
+  /**
+   * if the SVG depends on tags, then this lists some sample tags
+   * to generate specimens of ecah SVG variant
+   */
+  samples?: {
+    [label: string]: Tags;
+  };
   text?: {
     getValue(tags: Tags, slot: string): string | undefined;
     placement: TextConfig;
@@ -70,6 +78,8 @@ const SAILBOARDS =
   'm26.407 34.255-1.0957-1.8453.2318-.5942 1.3719-.7035Zm-9.4931-7.2622c-.8738-.0575-1.6013.9613-1.4488 1.9463.1538.9837.7925 1.78 1.7675 1.9825.9763.2012 1.39-.9263 1.265-2.0075-.125-1.0813-.71-1.8625-1.5837-1.9213m7.8961 21.1075-.5975.41c-.9187-1.8037-1.4525-3.7075-1.7487-5.675-2.095-.75-4.8412-2.6025-4.9025-4.5625l-.0662-2.0525c-.3863-1.6287-2.1975-3.4175-.8163-5.1325l1.6838-.1987 7.1412.8675-.2187.5812c-1.8.2613-3.6113.42-5.4438.3538.0425.5537.525 1.0875.5375 1.7325l.0638 3.0975c1.9075 1.8487 3.1225 3.1562 4.1988 4.4575 1.0775 1.3012.1999 5.7412.1687 6.1212m-4.5562 2.1438-.4463-.9825c3.1213-1.0412 6.5825-.9525 10.275-.09l-.4337 1.1563-9.395-.0838m4.5562-2.1438c7.7763-.8925 14.9788-5.51 21.8025-12.5987-2.5325-10.3275-7-19.7838-14.2962-27.9663-3.9325 13.76-6.4338 27.2813-7.5063 40.565';
 const VHF =
   'M38.6288 27.9808V12.336H48.6364V14.5804H41.002V19.1868H47.5092V21.302H41.002V27.9808ZM32.9484 27.9808V21.1516H26.742V27.9808H24.3692V12.336H26.742V19.0364H32.9484V12.336H35.3212V27.9808ZM15.6712 27.9808 10.5064 12.336H13.0084L16.5732 24.244H16.6164L20.1812 12.336H22.6832L17.5184 27.9808Z';
+const UKW =
+  'M42.26 14l2.106 9.108L46.088 14h2.628L45.878 26.798H43.22l-2.082-8.562-2.082 8.562H36.398L33.56 14h2.628l1.734 9.09L40.028 14H42.26ZM30.266 26.798l-3.288-5.136-1.368 1.476v3.66H22.97V14h2.64v5.802l1.158-1.59L30.026 14h3.246L28.73 19.688l4.674 7.11H30.266ZM18.164 14H20.81v8.43q0 2.1-1.314 3.318-1.314 1.224-3.594 1.224-2.238 0-3.558-1.188-1.32-1.182-1.344-3.258V14h2.634v8.448q0 1.254.606 1.83.6.576 1.662.576 2.226 0 2.262-2.34V14Z';
 const LAUNCHING =
   'M64 60H4M49.981 35.033V44.55H14.771V40.41ZM15.088 37.478l-.801-1.373 35.661-5.301v1.335Zm.059-4.573-3.243-5.3 38.032-8.131c.627 6.665-9.628 10.881-17.147 12.647ZM6.676 40.177l.804-.638c1.331 1.58 2.079.97 2.772-1.358 1.331 2.633 2.717 2.716 4.214.637l.665 1.026c-1.552 1.552-3.132 2.467-4.657.499-1.164 1.83-2.384 1.247-3.753-.099Zm25.111-5.588c2.507-.378 3.089 2.684.673 3.33-2.206.862-3.415-2.683-.82-3.298Zm.479 2.417c1.019-.409.496-1.623-.309-1.49-1.233.241-.559 1.745.208 1.527Z';
 const ANCHORING =
@@ -471,7 +481,14 @@ export const NOTICES = {
   make_radio_contact: {
     // B11
     colour: '#d00',
-    svg: [WHITE_WITH_RED_BORDER, <path d={VHF} />],
+    svg: (tags, slot) => {
+      // workaround for a german import which didn't use the proper tags for UKW channels
+      const isUKW = tags[`seamark:notice:${slot}information`]?.includes('UKW');
+      return [WHITE_WITH_RED_BORDER, <path d={isUKW ? UKW : VHF} />];
+    },
+    samples: {
+      ukw: { 'seamark:notice:information': 'UKW 22' },
+    },
     text: {
       getValue(tags, slot) {
         return (
@@ -1123,7 +1140,14 @@ export const NOTICES = {
   radio_information: {
     // E23
     colour: '#0000a0',
-    svg: [BLUE_BG, <path fill="#fff" d={VHF} />],
+    svg: (tags, slot) => {
+      // workaround for a german import which didn't use the proper tags for UKW channels
+      const isUKW = tags[`seamark:notice:${slot}information`]?.includes('UKW');
+      return [BLUE_BG, <path fill="#fff" d={isUKW ? UKW : VHF} />];
+    },
+    samples: {
+      ukw: { 'seamark:notice:information': 'UKW 22' },
+    },
     text: {
       getValue(tags, slot) {
         return (
@@ -1234,7 +1258,7 @@ function getGridPosition(index: number, symbolsPerRow: number) {
   };
 }
 
-function RenderWithAddition({ symbol }: { symbol: Symboll }) {
+function RenderWithAddition({ symbol, tags }: { symbol: Symboll; tags: Tags }) {
   const isLeft = !!symbol.addition?.includes('left_triangle');
   const isRight = !!symbol.addition?.includes('right_triangle');
 
@@ -1242,7 +1266,10 @@ function RenderWithAddition({ symbol }: { symbol: Symboll }) {
   // the centerpoint, since the notice is no longer square, and
   // now extends further to the left or right.
 
-  const svg = symbol.notice.svg;
+  const svg =
+    typeof symbol.notice.svg === 'function'
+      ? symbol.notice.svg(tags, symbol.slot)
+      : symbol.notice.svg;
 
   if (isLeft && isRight) {
     return (
@@ -1386,7 +1413,7 @@ export function renderNoticeSvg(
     >
       {sorted.length === 1 ? (
         // one symbol is easy
-        <RenderWithAddition symbol={sorted[0]!} />
+        <RenderWithAddition symbol={sorted[0]!} tags={tags} />
       ) : (
         // multiple symbols need to be spaced out
         <>
@@ -1398,7 +1425,7 @@ export function renderNoticeSvg(
               leftAdd && !symbol.addition?.includes('left_triangle') ? 30 : 0;
             return (
               <g style={`transform:translate(${x + shiftX}px, ${y}px)`}>
-                <RenderWithAddition symbol={symbol} />
+                <RenderWithAddition symbol={symbol} tags={tags} />
               </g>
             );
           })}

@@ -689,6 +689,7 @@ export const LEGEND: LegendCategory[] = [
         give_way_junction: 'B9a. Give Way Junction',
         give_way_crossing: 'B9b. Give Way Crossing',
         make_radio_contact: 'B11. Make Radio Contact',
+        make_radio_contact__ukw: 'B11. Make Radio Contact (UKW)',
         use_shorepower: 'B12. Use Shorepower',
 
         limited_depth: 'C1. Limited Depth',
@@ -766,6 +767,7 @@ export const LEGEND: LegendCategory[] = [
         high_speeds_permitted: 'E21. High Speeds Permitted',
         launching_beaching_permitted: 'E22. Launching Beaching Permitted',
         radio_information: 'E23. Radio Information',
+        radio_information__ukw: 'E23. Radio Information (UKW)',
         waterbikes_permitted: 'E24. Waterbikes Permitted',
         kitesurfing_permitted: 'E24. Kitesurfing Permitted',
         shorepower_permitted: 'E25. Shorepower Permitted',
