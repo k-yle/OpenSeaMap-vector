@@ -2,10 +2,14 @@
   "name": "navmark-renderer",
   "private": true,
   "type": "module",
-  "main": "./dist/navmark-renderer.js",
   "types": "./dist/navmark-renderer.d.ts",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
   "scripts": {
-    "build": "vite build && tsx src/scripts/specimens.ts",
+    "postbuild": "tsx src/scripts/specimens.ts",
+    "build": "tsdown --exports --minify",
     "typecheck": "tsc",
     "test": "vitest"
   },
@@ -14,10 +18,12 @@
     "@types/react": "catalog:",
     "@vitest/browser-webdriverio": "^4.0.18",
     "jsx-to-xml": "^0.0.1",
+    "tsdown": "^0.22.12",
     "tsx": "catalog:",
     "typescript": "catalog:",
-    "vite": "^7.3.1",
-    "vite-plugin-dts": "^4.5.4",
     "vitest": "^4.0.18"
+  },
+  "inlinedDependencies": {
+    "jsx-to-xml": "0.0.1"
   }
 }
