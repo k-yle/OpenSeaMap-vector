@@ -1,26 +1,23 @@
 {
-  "name": "@openseamap-vector/navmark-renderer",
+  "name": "navmark-renderer",
   "private": true,
   "type": "module",
   "main": "./dist/navmark-renderer.js",
   "types": "./dist/navmark-renderer.d.ts",
   "scripts": {
     "build": "vite build && tsx src/scripts/specimens.ts",
-    "lint": "eslint . && tsc",
+    "typecheck": "tsc",
     "test": "vitest"
   },
   "devDependencies": {
-    "@types/node": "^25.3.1",
-    "@types/react": "^19.2.13",
+    "@types/node": "catalog:",
+    "@types/react": "catalog:",
     "@vitest/browser-webdriverio": "^4.0.18",
-    "eslint": "^9.39.2",
-    "eslint-config-kyle": "^28.0.1",
     "jsx-to-xml": "^0.0.1",
-    "tsx": "^4.21.0",
-    "typescript": "^5.9.3",
+    "tsx": "catalog:",
+    "typescript": "catalog:",
     "vite": "^7.3.1",
     "vite-plugin-dts": "^4.5.4",
     "vitest": "^4.0.18"
-  },
-  "prettier": "eslint-config-kyle/prettier"
+  }
 }

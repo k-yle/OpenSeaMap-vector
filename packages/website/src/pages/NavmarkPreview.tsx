@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { type Tags, render } from '@openseamap-vector/navmark-renderer';
+import { type Tags, render } from 'navmark-renderer';
 
 function stringToTags(str: string): Tags | undefined {
   try {

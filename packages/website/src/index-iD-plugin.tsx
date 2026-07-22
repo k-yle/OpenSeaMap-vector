@@ -4,7 +4,7 @@
 import { useEffect, useRef, useSyncExternalStore } from 'react';
 import type * as iD from '@openstreetmap/id-plugin-sdk';
 import { type Root, createRoot } from 'react-dom/client';
-import { render } from '@openseamap-vector/navmark-renderer';
+import { render } from 'navmark-renderer';
 import type { Tags } from 'osm-api';
 import { SCALE } from './style.js';
 

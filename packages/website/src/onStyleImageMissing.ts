@@ -1,5 +1,5 @@
 import type { Map, MapLibreEvent } from 'maplibre-gl';
-import { render } from '@openseamap-vector/navmark-renderer';
+import { render } from 'navmark-renderer';
 import { getBurgee } from './external/wikidata.js';
 import { SCALE } from './style.js';
 

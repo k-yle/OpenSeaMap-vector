@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.9.0",
+  "engineStrict": true,
+  "engines": {
+    "node": ">=v25"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^10.6.0",
+    "eslint-config-kyle": "^28.0.1",
+    "typescript": "catalog:"
+  },
+  "prettier": "eslint-config-kyle/prettier"
+}
