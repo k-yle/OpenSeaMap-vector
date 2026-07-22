@@ -1,0 +1,7 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/refs/heads/main/schemas/config.json",
+  "last-release-sha": "3c4c36148e136ab816cb55684ddadd76cb2ccc23",
+  "packages": {
+    "packages/navmark-renderer": { "release-type": "node" }
+  }
+}
