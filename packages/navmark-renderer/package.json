@@ -1,7 +1,18 @@
 {
   "name": "navmark-renderer",
-  "private": true,
+  "version": "0.0.0",
   "type": "module",
+  "license": "MIT",
+  "sideEffects": false,
+  "description": "⛵🛶 SVG rendering engine for navigational marks, part of the OpenSeaMap-vector project.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/k-yle/OpenSeaMap-vector.git",
+    "directory": "packages/navmark-renderer"
+  },
+  "files": [
+    "dist"
+  ],
   "types": "./dist/navmark-renderer.d.ts",
   "exports": {
     ".": "./dist/index.mjs",
