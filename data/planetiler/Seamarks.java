@@ -61,6 +61,7 @@ public class Seamarks implements Profile {
       "wreck:type", //
       "wreck:date_sunk", //
       "whitewater:section_name", //
+      "building:height", //
       "maxspeed", //
       "maxstay", //
       "maxdraft", //

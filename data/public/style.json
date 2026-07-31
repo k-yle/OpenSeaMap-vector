@@ -64,7 +64,7 @@
 
     {
       "id": "hulk[fill]",
-      "type": "fill",
+      "type": "fill-extrusion",
       "source": "seamarks",
       "source-layer": "seamarks",
       "minzoom": 11,
@@ -88,7 +88,15 @@
           ]
         ]
       ],
-      "paint": { "fill-color": "#fc0", "fill-outline-color": "#000" }
+      "paint": {
+        "fill-extrusion-color": "#fc0",
+        "fill-extrusion-height": [
+          "case",
+          ["has", "building:height"],
+          ["to-number", ["get", "building:height"]],
+          5
+        ]
+      }
     },
     {
       "id": "hulk[symbol]",
