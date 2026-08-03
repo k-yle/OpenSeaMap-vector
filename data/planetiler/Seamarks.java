@@ -78,6 +78,23 @@ public class Seamarks implements Profile {
       "seamark:" //
   );
 
+  /**
+   * on the off-chance that these are drawn as a closed way, they should still be treated as a line.
+   * ideally we would import this from https://github.com/ideditor/id-area-keys
+   */
+  private Set<String> ALWAYS_LINEAR_SEAMARK_TYPES = Set.of(
+      //
+      "cable_overhead", //
+      "cable_submarine", //
+      "navigation_line", //
+      "pipeline_overhead", //
+      "pipeline_submarine", //
+      "recommended_track", //
+      "separation_boundary", //
+      "separation_lane", //
+      "separation_line" //
+  );
+
 
   /**
    * using the de-facto standard approach:
@@ -129,6 +146,14 @@ public class Seamarks implements Profile {
     }
 
     collected.setId(createFeatureId(feature));
+  }
+
+  private boolean isAlwaysLinear(SourceFeature feature) {
+    var seamarkType = (String) feature.getTag("seamark:type");
+    if (seamarkType == null) {
+      seamarkType = "";
+    }
+    return ALWAYS_LINEAR_SEAMARK_TYPES.contains(seamarkType);
   }
 
   private int getMinZoom(SourceFeature feature) {
@@ -183,6 +208,10 @@ public class Seamarks implements Profile {
     FeatureCollector.Feature collected = null;
     if (feature.isPoint()) {
       collected = collector.point("seamarks");
+    } else if (feature.canBeLine() && isAlwaysLinear(feature)) {
+      // doesn't matter if it's a closed or unclosed way, we
+      // will treat it as linear.
+      collected = collector.line("seamarks");
     } else if (feature.canBePolygon()) {
       // it's a closed way, and we expect this to be an area.
       collected = collector.polygon("seamarks");
