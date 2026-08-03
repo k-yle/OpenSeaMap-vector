@@ -204,7 +204,7 @@ async function loadFromPlanetilerJavaFile() {
     join(import.meta.dirname, '../../../data/planetiler/Seamarks.java'),
     'utf8',
   );
-  const [, attributeKeys, attributeKeyPrefixes] = javaFile
+  const [, attributeKeys /* , attributeKeyPrefixes */] = javaFile
     .matchAll(/Set\.of\(([^)]+)\);/g)
     .map((item): string[] =>
       // eslint-disable-next-line no-eval -- safe, this is code from our own repo
@@ -213,7 +213,7 @@ async function loadFromPlanetilerJavaFile() {
 
   const keys = [
     ...attributeKeys!,
-    ...attributeKeyPrefixes!.map((key) => `${key}*`),
+    // ...attributeKeyPrefixes!.map((key) => `${key}*`),
   ];
 
   const existing = new Set(taginfo.tags.map((item) => item.key));
