@@ -95,7 +95,7 @@ public class LightCharacteristics {
         str += LITCHR;
       }
     } else if (!SIGGRP.isEmpty()) {
-      str += LITCHR + "(" + SIGGRP + ")";
+      str += "(" + SIGGRP + ")";
     }
 
     // if the last character is not a bracket, and the next token
@@ -125,7 +125,7 @@ public class LightCharacteristics {
       str += HEIGHT + "m";
     }
     if (!VALMXR.isEmpty()) {
-      str += VALMXR += "M";
+      str += VALMXR + "M";
     }
 
     // turns out we didn"t need that separator
