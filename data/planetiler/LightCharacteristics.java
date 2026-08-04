@@ -69,20 +69,20 @@ public class LightCharacteristics {
       VALMXR = "";
     }
 
-    if (CATLIT != "" && type == "fog_signal") {
+    if (!CATLIT.isEmpty() && "fog_signal".equals(type)) {
       str += capitalize(CATLIT) + ": ";
     }
-    if (CATLIT == "directional") {
+    if ("directional".equals(CATLIT)) {
       str += "Dir";
     }
-    if (CATLIT == "aero" || CATLIT == "air_obstruction") {
+    if ("aero".equals(CATLIT) || "air_obstruction".equals(CATLIT)) {
       str += "Aero";
     }
-    if (MLTYLT != "") {
+    if (!MLTYLT.isEmpty()) {
       str += MLTYLT;
     }
-    if (LITCHR != "") {
-      if (SIGGRP != "") {
+    if (!LITCHR.isEmpty()) {
+      if (!SIGGRP.isEmpty()) {
         if (LITCHR.contains("+")) {
           // light charactertics with a plus are formatted differently
           var prefixSuffix = LITCHR.split("\\+");
@@ -94,17 +94,17 @@ public class LightCharacteristics {
         // no group, simple case
         str += LITCHR;
       }
-    } else if (SIGGRP != "") {
+    } else if (!SIGGRP.isEmpty()) {
       str += LITCHR + "(" + SIGGRP + ")";
     }
 
     // if the last character is not a bracket, and the next token
     // is going to be a colour, then add a dot
-    if (str != "" && str.charAt(str.length() - 1) != ')') {
+    if (!str.isEmpty() && str.charAt(str.length() - 1) != ')') {
       str += ".";
     }
 
-    if (COLOUR != "") {
+    if (!COLOUR.isEmpty()) {
       for (var colour : COLOUR.split(";")) {
         if (COLOUR_MAP.containsKey(colour)) {
           str += COLOUR_MAP.get(colour);
@@ -113,43 +113,43 @@ public class LightCharacteristics {
     }
 
     // add another dot, unless the previous group was empty
-    if (str != "" && str.charAt(str.length() - 1) != '.' && str.charAt(str.length() - 1) != ')'
-        && !(str.length() > 2 && str.substring(str.length() - 2) == ": ")) {
+    if (!str.isEmpty() && str.charAt(str.length() - 1) != '.' && str.charAt(str.length() - 1) != ')'
+        && !(str.length() > 2 && ": ".equals(str.substring(str.length() - 2)))) {
       str += ".";
     }
 
-    if (SIGPER != "") {
+    if (!SIGPER.isEmpty()) {
       str += SIGPER + "s";
     }
-    if (HEIGHT != "") {
+    if (!HEIGHT.isEmpty()) {
       str += HEIGHT + "m";
     }
-    if (VALMXR != "") {
+    if (!VALMXR.isEmpty()) {
       str += VALMXR += "M";
     }
 
     // turns out we didn"t need that separator
     var chars = Set.of('.', ':', ' ');
-    while (str != "" && chars.contains(str.charAt(str.length() - 1))) {
+    while (!str.isEmpty() && chars.contains(str.charAt(str.length() - 1))) {
       str = str.substring(0, str.length() - 1);
     }
 
-    if (CATLIT == "vertical") {
+    if ("vertical".equals(CATLIT)) {
       str += "(vert)";
     }
-    if (CATLIT == "horizontal") {
+    if ("horizontal".equals(CATLIT)) {
       str += "(hor)";
     }
-    if (CATLIT == "front") {
+    if ("front".equals(CATLIT)) {
       str += "(Front)";
     }
-    if (CATLIT == "rear") {
+    if ("rear".equals(CATLIT)) {
       str += "(Rear)";
     }
-    if (CATLIT == "upper") {
+    if ("upper".equals(CATLIT)) {
       str += "(Upper)";
     }
-    if (CATLIT == "lower") {
+    if ("lower".equals(CATLIT)) {
       str += "(Lower)";
     }
 
