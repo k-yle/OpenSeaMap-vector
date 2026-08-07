@@ -28,7 +28,7 @@ public class LightCharacteristics {
       Map.entry("amber", "Am"), // should be A?
       Map.entry("grey", "Gy"), //
       Map.entry("brown", "Br"), //
-      Map.entry("mangeta", "M"), //
+      Map.entry("magenta", "M"), //
       Map.entry("pink", "P") //
   );
 

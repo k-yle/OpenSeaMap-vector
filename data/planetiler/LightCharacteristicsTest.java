@@ -18,6 +18,12 @@ class LightCharacteristicsTest {
   }
 
   @Test
+  void magentaColourTag() {
+    Map<String, Object> tags = Map.of("seamark:light:1:colour", "magenta");
+    assertEquals("M", LightCharacteristics.encodeComplexLx(tags));
+  }
+
+  @Test
   void fogSignal_cat() {
     Map<String, Object> tags = Map.of("seamark:fog_signal:category", "bell");
     assertEquals("Bell", LightCharacteristics.encodeComplexLx(tags));
