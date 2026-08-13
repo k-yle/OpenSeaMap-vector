@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Map;
 
-public class Fuel {
+public class ManyCombo {
 
   /** temporary, until we support i18n */
   private static String capitalize(String str) {
@@ -37,5 +37,26 @@ public class Fuel {
     Collections.sort(fuelTypes);
 
     return String.join(", ", fuelTypes);
+  }
+
+  /**
+   * converts tags like `jetski_rental=yes` + `kayak_rental=yes` into a user-friendly string like
+   * `"Jetski, Kayak"`
+   */
+  public static String generateRentalLabel(Map<String, Object> tags) {
+    var watercraftTypes = new ArrayList<String>();
+
+    for (var entry : tags.entrySet()) {
+      var key = entry.getKey();
+      var value = entry.getValue();
+      if (key.endsWith("_rental") && value.equals("yes") && Seamarks.ATTRIBUTES.contains(key)) {
+        var type = key.replace("_rental", "").replace('_', ' ');
+        watercraftTypes.add(capitalize(type));
+      }
+    }
+
+    Collections.sort(watercraftTypes);
+
+    return String.join(", ", watercraftTypes);
   }
 }

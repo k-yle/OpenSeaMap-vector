@@ -137,6 +137,7 @@ public class Layers {
         "access_point", //
         "sanitary_dump_station" //
     ) || feature.hasTag("amenity", //
+        "boat_rental", //
         "boat_storage", //
         "charging_station", //
         "fish_cleaning" //

@@ -1434,6 +1434,7 @@
         [
           "any",
           ["==", ["get", "seamark:type"], "small_craft_facility"],
+          ["==", ["get", "amenity"], "boat_rental"],
           ["==", ["get", "amenity"], "boat_storage"],
           ["==", ["get", "leisure"], "fishing"],
           ["==", ["get", "leisure"], "slipway"],
@@ -1459,6 +1460,8 @@
         "text-allow-overlap": false,
         "icon-image": [
           "case",
+          ["==", ["get", "amenity"], "boat_rental"],
+          "small_craft_facility/boat_rental",
           ["==", ["get", "amenity"], "boat_storage"],
           "small_craft_facility/boat_storage",
           ["==", ["get", "amenity"], "fish_cleaning"],
@@ -1601,8 +1604,8 @@
                   ""
                 ]
               ],
-              ["has", "_fuel"],
-              ["get", "_fuel"],
+              ["has", "_manyCombo_label"],
+              ["get", "_manyCombo_label"],
               ""
             ]
           ]

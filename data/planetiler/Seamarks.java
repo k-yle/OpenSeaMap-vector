@@ -34,7 +34,7 @@ public class Seamarks implements Profile {
   );
 
   // there's an AST walker which extracts these values in scripts/taginfo.ts
-  private Set<String> ATTRIBUTES = Set.of(
+  public static final Set<String> ATTRIBUTES = Set.of(
       //
       "name", //
       "ref", //
@@ -62,6 +62,22 @@ public class Seamarks implements Profile {
       "wreck:date_sunk", //
       "whitewater:section_name", //
       "building:height", //
+
+      "motorboat_rental", //
+      "houseboat_rental", //
+      "pedalboat_rental", //
+      "jetski_rental", //
+      "sailboat_rental", //
+      "rowboat_rental", //
+      "dinghy_rental", //
+      "kayak_rental", //
+      "canoe_rental", //
+      "standup_paddleboard_rental", //
+      "yacht_rental", //
+      "raft_rental", //
+      "sailboard_rental", //
+      "surfboard_rental", //
+
       "maxspeed", //
       "maxstay", //
       "maxdraft", //
@@ -142,7 +158,10 @@ public class Seamarks implements Profile {
     }
     if ("fuel".equals(tags.get("waterway"))
         || "fuel_station".equals(tags.get("seamark:small_craft_facility:category"))) {
-      collected.setAttr("_fuel", Fuel.generateFuelLabel(tags));
+      collected.setAttr("_manyCombo_label", ManyCombo.generateFuelLabel(tags));
+    }
+    if ("boat_rental".equals(tags.get("amenity"))) {
+      collected.setAttr("_manyCombo_label", ManyCombo.generateRentalLabel(tags));
     }
 
     collected.setId(createFeatureId(feature));
