@@ -118,7 +118,7 @@ export const LEGEND: LegendCategory[] = [
           { waterway: 'fuel' },
           {
             'seamark:type': 'small_craft_facility',
-            'seamark:small_craft_facility:category': 'water_tap',
+            'seamark:small_craft_facility:category': 'fuel_station',
           },
         ],
       },
