@@ -27,6 +27,7 @@ public class Seamarks implements Profile {
       "scout", //
       "sport", //
       "portage", //
+      "water", //
       "waterway", //
       "whitewater", //
       "whitewater:section_grade", //
