@@ -204,20 +204,22 @@ public class Seamarks implements Profile {
       return;
     }
 
+    var layer = Layers.getLayer(feature);
+
     // figure out the geometry first
     FeatureCollector.Feature collected = null;
     if (feature.isPoint()) {
-      collected = collector.point("seamarks");
+      collected = collector.point(layer);
     } else if (feature.canBeLine() && isAlwaysLinear(feature)) {
       // doesn't matter if it's a closed or unclosed way, we
       // will treat it as linear.
-      collected = collector.line("seamarks");
+      collected = collector.line(layer);
     } else if (feature.canBePolygon()) {
       // it's a closed way, and we expect this to be an area.
-      collected = collector.polygon("seamarks");
+      collected = collector.polygon(layer);
     } else if (feature.canBeLine()) {
       // it's an unclosed way, or we expect it to be a linear.
-      collected = collector.line("seamarks");
+      collected = collector.line(layer);
     }
 
     if (collected == null) {

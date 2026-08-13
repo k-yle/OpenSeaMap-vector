@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
   ActionIcon,
   AppShell,
@@ -11,8 +12,10 @@ import {
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconBrandGithub, IconInfoCircle, IconMap } from '@tabler/icons-react';
+import type { Map } from 'maplibre-gl';
 import { LegendPage } from './pages/LegendPage.js';
 import { AppTitle } from './components/AppTitle.js';
+import { LayerSwitcher } from './components/LayerSwitcher.js';
 import { MapPage } from './pages/MapPage.js';
 
 const theme = createTheme({});
@@ -20,6 +23,7 @@ const theme = createTheme({});
 export const App: React.FC = () => {
   const [isNavbarOpen, { toggle: toggleNavbar }] = useDisclosure();
   const [isLegendOpen, { toggle: toggleLegend }] = useDisclosure();
+  const [map, setMap] = useState<Map>();
 
   return (
     <MantineProvider theme={theme}>
@@ -39,7 +43,8 @@ export const App: React.FC = () => {
           </Group>
           <Group h="100%" px="md" visibleFrom="sm" justify="space-between">
             <AppTitle />
-            <Group>
+            <Group gap={10}>
+              {map && <LayerSwitcher map={map} />}
               <Button
                 variant="subtle"
                 color="gray"
@@ -101,7 +106,7 @@ export const App: React.FC = () => {
           */}
         </AppShell.Navbar>
         <AppShell.Main p={0}>
-          <MapPage />
+          <MapPage onLoad={setMap} />
           <LegendPage isOpen={isLegendOpen} onClose={toggleLegend} />
         </AppShell.Main>
       </AppShell>

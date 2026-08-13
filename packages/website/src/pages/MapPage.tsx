@@ -25,7 +25,9 @@ protocol.add(pmTiles);
 
 /* eslint-disable @eslint-react/web-api/no-leaked-event-listener -- this is the root component, it never gets unmounted */
 
-export const MapPage: React.FC = () => {
+export const MapPage: React.FC<{
+  onLoad(map: Map): void;
+}> = ({ onLoad }) => {
   const domRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<Map>(null);
 
@@ -56,6 +58,7 @@ export const MapPage: React.FC = () => {
           pixelRatio: SCALE,
         });
         mapRef.current = map;
+        map.once('load', () => onLoad(map));
 
         map.addControl(new EliControl(), 'top-right');
 
@@ -128,7 +131,7 @@ export const MapPage: React.FC = () => {
         });
       })
       .catch(console.error);
-  }, []);
+  }, [onLoad]);
 
   return (
     <main>
