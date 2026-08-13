@@ -1436,6 +1436,7 @@
           ["==", ["get", "seamark:type"], "small_craft_facility"],
           ["==", ["get", "amenity"], "boat_rental"],
           ["==", ["get", "amenity"], "boat_storage"],
+          ["==", ["get", "amenity"], "fish_cleaning"],
           ["==", ["get", "leisure"], "fishing"],
           ["==", ["get", "leisure"], "slipway"],
           ["==", ["get", "waterway"], "boat_lift"],
