@@ -455,7 +455,11 @@ export const LEGEND: LegendCategory[] = [
       {
         label: 'Pile',
         icon: 'https://wiki.openstreetmap.org/w/images/9/9c/Post.png',
-        tags: [{ 'seamark:type': 'pile' }],
+        tags: [
+          { 'seamark:type': 'pile' },
+          { 'seamark:type': 'mooring', 'seamark:mooring:category': 'pile' },
+          { 'seamark:type': 'mooring', 'seamark:mooring:category': 'post' },
+        ],
       },
       {
         label: 'Mooring Bollard',
