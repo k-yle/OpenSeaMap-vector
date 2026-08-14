@@ -465,7 +465,7 @@ export const LEGEND: LegendCategory[] = [
         ],
       },
       {
-        label: 'Mooring Dolpin',
+        label: 'Mooring Dolphin',
         icon: 'https://wiki.openstreetmap.org/w/images/0/0b/Dolphin.png',
         tags: [
           { 'seamark:type': 'mooring', 'seamark:mooring:category': 'dolphin' },
@@ -695,7 +695,7 @@ export const LEGEND: LegendCategory[] = [
         no_wash: 'A9. No Wash',
         no_passage_left: 'A10a. No Passage Left',
         no_passage_right: 'A10b. No Passage Right',
-        no_motor_craft: 'A1. No Motor Craft',
+        no_motor_craft: 'A12. No Motor Craft',
         no_sport_craft: 'A13. No Sport Craft',
         no_waterskiing: 'A14. No Waterskiing',
         no_sailing_craft: 'A15. No Sailing Craft',
