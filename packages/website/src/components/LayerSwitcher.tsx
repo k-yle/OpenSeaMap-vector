@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Button, Checkbox, Menu } from '@mantine/core';
 import { IconStack2 } from '@tabler/icons-react';
 import type { Map } from 'maplibre-gl';
-import { LAYER_LABELS, LAYER_NAME_TO_ID, type Layer } from '../data/layers.js';
+import { LAYER_LABELS, Layer, type LayerName } from '../data/layers.js';
 
 // the disabled layers are stored using a bitmask in the URL
 const PROP = 'l';
@@ -32,9 +32,9 @@ export const LayerSwitcher: React.FC<{ map: Map }> = ({ map }) => {
     for (const styleLayer of map.getStyle().layers) {
       if (!('source-layer' in styleLayer)) continue;
       if (!styleLayer['source-layer']) continue;
+      if (!(styleLayer['source-layer'] in Layer)) continue;
 
-      const layerId = LAYER_NAME_TO_ID[styleLayer['source-layer']];
-      if (!layerId) throw new Error(`unknown layer “${layerId}”`);
+      const layerId = Layer[styleLayer['source-layer'] as LayerName];
 
       map.setLayoutProperty(
         styleLayer.id,

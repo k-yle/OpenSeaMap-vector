@@ -1,7 +1,7 @@
 import com.onthegomap.planetiler.reader.SourceFeature;
 
 public class Layers {
-  /** ⚠️ the returned value here needs to match LAYER_IDS in layers.ts */
+  /** ⚠️ the returned value here needs to match `enum Layer` in layers.ts */
   public static String getLayer(SourceFeature feature) {
 
     // moorings are annoying
