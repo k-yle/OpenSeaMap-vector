@@ -64,11 +64,13 @@ export const LEGEND: LegendCategory[] = [
           },
           { 'seamark:type': 'crane' },
         ],
+        hiddenIf: PRIVATE_TAGS,
       },
       {
         label: 'Boat Lift',
         icon: `${ICON_BASE_URL}/small_craft_facility/elevator.svg`,
         tags: [{ waterway: 'boat_lift' }],
+        hiddenIf: PRIVATE_TAGS,
       },
       {
         label: 'Boat Rental',
@@ -96,6 +98,7 @@ export const LEGEND: LegendCategory[] = [
         label: 'Boat Storage',
         icon: `${ICON_BASE_URL}/small_craft_facility/boat_storage.svg`,
         tags: [{ amenity: 'boat_storage' }],
+        hiddenIf: PRIVATE_TAGS,
       },
       {
         label: 'Boatyard',
@@ -106,6 +109,7 @@ export const LEGEND: LegendCategory[] = [
             'seamark:small_craft_facility:category': 'boatyard',
           },
         ],
+        hiddenIf: PRIVATE_TAGS,
       },
       {
         label: 'Electric Boat / EV Charger',
@@ -116,11 +120,13 @@ export const LEGEND: LegendCategory[] = [
         label: 'Fishing Spot',
         icon: `${ICON_BASE_URL}/small_craft_facility/fishing_spot.svg`,
         tags: [{ leisure: 'fishing' }],
+        hiddenIf: PRIVATE_TAGS,
       },
       {
         label: 'Fish Gutting Table',
         icon: `${ICON_BASE_URL}/small_craft_facility/fish_cleaning.svg`,
         tags: [{ amenity: 'fish_cleaning' }],
+        hiddenIf: PRIVATE_TAGS,
       },
       {
         label: 'Freshwater Tap',
@@ -132,6 +138,7 @@ export const LEGEND: LegendCategory[] = [
             'seamark:small_craft_facility:category': 'water_tap',
           },
         ],
+        hiddenIf: PRIVATE_TAGS,
       },
       {
         label: 'Marine Fuel Station',
@@ -143,6 +150,7 @@ export const LEGEND: LegendCategory[] = [
             'seamark:small_craft_facility:category': 'fuel_station',
           },
         ],
+        hiddenIf: PRIVATE_TAGS,
       },
       {
         label: 'Water Access Point',
@@ -169,6 +177,7 @@ export const LEGEND: LegendCategory[] = [
             'seamark:small_craft_facility:category': 'pump-out',
           },
         ],
+        hiddenIf: PRIVATE_TAGS,
       },
       {
         label: 'Boat Ramp',
@@ -180,6 +189,7 @@ export const LEGEND: LegendCategory[] = [
             'seamark:small_craft_facility:category': 'slipway',
           },
         ],
+        hiddenIf: PRIVATE_TAGS,
       },
       {
         label: 'Visitor Berth',
@@ -191,6 +201,7 @@ export const LEGEND: LegendCategory[] = [
           },
         ],
         labelAttributes: BERTH_LABEL_KEYS,
+        hiddenIf: PRIVATE_TAGS,
       },
       {
         label: 'Visitor Mooring',
@@ -202,6 +213,7 @@ export const LEGEND: LegendCategory[] = [
           },
         ],
         labelAttributes: BERTH_LABEL_KEYS,
+        hiddenIf: PRIVATE_TAGS,
       },
       {
         label: 'Rowing Club',
