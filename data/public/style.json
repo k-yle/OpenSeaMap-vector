@@ -899,7 +899,7 @@
         "circle-opacity": 0,
         "circle-stroke-color": [
           "case",
-          ["==", "seamark:distance_mark:category", "not_installed"],
+          ["==", ["get", "seamark:distance_mark:category"], "not_installed"],
           "#a30075",
           "#333"
         ],
