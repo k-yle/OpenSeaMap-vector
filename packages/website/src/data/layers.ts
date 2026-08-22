@@ -1,3 +1,5 @@
+import type { I$ } from '../context/LocaleContext.js';
+
 /** ⚠️ the keys MUST match Layers.java */
 export enum Layer {
   navmarks = 1 << 0, // and extrapolated navlines+rectracks
@@ -12,12 +14,12 @@ export enum Layer {
 
 export type LayerName = keyof typeof Layer;
 
-export const LAYER_LABELS: Record<Layer, string> = {
-  [Layer.navmarks]: 'Navigational Marks',
-  [Layer.hazards]: 'Hazards',
-  [Layer.notices]: 'Signs / Notices',
-  [Layer.areas]: 'Areas',
-  [Layer.recreational]: 'Recreational Facilities',
-  [Layer.general]: 'General',
-  [Layer.businesses]: 'Organisations',
-};
+export const LAYER_LABELS = ($: I$): Record<Layer, string> => ({
+  [Layer.navmarks]: $('Layer.navmarks'),
+  [Layer.hazards]: $('Layer.hazards'),
+  [Layer.notices]: $('Layer.notices'),
+  [Layer.areas]: $('Layer.areas'),
+  [Layer.recreational]: $('Layer.recreational'),
+  [Layer.general]: $('Layer.general'),
+  [Layer.businesses]: $('Layer.businesses'),
+});

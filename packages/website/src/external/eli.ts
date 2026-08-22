@@ -1,6 +1,7 @@
 import type { Map } from 'maplibre-gl';
 import type { FeatureCollection, Geometry } from 'geojson';
 import whichPolygon from 'which-polygon';
+import type { I$ } from '../context/LocaleContext.js';
 
 export type EliCategory =
   | 'photo'
@@ -186,15 +187,15 @@ const isRecommended = (layer: ELI) =>
 
 let eliPromise: Promise<ELIGeoJson> | undefined;
 
-const CATEGORY_LABELS: Record<EliCategory, string | undefined> = {
-  photo: 'Aerial Imagery',
-  map: 'Maps',
-  osmbasedmap: 'OSM-based Maps',
-  historicphoto: 'Historic Imagery',
-  historicmap: 'Historic Maps',
-  elevation: 'Elevation',
+const CATEGORY_LABELS: Record<EliCategory, (($: I$) => string) | undefined> = {
+  photo: ($) => $('eli.photo'),
+  map: ($) => $('eli.map'),
+  osmbasedmap: ($) => $('eli.osmbasedmap'),
+  historicphoto: ($) => $('eli.historicphoto'),
+  historicmap: ($) => $('eli.historicmap'),
+  elevation: ($) => $('eli.elevation'),
   qa: undefined, // don't show these
-  other: 'Other',
+  other: ($) => $('eli.other'),
 };
 
 export interface BasemapGroup {
@@ -203,7 +204,10 @@ export interface BasemapGroup {
   sources: ELI[];
 }
 
-export async function getAvailableLayers(map: Map): Promise<BasemapGroup[]> {
+export async function getAvailableLayers(
+  map: Map,
+  $: I$,
+): Promise<BasemapGroup[]> {
   eliPromise ||= fetch(
     'https://osmlab.github.io/editor-layer-index/imagery.geojson',
   ).then((r) => r.json() as Promise<ELIGeoJson>);
@@ -226,19 +230,19 @@ export async function getAvailableLayers(map: Map): Promise<BasemapGroup[]> {
   return [
     {
       id: 'best',
-      label: 'Best',
+      label: $('eli._best'),
       sources: [...local, ...world].filter(isRecommended),
     },
     {
       id: 'local',
-      label: 'Local',
+      label: $('eli._local'),
       sources: local.filter((layer) => !isRecommended(layer)),
     },
     ...(Object.keys(CATEGORY_LABELS) as EliCategory[])
       .filter((category) => CATEGORY_LABELS[category])
       .map((category) => ({
         id: category,
-        label: CATEGORY_LABELS[category]!,
+        label: CATEGORY_LABELS[category]!($),
         sources: world.filter(
           (layer) =>
             !isRecommended(layer) && (layer.category || 'other') === category,

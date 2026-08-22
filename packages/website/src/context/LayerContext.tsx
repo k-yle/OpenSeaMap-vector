@@ -8,12 +8,11 @@ import {
   useState,
 } from 'react';
 import { Layer, type LayerName } from '../data/layers.js';
+import { QS } from '../util/qs.js';
 import { AppContext } from './AppContext.js';
 
 // the disabled layers are stored using a bitmask in the URL
 const PROP = 'l';
-
-const getQs = () => new URLSearchParams(window.location.hash.slice(1));
 
 export interface ILayerContext {
   hiddenLayers: number;
@@ -26,20 +25,18 @@ export const LayerWrapper: React.FC<PropsWithChildren> = ({ children }) => {
   const { map } = use(AppContext);
 
   const [hiddenLayers, setHiddenLayers] = useState(
-    () => +(getQs().get(PROP) || 0),
+    () => +(QS.get().get(PROP) || 0),
   );
 
   useEffect(() => {
     // sync state with URL qs
-    const qs = getQs();
-    if (hiddenLayers) {
-      qs.set(PROP, hiddenLayers.toString());
-    } else {
-      qs.delete(PROP); // don't include ?hide=0
-    }
-    const url = new URL(window.location.href);
-    url.hash = qs.toString().replaceAll('%2F', '/'); // undo URLSearchParams's annoying behaviour
-    window.history.replaceState('', '', url);
+    QS.update((qs) => {
+      if (hiddenLayers) {
+        qs.set(PROP, hiddenLayers.toString());
+      } else {
+        qs.delete(PROP); // don't include ?hide=0
+      }
+    });
   }, [hiddenLayers]);
 
   useEffect(() => {

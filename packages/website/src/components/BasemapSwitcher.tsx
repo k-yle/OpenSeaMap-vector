@@ -8,10 +8,12 @@ import {
   getAvailableLayers,
 } from '../external/eli.js';
 import { AppContext } from '../context/AppContext.js';
+import { LocaleContext } from '../context/LocaleContext.js';
 
 export const BasemapSwitcher: React.FC<{
   isMobile?: boolean;
 }> = ({ isMobile }) => {
+  const { $ } = use(LocaleContext);
   const { map } = use(AppContext);
   const [groups, setGroups] = useState<BasemapGroup[]>();
   const [error, setError] = useState<unknown>();
@@ -26,7 +28,7 @@ export const BasemapSwitcher: React.FC<{
       onOpen={() => {
         setError(undefined);
         setGroups(undefined);
-        getAvailableLayers(map).then(setGroups).catch(setError);
+        getAvailableLayers(map, $).then(setGroups).catch(setError);
       }}
     >
       <Menu.Target>
@@ -40,11 +42,11 @@ export const BasemapSwitcher: React.FC<{
           my={isMobile ? 4 : undefined}
           styles={{ section: { marginInlineEnd: 'var(--mantine-spacing-sm)' } }}
         >
-          Basemap
+          {$('Navbar.basemap')}
         </Button>
       </Menu.Target>
       <Menu.Dropdown mah="min(60vh, 500px)" style={{ overflowY: 'auto' }}>
-        {!!error && <Menu.Item disabled>Error</Menu.Item>}
+        {!!error && <Menu.Item disabled>{$('generic.error')}</Menu.Item>}
         {!groups && (
           <Menu.Item disabled>
             <Loader />

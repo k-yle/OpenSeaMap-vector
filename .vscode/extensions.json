@@ -1,7 +1,7 @@
 {
   "recommendations": [
     "redhat.java",
-    "esbenp.prettier-vscode",
+    "lokalise.i18n-ally",
     "dbaeumer.vscode-eslint",
     "github.vscode-github-actions"
   ]

@@ -5,5 +5,5 @@
     "lib": ["esnext", "dom", "dom.iterable"],
     "types": ["vite/client", "node"]
   },
-  "include": ["src", "scripts"]
+  "include": ["src", "scripts", "src/**/*.json"]
 }

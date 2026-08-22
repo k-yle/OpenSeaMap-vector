@@ -1,4 +1,5 @@
 import type { Tags } from 'osm-api';
+import type { I$ } from '../context/LocaleContext.js';
 
 export interface LegendEntry {
   label: string;
@@ -17,7 +18,7 @@ export interface LegendEntry {
 }
 
 export interface LegendCategory {
-  categoryName: string;
+  categoryName($: I$): string;
   items: LegendEntry[];
 }
 
@@ -46,7 +47,7 @@ export const LEGEND: LegendCategory[] = [
   // re-use the translated labels from iD. Tracked by
   // https://github.com/openstreetmap/id-tagging-schema/issues/683
   {
-    categoryName: 'Recreational Facilities',
+    categoryName: ($) => $('Layer.recreational'),
     items: [
       {
         label: 'Beach',
@@ -309,7 +310,7 @@ export const LEGEND: LegendCategory[] = [
     ],
   },
   {
-    categoryName: 'General',
+    categoryName: ($) => $('Layer.general'),
     items: [
       {
         label: 'Harbour',
@@ -486,7 +487,7 @@ export const LEGEND: LegendCategory[] = [
     ],
   },
   {
-    categoryName: 'Landuse / Areas',
+    categoryName: ($) => $('LegendPage.areas'),
     items: [
       {
         label: 'Turning Basin',
@@ -550,7 +551,7 @@ export const LEGEND: LegendCategory[] = [
     ],
   },
   {
-    categoryName: 'Barriers',
+    categoryName: ($) => $('legend.barriers'),
     items: [
       {
         label: 'Floating Barrier (boom)',
@@ -601,7 +602,7 @@ export const LEGEND: LegendCategory[] = [
     ],
   },
   {
-    categoryName: 'Other Lines',
+    categoryName: ($) => $('legend.other-lines'),
     items: [
       {
         label: 'Overhead Cable',
@@ -639,7 +640,7 @@ export const LEGEND: LegendCategory[] = [
     ],
   },
   {
-    categoryName: 'Traffic Separation Scheme',
+    categoryName: ($) => $('legend.tss'),
     items: [
       {
         label: 'Separation Lane',
@@ -667,7 +668,7 @@ export const LEGEND: LegendCategory[] = [
     ],
   },
   {
-    categoryName: 'Buoys and Beacons',
+    categoryName: ($) => $('legend.buoys-beacons'),
     items: [
       {
         label: 'Leave-to-Port',
@@ -682,7 +683,7 @@ export const LEGEND: LegendCategory[] = [
     ],
   },
   {
-    categoryName: 'Notice Marks (Traffic Signs)',
+    categoryName: ($) => $('Layer.notices'),
     items: [
       ...Object.entries({
         no_entry: 'A1. No Entry',

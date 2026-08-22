@@ -1,8 +1,11 @@
+import { use } from 'react';
 import { Button, Flex, Group, Modal, Title } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import iconUrl from '../../../../data/public/icon.svg?url';
+import { LocaleContext } from '../context/LocaleContext.js';
 
 export const AppTitle: React.FC = () => {
+  const { $ } = use(LocaleContext);
   const [disclaimerOpen, { toggle: toggleDisclaimer }] = useDisclosure();
 
   return (
@@ -21,18 +24,15 @@ export const AppTitle: React.FC = () => {
           style={{ cursor: 'help' }}
           color="gray"
         >
-          Not for Navigation!
+          {$('AppTitle.disclaimer.short')}
         </Button>
       </Flex>
       <Modal
         opened={disclaimerOpen}
         onClose={toggleDisclaimer}
-        title={<strong>Not for Navigation!</strong>}
+        title={<strong>{$('AppTitle.disclaimer.short')}</strong>}
       >
-        Data from this map or from OpenStreetMap{' '}
-        <b>should never be used for marine navigation</b>. The contributors of
-        this project take no responsibility for the accuracy of the data. Always
-        use official nautical charts.
+        {$('AppTitle.disclaimer.long')}
       </Modal>
     </Group>
   );

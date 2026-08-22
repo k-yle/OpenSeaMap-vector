@@ -3,13 +3,16 @@ import { Button, Checkbox, Menu } from '@mantine/core';
 import { IconStack2 } from '@tabler/icons-react';
 import { LAYER_LABELS, type Layer } from '../data/layers.js';
 import { LayerContext } from '../context/LayerContext.js';
-
-const LAYERS = Object.keys(LAYER_LABELS).map((layer) => +layer as Layer);
+import { LocaleContext } from '../context/LocaleContext.js';
 
 export const LayerSwitcher: React.FC<{
   isMobile?: boolean;
 }> = ({ isMobile }) => {
+  const { $ } = use(LocaleContext);
   const { hiddenLayers, toggle } = use(LayerContext);
+
+  const labels = LAYER_LABELS($);
+
   return (
     <Menu closeOnItemClick={false} position="bottom-start" shadow="md">
       <Menu.Target>
@@ -23,15 +26,16 @@ export const LayerSwitcher: React.FC<{
           my={isMobile ? 4 : undefined}
           styles={{ section: { marginInlineEnd: 'var(--mantine-spacing-sm)' } }}
         >
-          Layers
+          {$('Navbar.layers')}
         </Button>
       </Menu.Target>
       <Menu.Dropdown>
-        {LAYERS.map((layer) => {
+        {Object.keys(labels).map((key) => {
+          const layer = +key as Layer;
           return (
             <Menu.Item key={layer} onClick={() => toggle(layer)}>
               <Checkbox
-                label={LAYER_LABELS[layer]}
+                label={labels[layer]}
                 checked={!(hiddenLayers & layer)}
                 onChange={() => toggle(layer)}
                 style={{ pointerEvents: 'none' }}

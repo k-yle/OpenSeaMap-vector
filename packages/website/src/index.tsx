@@ -5,6 +5,7 @@ import { App } from './App.js';
 import { NavmarkPreview } from './pages/NavmarkPreview.js';
 import { AppWrapper } from './context/AppContext.js';
 import { LayerWrapper } from './context/LayerContext.js';
+import { LocaleWrapper } from './context/LocaleContext.js';
 import './util/shut-up.js';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import '@mantine/core/styles.css';
@@ -23,7 +24,9 @@ root.render(
     <MantineProvider theme={theme}>
       <AppWrapper>
         <LayerWrapper>
-          {isPreviewPage ? <NavmarkPreview /> : <App />}
+          <LocaleWrapper>
+            {isPreviewPage ? <NavmarkPreview /> : <App />}
+          </LocaleWrapper>
         </LayerWrapper>
       </AppWrapper>
     </MantineProvider>

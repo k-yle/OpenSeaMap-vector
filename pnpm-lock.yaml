@@ -92,6 +92,9 @@ importers:
       md5:
         specifier: ^2.3.0
         version: 2.3.0
+      messageformat:
+        specifier: ^4.0.0
+        version: 4.0.0
       navmark-renderer:
         specifier: 'workspace:'
         version: link:../navmark-renderer
@@ -2617,6 +2620,10 @@ packages:
 
   mdn-data@2.23.0:
     resolution: {integrity: sha512-786vq1+4079JSeu2XdcDjrhi/Ry7BWtjDl9WtGPWLiIHb2T66GvIVflZTBoSNZ5JqTtJGYEVMuFA/lbQlMOyDQ==}
+
+  messageformat@4.0.0:
+    resolution: {integrity: sha512-XKmJ/ffTWToWOlHJzt85ZChQgVGC0LHzNWuNK8zuYpNySsB0nIEmytOdSAOW9ETKtkajAUJf520m5gFHHnrTYg==}
+    engines: {node: ^20.19 || ^22.12 || >=24}
 
   minimatch@10.2.5:
     resolution: {integrity: sha512-MULkVLfKGYDFYejP07QOurDLLQpcjk7Fw+7jXS2R2czRQzR56yHRveU5NDJEOviH+hETZKSkIk5c+T23GjFUMg==}
@@ -6240,6 +6247,8 @@ snapshots:
       is-buffer: 1.1.6
 
   mdn-data@2.23.0: {}
+
+  messageformat@4.0.0: {}
 
   minimatch@10.2.5:
     dependencies:

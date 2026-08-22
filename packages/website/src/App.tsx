@@ -16,9 +16,13 @@ import { LayerSwitcher } from './components/LayerSwitcher.js';
 import { BasemapSwitcher } from './components/BasemapSwitcher.js';
 import { MapPage } from './pages/MapPage.js';
 import { AppContext } from './context/AppContext.js';
+import { LocaleContext } from './context/LocaleContext.js';
+import { LanguageSwitcher } from './components/LanguageSwitcher.js';
 
 export const App: React.FC = () => {
   const { map } = use(AppContext);
+  const { $ } = use(LocaleContext);
+
   const [isNavbarOpen, { toggle: toggleNavbar }] = useDisclosure();
   const [isLegendOpen, { toggle: toggleLegend }] = useDisclosure();
 
@@ -51,9 +55,10 @@ export const App: React.FC = () => {
                 leftSection={<IconInfoCircle />}
                 onClick={toggleLegend}
               >
-                Legend
+                {$('Navbar.legend')}
               </Button>
               |
+              <LanguageSwitcher />
               <ActionIcon
                 variant="subtle"
                 color="gray"
@@ -61,6 +66,7 @@ export const App: React.FC = () => {
                 href="https://github.com/k-yle/OpenSeaMap-vector"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={$('Navbar.source_code')}
               >
                 <IconBrandGithub />
               </ActionIcon>
@@ -69,10 +75,10 @@ export const App: React.FC = () => {
         </AppShell.Header>
         <AppShell.Navbar p="md" hiddenFrom="sm">
           <Title order={4} mb={4}>
-            Pages
+            {$('Navbar.sections.pages')}
           </Title>
           <NavLink
-            label="Map"
+            label={$('Navbar.map')}
             active
             bdrs={8}
             my={4}
@@ -80,7 +86,7 @@ export const App: React.FC = () => {
             onClick={toggleNavbar}
           />
           <NavLink
-            label="Legend"
+            label={$('Navbar.legend')}
             bdrs={8}
             my={4}
             leftSection={<IconInfoCircle />}
@@ -93,17 +99,18 @@ export const App: React.FC = () => {
             href="https://github.com/k-yle/OpenSeaMap-vector"
             target="_blank"
             rel="noopener noreferrer"
-            label="Source Code"
+            label={$('Navbar.source_code')}
             bdrs={8}
             my={4}
             leftSection={<IconBrandGithub />}
           />
 
           <Title order={4} mt={8} mb={4}>
-            Settings
+            {$('Navbar.sections.settings')}
           </Title>
           {map && <LayerSwitcher isMobile />}
           {map && <BasemapSwitcher isMobile />}
+          <LanguageSwitcher isMobile />
         </AppShell.Navbar>
         <AppShell.Main p={0}>
           <MapPage />

@@ -1,5 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
+import { use, useEffect, useRef, useState } from 'react';
 import { type Tags, render } from 'navmark-renderer';
+import { LocaleContext } from '../context/LocaleContext.js';
 
 function stringToTags(str: string): Tags | undefined {
   try {
@@ -67,6 +68,8 @@ const DEFAULT_TAGS: Tags[] = [
  * test canvas rendering
  */
 export const NavmarkPreview: React.FC = () => {
+  const { $ } = use(LocaleContext);
+
   const [tagsString, setTagsString] = useState(
     () =>
       new URLSearchParams(window.location.search).get('tags') ||
@@ -104,7 +107,7 @@ export const NavmarkPreview: React.FC = () => {
     <>
       <div style={{ display: 'flex' }}>
         <textarea
-          placeholder="Tags"
+          placeholder={$('generic.tags')}
           value={tagsString}
           onChange={(event) => setTagsString(event.target.value)}
           onBlur={(event) => {
@@ -129,7 +132,7 @@ export const NavmarkPreview: React.FC = () => {
         }}
         style={{ position: 'fixed', bottom: 10, left: 10 }}
       >
-        Random Example
+        {$('NavmarkPreview.random-button')}
       </button>
     </>
   );

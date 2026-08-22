@@ -1,8 +1,9 @@
-import { Fragment } from 'react';
+import { Fragment, use } from 'react';
 import { FocusTrap, Modal, Table, Title } from '@mantine/core';
 import type { Tags } from 'osm-api';
 import { useMediaQuery } from '@mantine/hooks';
 import { LEGEND } from '../data/legend.js';
+import { LocaleContext } from '../context/LocaleContext.js';
 
 export const RenderTag: React.FC<{ k: string; v?: string }> = ({ k, v }) => {
   return (
@@ -47,12 +48,13 @@ export const LegendPage: React.FC<{ isOpen: boolean; onClose(): void }> = ({
   isOpen,
   onClose,
 }) => {
+  const { $ } = use(LocaleContext);
   const isNarrowScreen = useMediaQuery('(max-width: 700px)');
   return (
     <Modal
       opened={isOpen}
       onClose={onClose}
-      title={<strong>Legend</strong>}
+      title={<strong>{$('Navbar.legend')}</strong>}
       size="80vw"
       fullScreen={isNarrowScreen}
       transitionProps={isNarrowScreen ? { transition: 'fade' } : undefined}
@@ -62,12 +64,13 @@ export const LegendPage: React.FC<{ isOpen: boolean; onClose(): void }> = ({
       <Table>
         {LEGEND.map((category, categoryIndex) => {
           return (
-            <Fragment key={category.categoryName}>
+            // eslint-disable-next-line @eslint-react/no-array-index-key -- it's stable
+            <Fragment key={categoryIndex}>
               <Table.Thead>
                 <Table.Tr>
                   <Table.Th colSpan={3}>
                     <Title order={5} mt={categoryIndex && 32}>
-                      {category.categoryName}
+                      {category.categoryName($)}
                     </Title>
                   </Table.Th>
                 </Table.Tr>
@@ -96,9 +99,7 @@ export const LegendPage: React.FC<{ isOpen: boolean; onClose(): void }> = ({
                         {!!altTagsCount && (
                           <details>
                             <summary>
-                              {altTagsCount} alternative tag
-                              {altTagsCount === 1 ? ' is' : 's are'} also
-                              accepted:
+                              {$('LegendPage.altTags', { count: altTagsCount })}
                             </summary>
                             <ul style={{ marginLeft: 18 }}>
                               {item.tags.slice(1).map((tags, index) => (
@@ -113,8 +114,9 @@ export const LegendPage: React.FC<{ isOpen: boolean; onClose(): void }> = ({
                         {!!item.labelAttributes?.length && (
                           <details>
                             <summary>
-                              The label is affected by{' '}
-                              {item.labelAttributes.length} tags:
+                              {$('LegendPage.labelAttributes', {
+                                count: item.labelAttributes.length,
+                              })}
                             </summary>
                             <ul style={{ marginLeft: 18 }}>
                               {item.labelAttributes.map((key) => (
@@ -128,9 +130,9 @@ export const LegendPage: React.FC<{ isOpen: boolean; onClose(): void }> = ({
                         {item.hiddenIf && (
                           <details>
                             <summary>
-                              This feature is hidden if any of these{' '}
-                              {item.hiddenIf.length} tag
-                              {item.hiddenIf.length === 1 ? '' : 's'} exist:
+                              {$('LegendPage.hiddenIf', {
+                                count: item.hiddenIf.length,
+                              })}
                             </summary>
                             <ul style={{ marginLeft: 18 }}>
                               {item.hiddenIf.map((tags, index) => (
