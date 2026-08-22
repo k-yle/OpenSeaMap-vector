@@ -1,32 +1,29 @@
-import { useState } from 'react';
+import { use } from 'react';
 import {
   ActionIcon,
   AppShell,
   Burger,
   Button,
   Group,
-  MantineProvider,
   NavLink,
   Title,
-  createTheme,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconBrandGithub, IconInfoCircle, IconMap } from '@tabler/icons-react';
-import type { Map } from 'maplibre-gl';
 import { LegendPage } from './pages/LegendPage.js';
 import { AppTitle } from './components/AppTitle.js';
 import { LayerSwitcher } from './components/LayerSwitcher.js';
 import { MapPage } from './pages/MapPage.js';
-
-const theme = createTheme({});
+import { AppContext } from './context/AppContext.js';
 
 export const App: React.FC = () => {
+  const { map } = use(AppContext);
   const [isNavbarOpen, { toggle: toggleNavbar }] = useDisclosure();
   const [isLegendOpen, { toggle: toggleLegend }] = useDisclosure();
-  const [map, setMap] = useState<Map>();
 
   return (
-    <MantineProvider theme={theme}>
+    // eslint-disable-next-line @eslint-react/no-useless-fragment -- to preserve git blame
+    <>
       <AppShell
         header={{ height: 50 }}
         navbar={{
@@ -44,7 +41,7 @@ export const App: React.FC = () => {
           <Group h="100%" px="md" visibleFrom="sm" justify="space-between">
             <AppTitle />
             <Group gap={10}>
-              {map && <LayerSwitcher map={map} />}
+              {map && <LayerSwitcher />}
               <Button
                 variant="subtle"
                 color="gray"
@@ -99,17 +96,17 @@ export const App: React.FC = () => {
             my={4}
             leftSection={<IconBrandGithub />}
           />
-          {/*
+
           <Title order={4} mt={8} mb={4}>
             Settings
           </Title>
-          */}
+          {map && <LayerSwitcher isMobile />}
         </AppShell.Navbar>
         <AppShell.Main p={0}>
-          <MapPage onLoad={setMap} />
+          <MapPage />
           <LegendPage isOpen={isLegendOpen} onClose={toggleLegend} />
         </AppShell.Main>
       </AppShell>
-    </MantineProvider>
+    </>
   );
 };

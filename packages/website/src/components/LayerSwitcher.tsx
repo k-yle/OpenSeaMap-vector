@@ -1,63 +1,33 @@
-import { useEffect, useState } from 'react';
+import { use } from 'react';
 import { Button, Checkbox, Menu } from '@mantine/core';
 import { IconStack2 } from '@tabler/icons-react';
-import type { Map } from 'maplibre-gl';
-import { LAYER_LABELS, Layer, type LayerName } from '../data/layers.js';
+import { LAYER_LABELS, type Layer } from '../data/layers.js';
+import { LayerContext } from '../context/LayerContext.js';
 
-// the disabled layers are stored using a bitmask in the URL
-const PROP = 'l';
+const LAYERS = Object.keys(LAYER_LABELS).map((layer) => +layer as Layer);
 
-const getQs = () => new URLSearchParams(window.location.hash.slice(1));
-
-export const LayerSwitcher: React.FC<{ map: Map }> = ({ map }) => {
-  const [hiddenLayers, setHiddenLayers] = useState(
-    () => +(getQs().get(PROP) || 0),
-  );
-
-  useEffect(() => {
-    // sync state with URL qs
-    const qs = getQs();
-    if (hiddenLayers) {
-      qs.set(PROP, hiddenLayers.toString());
-    } else {
-      qs.delete(PROP); // don't include ?hide=0
-    }
-    const url = new URL(window.location.href);
-    url.hash = qs.toString().replaceAll('%2F', '/'); // undo URLSearchParams's annoying behaviour
-    window.history.replaceState('', '', url);
-  }, [hiddenLayers]);
-
-  useEffect(() => {
-    // sync state with the map
-    for (const styleLayer of map.getStyle().layers) {
-      if (!('source-layer' in styleLayer)) continue;
-      if (!styleLayer['source-layer']) continue;
-      if (!(styleLayer['source-layer'] in Layer)) continue;
-
-      const layerId = Layer[styleLayer['source-layer'] as LayerName];
-
-      map.setLayoutProperty(
-        styleLayer.id,
-        'visibility',
-        hiddenLayers & layerId ? 'none' : 'visible',
-      );
-    }
-  }, [hiddenLayers, map]);
-
-  const toggle = (value: Layer) =>
-    setHiddenLayers((current) => current ^ value);
-
+export const LayerSwitcher: React.FC<{
+  isMobile?: boolean;
+}> = ({ isMobile }) => {
+  const { hiddenLayers, toggle } = use(LayerContext);
   return (
-    <Menu closeOnItemClick={false} position="bottom-end" shadow="md">
+    <Menu closeOnItemClick={false} position="bottom-start" shadow="md">
       <Menu.Target>
-        <Button variant="subtle" color="gray" leftSection={<IconStack2 />}>
+        <Button
+          variant="subtle"
+          color="gray"
+          leftSection={<IconStack2 />}
+          fullWidth={isMobile}
+          justify={isMobile ? 'flex-start' : undefined}
+          bdrs={isMobile ? 8 : undefined}
+          my={isMobile ? 4 : undefined}
+          styles={{ section: { marginInlineEnd: 'var(--mantine-spacing-sm)' } }}
+        >
           Layers
         </Button>
       </Menu.Target>
       <Menu.Dropdown>
-        {Object.keys(LAYER_LABELS).map((_layer) => {
-          const layer = +_layer as Layer;
-
+        {LAYERS.map((layer) => {
           return (
             <Menu.Item key={layer} onClick={() => toggle(layer)}>
               <Checkbox

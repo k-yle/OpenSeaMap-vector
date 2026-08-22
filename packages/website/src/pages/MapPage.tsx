@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { use, useEffect, useRef } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import {
   GeolocateControl,
@@ -15,6 +15,7 @@ import { onStyleImageMissing } from '../onStyleImageMissing.js';
 import { MapPopup } from '../components/MapPopup.js';
 import { HOME_LOCATION } from '../util/region.js';
 import { Stars } from '../components/Stars.js';
+import { AppContext } from '../context/AppContext.js';
 import { EliControl } from './EliControl.js';
 
 const protocol = new Protocol();
@@ -25,9 +26,8 @@ protocol.add(pmTiles);
 
 /* eslint-disable @eslint-react/web-api/no-leaked-event-listener -- this is the root component, it never gets unmounted */
 
-export const MapPage: React.FC<{
-  onLoad(map: Map): void;
-}> = ({ onLoad }) => {
+export const MapPage: React.FC = () => {
+  const { setMap } = use(AppContext);
   const domRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<Map>(null);
 
@@ -58,7 +58,7 @@ export const MapPage: React.FC<{
           pixelRatio: SCALE,
         });
         mapRef.current = map;
-        map.once('load', () => onLoad(map));
+        map.once('load', () => setMap(map));
 
         map.addControl(new EliControl(), 'top-right');
 
@@ -131,7 +131,7 @@ export const MapPage: React.FC<{
         });
       })
       .catch(console.error);
-  }, [onLoad]);
+  }, [setMap]);
 
   return (
     <main>

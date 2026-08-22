@@ -1,7 +1,10 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import { MantineProvider, createTheme } from '@mantine/core';
 import { App } from './App.js';
 import { NavmarkPreview } from './pages/NavmarkPreview.js';
+import { AppWrapper } from './context/AppContext.js';
+import { LayerWrapper } from './context/LayerContext.js';
 import './util/shut-up.js';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import '@mantine/core/styles.css';
@@ -12,7 +15,17 @@ import './index.css';
 const isPreviewPage =
   new URLSearchParams(window.location.search).get('page') === 'navmark-preview';
 
+const theme = createTheme({});
+
 const root = createRoot(document.querySelector('main')!);
 root.render(
-  <StrictMode>{isPreviewPage ? <NavmarkPreview /> : <App />}</StrictMode>,
+  <StrictMode>
+    <MantineProvider theme={theme}>
+      <AppWrapper>
+        <LayerWrapper>
+          {isPreviewPage ? <NavmarkPreview /> : <App />}
+        </LayerWrapper>
+      </AppWrapper>
+    </MantineProvider>
+  </StrictMode>,
 );
