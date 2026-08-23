@@ -1,10 +1,19 @@
-import type { IControl, Map } from 'maplibre-gl';
+import type { Map } from 'maplibre-gl';
 import type { FeatureCollection, Geometry } from 'geojson';
 import whichPolygon from 'which-polygon';
-import layerIcon from '../static/layers.svg?url';
+
+export type EliCategory =
+  | 'photo'
+  | 'map'
+  | 'historicmap'
+  | 'osmbasedmap'
+  | 'historicphoto'
+  | 'qa'
+  | 'elevation'
+  | 'other';
 
 /** based on https://github.com/k-yle/tileserver-export/blob/main/src/types/eli.d.ts */
-export type ELI = {
+export interface ELI {
   /**
    * The name of the imagery source
    */
@@ -17,15 +26,7 @@ export type ELI = {
   /**
    * A rough categorisation of different types of layers
    */
-  category?:
-    | 'photo'
-    | 'map'
-    | 'historicmap'
-    | 'osmbasedmap'
-    | 'historicphoto'
-    | 'qa'
-    | 'elevation'
-    | 'other';
+  category?: EliCategory;
   /**
    * A URL template for imagery tiles
    */
@@ -159,7 +160,7 @@ export type ELI = {
    * minimum expiry time for tiles in seconds. The larger the value, the longer entry in cache will be considered valid
    */
   'minimum-tile-expire'?: number;
-};
+}
 
 export type ELIGeoJson = FeatureCollection<Geometry, ELI>;
 
@@ -168,128 +169,102 @@ export function convertTileUrl(url: string) {
   return url.replace('{zoom}', '{z}').replace(/{switch:([^,}]+)[^}]*}/, '$1');
 }
 
+export const DEFAULT_BASEMAP = 'MAPNIK';
+
 const isValid = (layer: ELI) =>
   (layer.type === 'tms' ||
     (layer.type === 'wms' &&
       layer.available_projections?.includes('EPSG:3857'))) &&
+  !layer.overlay &&
   !layer.name.includes(' Style)') &&
   !layer.url.includes('{apikey}');
 
-export class EliControl implements IControl {
-  #container?: HTMLDivElement;
+const isRecommended = (layer: ELI) =>
+  !!layer.best ||
+  layer.id === DEFAULT_BASEMAP ||
+  layer.id === 'EsriWorldImagery';
 
-  #map?: Map;
+let eliPromise: Promise<ELIGeoJson> | undefined;
 
-  #eliPromise = fetch(
+const CATEGORY_LABELS: Record<EliCategory, string | undefined> = {
+  photo: 'Aerial Imagery',
+  map: 'Maps',
+  osmbasedmap: 'OSM-based Maps',
+  historicphoto: 'Historic Imagery',
+  historicmap: 'Historic Maps',
+  elevation: 'Elevation',
+  qa: undefined, // don't show these
+  other: 'Other',
+};
+
+export interface BasemapGroup {
+  id: string;
+  label: string;
+  sources: ELI[];
+}
+
+export async function getAvailableLayers(map: Map): Promise<BasemapGroup[]> {
+  eliPromise ||= fetch(
     'https://osmlab.github.io/editor-layer-index/imagery.geojson',
-  ).then((r) => r.json()) as Promise<ELIGeoJson>;
+  ).then((r) => r.json() as Promise<ELIGeoJson>);
+  const geojson = await eliPromise;
 
-  currentLayerId = 'MAPNIK';
+  const world = geojson.features
+    .filter((x) => !x.geometry)
+    .map((x) => x.properties)
+    .filter(isValid);
 
-  async getAvailableLayers(): Promise<ELI[]> {
-    if (!this.#map) return [];
-    const geojson = await this.#eliPromise;
+  const nonWorld: ELIGeoJson = {
+    features: geojson.features.filter((x) => x.geometry),
+    type: 'FeatureCollection',
+  };
 
-    const world = geojson.features
-      .filter((x) => !x.geometry)
-      .map((x) => x.properties)
-      .filter(isValid);
+  const query = whichPolygon<ELI>(nonWorld);
 
-    const nonWorld: ELIGeoJson = {
-      features: geojson.features.filter((x) => x.geometry),
-      type: 'FeatureCollection',
-    };
+  const local = (query(map.getCenter().toArray(), true) || []).filter(isValid);
 
-    const query = whichPolygon<ELI>(nonWorld);
+  return [
+    {
+      id: 'best',
+      label: 'Best',
+      sources: [...local, ...world].filter(isRecommended),
+    },
+    {
+      id: 'local',
+      label: 'Local',
+      sources: local.filter((layer) => !isRecommended(layer)),
+    },
+    ...(Object.keys(CATEGORY_LABELS) as EliCategory[])
+      .filter((category) => CATEGORY_LABELS[category])
+      .map((category) => ({
+        id: category,
+        label: CATEGORY_LABELS[category]!,
+        sources: world.filter(
+          (layer) =>
+            !isRecommended(layer) && (layer.category || 'other') === category,
+        ),
+      })),
+  ].filter((group) => group.sources.length);
+}
 
-    const local = query(this.#map.getCenter().toArray(), true) || [];
-    return [
-      ...local.filter(isValid).toSorted((a, b) => +!a.best - +!b.best),
-      ...world,
-    ];
-  }
+export function changeBasemap(map: Map, layer: ELI) {
+  const style = map.getStyle();
+  // eslint-disable-next-line dot-notation
+  style.sources['basemap'] = {
+    type: 'raster',
+    tiles: [convertTileUrl(layer.url)],
+    tileSize: layer['tile-size'] || 256,
+    attribution: [
+      layer.attribution &&
+        layer.id !== DEFAULT_BASEMAP &&
+        layer.attribution.text?.link(layer.attribution.url!),
+      'OpenStreetMap contributors'.link('https://osm.org/copyright'),
+    ]
+      .filter(Boolean)
+      .join(' &middot; '),
+    maxzoom: layer.max_zoom,
+    minzoom: layer.min_zoom,
+  };
 
-  async #populateSelectOptions() {
-    const layers = await this.getAvailableLayers();
-    const select = this.#container?.querySelector('select');
-    if (!select) return;
-
-    select.textContent = '';
-    for (const layer of layers) {
-      const option = document.createElement('option');
-      option.value = layer.id;
-      option.textContent =
-        (layer.best || layer.id === 'MAPNIK' || layer.id === 'EsriWorldImagery'
-          ? '⭐ '
-          : '') + layer.name;
-      option.selected = this.currentLayerId === layer.id;
-      select.append(option);
-    }
-  }
-
-  onAdd(map: Map) {
-    this.#map = map;
-    this.#container = document.createElement('div');
-    this.#container.className = 'maplibregl-ctrl maplibregl-ctrl-group';
-    this.#container.style.position = 'relative';
-
-    const select = document.createElement('select');
-    select.style.visibility = 'hidden';
-    select.style.width = '0px';
-    select.style.height = '0px';
-    select.style.position = 'absolute';
-
-    select.addEventListener('change', async () => {
-      const id = select.value;
-      const eli = await this.#eliPromise;
-      const layer = eli.features.find(
-        (l) => l.properties.id === id,
-      )?.properties;
-      if (!layer) throw new Error('impossible');
-
-      this.currentLayerId = layer.id;
-
-      const style = map.getStyle();
-      // eslint-disable-next-line dot-notation
-      style.sources['basemap'] = {
-        type: 'raster',
-        tiles: [convertTileUrl(layer.url)],
-        tileSize: layer['tile-size'] || 256,
-        attribution: [
-          layer.attribution &&
-            layer.id !== 'MAPNIK' &&
-            layer.attribution.text?.link(layer.attribution.url!),
-          'OpenStreetMap contributors'.link('https://osm.org/copyright'),
-        ]
-          .filter(Boolean)
-          .join(' &middot; '),
-        maxzoom: layer.max_zoom,
-        minzoom: layer.min_zoom,
-      };
-
-      map.setStyle(style);
-    });
-    this.#container.append(select);
-
-    const button = document.createElement('button');
-    button.className = 'maplibregl-ctrl-geolocate';
-    button.title = 'Layers';
-    button.style.padding = '5px';
-    button.style.backgroundImage = `url("${layerIcon}")`;
-    button.style.backgroundSize = 'contain';
-    button.style.backgroundOrigin = 'content-box';
-    button.style.backgroundRepeat = 'no-repeat';
-    button.addEventListener('click', async () => {
-      await this.#populateSelectOptions();
-      select.showPicker();
-    });
-
-    this.#container.append(button);
-    return this.#container;
-  }
-
-  onRemove() {
-    this.#container?.remove();
-    this.#map = undefined;
-  }
+  map.setStyle(style);
 }

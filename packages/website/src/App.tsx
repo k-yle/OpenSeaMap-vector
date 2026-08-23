@@ -13,6 +13,7 @@ import { IconBrandGithub, IconInfoCircle, IconMap } from '@tabler/icons-react';
 import { LegendPage } from './pages/LegendPage.js';
 import { AppTitle } from './components/AppTitle.js';
 import { LayerSwitcher } from './components/LayerSwitcher.js';
+import { BasemapSwitcher } from './components/BasemapSwitcher.js';
 import { MapPage } from './pages/MapPage.js';
 import { AppContext } from './context/AppContext.js';
 
@@ -42,6 +43,7 @@ export const App: React.FC = () => {
             <AppTitle />
             <Group gap={10}>
               {map && <LayerSwitcher />}
+              {map && <BasemapSwitcher />}
               <Button
                 variant="subtle"
                 color="gray"
@@ -101,6 +103,7 @@ export const App: React.FC = () => {
             Settings
           </Title>
           {map && <LayerSwitcher isMobile />}
+          {map && <BasemapSwitcher isMobile />}
         </AppShell.Navbar>
         <AppShell.Main p={0}>
           <MapPage />

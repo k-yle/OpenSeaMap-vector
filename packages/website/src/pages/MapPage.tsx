@@ -16,7 +16,6 @@ import { MapPopup } from '../components/MapPopup.js';
 import { HOME_LOCATION } from '../util/region.js';
 import { Stars } from '../components/Stars.js';
 import { AppContext } from '../context/AppContext.js';
-import { EliControl } from './EliControl.js';
 
 const protocol = new Protocol();
 addProtocol('pmtiles', protocol.tile);
@@ -59,8 +58,6 @@ export const MapPage: React.FC = () => {
         });
         mapRef.current = map;
         map.once('load', () => setMap(map));
-
-        map.addControl(new EliControl(), 'top-right');
 
         map.addControl(
           new GeolocateControl({
