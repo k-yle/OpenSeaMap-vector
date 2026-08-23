@@ -7,23 +7,36 @@ import {
   useRef,
   useState,
 } from 'react';
-import { Alert, Center, Code, Loader, Stack, Text } from '@mantine/core';
+import {
+  Alert,
+  Center,
+  Code,
+  Loader,
+  Stack,
+  Text,
+  deepMerge,
+} from '@mantine/core';
 import { IconAlertTriangle } from '@tabler/icons-react';
 import { MessageFormat } from 'messageformat';
 import * as Diplomat from '@americana/diplomat';
 import {
   type Locale,
   TRANSLATIONS,
+  TRANSLATIONS_IDTS,
   type TranslationKey,
   type TranslationsFile,
+  type TranslationsFileIDTS,
 } from '../translations/index.js';
 import { QS } from '../util/qs.js';
+import type { PresetId } from '../data/legend.js';
 
 /** the original might be `de-CH-u-co-phonebk`, while the matched is `de`.json */
 export interface LocaleMatch {
   original: string;
   matched: Locale;
 }
+
+export const DEFAULT_LOCALE = 'en';
 
 export function getDefaultLocale(): LocaleMatch {
   const candidates = Object.keys(TRANSLATIONS).map((key) => ({
@@ -45,7 +58,7 @@ export function getDefaultLocale(): LocaleMatch {
       return { original, matched };
     }
   }
-  return { original: 'en', matched: 'en' };
+  return { original: DEFAULT_LOCALE, matched: DEFAULT_LOCALE };
 }
 
 export type I$ = (
@@ -53,8 +66,11 @@ export type I$ = (
   params?: Record<string, unknown>,
 ) => string;
 
+export type I$IDTS = (key: PresetId) => string;
+
 export interface ILocaleContext {
   $: I$;
+  $idts: I$IDTS;
   locale: LocaleMatch;
   setLocale(locale: Locale): void;
 }
@@ -64,6 +80,8 @@ LocaleContext.displayName = 'LocaleContext';
 export const LocaleWrapper: React.FC<PropsWithChildren> = ({ children }) => {
   const [locale, setLocale] = useState<LocaleMatch>(getDefaultLocale);
   const [translations, setTranslations] = useState<TranslationsFile>();
+  const [translationsIDTS, setTranslationsIDTS] =
+    useState<TranslationsFileIDTS>();
   const [error, setError] = useState<unknown>();
   const mf2CacheRef = useRef(
     new WeakMap<LocaleMatch, { [value: string]: MessageFormat }>(),
@@ -78,10 +96,15 @@ export const LocaleWrapper: React.FC<PropsWithChildren> = ({ children }) => {
     // when the locale changes, download the new translations
     const controller = new AbortController();
 
-    TRANSLATIONS[locale.matched]()
-      .then((file) => {
+    Promise.all([
+      TRANSLATIONS[locale.matched](),
+      TRANSLATIONS_IDTS[locale.matched](),
+      TRANSLATIONS_IDTS.en(),
+    ] as const)
+      .then(([file, fileIDTS, fileIDTSDefault]) => {
         if (controller.signal.aborted) return;
         setTranslations(file);
+        setTranslationsIDTS(deepMerge(fileIDTSDefault, fileIDTS));
       })
       .catch((ex) => {
         if (controller.signal.aborted) return;
@@ -113,14 +136,19 @@ export const LocaleWrapper: React.FC<PropsWithChildren> = ({ children }) => {
     [locale, translations],
   );
 
+  const $idts = useCallback<I$IDTS>(
+    (key) => translationsIDTS?.[key]?.name || '❓',
+    [translationsIDTS],
+  );
+
   const setLocalePublic = useCallback((newValue: Locale) => {
     QS.update((qs) => qs.set('language', newValue));
     setLocale({ matched: newValue, original: newValue });
   }, []);
 
   const ctx = useMemo<ILocaleContext>(
-    () => ({ locale, setLocale: setLocalePublic, $ }),
-    [locale, setLocalePublic, $],
+    () => ({ locale, setLocale: setLocalePublic, $, $idts }),
+    [locale, setLocalePublic, $, $idts],
   );
 
   if (error) {

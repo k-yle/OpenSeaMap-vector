@@ -2,7 +2,8 @@ import { promises as fs } from 'node:fs';
 import { join } from 'node:path';
 import type { DateString, Schema, Tag } from 'taginfo-projects';
 import type { Tags } from 'osm-api';
-import { LEGEND } from '../src/data/legend.js';
+import translations from '@openstreetmap/id-tagging-schema/dist/translations/en.json' with { type: 'json' };
+import { LEGEND, type LegendEntry } from '../src/data/legend.js';
 import { validateTaginfo } from './taginfo-validation.js';
 
 const taginfo: Schema = {
@@ -140,6 +141,12 @@ const taginfo: Schema = {
   ],
 };
 
+function getLabel(label: LegendEntry['label']) {
+  return typeof label === 'string'
+    ? label
+    : translations.en.presets.presets[label.$ref].name;
+}
+
 function renderTags(tags: Tags) {
   const str = Object.entries(tags)
     .map(([k, v]) => `${k}=${v}`)
@@ -152,7 +159,7 @@ function loadFromLegend() {
   for (const category of LEGEND) {
     for (const item of category.items) {
       for (const [index, tags] of item.tags.entries()) {
-        let description = `‘${item.label}’ is rendered if ${renderTags(tags)}.`;
+        let description = `‘${getLabel(item.label)}’ is rendered if ${renderTags(tags)}.`;
         const others = item.tags.filter((t) => t !== tags).map(renderTags);
         if (others.length) {
           const prefix = index
@@ -174,13 +181,13 @@ function loadFromLegend() {
           for (const [k, v] of Object.entries(matchTags)) {
             hiddenTags[k] ||= {};
             hiddenTags[k][v] ||= new Set();
-            hiddenTags[k][v].add(item.label);
+            hiddenTags[k][v].add(getLabel(item.label));
           }
         }
         for (const key of item.labelAttributes || []) {
           taginfo.tags.push({
             key,
-            description: `This tag is used in the label of ‘${item.label}’ features.`,
+            description: `This tag is used in the label of ‘${getLabel(item.label)}’ features.`,
             icon_url: item.icon || undefined,
           });
         }

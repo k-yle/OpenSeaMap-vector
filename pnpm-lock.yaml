@@ -111,6 +111,9 @@ importers:
         specifier: ^2.2.1
         version: 2.2.1
     devDependencies:
+      '@openstreetmap/id-tagging-schema':
+        specifier: ^7.1.1
+        version: 7.1.1
       '@types/geojson':
         specifier: ^7946.0.16
         version: 7946.0.16
@@ -645,6 +648,10 @@ packages:
   '@openstreetmap/id-plugin-sdk@https://codeload.github.com/k-yle/iD/tar.gz/77b5e449aa47b6d07851f9556ada4bd506382082':
     resolution: {gitHosted: true, integrity: sha512-5KM6sVC7AlOO7nwqmqe+u3PdeFaa0v9UTuiMC9JXFxTRzfcf/tGQt0G23+PopPaUGCfcVbRPmU6e+4GtANTqcQ==, tarball: https://codeload.github.com/k-yle/iD/tar.gz/77b5e449aa47b6d07851f9556ada4bd506382082}
     version: 0.0.0
+
+  '@openstreetmap/id-tagging-schema@7.1.1':
+    resolution: {integrity: sha512-SGIXbfh5vvI9+JaJ9S7+Lkf8i4CiYn6CBsvV+/oXhfQjr0+WFZZ7E3SOIYbH+KMx/cqGNA8NCF7GSkmt9Afpcw==}
+    engines: {node: '>=22'}
 
   '@oxc-project/types@0.140.0':
     resolution: {integrity: sha512-h5LUOzGArYemnW1NMz/DuuQhBi96J6JL2Bk8zE4kvqxB5Sg3jxmCiH4uyOWHDkiKSt5vWlG4FIwCR/DbstcNRQ==}
@@ -4160,6 +4167,8 @@ snapshots:
   '@nodable/entities@3.0.0': {}
 
   '@openstreetmap/id-plugin-sdk@https://codeload.github.com/k-yle/iD/tar.gz/77b5e449aa47b6d07851f9556ada4bd506382082': {}
+
+  '@openstreetmap/id-tagging-schema@7.1.1': {}
 
   '@oxc-project/types@0.140.0': {}
 

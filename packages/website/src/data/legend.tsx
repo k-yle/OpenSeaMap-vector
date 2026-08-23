@@ -1,8 +1,11 @@
 import type { Tags } from 'osm-api';
+import type translations from '@openstreetmap/id-tagging-schema/dist/translations/en.json';
 import type { I$ } from '../context/LocaleContext.js';
 
+export type PresetId = keyof typeof translations.en.presets.presets;
+
 export interface LegendEntry {
-  label: string;
+  label: string | { $ref: PresetId };
   icon: string;
   /**
    * tags to match the feature. The first array item is the
@@ -50,7 +53,7 @@ export const LEGEND: LegendCategory[] = [
     categoryName: ($) => $('Layer.recreational'),
     items: [
       {
-        label: 'Beach',
+        label: { $ref: 'natural/beach' },
         icon: `${ICON_BASE_URL}/small_craft_facility/beach.svg`,
         tags: [{ natural: 'beach' }],
         hiddenIf: PRIVATE_TAGS,
@@ -74,7 +77,7 @@ export const LEGEND: LegendCategory[] = [
         hiddenIf: PRIVATE_TAGS,
       },
       {
-        label: 'Boat Rental',
+        label: { $ref: 'amenity/boat_rental' },
         icon: `${ICON_BASE_URL}/small_craft_facility/boat_rental.svg`,
         tags: [{ amenity: 'boat_rental' }],
         labelAttributes: [
@@ -96,7 +99,7 @@ export const LEGEND: LegendCategory[] = [
         hiddenIf: PRIVATE_TAGS,
       },
       {
-        label: 'Boat Storage',
+        label: { $ref: 'amenity/boat_storage' },
         icon: `${ICON_BASE_URL}/small_craft_facility/boat_storage.svg`,
         tags: [{ amenity: 'boat_storage' }],
         hiddenIf: PRIVATE_TAGS,
@@ -118,7 +121,7 @@ export const LEGEND: LegendCategory[] = [
         tags: [{ amenity: 'charging_station', boat: 'designated' }],
       },
       {
-        label: 'Fishing Spot',
+        label: { $ref: 'leisure/fishing' },
         icon: `${ICON_BASE_URL}/small_craft_facility/fishing_spot.svg`,
         tags: [{ leisure: 'fishing' }],
         hiddenIf: PRIVATE_TAGS,
@@ -130,7 +133,7 @@ export const LEGEND: LegendCategory[] = [
         hiddenIf: PRIVATE_TAGS,
       },
       {
-        label: 'Freshwater Tap',
+        label: { $ref: 'waterway/water_point' },
         icon: `${ICON_BASE_URL}/small_craft_facility/freshwater_tap.svg`,
         tags: [
           { waterway: 'water_point' },
@@ -142,7 +145,7 @@ export const LEGEND: LegendCategory[] = [
         hiddenIf: PRIVATE_TAGS,
       },
       {
-        label: 'Marine Fuel Station',
+        label: { $ref: 'waterway/fuel' },
         icon: `${ICON_BASE_URL}/small_craft_facility/fuel_station.svg`,
         tags: [
           { waterway: 'fuel' },
@@ -154,7 +157,7 @@ export const LEGEND: LegendCategory[] = [
         hiddenIf: PRIVATE_TAGS,
       },
       {
-        label: 'Water Access Point',
+        label: { $ref: 'waterway/access_point' },
         icon: `${ICON_BASE_URL}/small_craft_facility/kayak.svg`,
         tags: [
           { waterway: 'access_point' },
@@ -169,7 +172,7 @@ export const LEGEND: LegendCategory[] = [
         hiddenIf: PRIVATE_TAGS,
       },
       {
-        label: 'Pump-Out (Toilet Disposal)',
+        label: { $ref: 'waterway/sanitary_dump_station' },
         icon: `${ICON_BASE_URL}/small_craft_facility/pump_out.svg`,
         tags: [
           { waterway: 'sanitary_dump_station' },
@@ -181,7 +184,7 @@ export const LEGEND: LegendCategory[] = [
         hiddenIf: PRIVATE_TAGS,
       },
       {
-        label: 'Boat Ramp',
+        label: { $ref: 'leisure/slipway_drivable' },
         icon: `${ICON_BASE_URL}/small_craft_facility/slipway.svg`,
         tags: [
           { leisure: 'slipway' },
@@ -265,7 +268,7 @@ export const LEGEND: LegendCategory[] = [
         ],
       },
       {
-        label: 'Marina',
+        label: { $ref: 'leisure/marina' },
         icon: `${ICON_BASE_URL}/harbour_marina.svg`,
         tags: [
           { leisure: 'marina' },
@@ -402,7 +405,7 @@ export const LEGEND: LegendCategory[] = [
         ],
       },
       {
-        label: 'Windsock',
+        label: { $ref: 'aeroway/windsock' },
         icon: `${ICON_BASE_URL}/windsock.svg`,
         tags: [{ aeroway: 'windsock' }],
       },
@@ -432,7 +435,7 @@ export const LEGEND: LegendCategory[] = [
         ],
       },
       {
-        label: 'Hazardous Rock',
+        label: { $ref: 'natural/stone' }, // misusing these translations
         icon: `${ICON_BASE_URL}/rock_dangerous.svg`,
         tags: [{ 'seamark:type': 'rock' }],
       },
@@ -448,7 +451,7 @@ export const LEGEND: LegendCategory[] = [
         labelAttributes: ['rapids:name'],
       },
       {
-        label: 'Shipwreck',
+        label: { $ref: 'historic/wreck' },
         icon: `${ICON_BASE_URL}/wreck_surface.svg`,
         tags: [{ historic: 'wreck' }, { 'seamark:type': 'wreck' }],
         labelAttributes: ['wreck:date_sunk'],
@@ -498,7 +501,7 @@ export const LEGEND: LegendCategory[] = [
         ],
       },
       {
-        label: 'Marine Farm / Aquaculture',
+        label: { $ref: 'landuse/aquaculture' },
         icon: `${ICON_BASE_URL}/marine_farm.svg`,
         tags: [{ 'seamark:type': 'marine_farm' }],
       },
@@ -585,7 +588,7 @@ export const LEGEND: LegendCategory[] = [
         tags: [{ barrier: 'shark_net' }],
       },
       {
-        label: 'Gate',
+        label: { $ref: 'barrier/gate' },
         icon: 'https://wiki.openstreetmap.org/w/images/8/88/PipelineO.png',
         tags: [
           { waterway: 'floodgate' },

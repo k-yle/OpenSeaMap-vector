@@ -26,6 +26,7 @@
     "which-polygon": "^2.2.1"
   },
   "devDependencies": {
+    "@openstreetmap/id-tagging-schema": "^7.1.1",
     "@types/geojson": "^7946.0.16",
     "@types/md5": "^2.3.6",
     "@types/node": "catalog:",

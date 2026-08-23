@@ -3,7 +3,7 @@ import { FocusTrap, Modal, Table, Title } from '@mantine/core';
 import type { Tags } from 'osm-api';
 import { useMediaQuery } from '@mantine/hooks';
 import { LEGEND } from '../data/legend.js';
-import { LocaleContext } from '../context/LocaleContext.js';
+import { DEFAULT_LOCALE, LocaleContext } from '../context/LocaleContext.js';
 
 export const RenderTag: React.FC<{ k: string; v?: string }> = ({ k, v }) => {
   return (
@@ -48,7 +48,7 @@ export const LegendPage: React.FC<{ isOpen: boolean; onClose(): void }> = ({
   isOpen,
   onClose,
 }) => {
-  const { $ } = use(LocaleContext);
+  const { $, $idts } = use(LocaleContext);
   const isNarrowScreen = useMediaQuery('(max-width: 700px)');
   return (
     <Modal
@@ -76,10 +76,11 @@ export const LegendPage: React.FC<{ isOpen: boolean; onClose(): void }> = ({
                 </Table.Tr>
               </Table.Thead>
               <Table.Tbody>
-                {category.items.map((item) => {
+                {category.items.map((item, index) => {
                   const altTagsCount = item.tags.length - 1;
                   return (
-                    <Table.Tr key={item.label}>
+                    // eslint-disable-next-line @eslint-react/no-array-index-key -- safe, static data
+                    <Table.Tr key={index}>
                       <Table.Td>
                         {item.icon && (
                           <img
@@ -93,7 +94,14 @@ export const LegendPage: React.FC<{ isOpen: boolean; onClose(): void }> = ({
                           />
                         )}
                       </Table.Td>
-                      <Table.Td>{item.label}</Table.Td>
+                      <Table.Td>
+                        {typeof item.label === 'string' ? (
+                          // untranslated
+                          <span lang={DEFAULT_LOCALE}>{item.label}</span>
+                        ) : (
+                          $idts(item.label.$ref)
+                        )}
+                      </Table.Td>
                       <Table.Td>
                         <RenderTags tags={item.tags[0]} />
                         {!!altTagsCount && (
@@ -102,9 +110,9 @@ export const LegendPage: React.FC<{ isOpen: boolean; onClose(): void }> = ({
                               {$('LegendPage.altTags', { count: altTagsCount })}
                             </summary>
                             <ul style={{ marginLeft: 18 }}>
-                              {item.tags.slice(1).map((tags, index) => (
+                              {item.tags.slice(1).map((tags, jindex) => (
                                 // eslint-disable-next-line @eslint-react/no-array-index-key -- safe, static data
-                                <li key={index}>
+                                <li key={jindex}>
                                   <RenderTags tags={tags} />
                                 </li>
                               ))}
@@ -135,9 +143,9 @@ export const LegendPage: React.FC<{ isOpen: boolean; onClose(): void }> = ({
                               })}
                             </summary>
                             <ul style={{ marginLeft: 18 }}>
-                              {item.hiddenIf.map((tags, index) => (
+                              {item.hiddenIf.map((tags, jindex) => (
                                 // eslint-disable-next-line @eslint-react/no-array-index-key -- safe, static data
-                                <li key={index}>
+                                <li key={jindex}>
                                   <RenderTags tags={tags} />
                                 </li>
                               ))}
