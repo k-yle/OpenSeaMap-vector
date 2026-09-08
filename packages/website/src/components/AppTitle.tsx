@@ -5,7 +5,7 @@ import iconUrl from '../../../../data/public/icon.svg?url';
 import { LocaleContext } from '../context/LocaleContext.js';
 
 export const AppTitle: React.FC = () => {
-  const { $ } = use(LocaleContext);
+  const { $, $$ } = use(LocaleContext);
   const [disclaimerOpen, { toggle: toggleDisclaimer }] = useDisclosure();
 
   return (
@@ -32,7 +32,7 @@ export const AppTitle: React.FC = () => {
         onClose={toggleDisclaimer}
         title={<strong>{$('AppTitle.disclaimer.short')}</strong>}
       >
-        {$('AppTitle.disclaimer.long')}
+        {$$('AppTitle.disclaimer.long')}
       </Modal>
     </Group>
   );

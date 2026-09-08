@@ -107,6 +107,9 @@ importers:
       react-dom:
         specifier: ^19.2.4
         version: 19.2.7(react@19.2.7)
+      react-mf2:
+        specifier: ^1.0.0
+        version: 1.0.0(messageformat@4.0.0)(react@19.2.7)
       which-polygon:
         specifier: ^2.2.1
         version: 2.2.1
@@ -2891,6 +2894,13 @@ packages:
     resolution: {integrity: sha512-t0BRVXvbiE/o20Hfw669rLbMCDWtYZLvmJigy2f0MxsXF+71pxhR3xOkspmsO8h3ZlNzyibAmtCa3l4lYKk6gQ==}
     peerDependencies:
       react: ^19.2.7
+
+  react-mf2@1.0.0:
+    resolution: {integrity: sha512-Z8NsFaQL9RjEkLikIw3eC6Z2Wtg1Os4ZeYaoRQv0kCT80/v177Lng05+iLsT/dA48Ny449E/I0lgNZS8wY8dng==}
+    engines: {node: ^20.19 || ^22.13 || >=24}
+    peerDependencies:
+      messageformat: ^4.0.0
+      react: '>=18'
 
   react-number-format@5.4.5:
     resolution: {integrity: sha512-y8O2yHHj3w0aE9XO8d2BCcUOOdQTRSVq+WIuMlLVucAm5XNjJAy+BoOJiuQMldVYVOKTMyvVNfnbl2Oqp+YxGw==}
@@ -6503,6 +6513,11 @@ snapshots:
     dependencies:
       react: 19.2.7
       scheduler: 0.27.0
+
+  react-mf2@1.0.0(messageformat@4.0.0)(react@19.2.7):
+    dependencies:
+      messageformat: 4.0.0
+      react: 19.2.7
 
   react-number-format@5.4.5(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
     dependencies:

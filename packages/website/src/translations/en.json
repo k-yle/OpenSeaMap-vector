@@ -1,5 +1,5 @@
 {
-  "AppTitle.disclaimer.long": "Data from this map or from OpenStreetMap should never be used for marine navigation. The contributors of this project take no responsibility for the accuracy of the data. Always use official nautical charts.",
+  "AppTitle.disclaimer.long": "Data from this map or from OpenStreetMap {#b}should never be used for marine navigation{/b}. The contributors of this project take no responsibility for the accuracy of the data. Always use official nautical charts.",
   "AppTitle.disclaimer.short": "Not for Navigation!",
   "Layer.areas": "Areas",
   "Layer.businesses": "Organisations",

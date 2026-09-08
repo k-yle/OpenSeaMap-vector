@@ -18,6 +18,7 @@ import {
 } from '@mantine/core';
 import { IconAlertTriangle } from '@tabler/icons-react';
 import { MessageFormat } from 'messageformat';
+import { type MarkupHandlers, formatToJsx } from 'react-mf2';
 import * as Diplomat from '@americana/diplomat';
 import {
   type Locale,
@@ -61,15 +62,30 @@ export function getDefaultLocale(): LocaleMatch {
   return { original: DEFAULT_LOCALE, matched: DEFAULT_LOCALE };
 }
 
+const MARKUP: MarkupHandlers = {
+  b: 'b',
+  i: 'i',
+  u: 'u',
+  code: 'code',
+  br: 'br',
+};
+
 export type I$ = (
   key: TranslationKey,
   params?: Record<string, unknown>,
 ) => string;
 
+/** like {@link I$}, but renders to JSX instead of a string */
+export type I$$ = (
+  key: TranslationKey,
+  params?: Record<string, unknown>,
+) => React.ReactNode;
+
 export type I$IDTS = (key: PresetId) => string;
 
 export interface ILocaleContext {
   $: I$;
+  $$: I$$;
   $idts: I$IDTS;
   locale: LocaleMatch;
   setLocale(locale: Locale): void;
@@ -114,8 +130,8 @@ export const LocaleWrapper: React.FC<PropsWithChildren> = ({ children }) => {
     return () => controller.abort();
   }, [locale]);
 
-  const $ = useCallback<I$>(
-    (key, params) => {
+  const getMessage = useCallback(
+    (key: TranslationKey) => {
       const value = translations!.default[key];
 
       // TS will catch this at build time, so no need for a runtime error
@@ -131,9 +147,27 @@ export const LocaleWrapper: React.FC<PropsWithChildren> = ({ children }) => {
 
       // no try…catch, we check for invalid MF2 syntax at build time
       cachedMF2s[value] ||= new MessageFormat(locale.original, value);
-      return cachedMF2s[value].format(params);
+      return cachedMF2s[value];
     },
     [locale, translations],
+  );
+
+  const $ = useCallback<I$>(
+    (key, params) => {
+      const message = getMessage(key);
+      if (typeof message === 'string') return message;
+      return message.format(params);
+    },
+    [getMessage],
+  );
+
+  const $$ = useCallback<I$$>(
+    (key, params) => {
+      const message = getMessage(key);
+      if (typeof message === 'string') return message;
+      return formatToJsx(message, params, MARKUP);
+    },
+    [getMessage],
   );
 
   const $idts = useCallback<I$IDTS>(
@@ -147,8 +181,8 @@ export const LocaleWrapper: React.FC<PropsWithChildren> = ({ children }) => {
   }, []);
 
   const ctx = useMemo<ILocaleContext>(
-    () => ({ locale, setLocale: setLocalePublic, $, $idts }),
-    [locale, setLocalePublic, $, $idts],
+    () => ({ locale, setLocale: setLocalePublic, $, $$, $idts }),
+    [locale, setLocalePublic, $, $$, $idts],
   );
 
   if (error) {
@@ -167,7 +201,7 @@ export const LocaleWrapper: React.FC<PropsWithChildren> = ({ children }) => {
               The <Code>{locale.matched}</Code> translations could not be
               downloaded.
             </Text>
-            <Code block>{`${error}`}</Code>
+            <Code block style={{ textWrap: 'auto' }}>{`${error}`}</Code>
           </Stack>
         </Alert>
       </Center>

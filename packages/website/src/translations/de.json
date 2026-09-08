@@ -1,5 +1,5 @@
 {
-  "AppTitle.disclaimer.long": "Die Daten dieser Karte bzw. von OpenStreetMap dürfen niemals für Navigation auf dem Wasser verwendet werden. Die Mitwirkenden dieses Projekts übernehmen keine Haftung für die Richtigkeit der Daten. Verwenden Sie immer offizielle Seekarten.",
+  "AppTitle.disclaimer.long": "Die Daten dieser Karte bzw. von OpenStreetMap {#b}dürfen niemals für Navigation auf dem Wasser verwendet werden{/b}. Die Mitwirkenden dieses Projekts übernehmen keine Haftung für die Richtigkeit der Daten. Verwenden Sie immer offizielle Seekarten.",
   "AppTitle.disclaimer.short": "Nicht für Navigation!",
   "Layer.areas": "Gebiete",
   "Layer.businesses": "Organisationen",

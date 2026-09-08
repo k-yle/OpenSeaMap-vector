@@ -1,5 +1,5 @@
 {
-  "AppTitle.disclaimer.long": "本地图及OpenStreetMap的数据绝不可用于航海导航。本项目的贡献者不对数据的准确性承担任何责任。请始终使用官方海图。",
+  "AppTitle.disclaimer.long": "本地图及OpenStreetMap的数据{#b}绝不可用于航海导航{/b}。本项目的贡献者不对数据的准确性承担任何责任。请始终使用官方海图。",
   "AppTitle.disclaimer.short": "不可用于航行！",
   "Layer.areas": "区域",
   "Layer.businesses": "机构与商家",

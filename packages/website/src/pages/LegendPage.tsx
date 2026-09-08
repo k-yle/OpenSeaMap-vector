@@ -48,7 +48,7 @@ export const LegendPage: React.FC<{ isOpen: boolean; onClose(): void }> = ({
   isOpen,
   onClose,
 }) => {
-  const { $, $idts } = use(LocaleContext);
+  const { $, $$, $idts } = use(LocaleContext);
   const isNarrowScreen = useMediaQuery('(max-width: 700px)');
   return (
     <Modal
@@ -107,7 +107,9 @@ export const LegendPage: React.FC<{ isOpen: boolean; onClose(): void }> = ({
                         {!!altTagsCount && (
                           <details>
                             <summary>
-                              {$('LegendPage.altTags', { count: altTagsCount })}
+                              {$$('LegendPage.altTags', {
+                                count: altTagsCount,
+                              })}
                             </summary>
                             <ul style={{ marginLeft: 18 }}>
                               {item.tags.slice(1).map((tags, jindex) => (
@@ -122,7 +124,7 @@ export const LegendPage: React.FC<{ isOpen: boolean; onClose(): void }> = ({
                         {!!item.labelAttributes?.length && (
                           <details>
                             <summary>
-                              {$('LegendPage.labelAttributes', {
+                              {$$('LegendPage.labelAttributes', {
                                 count: item.labelAttributes.length,
                               })}
                             </summary>
@@ -138,7 +140,7 @@ export const LegendPage: React.FC<{ isOpen: boolean; onClose(): void }> = ({
                         {item.hiddenIf && (
                           <details>
                             <summary>
-                              {$('LegendPage.hiddenIf', {
+                              {$$('LegendPage.hiddenIf', {
                                 count: item.hiddenIf.length,
                               })}
                             </summary>
