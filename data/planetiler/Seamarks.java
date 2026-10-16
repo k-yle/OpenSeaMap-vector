@@ -5,7 +5,6 @@ import com.onthegomap.planetiler.reader.*;
 import java.nio.file.Path;
 import java.util.Set;
 
-
 public class Seamarks implements Profile {
   private Set<String> NON_SEAMARK_FEATURE_KEYS = Set.of(
       //
@@ -112,7 +111,6 @@ public class Seamarks implements Profile {
       "separation_line" //
   );
 
-
   /**
    * using the de-facto standard approach:
    * https://github.com/protomaps/basemaps/blob/2a1cba/tiles/src/main/java/com/protomaps/basemap/feature/FeatureId.java
@@ -166,6 +164,13 @@ public class Seamarks implements Profile {
     }
 
     collected.setId(createFeatureId(feature));
+  }
+
+  private boolean keepAtLowZoom(SourceFeature feature) {
+    // portages are often mapped as many tiny footpath segments, and we want
+    // the line to look continuous at low-zoom levels
+    return feature.hasTag("portage", "yes", "designated") || feature.hasTag("canoe", "portage")
+        || feature.hasTag("whitewater", "portage_way");
   }
 
   private boolean isAlwaysLinear(SourceFeature feature) {
@@ -240,6 +245,9 @@ public class Seamarks implements Profile {
     } else if (feature.canBeLine()) {
       // it's an unclosed way, or we expect it to be a linear.
       collected = collector.line(layer);
+      if (keepAtLowZoom(feature)) {
+        collected.setMinPixelSize(0.1);
+      }
     }
 
     if (collected == null) {
