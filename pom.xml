@@ -57,7 +57,7 @@
             <configuration>
               <target>
                 <get
-                  src="https://google.github.io/styleguide/eclipse-java-google-style.xml"
+                  src="https://raw.githubusercontent.com/google/styleguide/eaa0a0/eclipse-java-google-style.xml"
                   dest="${project.basedir}/.vscode/java-formatter.xml"
                   verbose="true"
                   skipExisting="true"
