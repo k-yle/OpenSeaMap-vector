@@ -11,7 +11,7 @@ import {
 import * as Diplomat from '@americana/diplomat';
 import { PMTiles, Protocol } from 'pmtiles';
 import { PMTILES_URL, SCALE, getStyle } from '../style.js';
-import { onStyleImageMissing } from '../onStyleImageMissing.js';
+import { missingStyleImageResolver } from '../missingStyleImageResolver.js';
 import { MapPopup } from '../components/MapPopup.js';
 import { HOME_LOCATION } from '../util/region.js';
 import { Stars } from '../components/Stars.js';
@@ -102,7 +102,9 @@ export const MapPage: React.FC = () => {
 
         map.once('styledata', localise);
 
-        map.on('styleimagemissing', onStyleImageMissing);
+        map.setMissingStyleImageResolver((id) =>
+          missingStyleImageResolver(map, id),
+        );
 
         map.on('mouseenter', clickableKeys, () => {
           map.getCanvas().style.cursor = 'pointer';

@@ -44,7 +44,7 @@ export async function getStyle() {
 
   /**
    * override the placeholder symbol that we will replace
-   * with a complex symbol via styleimagemissing.
+   * with a complex symbol via setMissingStyleImageResolver.
    *
    * The icon-image is replaced with a massive string
    * that we can parse later with {@link URLSearchParams}.

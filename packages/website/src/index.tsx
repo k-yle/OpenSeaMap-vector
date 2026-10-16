@@ -1,5 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import { setWorkerUrl } from 'maplibre-gl';
+import maplibreWorkerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 import { MantineProvider, createTheme } from '@mantine/core';
 import { App } from './App.js';
 import { NavmarkPreview } from './pages/NavmarkPreview.js';
@@ -10,6 +12,8 @@ import './util/shut-up.js';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import '@mantine/core/styles.css';
 import './index.css';
+
+setWorkerUrl(maplibreWorkerUrl);
 
 // we don't use a router, because this app only has a single page,
 // and this one special debug page.
