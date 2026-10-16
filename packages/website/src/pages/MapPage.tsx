@@ -1,5 +1,5 @@
-import { use, useEffect, useRef } from 'react';
-import { renderToStaticMarkup } from 'react-dom/server';
+import { StrictMode, use, useEffect, useRef } from 'react';
+import { createRoot } from 'react-dom/client';
 import {
   GeolocateControl,
   Map,
@@ -115,9 +115,18 @@ export const MapPage: React.FC = () => {
         map.on('click', clickableKeys, (event) => {
           const feature = event.features![0]!;
 
+          const container = document.createElement('div');
+          const root = createRoot(container);
+          root.render(
+            <StrictMode>
+              <MapPopup feature={feature} />
+            </StrictMode>,
+          );
+
           new Popup()
             .setLngLat(event.lngLat)
-            .setHTML(renderToStaticMarkup(<MapPopup feature={feature} />))
+            .setDOMContent(container)
+            .once('close', () => root.unmount())
             .setMaxWidth('80vw')
             .addTo(map);
         });

@@ -9,7 +9,7 @@ allowBuilds:
 
 catalog:
   '@types/node': ^26.0.1
-  '@types/react': ^19.2.13
+  '@types/react': ^19.3.0
   tsx: ^4.23.1
   typescript: ^5.9.3
 
