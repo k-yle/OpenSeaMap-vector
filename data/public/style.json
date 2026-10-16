@@ -223,21 +223,31 @@
       "source-layer": "businesses",
       "minzoom": 11,
       "filter": [
-        "any",
-        ["==", ["get", "club"], "boat"],
-        ["==", ["get", "club"], "boating"],
-        ["==", ["get", "club"], "yachting"],
-        ["==", ["get", "club"], "sailing"],
+        "all",
         [
-          "all",
-          ["==", ["get", "club"], "sport"],
-          [
-            "any",
-            ["==", ["get", "sport"], "sailing"],
-            ["==", ["get", "sport"], "rowing"]
-          ]
+          "any",
+          ["has", "wikidata"],
+          ["has", "network:wikidata"],
+          ["has", "operator:wikidata"],
+          ["has", "brand:wikidata"]
         ],
-        ["==", ["get", "scout"], "sea"]
+        [
+          "any",
+          ["==", ["get", "club"], "boat"],
+          ["==", ["get", "club"], "boating"],
+          ["==", ["get", "club"], "yachting"],
+          ["==", ["get", "club"], "sailing"],
+          [
+            "all",
+            ["==", ["get", "club"], "sport"],
+            [
+              "any",
+              ["==", ["get", "sport"], "sailing"],
+              ["==", ["get", "sport"], "rowing"]
+            ]
+          ],
+          ["==", ["get", "scout"], "sea"]
+        ]
       ],
       "layout": {
         "icon-allow-overlap": true,
