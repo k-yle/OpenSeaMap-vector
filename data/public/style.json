@@ -39,7 +39,11 @@
         [
           "in",
           "no_entry",
-          ["split", ["get", "seamark:restricted_area:restriction"], ";"]
+          [
+            "split",
+            ["to-string", ["get", "seamark:restricted_area:restriction"]],
+            ";"
+          ]
         ]
       ],
       "paint": { "fill-pattern": "no_entry", "fill-opacity": 0.5 }
@@ -56,7 +60,11 @@
         [
           "in",
           "no_entry",
-          ["split", ["get", "seamark:restricted_area:restriction"], ";"]
+          [
+            "split",
+            ["to-string", ["get", "seamark:restricted_area:restriction"]],
+            ";"
+          ]
         ]
       ],
       "paint": { "line-color": "#f00", "line-opacity": 0.5 }
@@ -798,7 +806,11 @@
           [
             "in",
             "no_entry",
-            ["split", ["get", "seamark:restricted_area:restriction"], ";"]
+            [
+              "split",
+              ["to-string", ["get", "seamark:restricted_area:restriction"]],
+              ";"
+            ]
           ]
         ]
       ],
@@ -1762,7 +1774,11 @@
           [
             "in",
             "no_entry",
-            ["split", ["get", "seamark:restricted_area:restriction"], ";"]
+            [
+              "split",
+              ["to-string", ["get", "seamark:restricted_area:restriction"]],
+              ";"
+            ]
           ]
         ]
       ],
