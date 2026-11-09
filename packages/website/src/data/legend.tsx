@@ -529,7 +529,7 @@ export const LEGEND: LegendCategory[] = [
       },
       {
         label: 'No Entry Area',
-        icon: `${ICON_BASE_URL}/no_entry.svg`,
+        icon: `${ICON_BASE_URL}/fills/no_entry.svg`,
         tags: [{ 'seamark:restricted_area:restriction': 'no_entry' }],
       },
       {

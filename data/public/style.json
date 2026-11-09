@@ -46,7 +46,7 @@
           ]
         ]
       ],
-      "paint": { "fill-pattern": "no_entry", "fill-opacity": 0.5 }
+      "paint": { "fill-pattern": "fills/no_entry", "fill-opacity": 0.5 }
     },
     {
       "id": "no_entry[line]",
