@@ -103,6 +103,8 @@ public class Layers {
         "pipeline_area", //
         "dumping_ground", //
         "seaplane_landing_area", //
+        "seagrass", //
+        "weed", //
         // TSS
         "separation_lane", //
         "separation_line", //

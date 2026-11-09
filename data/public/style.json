@@ -28,6 +28,19 @@
       "source": "basemap"
     },
     {
+      "id": "seagrass[fill]",
+      "type": "fill",
+      "source": "seamarks",
+      "source-layer": "areas",
+      "minzoom": 11,
+      "filter": [
+        "any",
+        ["==", ["get", "seamark:type"], "seagrass"],
+        ["==", ["get", "seamark:type"], "weed"]
+      ],
+      "paint": { "fill-pattern": "fills/seagrass", "fill-opacity": 0.5 }
+    },
+    {
       "id": "no_entry[fill]",
       "type": "fill",
       "source": "seamarks",

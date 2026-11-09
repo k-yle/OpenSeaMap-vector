@@ -528,6 +528,11 @@ export const LEGEND: LegendCategory[] = [
         ],
       },
       {
+        label: 'Seagrass / Seaweed / Kelp',
+        icon: `${ICON_BASE_URL}/fills/seagrass.svg`,
+        tags: [{ 'seamark:type': 'seagrass' }, { 'seamark:type': 'weed' }],
+      },
+      {
         label: 'No Entry Area',
         icon: `${ICON_BASE_URL}/fills/no_entry.svg`,
         tags: [{ 'seamark:restricted_area:restriction': 'no_entry' }],
