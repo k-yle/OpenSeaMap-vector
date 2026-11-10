@@ -13,6 +13,7 @@
   "LegendPage.hiddenIf": ".input {$count :number}\n\n.match $count\none {{This feature is hidden if any of these {$count} tag exists:}}\n* {{This feature is hidden if any of these {$count} tags exist:}}",
   "LegendPage.labelAttributes": ".input {$count :number}\n\n.match $count\none {{The label is affected by {$count} tag:}}\n* {{The label is affected by {$count} tags:}}",
   "Navbar.basemap": "Basemap",
+  "Navbar.edit": "Edit",
   "Navbar.language": "Language",
   "Navbar.layers": "Layers",
   "Navbar.legend": "Legend",

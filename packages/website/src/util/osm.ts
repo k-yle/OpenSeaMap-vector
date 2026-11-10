@@ -18,11 +18,15 @@ export function osmIdToUrl(osmId: OsmId) {
   return `https://osm.org/${osmId.type}/${osmId.id}`;
 }
 
-export function osmIdtoEditorUrl(osmId: OsmId) {
+export function getEditorUrl(params: Record<string, string>) {
   const qs = new URLSearchParams({
     overlays: 'openseamap',
     background: 'MAPNIK',
-    id: osmId.type[0]! + osmId.id,
+    ...params,
   });
-  return `https://kyle.kiwi/iD/#${qs}`;
+  return `https://kyle.kiwi/iD/#${qs.toString().replaceAll('%2F', '/')}`;
+}
+
+export function osmIdtoEditorUrl(osmId: OsmId) {
+  return getEditorUrl({ id: osmId.type[0]! + osmId.id });
 }

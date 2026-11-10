@@ -13,6 +13,7 @@
   "LegendPage.hiddenIf": ".input {$count :number}\n\n.match $count\n1 {{存在以下标签时，此要素将被隐藏：}}\n* {{存在以下任一标签时，此要素将被隐藏：}}",
   "LegendPage.labelAttributes": "标注内容受以下标签影响：",
   "Navbar.basemap": "底图",
+  "Navbar.edit": "编辑",
   "Navbar.language": "语言",
   "Navbar.layers": "图层",
   "Navbar.legend": "图例",

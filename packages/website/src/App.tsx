@@ -18,6 +18,7 @@ import { MapPage } from './pages/MapPage.js';
 import { AppContext } from './context/AppContext.js';
 import { LocaleContext } from './context/LocaleContext.js';
 import { LanguageSwitcher } from './components/LanguageSwitcher.js';
+import { EditButton } from './components/EditButton.js';
 
 export const App: React.FC = () => {
   const { map } = use(AppContext);
@@ -57,7 +58,7 @@ export const App: React.FC = () => {
               >
                 {$('Navbar.legend')}
               </Button>
-              |
+              |{map && <EditButton />}
               <LanguageSwitcher />
               <ActionIcon
                 variant="subtle"
@@ -110,6 +111,7 @@ export const App: React.FC = () => {
           </Title>
           {map && <LayerSwitcher isMobile />}
           {map && <BasemapSwitcher isMobile />}
+          {map && <EditButton isMobile />}
           <LanguageSwitcher isMobile />
         </AppShell.Navbar>
         <AppShell.Main p={0}>

@@ -13,6 +13,7 @@
   "LegendPage.hiddenIf": ".input {$count :number}\n\n.match $count\none {{Dieses Objekt wird ausgeblendet, wenn dieses {$count} Tag vorhanden ist:}}\n* {{Dieses Objekt wird ausgeblendet, wenn eines dieser {$count} Tags vorhanden ist:}}",
   "LegendPage.labelAttributes": ".input {$count :number}\n\n.match $count\none {{Die Beschriftung wird von {$count} Tag beeinflusst:}}\n* {{Die Beschriftung wird von {$count} Tags beeinflusst:}}",
   "Navbar.basemap": "Hintergrundkarte",
+  "Navbar.edit": "Bearbeiten",
   "Navbar.language": "Sprache",
   "Navbar.layers": "Ebenen",
   "Navbar.legend": "Legende",
