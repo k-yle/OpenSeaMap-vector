@@ -16,7 +16,7 @@
     "@tabler/icons-react": "^3.41.1",
     "get-region": "^1.0.0",
     "light-characteristics": "^1.0.0",
-    "maplibre-gl": "^6.14.0",
+    "maplibre-gl": "^6.19.0",
     "md5": "^2.3.0",
     "messageformat": "^4.0.0",
     "navmark-renderer": "workspace:",
