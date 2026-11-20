@@ -3,7 +3,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "lib": ["esnext", "dom", "dom.iterable"],
-    "types": ["vite/client", "node"]
+    "types": ["vite/client", "node", "trusted-types"]
   },
   "include": ["src", "scripts", "src/**/*.json"]
 }

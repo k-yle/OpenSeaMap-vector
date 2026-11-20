@@ -9,6 +9,7 @@ import { AppWrapper } from './context/AppContext.js';
 import { LayerWrapper } from './context/LayerContext.js';
 import { LocaleWrapper } from './context/LocaleContext.js';
 import './util/shut-up.js';
+import './util/trusted-types.js';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import '@mantine/core/styles.css';
 import './index.css';
